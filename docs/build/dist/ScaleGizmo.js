@@ -5,7 +5,7 @@
 // - Outlines drawn as line-list edges (back, right, top faces only) using origin-based coordinates
 // - Picking geometry uses quads -> triangles (axis quads + outer plane quads + inner uniform quad)
 // - Picking IDs: 1..7 (AxisX, AxisY, AxisZ, PlaneXY, PlaneYZ, PlaneZX, Uniform)
-import { mat4, vec3 } from "./gl-matrix";
+import { mat4, vec3 } from "gl-matrix";
 import { GizmoSpace } from "./GizmoManager";
 export var ScalePickId;
 (function (ScalePickId) {
