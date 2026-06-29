@@ -6,7 +6,7 @@
 //
 // Requires: npm install gl-matrix
 // Build/run: your normal dev server (Vite/webpack/etc.)
-import "./styles.css";
+//import "./styles.css";
 import { mat4, vec3 } from "./gl-matrix.js";
 import { Scene } from "./Scene.js";
 import { CubeActor } from "./CubeActor.js";
