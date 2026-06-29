@@ -7,8 +7,7 @@
 // Requires: npm install gl-matrix
 // Build/run: your normal dev server (Vite/webpack/etc.)
 import "./styles.css";
-import { mat4, vec3, quat } from "./gl-matrix.js";
-
+import { mat4, vec3 } from "gl-matrix";
 import { Scene } from "./Scene";
 import { CubeActor } from "./CubeActor";
 import { SelectionManager } from "./SelectionManager";

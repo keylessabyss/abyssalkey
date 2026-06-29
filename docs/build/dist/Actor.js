@@ -1,8 +1,7 @@
 // src/Actor.ts
 // Base Actor: owns transform and modelMatrix computation only.
 // No GPU resources here — renderer manages GPU state.
-import { mat4, vec3, quat } from "./gl-matrix.js";
-
+import { mat4, vec3 } from "gl-matrix";
 export class Actor {
     name;
     position = vec3.fromValues(0, 0, 0);

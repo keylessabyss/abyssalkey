@@ -1,6 +1,5 @@
 // src/MoveGizmo.ts
-import { mat4, vec3, quat } from "./gl-matrix.js";
-
+import { mat4, vec3 } from "gl-matrix";
 import { GizmoSpace } from "./GizmoManager";
 export var MovePickId;
 (function (MovePickId) {
