@@ -1,5 +1,5 @@
 // src/RotateGizmo.ts
-import { mat4, vec3 } from "gl-matrix";
+import { mat4, vec3, quat } from "gl-matrix";
 import { GizmoSpace } from "./GizmoManager";
 export class RotateGizmo {
     drawPicking(pass, actor, cameraViewProj, cameraPos, space, pickingPipeline, pickingUniformBuffer, pickingBindGroup) {
