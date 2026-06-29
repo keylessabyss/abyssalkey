@@ -1,5 +1,5 @@
 // src/Raycast.ts
-import { vec3, mat4 } from "./gl-matrix";
+import { vec3, mat4 } from "./gl-matrix.js";
 export function raycastActors(actors, cameraPos, rayDir) {
     let closest = null;
     let closestDist = Infinity;

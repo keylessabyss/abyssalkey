@@ -1,6 +1,6 @@
 // src/MoveGizmo.ts
-import { mat4, vec3 } from "./gl-matrix";
-import { GizmoSpace } from "./GizmoManager";
+import { mat4, vec3 } from "./gl-matrix.js";
+import { GizmoSpace } from "./GizmoManager.js";
 export var MovePickId;
 (function (MovePickId) {
     MovePickId[MovePickId["AxisX"] = 1] = "AxisX";

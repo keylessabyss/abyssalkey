@@ -1,6 +1,6 @@
 // src/SelectGizmo.ts
-import { mat4, vec3 } from "./gl-matrix";
-import { GizmoSpace } from "./GizmoManager";
+import { mat4, vec3 } from "./gl-matrix.js";
+import { GizmoSpace } from "./GizmoManager.js";
 export class SelectGizmo {
     device;
     pipeline;

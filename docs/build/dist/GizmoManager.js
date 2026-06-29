@@ -1,8 +1,8 @@
 // src/GizmoManager.ts
-import { MoveGizmo } from "./MoveGizmo";
-import { SelectGizmo } from "./SelectGizmo";
-import { RotateGizmo } from "./RotateGizmo";
-import { ScaleGizmo } from "./ScaleGizmo";
+import { MoveGizmo } from "./MoveGizmo.js";
+import { SelectGizmo } from "./SelectGizmo.js";
+import { RotateGizmo } from "./RotateGizmo.js";
+import { ScaleGizmo } from "./ScaleGizmo.js";
 export var GizmoMode;
 (function (GizmoMode) {
     GizmoMode[GizmoMode["None"] = 0] = "None";

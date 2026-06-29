@@ -1,7 +1,7 @@
 // src/CubeActor.ts
 // A simple mesh actor that owns vertex/index buffers and issues draw calls.
 // It does NOT own pipeline, bind groups, or uniform buffers.
-import { Actor } from "./Actor";
+import { Actor } from "./Actor.js";
 export class CubeActor extends Actor {
     vertexBuffer;
     indexBuffer;

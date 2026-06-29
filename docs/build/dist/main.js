@@ -7,15 +7,15 @@
 // Requires: npm install gl-matrix
 // Build/run: your normal dev server (Vite/webpack/etc.)
 import "./styles.css";
-import { mat4, vec3 } from "./gl-matrix";
-import { Scene } from "./Scene";
-import { CubeActor } from "./CubeActor";
-import { SelectionManager } from "./SelectionManager";
-import { raycastActors } from "./Raycast";
-import { HierarchyPanel } from "./HierarchyPanel";
-import { DetailsPanel } from "./DetailsPanel";
-import { GizmoManager, GizmoMode, GizmoSpace } from "./GizmoManager";
-import { PickingPass } from "./PickingPass";
+import { mat4, vec3 } from "./gl-matrix.js";
+import { Scene } from "./Scene.js";
+import { CubeActor } from "./CubeActor.js";
+import { SelectionManager } from "./SelectionManager.js";
+import { raycastActors } from "./Raycast.js";
+import { HierarchyPanel } from "./HierarchyPanel.js";
+import { DetailsPanel } from "./DetailsPanel.js";
+import { GizmoManager, GizmoMode, GizmoSpace } from "./GizmoManager.js";
+import { PickingPass } from "./PickingPass.js";
 async function main() {
     // -------------------------
     // DOM + HUD

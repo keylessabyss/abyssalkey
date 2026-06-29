@@ -1,6 +1,6 @@
 // src/RotateGizmo.ts
-import { mat4, vec3 } from "./gl-matrix";
-import { GizmoSpace } from "./GizmoManager";
+import { mat4, vec3 } from "./gl-matrix.js";
+import { GizmoSpace } from "./GizmoManager.js";
 export class RotateGizmo {
     drawPicking(pass, actor, cameraViewProj, cameraPos, space, pickingPipeline, pickingUniformBuffer, pickingBindGroup) {
         // TEMP: do nothing so picking pass doesn't crash
