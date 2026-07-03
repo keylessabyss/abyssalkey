@@ -69,19 +69,19 @@ fn vs_main(@location(0) pos : vec3<f32>, @location(1) handleId : u32) -> VSOut {
     out.color = select(vec3<f32>(1.0,0.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
     out.alpha = 1.0;
   } else if (handleId == ${W.AxisY}u) {
-    out.color = select(vec3<f32>(0.0,1.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
-    out.alpha = 1.0;
-  } else if (handleId == ${W.AxisZ}u) {
     out.color = select(vec3<f32>(0.0,0.0,1.0), vec3<f32>(1.0,1.0,1.0), hov);
     out.alpha = 1.0;
+  } else if (handleId == ${W.AxisZ}u) {
+    out.color = select(vec3<f32>(0.0,1.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
+    out.alpha = 1.0;
   } else if (handleId == ${W.PlaneXY}u) {
-    out.color = vec3<f32>(1.0,1.0,0.0);
-    out.alpha = select(0.2,0.45,hov);
-  } else if (handleId == ${W.PlaneYZ}u) {
     out.color = vec3<f32>(0.0,1.0,1.0);
     out.alpha = select(0.2,0.45,hov);
-  } else if (handleId == ${W.PlaneZX}u) {
+  } else if (handleId == ${W.PlaneYZ}u) {
     out.color = vec3<f32>(1.0,0.0,1.0);
+    out.alpha = select(0.2,0.45,hov);
+  } else if (handleId == ${W.PlaneZX}u) {
+    out.color = vec3<f32>(1.0,1.0,0.0);
     out.alpha = select(0.2,0.45,hov);
   } else {
     out.color = vec3<f32>(1.0,1.0,1.0);
@@ -114,9 +114,9 @@ fn vs_main(
   if (axis == 0u) {
     out.color = vec3<f32>(1.0, 0.0, 0.0);
   } else if (axis == 1u) {
-    out.color = vec3<f32>(0.0, 1.0, 0.0);
-  } else {
     out.color = vec3<f32>(0.0, 0.0, 1.0);
+  } else {
+    out.color = vec3<f32>(0.0, 1.0, 0.0);
   }
 
   return out;
@@ -150,13 +150,13 @@ fn vs_main(@location(0) pos : vec3<f32>, @location(1) handleId : u32) -> VSOut {
   let hov = handleId == u_highlight.hoveredId;
 
   if (handleId == ${G.AxisX}u) {
-    out.color = select(vec3<f32>(1.0,0.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
-    out.alpha = 1.0;
-  } else if (handleId == ${G.AxisY}u) {
     out.color = select(vec3<f32>(0.0,1.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
     out.alpha = 1.0;
-  } else if (handleId == ${G.AxisZ}u) {
+  } else if (handleId == ${G.AxisY}u) {
     out.color = select(vec3<f32>(0.0,0.0,1.0), vec3<f32>(1.0,1.0,1.0), hov);
+    out.alpha = 1.0;
+  } else if (handleId == ${G.AxisZ}u) {
+    out.color = select(vec3<f32>(1.0,0.0,0.0), vec3<f32>(1.0,1.03,1.0), hov);
     out.alpha = 1.0;
   } else {
     out.color = vec3<f32>(0.0,0.0,0.0);
@@ -197,22 +197,22 @@ fn vs_main(@location(0) pos : vec3<f32>, @location(1) handleId : u32) -> VSOut {
     out.color = select(vec3<f32>(1.0,0.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
     out.alpha = 1.0;
   } else if (handleId == ${K.AxisY}u) {
-    out.color = select(vec3<f32>(0.0,1.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
-    out.alpha = 1.0;
-  } else if (handleId == ${K.AxisZ}u) {
     out.color = select(vec3<f32>(0.0,0.0,1.0), vec3<f32>(1.0,1.0,1.0), hov);
     out.alpha = 1.0;
+  } else if (handleId == ${K.AxisZ}u) {
+    out.color = select(vec3<f32>(0.0,1.0,0.0), vec3<f32>(1.0,1.0,1.0), hov);
+    out.alpha = 1.0;
   } else if (handleId == ${K.PlaneXY}u) {
-    out.color = vec3<f32>(1.0,1.0,0.0);
-    out.alpha = select(0.25,0.45,hov);
-  } else if (handleId == ${K.PlaneYZ}u) {
     out.color = vec3<f32>(0.0,1.0,1.0);
     out.alpha = select(0.25,0.45,hov);
-  } else if (handleId == ${K.PlaneZX}u) {
+  } else if (handleId == ${K.PlaneYZ}u) {
     out.color = vec3<f32>(1.0,0.0,1.0);
     out.alpha = select(0.25,0.45,hov);
+  } else if (handleId == ${K.PlaneZX}u) {
+    out.color = vec3<f32>(1.0,1.0,0.0);
+    out.alpha = select(0.25,0.45,hov);
   } else {
-    out.color = vec3<f32>(0.62,0.35,0.95);
+    out.color = vec3<f32>(0.62,0.1,0.95);
     out.alpha = select(0.35,0.55,hov);
   }
 
