@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Abyssal Engine Editor</title>
     <style></style>
-  <script type="module" crossorigin src="/assets/index-CBvj4bTH.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Ct_jbBe8.css">
+  <script type="module" crossorigin src="/assets/index-zuJlpt5Z.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-jNRfDlNr.css">
 </head>
 
 <body>
@@ -15,15 +15,16 @@
         <div id="toolbar">
             <strong>Abyssal Engine</strong>
             <div style="margin-left:20px;">File | Edit | View | Build | Play</div>
+            <button id="playButton">▶ Play</button>
+            <button id="stopButton" disabled>■ Stop</button>
         </div>
 
-        <div id="leftPanel"></div>
+        <div id="leftPanel"><h3>Hierarchy</h3><div id="hierarchyList"></div></div>
 
         <div id="leftDevicePanel"></div>
 
         <div id="viewportContainer">
             <canvas id="viewport"></canvas>
-            <div id="hud">FPS: 0</div>
         </div>
 
         <div id="rightDevicePanel"></div>
