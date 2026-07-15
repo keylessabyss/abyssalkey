@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="engine-overview.html">Overview</a>
+        <a href="controls.html">Controls</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="about.html">About</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Current build status</p>
+    <h1>Features</h1>
+    <p class="lead">Abyssal is growing as an editor and runtime foundation. The labels below distinguish normal available features from experimental or planned work.</p>
+
+    <section class="section grid two">
+      <article class="card">
+        <div class="badge-row"><span class="badge available">Available</span></div>
+        <h2>Editor</h2>
+        <ul class="list-clean">
+          <li>Hierarchy and Details panels.</li>
+          <li>Viewport selection and transform gizmos.</li>
+          <li>World, Wings Assembler, and Material Editor modes.</li>
+          <li>Content Browser with virtual folder tree.</li>
+          <li>Resizable Content Browser and editor panels.</li>
+          <li>Text-input focus guard for editor hotkeys.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="badge-row"><span class="badge available">Available</span></div>
+        <h2>Projects and Assets</h2>
+        <ul class="list-clean">
+          <li>Project folder creation and manifest saving.</li>
+          <li>Project open, save, save all, close, and switch confirmation.</li>
+          <li>MeshAsset registry and built-in Base Mesh library.</li>
+          <li>OBJ geometry import foundation.</li>
+          <li>Fragment JSON persistence.</li>
+          <li>Material JSON persistence.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <div class="badge-row"><span class="badge available">Available</span></div>
+        <h2>Wings Assembler</h2>
+        <ul class="list-clean">
+          <li>Empty Fragment assemblies.</li>
+          <li>Mesh-part hierarchy with Root, Empty Pivot, and Mesh nodes.</li>
+          <li>Parenting, reparenting, renaming, and local transforms.</li>
+          <li>Material assignment by saved MaterialAsset reference.</li>
+          <li>Fragment saving into the active project.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="badge-row"><span class="badge available">Available</span></div>
+        <h2>Rendering</h2>
+        <ul class="list-clean">
+          <li>WebGPU-first rendering path.</li>
+          <li>ReflectionLit mesh rendering.</li>
+          <li>Base color, metallic, roughness, emissive, and opacity values.</li>
+          <li>Global environment reflection.</li>
+          <li>Specialized grid, gizmo, and picking paths for editor interaction.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <div class="badge-row"><span class="badge experimental">Experimental / diagnostic</span></div>
+        <h2>Gameplay Systems</h2>
+        <ul class="list-clean">
+          <li>Actor and Component model.</li>
+          <li>Construct and Fragment gameplay pipeline.</li>
+          <li>Lane combat and unit deployment.</li>
+          <li>AI purchasing and economy loop.</li>
+          <li>Projectile travel, impact, and damage timing.</li>
+          <li>Events, timers, possession, and match coordination.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="badge-row"><span class="badge planned">Planned</span></div>
+        <h2>Deferred Systems</h2>
+        <ul class="list-clean">
+          <li>Complete scene persistence.</li>
+          <li>Texture asset workflow and texture assignment UI.</li>
+          <li>Fragment-to-world placement for saved FragmentAssets.</li>
+          <li>Component-definition authoring in Wings Assembler.</li>
+          <li>Socket and nested Fragment composition tools.</li>
+          <li>Production export pipeline.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section panel">
+      <h2>Known Limitations</h2>
+      <div class="grid two">
+        <ul class="list-clean">
+          <li>A desktop Chromium browser with WebGPU is the primary target.</li>
+          <li>Project-folder workflows require File System Access permission.</li>
+          <li>Scene saving and authored world restoration are not complete yet.</li>
+          <li>Texture assets and material texture slots are not user-facing yet.</li>
+        </ul>
+        <ul class="list-clean">
+          <li>Mesh import/export UI is deferred.</li>
+          <li>No production-ready build packaging or console workflow.</li>
+          <li>Some gameplay systems are included for validation and may change.</li>
+          <li>Roadmap priority follows Morninghollow production needs.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss - Abyssal Engine public documentation</div>
+      <div>Feature status is a public summary, not an internal implementation log.</div>
+    </div>
+  </footer>
+</body>
+</html>

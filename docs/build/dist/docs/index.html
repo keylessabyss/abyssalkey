@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abyssal Engine Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="engine-overview.html">Overview</a>
+        <a href="controls.html">Controls</a>
+        <a href="features.html">Features</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="about.html">About</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Active development build</p>
+        <h1>Abyssal Engine</h1>
+        <p class="lead">A lightweight, modular WebGPU game engine and editor built to create the worlds of Keyless Abyss.</p>
+        <p class="muted">Abyssal Engine was created to build real games, beginning with Morninghollow. Its systems grow from production needs rather than feature-count competition.</p>
+        <div class="actions">
+          <a class="button primary" href="../">Open Abyssal Editor</a>
+          <a class="button" href="engine-overview.html">Read the Overview</a>
+          <a class="button" href="features.html">View Current Features</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <h2>Current Status</h2>
+        <p class="muted">This hosted build is an evolving editor and engine preview. It demonstrates project-based authoring, WebGPU rendering, asset browsing, and Wings Assembler workflows.</p>
+        <div class="badge-row">
+          <span class="badge available">WebGPU-first</span>
+          <span class="badge available">TypeScript</span>
+          <span class="badge available">Projects</span>
+          <span class="badge available">Wings Assembler</span>
+          <span class="badge experimental">Active development</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>Build games, not demos</h3>
+        <p>Abyssal is shaped by Morninghollow and the needs of real game production. Features are added when they support a working content or gameplay path.</p>
+      </article>
+      <article class="card">
+        <h3>Project-owned content</h3>
+        <p>Projects provide a disk home for Fragments, Materials, and future scenes or recipes. The editor is moving toward durable, native content assets.</p>
+      </article>
+      <article class="card">
+        <h3>Modular assembly</h3>
+        <p>Meshes, Materials, Fragments, Constructs, and Components each have distinct responsibilities so content can grow without becoming one tangled object.</p>
+      </article>
+    </section>
+
+    <section class="section callout">
+      <h2>Documentation Notice</h2>
+      <p>Abyssal Engine is under active development. This public manual describes the current hosted build and may evolve alongside the editor.</p>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <h3>Start Here</h3>
+        <ul class="list-clean">
+          <li><a href="engine-overview.html">Engine Overview</a> explains the public architecture.</li>
+          <li><a href="controls.html">Controls</a> lists verified editor inputs.</li>
+          <li><a href="features.html">Features</a> separates available, experimental, and planned systems.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Known Limitations</h3>
+        <ul class="list-clean">
+          <li>Best supported in a desktop Chromium browser with WebGPU.</li>
+          <li>Project folders require browser File System Access permission.</li>
+          <li>Scene persistence, texture assets, and production export workflows are not complete yet.</li>
+          <li>Some gameplay and stress systems remain diagnostic or experimental.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss - Abyssal Engine public documentation</div>
+      <div>This manual summarizes the hosted build without exposing internal planning notes.</div>
+    </div>
+  </footer>
+</body>
+</html>

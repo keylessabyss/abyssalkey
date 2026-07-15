@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engine Overview - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="engine-overview.html" aria-current="page">Overview</a>
+        <a href="controls.html">Controls</a>
+        <a href="features.html">Features</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="about.html">About</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Architecture for visitors</p>
+    <h1>Engine Overview</h1>
+    <p class="lead">Abyssal Engine combines an editor shell, WebGPU renderer, project system, asset registry, and modular gameplay framework.</p>
+
+    <section class="section panel">
+      <h2>Project Model</h2>
+      <p class="muted">A project is the editor's workspace and the future home for all durable content.</p>
+      <pre><code>Project
+  Mesh Assets
+  Material Assets
+  Fragment Assets
+  future Scenes
+  future Recipes</code></pre>
+      <p>Abyssal uses friendly names in the editor while keeping stable internal identifiers for asset references. This makes content easier to edit without sacrificing reliable links between assets.</p>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>MeshAsset</h3>
+        <p>Geometry metadata. Meshes may come from the built-in base mesh library or imported OBJ geometry.</p>
+      </article>
+      <article class="card">
+        <h3>MaterialAsset</h3>
+        <p>Appearance data for ReflectionLit materials, including base color, roughness, metallic, opacity, and emissive settings.</p>
+      </article>
+      <article class="card">
+        <h3>FragmentAsset</h3>
+        <p>An authored assembly made from mesh nodes, empty pivots, transforms, and optional material references.</p>
+      </article>
+      <article class="card">
+        <h3>Construct</h3>
+        <p>A runtime gameplay identity. A Construct can be assembled from Fragments and configured with gameplay data.</p>
+      </article>
+      <article class="card">
+        <h3>Component</h3>
+        <p>Reusable behavior. Movement, targeting, economy, camera, and other behaviors are composed through Components and services.</p>
+      </article>
+      <article class="card">
+        <h3>Renderer</h3>
+        <p>A WebGPU-first renderer using the ReflectionLit path for mesh rendering, plus specialized editor paths for grid, gizmos, and picking.</p>
+      </article>
+    </section>
+
+    <section class="section panel">
+      <h2>Wings Assembler Workflow</h2>
+      <pre><code>Base Mesh or imported Mesh
+  -> Add to assembly
+  -> Build hierarchy
+  -> Position, rotate, and scale parts
+  -> Assign Materials
+  -> Save Fragment into project</code></pre>
+      <p>Wings Assembler is the embedded workspace for building reusable physical modules. It uses the same editor shell as the world view, but operates inside an isolated preview scene.</p>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <h3>Guiding Philosophy</h3>
+        <ul class="list-clean">
+          <li>Build games, not demos.</li>
+          <li>Morninghollow is the proving ground.</li>
+          <li>Documentation is part of the architecture.</li>
+          <li>Modularity must solve real production problems.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Technology Stack</h3>
+        <ul class="list-clean">
+          <li>TypeScript for engine and editor code.</li>
+          <li>WebGPU and WGSL for rendering.</li>
+          <li>gl-matrix for vector and matrix math.</li>
+          <li>Vite for local development and static builds.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section callout">
+      <h2>Tool Philosophy</h2>
+      <p>Abyssal Engine was not created to replace Unreal, Unity, Godot, or Blender. It was created to build the worlds of Keyless Abyss. Blender remains an important future bridge for broad content workflows.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss - Abyssal Engine public documentation</div>
+      <div>Architecture summarized for users of the hosted build.</div>
+    </div>
+  </footer>
+</body>
+</html>

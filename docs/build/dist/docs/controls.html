@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controls - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="engine-overview.html">Overview</a>
+        <a href="controls.html" aria-current="page">Controls</a>
+        <a href="features.html">Features</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="about.html">About</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Verified editor inputs</p>
+    <h1>Controls</h1>
+    <p class="lead">These controls describe the current hosted editor. Text fields suppress viewport hotkeys while you type.</p>
+
+    <section class="section grid two">
+      <article class="card">
+        <h2>Viewport</h2>
+        <table>
+          <tbody>
+            <tr><th>Action</th><th>Control</th></tr>
+            <tr><td>Select Actor or node</td><td>Left click in the viewport</td></tr>
+            <tr><td>Drag selected gizmo handle</td><td>Left mouse drag on a highlighted handle</td></tr>
+            <tr><td>Move camera forward/back</td><td>W / S</td></tr>
+            <tr><td>Move camera left/right</td><td>A / D</td></tr>
+            <tr><td>Move camera up/down</td><td>E / Q</td></tr>
+            <tr><td>Look around</td><td>Hold Alt to enter pointer-lock look mode</td></tr>
+            <tr><td>Adjust movement speed</td><td>Mouse wheel</td></tr>
+            <tr><td>Toggle grid</td><td>G</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card">
+        <h2>Transform Tools</h2>
+        <table>
+          <tbody>
+            <tr><th>Tool</th><th>Shortcut</th></tr>
+            <tr><td>Select</td><td>1</td></tr>
+            <tr><td>Move</td><td>2</td></tr>
+            <tr><td>Rotate</td><td>3</td></tr>
+            <tr><td>Scale</td><td>4</td></tr>
+            <tr><td>Toggle World / Local</td><td>`</td></tr>
+            <tr><td>Focus selected Actor</td><td>R</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <h2>Projects</h2>
+        <ul class="list-clean">
+          <li>Use File -> New Project to create a project folder in a selected parent directory.</li>
+          <li>Use File -> Open Project to open a folder containing <code>abyssal.project.json</code>.</li>
+          <li>Save writes the current project manifest and current supported project assets.</li>
+          <li>Save All is the future extension point for all dirty project content.</li>
+          <li>Close Project unloads project-owned assets and leaves the editor running.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Browser Permissions</h2>
+        <p>Project folders use the browser File System Access API. The current supported target is a desktop Chromium-based browser on localhost or a secure hosted origin.</p>
+        <p class="small">The native folder picker may say the site can save changes. That permission is how the editor creates and updates project files.</p>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <h2>Content Browser</h2>
+        <ul class="list-clean">
+          <li>Select a virtual folder in the left tree.</li>
+          <li>Select an asset in the folder contents.</li>
+          <li>Use New Fragment from the Fragments folder header.</li>
+          <li>Use New Material from the Materials folder header.</li>
+          <li>Use Add on a MeshAsset to add it to the current context: World or Wings Assembler.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Wings Assembler</h2>
+        <ul class="list-clean">
+          <li>Create a new Fragment from the Fragments folder.</li>
+          <li>Add MeshAssets from the Content Browser.</li>
+          <li>Select hierarchy nodes to transform, rename, reparent, assign material references, or delete supported nodes.</li>
+          <li>Save writes the Fragment hierarchy into the active project.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section callout">
+      <h2>Typing Guard</h2>
+      <p>When an input, textarea, select, or editable field has focus, editor hotkeys and camera movement pause so normal text entry works. Numeric fields keep their normal browser editing behavior.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss - Abyssal Engine public documentation</div>
+      <div>Controls reflect the current hosted build and may change.</div>
+    </div>
+  </footer>
+</body>
+</html>
