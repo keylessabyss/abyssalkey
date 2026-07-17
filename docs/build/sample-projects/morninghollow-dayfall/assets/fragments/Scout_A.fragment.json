@@ -1,0 +1,154 @@
+{
+  "assetId": "Fragment.Scout_A",
+  "displayName": "Scout Apex",
+  "description": "Morninghollow Dayfall Scout assembled from imported mesh channels.",
+  "tags": [
+    "Fragment",
+    "Project",
+    "Scout",
+    "Ship"
+  ],
+  "assemblyNodes": [
+    {
+      "nodeId": "Root",
+      "type": "Root",
+      "name": "Scout Apex",
+      "parentNodeId": null,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "Scout_A_Base",
+      "type": "Mesh",
+      "name": "Scout A Base Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.scout_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "Scout_A_Boltz",
+      "type": "Mesh",
+      "name": "Scout A Boltz Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.scout_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "Scout_A_Color",
+      "type": "Mesh",
+      "name": "Scout A Color Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.scout_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "Scout_A_Emissive",
+      "type": "Mesh",
+      "name": "Scout A Accent Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.scout_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    }
+  ],
+  "componentDefinitions": [
+    {
+      "type": "Tag",
+      "enabled": true,
+      "tags": [
+        "Unit",
+        "Ship",
+        "Scout"
+      ]
+    },
+    {
+      "type": "Resource",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 30,
+      "startingValue": 30
+    },
+    {
+      "type": "Team",
+      "enabled": true,
+      "teamId": "Neutral"
+    }
+  ]
+}

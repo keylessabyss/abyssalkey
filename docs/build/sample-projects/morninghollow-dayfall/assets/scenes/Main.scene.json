@@ -1,0 +1,35 @@
+{
+  "format": "AbyssalScene",
+  "formatVersion": 1,
+  "assetId": "Scene.Main",
+  "displayName": "Main",
+  "description": "Morninghollow Dayfall bundled sample scene.",
+  "tags": [
+    "Scene",
+    "Project",
+    "Sample"
+  ],
+  "placedFragments": [
+    {
+      "instanceId": "SampleScout1",
+      "sourceFragmentAssetId": "Fragment.Scout_A",
+      "instanceName": "Scout Apex",
+      "worldPosition": [
+        -3,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

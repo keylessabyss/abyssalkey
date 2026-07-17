@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Shared language</p>
+    <h1>Glossary</h1>
+    <p class="lead">Abyssal Engine uses a small set of precise terms so assets, runtime systems, and editor tools stay understandable.</p>
+
+    <section class="section glossary-list">
+      <article><h2>Actor</h2><p>A live world object with Transform, hierarchy, Components, tags, and lifecycle state.</p></article>
+      <article><h2>Asset</h2><p>Durable project-owned authored content, such as Mesh, Material, Fragment, or Scene data.</p></article>
+      <article><h2>Base Mesh</h2><p>A built-in reusable mesh primitive used as authoring source content in Wings Assembler.</p></article>
+      <article><h2>Component</h2><p>A live runtime behavior object attached to an Actor.</p></article>
+      <article><h2>ComponentDefinition</h2><p>Serializable authored intent used to create a live Component later.</p></article>
+      <article><h2>Construct</h2><p>A gameplay identity assembled from fragments and configured by runtime systems.</p></article>
+      <article><h2>FragmentAsset</h2><p>A reusable physical module or assembly saved by Wings Assembler.</p></article>
+      <article><h2>MaterialAsset</h2><p>Project-owned ReflectionLit appearance data.</p></article>
+      <article><h2>MeshAsset</h2><p>Geometry source data, either built in or imported.</p></article>
+      <article><h2>PlacedFragmentInstance</h2><p>One scene placement of a reusable FragmentAsset, with its own transform.</p></article>
+      <article><h2>Project</h2><p>The disk home that owns assets, scenes, settings, and future content.</p></article>
+      <article><h2>SceneAsset</h2><p>A saved map file containing placed Fragment instance records.</p></article>
+      <article><h2>Wings Assembler</h2><p>The editor mode for building FragmentAssets from mesh nodes, pivots, materials, and component definitions.</p></article>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="assets.html">Assets</a>
+        <a href="components.html">Components</a>
+        <a href="architecture-diagrams.html">Diagrams</a>
+        <a href="documentation-style-guide.html">Documentation Style Guide</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

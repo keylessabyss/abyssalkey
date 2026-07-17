@@ -1,0 +1,31 @@
+{
+  "format": "AbyssalMaterial",
+  "formatVersion": 1,
+  "assetId": "Material.M_metal_bronze",
+  "displayName": "Metallic Bronze",
+  "description": "Scout fixed bronze metal.",
+  "tags": [
+    "Material",
+    "Project",
+    "Scout"
+  ],
+  "materialType": "ReflectionLit",
+  "channelRole": "Fixed",
+  "reflectionLit": {
+    "baseColor": [
+      1,
+      0.761,
+      0.195,
+      1
+    ],
+    "emissiveColor": [
+      0,
+      0,
+      0
+    ],
+    "emissiveIntensity": 0,
+    "metallic": 1,
+    "roughness": 0.2,
+    "opacity": 1
+  }
+}

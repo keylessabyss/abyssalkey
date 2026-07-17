@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Style Guide - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">How to extend the manual</p>
+    <h1>Documentation Style Guide</h1>
+    <p class="lead">The public manual should explain the engine clearly without exposing implementation noise or promising unfinished workflows.</p>
+
+    <section class="section grid two">
+      <article class="card"><h2>Lead with Purpose</h2><p>Every page should answer what the system is for, who owns it, and what boundaries protect it.</p></article>
+      <article class="card"><h2>Use Stable Terms</h2><p>Prefer glossary terms such as Asset, FragmentAsset, SceneAsset, Actor, and ComponentDefinition.</p></article>
+      <article class="card"><h2>Separate Current and Future</h2><p>Mark planned capabilities as future work. Do not describe deferred features as already supported.</p></article>
+      <article class="card"><h2>Keep It Offline</h2><p>The manual must work from the built site without external scripts, fonts, or CDNs.</p></article>
+    </section>
+
+    <section class="section panel">
+      <h2>Page Checklist</h2>
+      <ul class="list-clean">
+        <li>Clear title and lead paragraph.</li>
+        <li>Navigation matches the rest of the manual.</li>
+        <li>Related Reading links point to real local pages.</li>
+        <li>Architecture boundaries are explicit.</li>
+        <li>Mobile layout remains readable.</li>
+      </ul>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="design-principles.html">Design Principles</a>
+        <a href="ai-quick-start.html">AI Quick Start</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="roadmap.html">Roadmap</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

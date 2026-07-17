@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Editor - Abyssal Engine</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a><nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav></div></header>
+  <main class="page">
+    <p class="eyebrow">Authoring workflow</p>
+    <h1>Editor</h1>
+    <p class="lead">The editor shell hosts world editing, asset browsing, Wings Assembler, Material editing, and Play/Stop validation.</p>
+    <section class="section grid two">
+      <article class="card"><h2>Content Browser</h2><p>Browse virtual folders for Meshes, Materials, Fragments, and Scenes. Context actions change by selected folder and asset type, including OBJ import from Meshes / Imported and safe deletion for unused project-owned assets.</p></article>
+      <article class="card"><h2>Wings Assembler</h2><p>Create reusable FragmentAssets from mesh nodes, pivots, transforms, materials, and root ComponentDefinitions.</p></article>
+      <article class="card"><h2>Scene Editor</h2><p>Place saved FragmentAssets into the world, edit transforms, and save placements into Scene assets.</p></article>
+      <article class="card"><h2>Play / Stop</h2><p>Play creates runtime actors. Stop removes runtime actors and restores authored state from the snapshot.</p></article>
+    </section>
+    <section class="section panel"><h2>Tips</h2><ul class="list-clean"><li>Open a project before authoring assets.</li><li>Use Wings Assembler for source Fragment changes.</li><li>Use World details for placed-instance transforms.</li><li>Delete is only available for unused project-owned assets, and there is no undo or Trash yet.</li><li>Runtime-spawned units are not saved into Scenes.</li></ul></section>
+    <section class="section panel"><h2>Related Reading</h2><div class="related"><a href="controls.html">Controls</a><a href="assets.html">Assets</a><a href="gameplay.html">Gameplay</a><a href="glossary.html">Glossary</a></div></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rendering - Abyssal Engine</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a><nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav></div></header>
+  <main class="page">
+    <p class="eyebrow">WebGPU first</p>
+    <h1>Rendering</h1>
+    <p class="lead">Abyssal uses a ReflectionLit path for mesh rendering, an HDR scene-color target with tone mapping, and specialized editor paths for grid, gizmos, and picking.</p>
+    <section class="section grid two">
+      <article class="card"><h2>ReflectionLit</h2><p>A lightweight material path with base color, metallic, roughness, emissive, alpha behavior, and one global environment reflection.</p></article>
+      <article class="card"><h2>Material Assets</h2><p>ReflectionLit values are stored in MaterialAssets and assigned to mesh nodes in Wings Assembler.</p></article>
+      <article class="card"><h2>HDR Tone Mapping</h2><p>ReflectionLit writes HDR color first. Bloom and tone mapping then compress brightness for display while preserving saturated emissive hue.</p></article>
+      <article class="card"><h2>Editor Rendering</h2><p>Grid, gizmos, picking, and overlays remain specialized and sharp instead of being tone-mapped with world materials.</p></article>
+      <article class="card"><h2>Future PBR</h2><p>The architecture keeps room for Unlit, StylizedLit, ReflectionLit, and full PBR paths later.</p></article>
+    </section>
+    <section class="section panel"><h2>Current HDR Boundary</h2><p>Bright emissive materials can exceed normal display range inside the renderer. Foundational bloom extracts sufficiently bright world surfaces, blurs them at reduced resolution, and combines the glow before tone mapping.</p></section>
+    <section class="section panel"><h2>Common Mistake</h2><p>Do not treat renderer-owned GPU state as asset data. Materials are CPU-side appearance assets; renderer caches own GPU buffers and bind groups.</p></section>
+    <section class="section panel"><h2>Related Reading</h2><div class="related"><a href="assets.html">Assets</a><a href="engine-overview.html">Architecture</a><a href="features.html">Feature Status</a><a href="roadmap.html">Roadmap</a></div></section>
+  </main>
+</body>
+</html>

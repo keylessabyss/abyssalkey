@@ -1,0 +1,32 @@
+{
+  "format": "AbyssalMaterial",
+  "formatVersion": 1,
+  "assetId": "Material.M_dynamic_accent",
+  "displayName": "Team Emissive",
+  "description": "Runtime team-emissive Scout channel.",
+  "tags": [
+    "Material",
+    "Project",
+    "Scout",
+    "TeamEmissive"
+  ],
+  "materialType": "ReflectionLit",
+  "channelRole": "TeamEmissive",
+  "reflectionLit": {
+    "baseColor": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "emissiveColor": [
+      1,
+      0,
+      0
+    ],
+    "emissiveIntensity": 10,
+    "metallic": 0,
+    "roughness": 0,
+    "opacity": 1
+  }
+}

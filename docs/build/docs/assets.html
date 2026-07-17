@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assets - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a><nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav></div></header>
+  <main class="page">
+    <p class="eyebrow">Project-owned content</p>
+    <h1>Assets</h1>
+    <p class="lead">Assets are durable project content. Runtime Actors are temporary instances created from assets and gameplay systems.</p>
+    <section class="section grid two">
+      <article class="card"><h2>Projects</h2><p>A project folder owns authored content and gives assets a stable disk home.</p></article>
+      <article class="card"><h2>Meshes</h2><p>MeshAssets describe geometry from built-in Base Meshes or imported OBJ sources.</p></article>
+      <article class="card"><h2>Materials</h2><p>MaterialAssets store ReflectionLit appearance data and can be assigned to Fragment mesh nodes.</p></article>
+      <article class="card"><h2>Fragments</h2><p>FragmentAssets store assembly hierarchy, mesh references, material references, Tags, and Resources.</p></article>
+      <article class="card"><h2>Components</h2><p>ComponentDefinitions are typed authored data. Live Components are created later by runtime systems.</p></article>
+      <article class="card"><h2>Scenes</h2><p>SceneAssets store placed Fragment instance records, not runtime-spawned units.</p></article>
+    </section>
+    <section class="section callout"><h2>Common Mistake</h2><p>Do not save live runtime state into reusable assets. A Fragment can define identity; a match decides ownership.</p></section>
+    <section class="section panel"><h2>Importing OBJ Blocks</h2><p>Open a project, choose the Content Browser's <strong>Meshes / Imported</strong> folder, then use <strong>Import OBJ</strong>. The editor copies the OBJ into the project, registers it as a MeshAsset, and shows it under Imported.</p><p>Imported meshes can be added to Wings Assembler, transformed, saved inside a Fragment, and reopened with the project. Materials, textures, and MTL files are not imported yet.</p></section>
+    <section class="section panel"><h2>Material Presets</h2><p>The Material Editor includes five practical Metallic/Roughness starting points. They are shortcuts only; MaterialAssets save the resulting scalar values, not the preset name.</p><table><thead><tr><th>Preset</th><th>Metallic</th><th>Roughness</th></tr></thead><tbody><tr><td>Soft Metal</td><td>0.7</td><td>0.3</td></tr><tr><td>Polished Metal</td><td>0.9</td><td>0.2</td></tr><tr><td>Mirror</td><td>1.0</td><td>0.0</td></tr><tr><td>Rough Metal</td><td>1.0</td><td>1.0</td></tr><tr><td>Matte Non-Metal</td><td>0.0</td><td>1.0</td></tr></tbody></table></section>
+    <section class="section panel"><h2>Related Reading</h2><div class="related"><a href="architecture-diagrams.html">Diagrams</a><a href="editor.html">Editor</a><a href="gameplay.html">Gameplay</a><a href="glossary.html">Glossary</a></div></section>
+  </main>
+</body>
+</html>

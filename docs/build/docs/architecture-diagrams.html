@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture Diagrams - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <p class="eyebrow">Visual map</p>
+    <h1>Architecture Diagrams</h1>
+    <p class="lead">A few simple diagrams explain the core relationships faster than a long implementation tour.</p>
+
+    <section class="section panel">
+      <h2>Asset Pipeline</h2>
+      <pre class="diagram"><code>Project
+  Assets
+    MeshAsset
+    MaterialAsset
+    FragmentAsset
+    SceneAsset
+  Future
+    RecipeAsset
+    TextureAsset</code></pre>
+    </section>
+
+    <section class="section panel">
+      <h2>Runtime Construction</h2>
+      <pre class="diagram"><code>ConstructRecipe
+  fragmentAssetId
+    |
+    v
+ContentAssetRegistry
+    |
+    v
+FragmentAssetInstantiator
+    |
+    v
+Runtime Actor root
+  + runtime Team
+  + movement
+  + targeting
+  + combat</code></pre>
+    </section>
+
+    <section class="section panel">
+      <h2>Scene Lifecycle</h2>
+      <pre class="diagram"><code>FragmentAsset
+    |
+    v
+PlacedFragmentInstance
+    |
+    v
+SceneAsset
+    |
+    v
+Play
+    |
+    v
+Runtime actors
+    |
+    v
+Stop
+    |
+    v
+Restore authored state</code></pre>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="engine-overview.html">Architecture</a>
+        <a href="assets.html">Assets</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="editor.html">Editor</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

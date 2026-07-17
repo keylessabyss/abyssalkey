@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Principles - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <p class="eyebrow">How to think</p>
+    <h1>Design Principles</h1>
+    <p class="lead">These principles are not slogans. They are the rules Abyssal uses to decide where systems belong.</p>
+
+    <section class="section grid two">
+      <article class="card"><h2>Build games, not demos</h2><p>Features exist because Morninghollow or another real game needs them. A system should support production, not only a technical showcase.</p></article>
+      <article class="card"><h2>Composition over inheritance</h2><p>Actors become useful through Components, Fragments, recipes, and services. Avoid hardcoded species like UnitActor versus BuildingActor unless a real technical need appears.</p></article>
+      <article class="card"><h2>Fragments define identity</h2><p>A Fragment describes what an object is: its structure, default resources, tags, and visual assembly.</p></article>
+      <article class="card"><h2>Runtime owns the match</h2><p>Fragments may define a default Team, but explicit match context owns final team, owner, controller, lane, target, current health, and match state.</p></article>
+      <article class="card"><h2>Editor builds, manual teaches</h2><p>The editor should stay a workshop for creating content. The Digital Manual is the textbook for concepts, relationships, examples, and long-form explanations.</p></article>
+      <article class="card"><h2>Author once, instantiate many</h2><p>A saved Fragment can be placed in a Scene, spawned by a recipe, or used by either faction without duplicating asset data.</p></article>
+      <article class="card"><h2>One authoritative system</h2><p>Ownership follows lifetime. Assets own asset data; renderers own render state; gameplay services own runtime behavior.</p></article>
+      <article class="card"><h2>Documentation is architecture</h2><p>Docs explain why systems exist and how future work should fit. A feature is not complete until its responsibility is understandable.</p></article>
+      <article class="card"><h2>Small stable steps</h2><p>Abyssal grows by proving one layer, then building the next. Avoid broad rewrites when a narrow bridge will preserve architecture.</p></article>
+    </section>
+
+    <section class="section panel">
+      <h2>Architecture Notes</h2>
+      <p>Color is visual presentation. Color does not determine Team. Tags can describe identity, but structured ownership should live in explicit runtime or placed-instance data.</p>
+      <div class="related">
+        <a href="engine-overview.html">Architecture</a>
+        <a href="components.html">Components</a>
+        <a href="glossary.html">Glossary</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

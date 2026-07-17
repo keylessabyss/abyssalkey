@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Quick Start - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Learn</a>
+        <a href="ai-quick-start.html" aria-current="page">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">For assistant handoffs</p>
+    <h1>AI Quick Start</h1>
+    <p class="lead">This page gives AI assistants a safe reading order and the core boundaries needed before proposing Abyssal Engine changes.</p>
+
+    <section class="section panel">
+      <h2>Read First</h2>
+      <ol class="list-clean">
+        <li>Start with <a href="design-principles.html">Design Principles</a> to understand how decisions are judged.</li>
+        <li>Read <a href="engine-overview.html">Architecture</a> and <a href="architecture-diagrams.html">Architecture Diagrams</a> for ownership boundaries.</li>
+        <li>Use <a href="assets.html">Assets</a>, <a href="editor.html">Editor</a>, and <a href="gameplay.html">Gameplay</a> to locate the system being changed.</li>
+        <li>Check <a href="glossary.html">Glossary</a> before renaming concepts or inventing new terms.</li>
+      </ol>
+    </section>
+
+    <section class="section grid two">
+      <article class="card">
+        <h2>Rules of Engagement</h2>
+        <p>Preserve architecture, make small truthful changes, update stale call sites instead of adding compatibility aliases, and validate with TypeScript.</p>
+      </article>
+      <article class="card">
+        <h2>Asset Boundary</h2>
+        <p>Assets store authored intent. Runtime Actors, Components, renderer caches, and temporary diagnostics are not asset data.</p>
+      </article>
+      <article class="card">
+        <h2>Editor Boundary</h2>
+        <p>Editor panels present and author data. They should not become hidden gameplay authorities.</p>
+      </article>
+      <article class="card">
+        <h2>Runtime Boundary</h2>
+        <p>Gameplay services resolve saved definitions into live Components and Actors. Do not serialize runtime-spawned match state into reusable assets.</p>
+      </article>
+    </section>
+
+    <section class="section callout">
+      <h2>Preferred Change Shape</h2>
+      <p>Audit the current code path, change the smallest owner responsible for the behavior, run validation, and report risks that should be tested manually.</p>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="documentation-style-guide.html">Documentation Style Guide</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="features.html">Feature Status</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

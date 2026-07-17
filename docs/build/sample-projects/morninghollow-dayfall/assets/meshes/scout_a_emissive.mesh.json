@@ -1,0 +1,18 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.scout_a_emissive",
+  "displayName": "Scout A Emissive",
+  "description": "Morninghollow Dayfall Scout team-emissive accent mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Scout",
+    "TeamEmissive"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/scout_a_emissive.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}

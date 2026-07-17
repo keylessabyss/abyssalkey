@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Learning Center</p>
+    <h1>Learn Abyssal Engine</h1>
+    <p class="lead">This is the main human-readable hub for learning how Abyssal is built and how to build with it.</p>
+    <p class="muted">The editor is the workshop. The manual is the textbook. Start here when you want the path through projects, assets, Fragments, gameplay, editor tools, and rendering.</p>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Recommended path</p>
+          <h2>Beginner Reading Order</h2>
+        </div>
+      </div>
+      <div class="panel">
+        <ol class="list-clean">
+          <li><a href="index.html">What is Abyssal Engine?</a></li>
+          <li><a href="about.html">Engine Philosophy</a></li>
+          <li><a href="design-principles.html">Design Principles</a></li>
+          <li><a href="engine-overview.html">Architecture</a></li>
+          <li><a href="assets.html">Projects, Assets, and Fragments</a></li>
+          <li><a href="components.html">Actors and Components</a></li>
+          <li><a href="assets.html">Scenes and Placed Fragments</a></li>
+          <li><a href="gameplay.html">Recipes and Gameplay</a></li>
+          <li><a href="editor.html">Editor and Play/Stop</a></li>
+          <li><a href="rendering.html">Rendering</a></li>
+          <li><a href="roadmap.html">Build your first game path</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Choose a topic</p>
+          <h2>Learning Hubs</h2>
+        </div>
+      </div>
+      <div class="manual-map">
+        <article class="card">
+          <h3>Getting Started</h3>
+          <p>Learn the basic project-first workflow: open a project, build content, place it, save it, and test it.</p>
+          <div class="related"><a href="editor.html">Editor Workflow</a><a href="controls.html">Controls</a></div>
+        </article>
+        <article class="card">
+          <h3>Design Principles</h3>
+          <p>Understand the rules that guide ownership, runtime boundaries, and the editor/manual split.</p>
+          <div class="related"><a href="design-principles.html">Read Principles</a><a href="glossary.html">Glossary</a></div>
+        </article>
+        <article class="card">
+          <h3>Architecture</h3>
+          <p>See how Project, Asset, Scene, Actor, Component, Renderer, and gameplay systems fit together.</p>
+          <div class="related"><a href="engine-overview.html">Overview</a><a href="architecture-diagrams.html">Diagrams</a></div>
+        </article>
+        <article class="card">
+          <h3>Assets</h3>
+          <p>Learn MeshAssets, MaterialAssets, FragmentAssets, ComponentDefinitions, and SceneAssets.</p>
+          <div class="related"><a href="assets.html">Asset Pipeline</a><a href="components.html">Components</a></div>
+        </article>
+        <article class="card">
+          <h3>Gameplay</h3>
+          <p>Learn how live Actors, Constructs, recipes, resources, tags, bases, and AI economy systems relate.</p>
+          <div class="related"><a href="gameplay.html">Gameplay Systems</a><a href="features.html">Feature Status</a></div>
+        </article>
+        <article class="card">
+          <h3>Editor</h3>
+          <p>Learn the Content Browser, Wings Assembler, Material Editor, Scene editing, and Play/Stop loop.</p>
+          <div class="related"><a href="editor.html">Editor</a><a href="controls.html">Controls</a></div>
+        </article>
+        <article class="card">
+          <h3>Rendering</h3>
+          <p>Learn the current WebGPU ReflectionLit path and how material assets remain separate from renderer state.</p>
+          <div class="related"><a href="rendering.html">Rendering</a><a href="features.html">Feature Status</a></div>
+        </article>
+        <article class="card">
+          <h3>Glossary</h3>
+          <p>Learn the shared language for Fragments, Components, Scenes, placed instances, assets, and runtime systems.</p>
+          <div class="related"><a href="glossary.html">Glossary</a><a href="documentation-style-guide.html">Docs Style</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <h2>Common Mistakes</h2>
+      <ul class="list-clean">
+        <li>Trying to save authored content without opening a project first.</li>
+        <li>Assuming a Fragment's color determines Team. Team is structured ownership data; match context can override Fragment defaults.</li>
+        <li>Editing a placed instance and expecting the source Fragment asset to change.</li>
+        <li>Expecting runtime-spawned units to be saved into the Scene.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

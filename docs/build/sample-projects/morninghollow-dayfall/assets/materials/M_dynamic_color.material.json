@@ -1,0 +1,32 @@
+{
+  "format": "AbyssalMaterial",
+  "formatVersion": 1,
+  "assetId": "Material.M_dynamic_color",
+  "displayName": "Team Color",
+  "description": "Runtime team-colored Scout channel.",
+  "tags": [
+    "Material",
+    "Project",
+    "Scout",
+    "TeamColor"
+  ],
+  "materialType": "ReflectionLit",
+  "channelRole": "TeamColor",
+  "reflectionLit": {
+    "baseColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "emissiveColor": [
+      0,
+      0,
+      0
+    ],
+    "emissiveIntensity": 0,
+    "metallic": 0,
+    "roughness": 1,
+    "opacity": 1
+  }
+}
