@@ -1,0 +1,18 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.heavy_a_emissive",
+  "displayName": "Heavy A Emissive",
+  "description": "Morninghollow Dayfall Heavy emissive accent mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Heavy",
+    "Emissive"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/heavy_a_emissive.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}

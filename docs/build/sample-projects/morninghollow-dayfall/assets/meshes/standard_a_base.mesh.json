@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.standard_a_base",
+  "displayName": "Standard A Base",
+  "description": "Morninghollow Dayfall Standard base mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Standard"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/standard_a_base.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}

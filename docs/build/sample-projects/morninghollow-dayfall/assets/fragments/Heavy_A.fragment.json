@@ -1,0 +1,85 @@
+{
+  "assetId": "Fragment.Heavy_A",
+  "displayName": "Heavy Apex",
+  "description": "Morninghollow Dayfall Heavy assembled from imported mesh channels.",
+  "tags": [
+    "Fragment",
+    "Project",
+    "Heavy",
+    "Ship"
+  ],
+  "assemblyNodes": [
+    {
+      "nodeId": "Root",
+      "type": "Root",
+      "name": "Heavy Apex",
+      "parentNodeId": null,
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1]
+    },
+    {
+      "nodeId": "Heavy_A_Base",
+      "type": "Mesh",
+      "name": "Heavy A Base Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.heavy_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "Heavy_A_Boltz",
+      "type": "Mesh",
+      "name": "Heavy A Boltz Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.heavy_a_bolz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "Heavy_A_Color",
+      "type": "Mesh",
+      "name": "Heavy A Color Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.heavy_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "Heavy_A_Emissive",
+      "type": "Mesh",
+      "name": "Heavy A Accent Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.heavy_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    }
+  ],
+  "componentDefinitions": [
+    {
+      "type": "Tag",
+      "enabled": true,
+      "tags": ["Unit", "Ship", "Heavy"]
+    },
+    {
+      "type": "Resource",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 80,
+      "startingValue": 80
+    },
+    {
+      "type": "Team",
+      "enabled": true,
+      "teamId": "Neutral"
+    }
+  ]
+}

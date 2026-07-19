@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.heavy_a_base",
+  "displayName": "Heavy A Base",
+  "description": "Morninghollow Dayfall Heavy base mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Heavy"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/heavy_a_base.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}

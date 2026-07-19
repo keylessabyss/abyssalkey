@@ -1,0 +1,18 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.standard_a_color",
+  "displayName": "Standard A Color",
+  "description": "Morninghollow Dayfall Standard team color mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Standard",
+    "TeamColor"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/standard_a_color.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}

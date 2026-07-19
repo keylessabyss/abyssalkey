@@ -1,0 +1,85 @@
+{
+  "assetId": "Fragment.Standard_A",
+  "displayName": "Standard Apex",
+  "description": "Morninghollow Dayfall Standard assembled from imported mesh channels.",
+  "tags": [
+    "Fragment",
+    "Project",
+    "Standard",
+    "Ship"
+  ],
+  "assemblyNodes": [
+    {
+      "nodeId": "Root",
+      "type": "Root",
+      "name": "Standard Apex",
+      "parentNodeId": null,
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1]
+    },
+    {
+      "nodeId": "Standard_A_Base",
+      "type": "Mesh",
+      "name": "Standard A Base Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.standard_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "Standard_A_Boltz",
+      "type": "Mesh",
+      "name": "Standard A Boltz Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.standard_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "Standard_A_Color",
+      "type": "Mesh",
+      "name": "Standard A Color Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.standard_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "Standard_A_Emissive",
+      "type": "Mesh",
+      "name": "Standard A Accent Mesh",
+      "parentNodeId": "Root",
+      "localPosition": [0, 0, 0],
+      "localRotation": [0, 0, 0, 1],
+      "localScale": [1, 1, 1],
+      "meshAssetId": "Mesh.standard_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    }
+  ],
+  "componentDefinitions": [
+    {
+      "type": "Tag",
+      "enabled": true,
+      "tags": ["Unit", "Ship", "Fighter"]
+    },
+    {
+      "type": "Resource",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 30,
+      "startingValue": 30
+    },
+    {
+      "type": "Team",
+      "enabled": true,
+      "teamId": "Neutral"
+    }
+  ]
+}

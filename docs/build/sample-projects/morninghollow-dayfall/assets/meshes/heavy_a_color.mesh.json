@@ -1,0 +1,18 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.heavy_a_color",
+  "displayName": "Heavy A Color",
+  "description": "Morninghollow Dayfall Heavy team color mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Heavy",
+    "TeamColor"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/heavy_a_color.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}

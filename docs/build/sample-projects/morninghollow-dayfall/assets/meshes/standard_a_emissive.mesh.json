@@ -1,0 +1,18 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.standard_a_emissive",
+  "displayName": "Standard A Emissive",
+  "description": "Morninghollow Dayfall Standard emissive accent mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "Standard",
+    "Emissive"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/standard_a_emissive.obj",
+  "importOptions": {
+    "flipV": false
+  }
+}
