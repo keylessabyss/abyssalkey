@@ -29,6 +29,5 @@
   ],
   "scenes": [
     "assets/scenes/Main.scene.json"
-  ],
-  "defaultSceneAssetId": "Scene.Main"
+  ]
 }

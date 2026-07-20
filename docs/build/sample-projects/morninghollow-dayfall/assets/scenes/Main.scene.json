@@ -9,5 +9,75 @@
     "Project",
     "Sample"
   ],
-  "placedFragments": []
+  "placedFragments": [
+    {
+      "instanceId": "Morninghollow.Dayfall.PlayerScout",
+      "sourceFragmentAssetId": "Fragment.Scout_A",
+      "instanceName": "Player Scout Apex",
+      "worldPosition": [
+        -3,
+        -3,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Day",
+      "controllerId": "Player1"
+    },
+    {
+      "instanceId": "Morninghollow.Dayfall.StandardPreview",
+      "sourceFragmentAssetId": "Fragment.Standard_A",
+      "instanceName": "Standard Apex Preview",
+      "worldPosition": [
+        0,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Neutral",
+      "controllerId": "None"
+    },
+    {
+      "instanceId": "Morninghollow.Dayfall.HeavyPreview",
+      "sourceFragmentAssetId": "Fragment.Heavy_A",
+      "instanceName": "Heavy Apex Preview",
+      "worldPosition": [
+        4,
+        3,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Neutral",
+      "controllerId": "None"
+    }
+  ]
 }
