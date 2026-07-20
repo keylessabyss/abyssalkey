@@ -3,15 +3,14 @@
   "formatVersion": 1,
   "assetId": "Mesh.scout_a_base",
   "displayName": "Scout A Base",
-  "description": "Morninghollow Dayfall Scout base mesh.",
+  "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
     "Imported",
-    "Scout"
+    "OBJ",
+    "Mesh"
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/scout_a_base.obj",
-  "importOptions": {
-    "flipV": false
-  }
+  "importOptions": {}
 }

@@ -3,12 +3,9 @@
   "formatVersion": 1,
   "assetId": "Material.M_dynamic_accent",
   "displayName": "Team Emissive",
-  "description": "Runtime team-emissive Scout channel.",
+  "description": "",
   "tags": [
-    "Material",
-    "Project",
-    "Scout",
-    "TeamEmissive"
+    "Material"
   ],
   "materialType": "ReflectionLit",
   "channelRole": "TeamEmissive",
@@ -20,11 +17,11 @@
       1
     ],
     "emissiveColor": [
-      1,
+      0,
       0,
       0
     ],
-    "emissiveIntensity": 10,
+    "emissiveIntensity": 5,
     "metallic": 0,
     "roughness": 0,
     "opacity": 1

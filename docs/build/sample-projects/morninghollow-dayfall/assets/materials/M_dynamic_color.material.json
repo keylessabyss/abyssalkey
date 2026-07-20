@@ -3,12 +3,9 @@
   "formatVersion": 1,
   "assetId": "Material.M_dynamic_color",
   "displayName": "Team Color",
-  "description": "Runtime team-colored Scout channel.",
+  "description": "",
   "tags": [
-    "Material",
-    "Project",
-    "Scout",
-    "TeamColor"
+    "Material"
   ],
   "materialType": "ReflectionLit",
   "channelRole": "TeamColor",
@@ -25,7 +22,7 @@
       0
     ],
     "emissiveIntensity": 0,
-    "metallic": 0,
+    "metallic": 1,
     "roughness": 1,
     "opacity": 1
   }

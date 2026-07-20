@@ -3,15 +3,14 @@
   "formatVersion": 1,
   "assetId": "Mesh.scout_a_boltz",
   "displayName": "Scout A Boltz",
-  "description": "Morninghollow Dayfall Scout bolt/detail mesh.",
+  "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
     "Imported",
-    "Scout"
+    "OBJ",
+    "Mesh"
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/scout_a_boltz.obj",
-  "importOptions": {
-    "flipV": false
-  }
+  "importOptions": {}
 }

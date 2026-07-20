@@ -3,15 +3,14 @@
   "formatVersion": 1,
   "assetId": "Mesh.standard_a_boltz",
   "displayName": "Standard A Boltz",
-  "description": "Morninghollow Dayfall Standard boltz mesh.",
+  "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
     "Imported",
-    "Standard"
+    "OBJ",
+    "Mesh"
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/standard_a_boltz.obj",
-  "importOptions": {
-    "flipV": false
-  }
+  "importOptions": {}
 }

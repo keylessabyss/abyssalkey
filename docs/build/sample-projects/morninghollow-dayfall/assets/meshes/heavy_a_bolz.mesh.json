@@ -2,16 +2,15 @@
   "format": "AbyssalMesh",
   "formatVersion": 1,
   "assetId": "Mesh.heavy_a_bolz",
-  "displayName": "Heavy A Boltz",
-  "description": "Morninghollow Dayfall Heavy boltz mesh.",
+  "displayName": "Heavy A Bolz",
+  "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
     "Imported",
-    "Heavy"
+    "OBJ",
+    "Mesh"
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/heavy_a_bolz.obj",
-  "importOptions": {
-    "flipV": false
-  }
+  "importOptions": {}
 }

@@ -3,19 +3,17 @@
   "formatVersion": 1,
   "assetId": "Material.M_Metal_Gray",
   "displayName": "Metallic Gray",
-  "description": "Scout fixed gray metal.",
+  "description": "",
   "tags": [
-    "Material",
-    "Project",
-    "Scout"
+    "Material"
   ],
   "materialType": "ReflectionLit",
   "channelRole": "Fixed",
   "reflectionLit": {
     "baseColor": [
-      0.434,
-      0.434,
-      0.434,
+      0.14702726649759498,
+      0.14702726649759498,
+      0.14702726649759498,
       1
     ],
     "emissiveColor": [
@@ -25,7 +23,7 @@
     ],
     "emissiveIntensity": 0,
     "metallic": 1,
-    "roughness": 0.2,
+    "roughness": 0.3,
     "opacity": 1
   }
 }

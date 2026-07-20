@@ -3,16 +3,14 @@
   "formatVersion": 1,
   "assetId": "Mesh.heavy_a_color",
   "displayName": "Heavy A Color",
-  "description": "Morninghollow Dayfall Heavy team color mesh.",
+  "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
     "Imported",
-    "Heavy",
-    "TeamColor"
+    "OBJ",
+    "Mesh"
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/heavy_a_color.obj",
-  "importOptions": {
-    "flipV": false
-  }
+  "importOptions": {}
 }

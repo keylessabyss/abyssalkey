@@ -3,21 +3,20 @@
   "formatVersion": 1,
   "assetId": "Scene.Main",
   "displayName": "Main",
-  "description": "Morninghollow Dayfall bundled sample scene.",
+  "description": "Main project scene.",
   "tags": [
     "Scene",
-    "Project",
-    "Sample"
+    "Project"
   ],
   "placedFragments": [
     {
-      "instanceId": "Morninghollow.Dayfall.PlayerScout",
-      "sourceFragmentAssetId": "Fragment.Scout_A",
-      "instanceName": "Player Scout Apex",
+      "instanceId": "PlacedFragment1",
+      "sourceFragmentAssetId": "Fragment.Standard_A",
+      "instanceName": "Standard Apex",
       "worldPosition": [
-        -3,
-        -3,
-        0
+        -33.71257400512695,
+        0,
+        4.5974650382995605
       ],
       "worldRotation": [
         0,
@@ -32,52 +31,6 @@
       ],
       "teamId": "Morninghollow.Day",
       "controllerId": "Player1"
-    },
-    {
-      "instanceId": "Morninghollow.Dayfall.StandardPreview",
-      "sourceFragmentAssetId": "Fragment.Standard_A",
-      "instanceName": "Standard Apex Preview",
-      "worldPosition": [
-        0,
-        0,
-        0
-      ],
-      "worldRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "worldScale": [
-        1,
-        1,
-        1
-      ],
-      "teamId": "Neutral",
-      "controllerId": "None"
-    },
-    {
-      "instanceId": "Morninghollow.Dayfall.HeavyPreview",
-      "sourceFragmentAssetId": "Fragment.Heavy_A",
-      "instanceName": "Heavy Apex Preview",
-      "worldPosition": [
-        4,
-        3,
-        0
-      ],
-      "worldRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "worldScale": [
-        1,
-        1,
-        1
-      ],
-      "teamId": "Neutral",
-      "controllerId": "None"
     }
   ]
 }

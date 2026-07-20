@@ -1,12 +1,10 @@
 {
   "assetId": "Fragment.Scout_A",
   "displayName": "Scout Apex",
-  "description": "Morninghollow Dayfall Scout assembled from imported mesh channels.",
+  "description": "Project Fragment assembly authored in Wings Assembler.",
   "tags": [
     "Fragment",
-    "Project",
-    "Scout",
-    "Ship"
+    "Project"
   ],
   "assemblyNodes": [
     {
@@ -32,9 +30,9 @@
       ]
     },
     {
-      "nodeId": "Scout_A_Base",
+      "nodeId": "MeshNode1",
       "type": "Mesh",
-      "name": "Scout A Base Mesh",
+      "name": "Scout A Base",
       "parentNodeId": "Root",
       "localPosition": [
         0,
@@ -56,9 +54,9 @@
       "materialAssetId": "Material.M_Metal_Gray"
     },
     {
-      "nodeId": "Scout_A_Boltz",
+      "nodeId": "MeshNode2",
       "type": "Mesh",
-      "name": "Scout A Boltz Mesh",
+      "name": "Scout A Boltz",
       "parentNodeId": "Root",
       "localPosition": [
         0,
@@ -80,9 +78,9 @@
       "materialAssetId": "Material.M_metal_bronze"
     },
     {
-      "nodeId": "Scout_A_Color",
+      "nodeId": "MeshNode3",
       "type": "Mesh",
-      "name": "Scout A Color Mesh",
+      "name": "Scout A Color",
       "parentNodeId": "Root",
       "localPosition": [
         0,
@@ -104,9 +102,9 @@
       "materialAssetId": "Material.M_dynamic_color"
     },
     {
-      "nodeId": "Scout_A_Emissive",
+      "nodeId": "MeshNode4",
       "type": "Mesh",
-      "name": "Scout A Accent Mesh",
+      "name": "Scout A Emissive",
       "parentNodeId": "Root",
       "localPosition": [
         0,
@@ -128,27 +126,5 @@
       "materialAssetId": "Material.M_dynamic_accent"
     }
   ],
-  "componentDefinitions": [
-    {
-      "type": "Tag",
-      "enabled": true,
-      "tags": [
-        "Unit",
-        "Ship",
-        "Scout"
-      ]
-    },
-    {
-      "type": "Resource",
-      "enabled": true,
-      "resourceId": "Health",
-      "maximum": 30,
-      "startingValue": 30
-    },
-    {
-      "type": "Team",
-      "enabled": true,
-      "teamId": "Neutral"
-    }
-  ]
+  "componentDefinitions": []
 }
