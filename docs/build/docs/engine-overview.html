@@ -24,56 +24,61 @@
   <main class="page">
     <p class="eyebrow">Architecture for visitors</p>
     <h1>Engine Overview</h1>
-    <p class="lead">Abyssal Engine combines an editor shell, WebGPU renderer, project system, asset registry, and modular gameplay framework.</p>
+    <p class="lead">Abyssal Engine combines an editor shell, project system, authoring tools, runtime scene layer, and WebGPU renderer into one pipeline.</p>
 
     <section class="section panel">
-      <h2>Project Model</h2>
-      <p class="muted">A project is the durable workspace and home for all authored content.</p>
-      <pre><code>Project
-  ├── assets/
-  │   ├── meshes/
-  │   ├── materials/
-  │   └── fragments/
-  ├── scenes/
-  └── recipes/</code></pre>
-      <p>Friendly names are used in the editor. Stable qualified IDs ensure reliable references between assets.</p>
+      <h2>Major Engine Layers</h2>
+      <p class="muted">This page maps the big pieces of Abyssal Engine and how they communicate.</p>
+      <pre><code>Project Layer
+  → owns saved content and configuration
+
+Authoring Layer
+  → editor shell, content browser, Wings Assembler
+
+Runtime Layer
+  → scenes, actors, components, gameplay systems
+
+Rendering Layer
+  → WebGPU ReflectionLit frame output</code></pre>
+      <p>For file layout, asset types, and content browser workflows, see <a href="projects-assets.html">Projects &amp; Assets</a>.</p>
     </section>
 
     <section class="section grid">
       <article class="card">
-        <h3>MeshAsset</h3>
-        <p>Geometry metadata from built-in base meshes or imported OBJ files.</p>
+        <h3>Project System</h3>
+        <p>Owns authored assets, scenes, recipes, and project-wide configuration.</p>
       </article>
       <article class="card">
-        <h3>MaterialAsset</h3>
-        <p>Appearance data for ReflectionLit materials (color, metallic, roughness, emissive, opacity).</p>
+        <h3>Authoring Tools</h3>
+        <p>Wings Assembler, editors, and browser pages create and shape content.</p>
       </article>
       <article class="card">
-        <h3>FragmentAsset</h3>
-        <p>Authored assembly of mesh nodes, empty pivots, transforms, and material references.</p>
-      </article>
-      <article class="card">
-        <h3>Construct</h3>
-        <p>Runtime gameplay identity assembled from Fragments and configured with behavior.</p>
-      </article>
-      <article class="card">
-        <h3>Component</h3>
-        <p>Reusable behavior attached to Actors (movement, combat, economy, etc.).</p>
+        <h3>Runtime Scene</h3>
+        <p>Scenes become live actors with components, behaviors, and gameplay services.</p>
       </article>
       <article class="card">
         <h3>Renderer</h3>
-        <p>WebGPU ReflectionLit pipeline with editor overlays for grid, gizmos, and picking.</p>
+        <p>WebGPU turns runtime scene state into the visible frame.</p>
+      </article>
+      <article class="card">
+        <h3>Play Boundary</h3>
+        <p>Pressing Play switches from authoring into runtime without leaving the project.</p>
+      </article>
+      <article class="card">
+        <h3>WingsWorld &amp; WingScript</h3>
+        <p>Later layers for assembling a playable experience and directing gameplay rules.</p>
       </article>
     </section>
 
     <section class="section panel">
       <h2>Wings Assembler Workflow</h2>
-      <pre><code>MeshAsset → Add to Assembly
-  → Build hierarchy (Root / Empty Pivot / Mesh)
-  → Transform parts
-  → Assign Materials
-  → Save as FragmentAsset</code></pre>
-      <p>Wings Assembler is the embedded modular authoring workspace using an isolated preview scene.</p>
+      <pre><code>Project
+  → Assets and Scenes
+  → Authoring Tools
+  → Play Runtime Context
+  → Actors + Components + Gameplay
+  → WebGPU Renderer</code></pre>
+      <p>Wings Assembler is the embedded modular authoring workspace used to build Fragment assets inside the editor.</p>
     </section>
 
     <section class="section grid two">
@@ -105,7 +110,7 @@
       <h2>Related Reading</h2>
       <div class="related">
         <a href="design-principles.html">Design Principles</a>
-        <a href="getting-started.html">Projects & Assets</a>
+        <a href="projects-assets.html">Projects &amp; Assets</a>
         <a href="glossary.html">Glossary</a>
       </div>
     </section>

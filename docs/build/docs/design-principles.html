@@ -12,7 +12,7 @@
       <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
       <nav class="nav-links" aria-label="Documentation navigation">
         <a href="index.html">Home</a>
-        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="getting-started.html">Learn</a>
         <a href="ai-quick-start.html">AI Start</a>
         <a href="roadmap.html">Roadmap</a>
         <a href="team.html">Team</a>
@@ -20,32 +20,63 @@
       </nav>
     </div>
   </header>
-  <main class="page">
-    <p class="eyebrow">How to think</p>
-    <h1>Design Principles</h1>
-    <p class="lead">These principles are not slogans. They are the rules Abyssal uses to decide where systems belong.</p>
 
-    <section class="section grid two">
-      <article class="card"><h2>Build games, not demos</h2><p>Features exist because Morninghollow or another real game needs them. A system should support production, not only a technical showcase.</p></article>
-      <article class="card"><h2>Composition over inheritance</h2><p>Actors become useful through Components, Fragments, recipes, and services. Avoid hardcoded species like UnitActor versus BuildingActor unless a real technical need appears.</p></article>
-      <article class="card"><h2>Fragments define identity</h2><p>A Fragment describes what an object is: its structure, default resources, tags, and visual assembly.</p></article>
-      <article class="card"><h2>Runtime owns the match</h2><p>Fragments may define a default Team, but explicit match context owns final team, owner, controller, lane, target, current health, and match state.</p></article>
-      <article class="card"><h2>Editor builds, manual teaches</h2><p>The editor should stay a workshop for creating content. The Digital Manual is the textbook for concepts, relationships, examples, and long-form explanations.</p></article>
-      <article class="card"><h2>Author once, instantiate many</h2><p>A saved Fragment can be placed in a Scene, spawned by a recipe, or used by either faction without duplicating asset data.</p></article>
-      <article class="card"><h2>One authoritative system</h2><p>Ownership follows lifetime. Assets own asset data; renderers own render state; gameplay services own runtime behavior.</p></article>
-      <article class="card"><h2>Documentation is architecture</h2><p>Docs explain why systems exist and how future work should fit. A feature is not complete until its responsibility is understandable.</p></article>
-      <article class="card"><h2>Small stable steps</h2><p>Abyssal grows by proving one layer, then building the next. Avoid broad rewrites when a narrow bridge will preserve architecture.</p></article>
+  <main class="page">
+    <p class="eyebrow">Foundational Rules</p>
+    <h1>Design Principles</h1>
+    <p class="lead">These principles guide every decision in Abyssal Engine.</p>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>Build games, not demos</h3>
+        <p>Morninghollow is the proving ground. Features are added when they solve real production problems in a real game.</p>
+      </article>
+      <article class="card">
+        <h3>Composition over inheritance</h3>
+        <p>Actors stay light. Behavior is added through Components, Fragments, and services.</p>
+      </article>
+      <article class="card">
+        <h3>Documentation is architecture</h3>
+        <p>Clear, maintained docs are part of the system, not an afterthought.</p>
+      </article>
+      <article class="card">
+        <h3>Public teaches, Internal builds</h3>
+        <p>Public documentation helps users and AI. Internal records protect development history.</p>
+      </article>
+      <article class="card">
+        <h3>Cooperate, don't compete</h3>
+        <p>Abyssal works alongside Unreal, Unity, Godot, and Blender. Native formats remain authoritative.</p>
+      </article>
+      <article class="card">
+        <h3>AI assists creativity</h3>
+        <p>Tools like WingChat and WingsVoice augment human creators without replacing final decisions.</p>
+      </article>
     </section>
 
     <section class="section panel">
-      <h2>Architecture Notes</h2>
-      <p>Color is visual presentation. Color does not determine Team. Tags can describe identity, but structured ownership should live in explicit runtime or placed-instance data.</p>
+      <h2>Practical Modularity</h2>
+      <p>Generalize only after a real problem has taught the shape of the module. Small focused systems are preferred over large frameworks.</p>
+    </section>
+
+    <section class="section callout">
+      <h2>Core Law</h2>
+      <p>Public documentation teaches the engine. Internal documentation builds the engine.</p>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
       <div class="related">
         <a href="engine-overview.html">Architecture</a>
-        <a href="components.html">Components</a>
-        <a href="glossary.html">Glossary</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="team.html">Team</a>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss — Abyssal Engine public documentation</div>
+    </div>
+  </footer>
 </body>
 </html>
