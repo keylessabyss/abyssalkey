@@ -1,0 +1,29 @@
+{
+  "format": "AbyssalMaterial",
+  "formatVersion": 1,
+  "assetId": "Material.M_Player_1_ship_emissive",
+  "displayName": "Player One Ship Emissive",
+  "description": "",
+  "tags": [
+    "Material"
+  ],
+  "materialType": "ReflectionLit",
+  "channelRole": "Fixed",
+  "reflectionLit": {
+    "baseColor": [
+      0,
+      1,
+      0.005605391624202723,
+      1
+    ],
+    "emissiveColor": [
+      0,
+      0,
+      0
+    ],
+    "emissiveIntensity": 5,
+    "metallic": 0,
+    "roughness": 0.5,
+    "opacity": 1
+  }
+}

@@ -7,6 +7,23 @@
     "Project"
   ],
   "behaviorSource": "Authored",
+  "behaviorProfiles": [
+    {
+      "profileId": "None",
+      "displayName": "None",
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "Player",
+      "displayName": "Player",
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "AI",
+      "displayName": "AI",
+      "componentDefinitions": []
+    }
+  ],
   "assemblyNodes": [
     {
       "nodeId": "Root",
@@ -125,90 +142,46 @@
       ],
       "meshAssetId": "Mesh.standard_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
-    }
-  ],
-  "componentDefinitions": [
-    {
-      "type": "Tag",
-      "enabled": true,
-      "tags": [
-        "Unit",
-        "Ship",
-        "Fighter"
-      ]
     },
     {
-      "type": "Resource",
-      "enabled": true,
-      "resourceId": "Health",
-      "maximum": 30,
-      "startingValue": 30
-    }
-  ],
-  "behaviorProfiles": [
-    {
-      "profileId": "None",
-      "displayName": "None",
-      "componentDefinitions": []
-    },
-    {
-      "profileId": "Player",
-      "displayName": "Player",
-      "componentDefinitions": [
+      "nodeId": "EmptyNode1",
+      "type": "Empty",
+      "name": "Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        2.1386449337005615,
+        0,
+        1.1130727529525757
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "behaviorProfiles": [
         {
-          "type": "Targeting",
-          "enabled": true,
-          "searchRadius": 16,
-          "requireEnemy": true
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Standard Fighter Weapon",
-          "damage": 5,
-          "range": 3,
-          "cooldown": 1.3333333333333333
-        },
-        {
-          "type": "AutoCombat",
-          "enabled": true,
-          "aimSpeed": 8
-        }
-      ]
-    },
-    {
-      "profileId": "AI",
-      "displayName": "AI",
-      "componentDefinitions": [
-        {
-          "type": "Targeting",
-          "enabled": true,
-          "searchRadius": 5,
-          "requireEnemy": true
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Standard Fighter Weapon",
-          "damage": 5,
-          "range": 3,
-          "cooldown": 1.3333333333333333
-        },
-        {
-          "type": "LanePush",
-          "enabled": true,
-          "speed": 3,
-          "turnSpeed": 3,
-          "arriveDistance": 0.4,
-          "pauseForCombat": true,
-          "lockToPlane": true
-        },
-        {
-          "type": "AutoCombat",
-          "enabled": true,
-          "aimSpeed": 8
+          "profileId": "Player",
+          "displayName": "Player",
+          "componentDefinitions": [
+            {
+              "type": "Weapon",
+              "enabled": true,
+              "name": "Ship Weapon",
+              "damage": 2,
+              "range": 5,
+              "cooldown": 0.1,
+              "muzzleAnchorNodeId": null
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "componentDefinitions": []
 }
