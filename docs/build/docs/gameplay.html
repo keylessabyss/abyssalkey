@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gameplay - Abyssal Engine</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gameplay - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a><nav class="nav-links" aria-label="Documentation navigation">
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
         <a href="index.html">Home</a>
-        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="getting-started.html">Learn</a>
         <a href="ai-quick-start.html">AI Start</a>
         <a href="roadmap.html">Roadmap</a>
         <a href="team.html">Team</a>
         <a class="open-editor" href="../">Open Editor</a>
-      </nav></div></header>
+      </nav>
+    </div>
+  </header>
+
   <main class="page">
-    <p class="eyebrow">Runtime systems</p>
+    <p class="eyebrow">Runtime Systems</p>
     <h1>Gameplay</h1>
-    <p class="lead">Gameplay is built from Actors, Components, Constructs, recipes, deployment systems, and services such as economy and match coordination.</p>
-    <section class="section grid two">
-      <article class="card"><h2>Actors</h2><p>Live world objects with Transform, Components, hierarchy, tags, and lifecycle state.</p></article>
-      <article class="card"><h2>Components</h2><p>Live behavior objects. Tag, Resource, and Team definitions can currently be authored; most gameplay Components remain runtime-only or planned.</p></article>
-      <article class="card"><h2>Resources and Tags</h2><p>Resources give actors values like Health. Tags describe identity and query groups, but should not replace structured ownership.</p></article>
-      <article class="card"><h2>Recipes and Constructs</h2><p>Recipes describe production. Constructs and runtime configurators attach gameplay behavior around spawned roots.</p></article>
-      <article class="card"><h2>Bases</h2><p>Bases own match objective behavior, team, account, lane, and production context at runtime.</p></article>
-      <article class="card"><h2>AI Economy</h2><p>AI commanders select roster entries, purchase through the economy service, and queue paid deployments.</p></article>
+    <p class="lead">Gameplay is built from reusable Constructs assembled from Fragments and configured with Components and services.</p>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>Constructs</h3>
+        <p>Runtime gameplay entities assembled from Fragment hierarchies and given identity via Components.</p>
+      </article>
+      <article class="card">
+        <h3>Recipes</h3>
+        <p>Definitions that combine Fragments into complete units (fighters, buildings, etc.).</p>
+      </article>
+      <article class="card">
+        <h3>Components & Behaviors</h3>
+        <p>Resource, Team, Weapon, LanePush, Targeting, and AI systems drive live behavior.</p>
+      </article>
     </section>
-    <section class="section panel"><h2>Architecture Notes</h2><p>Fragment-authored ownership is a default. Explicit runtime context owns the match. Saved Fragment recipes reuse authored content while runtime systems apply final team, lane, targeting, and combat.</p></section>
-    <section class="section panel"><h2>Related Reading</h2><div class="related"><a href="assets.html">Assets</a><a href="design-principles.html">Principles</a><a href="architecture-diagrams.html">Diagrams</a><a href="features.html">Feature Status</a></div></section>
+
+    <section class="section panel">
+      <h2>AI Economy</h2>
+      <p>Commanders, purchase strategies, and deployment systems enable dynamic AI opponents in match modes.</p>
+    </section>
+
+    <section class="section callout">
+      <h2>Key Pattern</h2>
+      <p>FragmentAsset → Construct Recipe → Runtime Actor with Components → Gameplay Systems.</p>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="components.html">Components</a>
+        <a href="projects-assets.html">Projects & Assets</a>
+        <a href="editor.html">Editor</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss — Abyssal Engine public documentation</div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -12,7 +12,7 @@
       <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
       <nav class="nav-links" aria-label="Documentation navigation">
         <a href="index.html">Home</a>
-        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="getting-started.html">Learn</a>
         <a href="ai-quick-start.html">AI Start</a>
         <a href="roadmap.html">Roadmap</a>
         <a href="team.html">Team</a>
@@ -22,207 +22,58 @@
   </header>
 
   <main class="page">
-    <p class="eyebrow">Authored intent to runtime behavior</p>
+    <p class="eyebrow">Behavior Layer</p>
     <h1>Components</h1>
-    <p class="lead">Abyssal separates saved ComponentDefinitions from live Components so assets stay reusable and runtime behavior stays explicit.</p>
-    <p class="muted">This reference lists the real component capabilities currently recognized or implemented by the engine. Not every documented component can be added through Wings Assembler.</p>
+    <p class="lead">Components add reusable behavior to Actors through composition rather than inheritance.</p>
 
-    <section class="section grid two">
-      <article class="card"><h2>ComponentDefinition</h2><p>Serializable behavior intent authored and saved with an asset. Today this is root-level Tag, Resource, and Team data on FragmentAssets.</p></article>
-      <article class="card"><h2>Runtime Component</h2><p>A live capability attached to an Actor during instantiation or gameplay. Runtime Components are not saved directly into reusable asset files.</p></article>
-      <article class="card"><h2>Component Catalog</h2><p>The metadata registry describing component identity, category, availability, persistence, and documentation relationships.</p></article>
-      <article class="card"><h2>Factory Boundary</h2><p>The translation point that applies saved definitions to live Actors. Tag adds Actor tags; Resource and Team create or update live Components.</p></article>
+    <section class="section panel">
+      <h2>Core Idea</h2>
+      <p>Keep Actors light. Attach the behaviors you need. This makes systems modular, testable, and easy to combine.</p>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>ResourceComponent</h3>
+        <p>Health, shields, energy, and other tracked values with regeneration.</p>
+      </article>
+      <article class="card">
+        <h3>TeamComponent</h3>
+        <p>Faction ownership used for materials, targeting, and gameplay rules.</p>
+      </article>
+      <article class="card">
+        <h3>WeaponComponent</h3>
+        <p>Ranged or melee attacks with cooldown, damage, and range.</p>
+      </article>
+      <article class="card">
+        <h3>LanePushBehavior</h3>
+        <p>Movement along lanes with targeting, combat pause, and friendly separation.</p>
+      </article>
+    </section>
+
+    <section class="section panel">
+      <h2>Authoring</h2>
+      <p>ComponentDefinitions on FragmentAssets describe intended behavior. At runtime they are turned into live Component instances on Actors.</p>
     </section>
 
     <section class="section callout">
-      <h2>Design Rule</h2>
-      <p>Assets store what should exist. Runtime systems decide how that intent becomes behavior in the current world or match.</p>
-    </section>
-
-    <section class="section panel">
-      <h2>Status Legend</h2>
-      <div class="badge-row">
-        <span class="badge available">Authorable</span>
-        <span class="badge runtime">Runtime</span>
-        <span class="badge planned">Planned</span>
-        <span class="badge internal">Internal</span>
-      </div>
-      <p class="muted">Authorable means the current Wings Assembler Add Component workflow can save it as a ComponentDefinition. Runtime means implemented and used by gameplay, but not directly authored on Fragments yet.</p>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Current inventory</p>
-          <h2>Component Overview</h2>
-        </div>
-      </div>
-      <div class="component-reference">
-        <div class="component-group">
-          <h3>Identity</h3>
-          <a class="component-row" href="#tag"><span>Tag</span><span class="badge available">Authorable</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Input</h3>
-          <a class="component-row" href="input.html#player-input-bindings"><span>Player Input Bindings</span><span class="badge available">Authorable</span></a>
-          <a class="component-row" href="input.html#fragment-input-channels"><span>Fragment Input Channels</span><span class="badge available">Authorable</span></a>
-          <a class="component-row" href="input.html#auto-input"><span>Auto Input</span><span class="badge available">Authorable</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Resources</h3>
-          <a class="component-row" href="#resource"><span>Resource</span><span class="badge available">Authorable</span></a>
-          <a class="component-row" href="#inventory"><span>Inventory</span><span class="badge runtime">Runtime</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Ownership and Production</h3>
-          <a class="component-row" href="#team"><span>Team</span><span class="badge available">Authorable</span></a>
-          <a class="component-row" href="#base-production"><span>Base Production</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#purchase-controller"><span>Construct Purchase</span><span class="badge runtime">Runtime</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Combat</h3>
-          <a class="component-row" href="#weapon"><span>Weapon</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#projectile-state"><span>Projectile State</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#ability"><span>Ability</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#effect"><span>Effect</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#element"><span>Element</span><span class="badge runtime">Runtime</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Behaviors</h3>
-          <a class="component-row" href="#lane-movement"><span>Lane Movement</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#auto-combat"><span>Auto Combat</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#movement"><span>Movement</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#follow"><span>Follow</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#player-input"><span>Player Input</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#patrol"><span>Patrol</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#spawner"><span>Spawner</span><span class="badge runtime">Runtime</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Sensors</h3>
-          <a class="component-row" href="#targeting"><span>Targeting Sensor</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#distance-sensor"><span>Distance Sensor</span><span class="badge runtime">Runtime</span></a>
-        </div>
-        <div class="component-group">
-          <h3>Rendering and Engine</h3>
-          <a class="component-row" href="#mesh-renderer"><span>Mesh Renderer</span><span class="badge internal">Internal</span></a>
-          <a class="component-row" href="#possession"><span>Possession</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#camera-target"><span>Camera Target</span><span class="badge runtime">Runtime</span></a>
-          <a class="component-row" href="#internal-engine-state"><span>Transform, Script, Actor Identity, Preview State</span><span class="badge internal">Internal</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Authorable Components</h2>
-      <article class="component-detail" id="tag">
-        <div><h3>Tag</h3><span class="badge available">Authorable</span></div>
-        <p>Adds identity labels to a Fragment root. Tags let systems recognize groups such as player objects, enemies, fighter units, or damageable objects without depending on a specific class.</p>
-        <dl>
-          <dt>Authored fields</dt><dd>Enabled, Tags. Tags are written as a comma-separated list in Wings Assembler and saved as normalized strings.</dd>
-          <dt>Saved definition</dt><dd>Tag ComponentDefinition.</dd>
-          <dt>Runtime result</dt><dd>The factory adds the saved tags to the instantiated Actor. It does not create a live Tag Component object.</dd>
-          <dt>Example</dt><dd><code>Unit.Fighter.Heavy</code>, <code>Actor.Enemy</code>, <code>Damageable</code>.</dd>
-        </dl>
-      </article>
-
-      <article class="component-detail" id="resource">
-        <div><h3>Resource</h3><span class="badge available">Authorable</span></div>
-        <p>Defines a named value such as Health, Energy, Shield, Fuel, or Ammunition. Gameplay can reduce, restore, spend, or inspect that value at runtime.</p>
-        <dl>
-          <dt>Authored fields</dt><dd>Enabled, Resource Id, Maximum, Starting Value.</dd>
-          <dt>Saved definition</dt><dd>Resource ComponentDefinition.</dd>
-          <dt>Runtime result</dt><dd>The factory creates or reuses a Resource Component on the live Actor and adds the named resource.</dd>
-          <dt>Example</dt><dd>A Fragment can define <code>Health</code> with maximum <code>150</code> and starting value <code>150</code>.</dd>
-        </dl>
-      </article>
-
-      <article class="component-detail" id="team">
-        <div><h3>Team</h3><span class="badge available">Authorable</span></div>
-        <p>Defines the default ownership team for a Fragment root. Team is used by targeting, projectile rules, faction materials, and ally/enemy checks.</p>
-        <dl>
-          <dt>Authored fields</dt><dd>Enabled, Team ID. Current IDs are <code>Neutral</code>, <code>Player</code>, <code>Enemy</code>, and <code>Ally</code>.</dd>
-          <dt>Saved definition</dt><dd>Team ComponentDefinition.</dd>
-          <dt>Runtime result</dt><dd>The factory creates or reuses a Team Component on the live Actor and sets the authored team.</dd>
-          <dt>Ownership rule</dt><dd>Fragment-authored Team is a default for direct placement. Explicit match, recipe, or spawn context can override it at runtime.</dd>
-        </dl>
-      </article>
-    </section>
-
-    <section class="section">
-      <h2>Runtime Components</h2>
-      <div class="component-detail-grid">
-        <article class="component-detail" id="weapon"><div><h3>Weapon</h3><span class="badge runtime">Runtime</span></div><p>Stores weapon slots, active weapon, damage, range, cooldown, and firing checks. Current recipe/runtime configuration supplies weapons; Fragment authoring for reusable weapon definitions is deferred.</p><p class="muted">Developer name: WeaponComponent.</p></article>
-        <article class="component-detail" id="projectile-state"><div><h3>Projectile State</h3><span class="badge runtime">Runtime</span></div><p>Moves a projectile Actor, tracks owner, velocity, lifetime, and hit behavior. Projectiles are temporary runtime effects and are not saved into Fragment assets.</p><p class="muted">Developer name: ProjectileComponent.</p></article>
-        <article class="component-detail" id="base-production"><div><h3>Base Production</h3><span class="badge runtime">Runtime</span></div><p>Represents base ownership, account identity, lane association, spawn metadata, health monitoring, and destruction behavior. It is active in gameplay, but authoring base capability separately from runtime owner/account/lane data is future work.</p><p class="muted">Developer name: BaseComponent.</p></article>
-        <article class="component-detail" id="mesh-renderer"><div><h3>Mesh Renderer</h3><span class="badge internal">Internal</span></div><p>Connects a Mesh and Material to a visual Actor so the renderer can draw it. Designers author mesh nodes and material references instead of adding Mesh Renderer as a ComponentDefinition.</p><p class="muted">Developer name: MeshRenderer.</p></article>
-        <article class="component-detail" id="possession"><div><h3>Possession</h3><span class="badge runtime">Runtime</span></div><p>Marks a runtime Actor as possessable and stores the current owner id. The play-mode possession workflow owns this today; placed-instance or construct authoring may come later.</p><p class="muted">Developer name: PossessionComponent.</p></article>
-        <article class="component-detail" id="camera-target"><div><h3>Camera Target</h3><span class="badge runtime">Runtime</span></div><p>Stores camera follow target settings for possessable Actors. It is not part of Fragment authoring yet.</p><p class="muted">Developer name: CameraTargetComponent.</p></article>
-        <article class="component-detail" id="ability"><div><h3>Ability</h3><span class="badge runtime">Runtime</span></div><p>Stores runtime ability entries, cooldowns, resource costs, and activation callbacks. Ability data needs a stable asset definition before it becomes authorable.</p><p class="muted">Developer name: AbilityComponent.</p></article>
-        <article class="component-detail" id="effect"><div><h3>Effect</h3><span class="badge runtime">Runtime</span></div><p>Applies resource changes to a target, optionally modified by Element data. Effects are implemented, but reusable authored effect definitions are deferred.</p><p class="muted">Developer name: EffectComponent.</p></article>
-        <article class="component-detail" id="element"><div><h3>Element</h3><span class="badge runtime">Runtime</span></div><p>Stores elemental affinities or amounts such as Physical, Light, Fire, or Void. It is a likely future Fragment identity capability, but it has no stable authoring format yet.</p><p class="muted">Developer name: ElementComponent.</p></article>
-        <article class="component-detail" id="inventory"><div><h3>Inventory</h3><span class="badge runtime">Runtime</span></div><p>Stores runtime item stacks and item metadata. Starting inventory and save rules are not defined yet, so it is not authorable.</p><p class="muted">Developer name: InventoryComponent.</p></article>
-        <article class="component-detail" id="internal-engine-state"><div><h3>Internal Engine State</h3><span class="badge internal">Internal</span></div><p>Transform, Script, Actor Identity, and Wings Assembler preview state are engine-owned concepts. They are documented so the boundary is clear, but designers do not add them as Fragment ComponentDefinitions.</p></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Behaviors</h2>
-      <div class="component-detail-grid">
-        <article class="component-detail" id="lane-movement"><div><h3>Lane Movement</h3><span class="badge runtime">Runtime</span></div><p>Moves units through a lane corridor, approaches combat targets in 2D, holds weapon range, and applies lightweight friendly separation. It depends on lane data, Team, Targeting, and Weapon state.</p><p class="muted">Developer name: LanePushBehavior.</p></article>
-        <article class="component-detail" id="auto-combat"><div><h3>Auto Combat</h3><span class="badge runtime">Runtime</span></div><p>Aims at the current target, asks the Weapon component to fire, and sends successful shots through the projectile system. It depends on Targeting, Weapon, Resource, and Projectile systems.</p><p class="muted">Developer name: AutoCombatBehavior.</p></article>
-        <article class="component-detail" id="movement"><div><h3>Movement</h3><span class="badge runtime">Runtime</span></div><p>Generic movement behavior for forward, chase, flee, and orbit motion. It is implemented as runtime code and not exposed as a saved Fragment definition.</p><p class="muted">Developer name: MovementBehavior.</p></article>
-        <article class="component-detail" id="follow"><div><h3>Follow</h3><span class="badge runtime">Runtime</span></div><p>Moves one Actor near another runtime target, with optional teleporting when too far away. Runtime target references are not reusable asset data.</p><p class="muted">Developer name: FollowBehavior.</p></article>
-        <article class="component-detail" id="player-input"><div><h3>Player Input</h3><span class="badge runtime">Runtime</span></div><p>Consumes input actions and axes for movement, weapons, and abilities. It is attached by possession/runtime systems, not authored directly on a Fragment.</p><p class="muted">Developer name: PlayerInputBehavior.</p></article>
-        <article class="component-detail" id="patrol"><div><h3>Patrol</h3><span class="badge runtime">Runtime</span></div><p>Moves an Actor between patrol points. The behavior exists, but route authoring belongs to future scene or placed-instance tools rather than reusable Fragment identity.</p><p class="muted">Developer name: PatrolBehavior.</p></article>
-        <article class="component-detail" id="spawner"><div><h3>Spawner</h3><span class="badge runtime">Runtime</span></div><p>Can spawn Actors from a configured factory with alive limits and respawn delay. Public authoring is deferred until spawn targets, ownership, and recipes have a stable data model.</p><p class="muted">Developer name: SpawnerBehavior.</p></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Sensors</h2>
-      <div class="component-detail-grid">
-        <article class="component-detail" id="targeting"><div><h3>Targeting Sensor</h3><span class="badge runtime">Runtime</span></div><p>Finds and maintains a valid target by range and team relationship. Auto Combat and Lane Movement consume the target it finds.</p><p class="muted">Developer name: TargetingSensor.</p></article>
-        <article class="component-detail" id="distance-sensor"><div><h3>Distance Sensor</h3><span class="badge runtime">Runtime</span></div><p>Tracks whether a runtime target is inside or outside enter/exit distance thresholds and emits callbacks when that state changes.</p><p class="muted">Developer name: DistanceComponent.</p></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Controllers</h2>
-      <article class="component-detail" id="purchase-controller">
-        <div><h3>Construct Purchase</h3><span class="badge runtime">Runtime</span></div>
-        <p>Coordinates AI or commander-driven construct purchasing. It checks economy balance, consults a purchase strategy, respects pending paid-unit pressure, and sends valid requests to the purchase/deployment services.</p>
-        <p class="muted">Developer name: ConstructPurchaseControllerComponent. This is a runtime commander capability, not a Fragment authoring option.</p>
-      </article>
-    </section>
-
-    <section class="section panel">
-      <h2>Runtime but Not Yet Authorable</h2>
-      <p class="muted">These systems exist in code or gameplay configuration, but they are not available in the Wings Assembler Add Component dropdown. Their future authoring model still needs stable asset or placed-instance rules.</p>
-      <div class="related">
-        <span>Base Production</span>
-        <span>Weapon</span>
-        <span>Possession</span>
-        <span>Camera Target</span>
-        <span>Ability</span>
-        <span>Effect</span>
-        <span>Element</span>
-        <span>Inventory</span>
-        <span>Patrol</span>
-        <span>Spawner</span>
-      </div>
+      <h2>Best Practice</h2>
+      <p>Prefer small, focused Components. Compose them to create complex behavior instead of large monolithic classes.</p>
     </section>
 
     <section class="section panel">
       <h2>Related Reading</h2>
       <div class="related">
-        <a href="assets.html">Assets</a>
-        <a href="input.html">Input</a>
+        <a href="engine-overview.html">Architecture</a>
+        <a href="getting-started.html">Projects & Assets</a>
         <a href="gameplay.html">Gameplay</a>
-        <a href="editor.html">Editor</a>
-        <a href="glossary.html">Glossary</a>
-        <a href="ai-quick-start.html">AI Start</a>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss — Abyssal Engine public documentation</div>
+    </div>
+  </footer>
 </body>
 </html>

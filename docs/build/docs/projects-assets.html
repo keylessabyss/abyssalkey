@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Assets - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="team.html">Team</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Content Foundation</p>
+    <h1>Projects & Assets</h1>
+    <p class="lead">Projects provide the durable workspace. Assets are the reusable building blocks of your game.</p>
+
+    <section class="section panel">
+      <h2>Project Model</h2>
+      <pre><code>ProjectRoot/
+  ├── abyssal.project.json
+  ├── assets/
+  │   ├── meshes/
+  │   ├── materials/
+  │   └── fragments/
+  ├── scenes/
+  └── recipes/</code></pre>
+      <p>Projects own all authored content. The editor uses friendly names while maintaining stable internal IDs for reliable references.</p>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>MeshAsset</h3>
+        <p>Geometry from built-in base meshes or imported OBJ files. Shared across Fragments and the world.</p>
+      </article>
+      <article class="card">
+        <h3>MaterialAsset</h3>
+        <p>ReflectionLit appearance data (color, metallic, roughness, emissive, opacity). Reusable across meshes.</p>
+      </article>
+      <article class="card">
+        <h3>FragmentAsset</h3>
+        <p>Authored modular assembly (hierarchy of mesh nodes and pivots) saved to the project.</p>
+      </article>
+    </section>
+
+    <section class="section panel">
+      <h2>Content Browser</h2>
+      <p>The Content Browser lets you browse, create, and place assets. Virtual folders organize Meshes, Materials, and Fragments.</p>
+      <ul class="list-clean">
+        <li><strong>Base Meshes</strong> — Starter geometry library</li>
+        <li><strong>Imported</strong> — OBJ geometry</li>
+        <li><strong>Fragments</strong> — Reusable assemblies (Wings Assembler)</li>
+        <li><strong>Materials</strong> — Appearance definitions</li>
+      </ul>
+    </section>
+
+    <section class="section callout">
+      <h2>Workflow Summary</h2>
+      <p>MeshAsset → Wings Assembler → FragmentAsset → Place in World → Test with Play/Stop.</p>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="getting-started.html">Getting Started</a>
+        <a href="engine-overview.html">Architecture</a>
+        <a href="editor.html">Editor</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss — Abyssal Engine public documentation</div>
+    </div>
+  </footer>
+</body>
+</html>

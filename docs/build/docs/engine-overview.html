@@ -12,7 +12,7 @@
       <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
       <nav class="nav-links" aria-label="Documentation navigation">
         <a href="index.html">Home</a>
-        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="getting-started.html">Learn</a>
         <a href="ai-quick-start.html">AI Start</a>
         <a href="roadmap.html">Roadmap</a>
         <a href="team.html">Team</a>
@@ -28,52 +28,52 @@
 
     <section class="section panel">
       <h2>Project Model</h2>
-      <p class="muted">A project is the editor's workspace and the future home for all durable content.</p>
+      <p class="muted">A project is the durable workspace and home for all authored content.</p>
       <pre><code>Project
-  Mesh Assets
-  Material Assets
-  Fragment Assets
-  future Scenes
-  future Recipes</code></pre>
-      <p>Abyssal uses friendly names in the editor while keeping stable internal identifiers for asset references. This makes content easier to edit without sacrificing reliable links between assets.</p>
+  ├── assets/
+  │   ├── meshes/
+  │   ├── materials/
+  │   └── fragments/
+  ├── scenes/
+  └── recipes/</code></pre>
+      <p>Friendly names are used in the editor. Stable qualified IDs ensure reliable references between assets.</p>
     </section>
 
     <section class="section grid">
       <article class="card">
         <h3>MeshAsset</h3>
-        <p>Geometry metadata. Meshes may come from the built-in base mesh library or imported OBJ geometry.</p>
+        <p>Geometry metadata from built-in base meshes or imported OBJ files.</p>
       </article>
       <article class="card">
         <h3>MaterialAsset</h3>
-        <p>Appearance data for ReflectionLit materials, including base color, roughness, metallic, opacity, and emissive settings.</p>
+        <p>Appearance data for ReflectionLit materials (color, metallic, roughness, emissive, opacity).</p>
       </article>
       <article class="card">
         <h3>FragmentAsset</h3>
-        <p>An authored assembly made from mesh nodes, empty pivots, transforms, and optional material references.</p>
+        <p>Authored assembly of mesh nodes, empty pivots, transforms, and material references.</p>
       </article>
       <article class="card">
         <h3>Construct</h3>
-        <p>A runtime gameplay identity. A Construct can be assembled from Fragments and configured with gameplay data.</p>
+        <p>Runtime gameplay identity assembled from Fragments and configured with behavior.</p>
       </article>
       <article class="card">
         <h3>Component</h3>
-        <p>Reusable behavior. Movement, targeting, economy, camera, and other behaviors are composed through Components and services.</p>
+        <p>Reusable behavior attached to Actors (movement, combat, economy, etc.).</p>
       </article>
       <article class="card">
         <h3>Renderer</h3>
-        <p>A WebGPU-first renderer using the ReflectionLit path for mesh rendering, plus specialized editor paths for grid, gizmos, and picking.</p>
+        <p>WebGPU ReflectionLit pipeline with editor overlays for grid, gizmos, and picking.</p>
       </article>
     </section>
 
     <section class="section panel">
       <h2>Wings Assembler Workflow</h2>
-      <pre><code>Base Mesh or imported Mesh
-  -> Add to assembly
-  -> Build hierarchy
-  -> Position, rotate, and scale parts
-  -> Assign Materials
-  -> Save Fragment into project</code></pre>
-      <p>Wings Assembler is the embedded workspace for building reusable physical modules. It uses the same editor shell as the world view, but operates inside an isolated preview scene.</p>
+      <pre><code>MeshAsset → Add to Assembly
+  → Build hierarchy (Root / Empty Pivot / Mesh)
+  → Transform parts
+  → Assign Materials
+  → Save as FragmentAsset</code></pre>
+      <p>Wings Assembler is the embedded modular authoring workspace using an isolated preview scene.</p>
     </section>
 
     <section class="section grid two">
@@ -89,26 +89,23 @@
       <article class="card">
         <h3>Technology Stack</h3>
         <ul class="list-clean">
-          <li>TypeScript for engine and editor code.</li>
-          <li>WebGPU and WGSL for rendering.</li>
-          <li>gl-matrix for vector and matrix math.</li>
-          <li>Vite for local development and static builds.</li>
+          <li>TypeScript + WebGPU</li>
+          <li>gl-matrix for math</li>
+          <li>Vite for builds</li>
         </ul>
       </article>
     </section>
 
     <section class="section callout">
       <h2>Tool Philosophy</h2>
-      <p>Abyssal Engine was not created to replace Unreal, Unity, Godot, or Blender. It was created to build the worlds of Keyless Abyss. Blender remains an important future bridge for broad content workflows.</p>
+      <p>Abyssal was not created to replace other engines. It cooperates with them. Blender remains the preferred bridge for broad content interchange.</p>
     </section>
 
     <section class="section panel">
       <h2>Related Reading</h2>
       <div class="related">
         <a href="design-principles.html">Design Principles</a>
-        <a href="architecture-diagrams.html">Architecture Diagrams</a>
-        <a href="assets.html">Assets</a>
-        <a href="gameplay.html">Gameplay</a>
+        <a href="getting-started.html">Projects & Assets</a>
         <a href="glossary.html">Glossary</a>
       </div>
     </section>
@@ -116,8 +113,7 @@
 
   <footer class="site-footer">
     <div class="footer-shell">
-      <div>Keyless Abyss - Abyssal Engine public documentation</div>
-      <div>Architecture summarized for users of the hosted build.</div>
+      <div>Keyless Abyss — Abyssal Engine public documentation</div>
     </div>
   </footer>
 </body>

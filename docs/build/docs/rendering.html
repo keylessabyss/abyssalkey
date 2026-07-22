@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rendering - Abyssal Engine</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendering - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a><nav class="nav-links" aria-label="Documentation navigation">
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
         <a href="index.html">Home</a>
-        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="getting-started.html">Learn</a>
         <a href="ai-quick-start.html">AI Start</a>
         <a href="roadmap.html">Roadmap</a>
         <a href="team.html">Team</a>
         <a class="open-editor" href="../">Open Editor</a>
-      </nav></div></header>
+      </nav>
+    </div>
+  </header>
+
   <main class="page">
-    <p class="eyebrow">WebGPU first</p>
+    <p class="eyebrow">Graphics Pipeline</p>
     <h1>Rendering</h1>
-    <p class="lead">Abyssal uses a ReflectionLit path for mesh rendering, an HDR scene-color target with tone mapping, and specialized editor paths for grid, gizmos, and picking.</p>
-    <section class="section grid two">
-      <article class="card"><h2>ReflectionLit</h2><p>A lightweight material path with base color, metallic, roughness, emissive, alpha behavior, and one global environment reflection.</p></article>
-      <article class="card"><h2>Material Assets</h2><p>ReflectionLit values are stored in MaterialAssets and assigned to mesh nodes in Wings Assembler.</p></article>
-      <article class="card"><h2>HDR Tone Mapping</h2><p>ReflectionLit writes HDR color first. Bloom and tone mapping then compress brightness for display while preserving saturated emissive hue.</p></article>
-      <article class="card"><h2>Editor Rendering</h2><p>Grid, gizmos, picking, and overlays remain specialized and sharp instead of being tone-mapped with world materials.</p></article>
-      <article class="card"><h2>Future PBR</h2><p>The architecture keeps room for Unlit, StylizedLit, ReflectionLit, and full PBR paths later.</p></article>
+    <p class="lead">Abyssal uses a modern WebGPU renderer centered on the ReflectionLit material path.</p>
+
+    <section class="section panel">
+      <h2>Core Pipeline</h2>
+      <p>Scene → Renderer traversal → MeshRenderer → ReflectionLitMaterial → GPU draw.</p>
+      <p>Shared meshes and materials are cached for performance. Editor overlays (grid, gizmos, picking) use specialized paths.</p>
     </section>
-    <section class="section panel"><h2>Current HDR Boundary</h2><p>Bright emissive materials can exceed normal display range inside the renderer. Foundational bloom extracts sufficiently bright world surfaces, blurs them at reduced resolution, and combines the glow before tone mapping.</p></section>
-    <section class="section panel"><h2>Common Mistake</h2><p>Do not treat renderer-owned GPU state as asset data. Materials are CPU-side appearance assets; renderer caches own GPU buffers and bind groups.</p></section>
-    <section class="section panel"><h2>Related Reading</h2><div class="related"><a href="assets.html">Assets</a><a href="engine-overview.html">Architecture</a><a href="features.html">Feature Status</a><a href="roadmap.html">Roadmap</a></div></section>
+
+    <section class="section grid">
+      <article class="card">
+        <h3>ReflectionLitMaterial</h3>
+        <p>Base color, metallic, roughness, emissive, and opacity. Supports dynamic updates via revision tracking.</p>
+      </article>
+      <article class="card">
+        <h3>MeshAsset</h3>
+        <p>Loaded once and shared across instances. Supports built-in primitives and imported OBJ geometry.</p>
+      </article>
+      <article class="card">
+        <h3>MaterialAsset</h3>
+        <p>Project-owned appearance definitions that resolve to runtime materials.</p>
+      </article>
+    </section>
+
+    <section class="section callout">
+      <h2>Future Direction</h2>
+      <p>Textures, advanced material graphs, HDR, bloom, and post-processing are planned as production needs arise.</p>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="projects-assets.html">Projects & Assets</a>
+        <a href="editor.html">Editor</a>
+        <a href="engine-overview.html">Architecture</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss — Abyssal Engine public documentation</div>
+    </div>
+  </footer>
 </body>
 </html>
