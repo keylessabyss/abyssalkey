@@ -16,6 +16,50 @@
     {
       "profileId": "Player",
       "displayName": "Player",
+      "inputBindings": [
+        {
+          "inputChannel": "Input2",
+          "positiveControls": [
+            "Space",
+            "Gamepad0.RightStickY"
+          ],
+          "negativeControls": [
+            "ShiftLeft"
+          ],
+          "hardwareControls": [
+            "Space",
+            "Gamepad0.RightStickY"
+          ]
+        },
+        {
+          "inputChannel": "Input3",
+          "positiveControls": [
+            "KeyA",
+            "Gamepad0.LeftStickX"
+          ],
+          "negativeControls": [
+            "KeyD"
+          ],
+          "hardwareControls": [
+            "KeyA",
+            "Gamepad0.LeftStickX"
+          ]
+        },
+        {
+          "inputChannel": "Input4",
+          "positiveControls": [
+            "KeyW",
+            "Gamepad0.LeftStickY"
+          ],
+          "negativeControls": [
+            "KeyS"
+          ],
+          "hardwareControls": [
+            "KeyW",
+            "Gamepad0.LeftStickY"
+          ]
+        }
+      ],
       "componentDefinitions": [
         {
           "type": "AutoInput",
@@ -23,6 +67,28 @@
           "inputChannel": "Input1",
           "interval": 0.25,
           "range": 10
+        },
+        {
+          "type": "Acceleration",
+          "enabled": true,
+          "inputChannel": "Input2",
+          "deadZone": 0.12,
+          "accelerationRate": 9,
+          "decelerationRate": 9
+        },
+        {
+          "type": "Yaw",
+          "enabled": true,
+          "inputChannel": "Input3",
+          "deadZone": 0.12,
+          "yawRate": 1.8
+        },
+        {
+          "type": "Pitch",
+          "enabled": true,
+          "inputChannel": "Input4",
+          "deadZone": 0.12,
+          "pitchRate": 1.8
         }
       ]
     },
