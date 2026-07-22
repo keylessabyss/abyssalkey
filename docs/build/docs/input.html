@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input - Abyssal Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Abyssal Engine <span>Public manual</span></a>
+      <nav class="nav-links" aria-label="Documentation navigation">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html" aria-current="page">Learn</a>
+        <a href="ai-quick-start.html">AI Start</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="team.html">Team</a>
+        <a class="open-editor" href="../">Open Editor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <p class="eyebrow">Fragment intent, not gameplay vocabulary</p>
+    <h1>Input</h1>
+    <p class="lead">Abyssal uses generic Fragment input channels. The engine defines channels such as Input1 and Input2; Components decide what those channels mean.</p>
+
+    <section class="section callout">
+      <h2>Core Rule</h2>
+      <p>Hardware produces input. Controllers translate input. Fragments consume input. Components decide what it means.</p>
+    </section>
+
+    <section class="section grid two">
+      <article class="card" id="player-input-bindings">
+        <h2>Player Input Bindings</h2>
+        <p>Player Profile Bindings translate physical controls into this Fragment's local input channels.</p>
+        <table>
+          <tbody>
+            <tr><th>Channel</th><th>Example bindings</th></tr>
+            <tr><td>Input1</td><td>MouseLeft, Gamepad0.Button0</td></tr>
+            <tr><td>Input2</td><td>MouseRight, Gamepad0.Button1</td></tr>
+            <tr><td>Input3</td><td>Space, Gamepad0.Button2</td></tr>
+            <tr><td>Input4</td><td>ShiftLeft, Gamepad0.Button3</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Bindings live on the Root Player profile because they describe how a player drives that Fragment.</p>
+      </article>
+
+      <article class="card" id="fragment-input-channels">
+        <h2>Fragment Input Channels</h2>
+        <p>Each Fragment has its own local channels from Input1 through Input10. Input1 on a fighter can fire a cannon while Input1 on a gate can activate the gate.</p>
+        <p>Multiple Components may listen to the same channel. Two muzzle Weapon Components can both use Input1, so one player action fires both weapons.</p>
+        <p class="small">The channel number is local to the Fragment receiving it. It is not a global action name.</p>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card" id="auto-input">
+        <h2>Auto Input</h2>
+        <p>Auto Input is an authored producer. When its conditions are met, it emits a local input channel at a configured rate, allowing existing Components to react without special-case combat code.</p>
+        <p>For example, Auto Input can emit Input1 while a target is in range. Any Weapon Component listening to Input1 may fire.</p>
+        <p class="small">Auto Input is not a replacement for Player Input Bindings. It is another producer that speaks the same channel language.</p>
+      </article>
+
+      <article class="card">
+        <h2>Supported Control IDs</h2>
+        <table>
+          <tbody>
+            <tr><th>Control</th><th>Meaning</th></tr>
+            <tr><td>MouseLeft</td><td>Left mouse button</td></tr>
+            <tr><td>MouseRight</td><td>Right mouse button</td></tr>
+            <tr><td>Space</td><td>Keyboard Space</td></tr>
+            <tr><td>ShiftLeft</td><td>Keyboard Left Shift</td></tr>
+            <tr><td>ControlLeft</td><td>Keyboard Left Control</td></tr>
+            <tr><td>KeyE</td><td>Keyboard E</td></tr>
+            <tr><td>KeyQ</td><td>Keyboard Q</td></tr>
+            <tr><td>Gamepad0.Button0</td><td>First gamepad face button</td></tr>
+            <tr><td>Gamepad0.Button1</td><td>Second gamepad face button</td></tr>
+            <tr><td>Gamepad0.Button2</td><td>Third gamepad face button</td></tr>
+            <tr><td>Gamepad0.Button3</td><td>Fourth gamepad face button</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="section panel">
+      <h2>Flow</h2>
+      <div class="related">
+        <span>Hardware Control</span>
+        <span>Player Profile Binding</span>
+        <span>Input1-Input10</span>
+        <span>Fragment Dispatcher</span>
+        <span>Components</span>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <h2>Related Reading</h2>
+      <div class="related">
+        <a href="components.html">Components</a>
+        <a href="controls.html">Controls</a>
+        <a href="editor.html">Editor</a>
+        <a href="gameplay.html">Gameplay</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div>Keyless Abyss - Abyssal Engine public documentation</div>
+      <div>Input channels are generic; Fragment Components provide their meaning.</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -16,7 +16,15 @@
     {
       "profileId": "Player",
       "displayName": "Player",
-      "componentDefinitions": []
+      "componentDefinitions": [
+        {
+          "type": "AutoInput",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "interval": 0.25,
+          "range": 10
+        }
+      ]
     },
     {
       "profileId": "AI",
@@ -149,9 +157,9 @@
       "name": "Anchor",
       "parentNodeId": "Root",
       "localPosition": [
-        2.1386449337005615,
-        0,
-        1.1130727529525757
+        2,
+        -1,
+        0
       ],
       "localRotation": [
         0,
@@ -175,8 +183,71 @@
               "name": "Ship Weapon",
               "damage": 2,
               "range": 5,
-              "cooldown": 0.1,
+              "cooldown": 0.5,
+              "inputChannel": "Input1",
               "muzzleAnchorNodeId": null
+            },
+            {
+              "type": "Targeting",
+              "enabled": true,
+              "searchRadius": 7,
+              "requireEnemy": true
+            },
+            {
+              "type": "AutoCombat",
+              "enabled": true,
+              "aimSpeed": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "EmptyNode3",
+      "type": "Empty",
+      "name": "Anchor (2)",
+      "parentNodeId": "Root",
+      "localPosition": [
+        2,
+        1,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "behaviorProfiles": [
+        {
+          "profileId": "Player",
+          "displayName": "Player",
+          "componentDefinitions": [
+            {
+              "type": "Weapon",
+              "enabled": true,
+              "name": "Ship Weapon",
+              "damage": 2,
+              "range": 5,
+              "cooldown": 2,
+              "inputChannel": "Input1",
+              "muzzleAnchorNodeId": null
+            },
+            {
+              "type": "Targeting",
+              "enabled": true,
+              "searchRadius": 7,
+              "requireEnemy": true
+            },
+            {
+              "type": "AutoCombat",
+              "enabled": true,
+              "aimSpeed": 8
             }
           ]
         }
