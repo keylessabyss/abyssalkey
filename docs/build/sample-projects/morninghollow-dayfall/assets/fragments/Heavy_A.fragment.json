@@ -6,6 +6,7 @@
     "Fragment",
     "Project"
   ],
+  "behaviorSource": "Authored",
   "assemblyNodes": [
     {
       "nodeId": "Root",
@@ -126,5 +127,88 @@
       "materialAssetId": "Material.M_dynamic_color"
     }
   ],
-  "componentDefinitions": []
+  "componentDefinitions": [
+    {
+      "type": "Tag",
+      "enabled": true,
+      "tags": [
+        "Unit",
+        "Ship",
+        "Heavy"
+      ]
+    },
+    {
+      "type": "Resource",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 80,
+      "startingValue": 80
+    }
+  ],
+  "behaviorProfiles": [
+    {
+      "profileId": "None",
+      "displayName": "None",
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "Player",
+      "displayName": "Player",
+      "componentDefinitions": [
+        {
+          "type": "Targeting",
+          "enabled": true,
+          "searchRadius": 16,
+          "requireEnemy": true
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Heavy Fighter Weapon",
+          "damage": 10,
+          "range": 4,
+          "cooldown": 2
+        },
+        {
+          "type": "AutoCombat",
+          "enabled": true,
+          "aimSpeed": 8
+        }
+      ]
+    },
+    {
+      "profileId": "AI",
+      "displayName": "AI",
+      "componentDefinitions": [
+        {
+          "type": "Targeting",
+          "enabled": true,
+          "searchRadius": 6,
+          "requireEnemy": true
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Heavy Fighter Weapon",
+          "damage": 10,
+          "range": 4,
+          "cooldown": 2
+        },
+        {
+          "type": "LanePush",
+          "enabled": true,
+          "speed": 0.3,
+          "turnSpeed": 1.5,
+          "arriveDistance": 0.4,
+          "pauseForCombat": true,
+          "lockToPlane": true
+        },
+        {
+          "type": "AutoCombat",
+          "enabled": true,
+          "aimSpeed": 8
+        }
+      ]
+    }
+  ]
 }
