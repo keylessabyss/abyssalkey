@@ -4,7 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team - Abyssal Engine</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Full styles.css content embedded for single-file use */
+    * { box-sizing: border-box; }
+    :root {
+      color-scheme: dark;
+      --bg: #0b0e12;
+      --panel: #171c24;
+      --panel-strong: #202733;
+      --border: #303946;
+      --text: #eef4ff;
+      --muted: #a9b4c3;
+      --dim: #7f8a99;
+      --accent: #65d8ff;
+      --accent-strong: #8ee8ff;
+      --accent-soft: rgba(101, 216, 255, 0.13);
+      --ok: #7ee787;
+      --warn: #ffd479;
+      --planned: #b8a3ff;
+      --shadow: rgba(0, 0, 0, 0.35);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    html { min-height: 100%; background: var(--bg); }
+    body {
+      min-height: 100%; margin: 0; background: radial-gradient(circle at 20% 0%, rgba(101, 216, 255, 0.11), transparent 32rem), linear-gradient(180deg, #0d1117 0%, var(--bg) 42rem);
+      color: var(--text); line-height: 1.6;
+    }
+    a { color: var(--accent-strong); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-header {
+      position: sticky; top: 0; z-index: 5; border-bottom: 1px solid var(--border);
+      background: rgba(11, 14, 18, 0.94); backdrop-filter: blur(14px);
+    }
+    .nav-shell {
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+      width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 14px 0;
+    }
+    .brand { display: grid; min-width: 180px; color: var(--text); font-weight: 750; }
+    .brand span { color: var(--muted); font-size: 0.78rem; font-weight: 500; }
+    .nav-links {
+      display: flex; align-items: center; justify-content: flex-end; gap: 4px; flex-wrap: wrap;
+    }
+    .nav-links a {
+      border: 1px solid transparent; border-radius: 6px; padding: 7px 10px;
+      color: var(--muted); font-size: 0.92rem;
+    }
+    .nav-links a:hover { border-color: var(--border); background: var(--panel); color: var(--text); }
+    .nav-links a[aria-current="page"] {
+      border-color: rgba(101, 216, 255, 0.45); background: var(--accent-soft); color: var(--text);
+    }
+    .page {
+      width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 54px 0 64px;
+    }
+    .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    h1 { margin: 0 0 18px; font-size: clamp(2.4rem, 7vw, 5rem); }
+    h2 { margin: 0 0 16px; font-size: clamp(1.55rem, 3vw, 2.3rem); }
+    .lead { max-width: 66ch; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.28rem); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .card {
+      border: 1px solid var(--border); border-radius: 8px; background: rgba(23, 28, 36, 0.86);
+      padding: 18px; box-shadow: 0 16px 40px var(--shadow);
+    }
+    .section { margin-top: 42px; }
+    .list-clean { margin: 0; padding-left: 18px; }
+    .list-clean li { margin: 6px 0; }
+    .panel { border: 1px solid var(--border); border-radius: 8px; background: rgba(23, 28, 36, 0.86); padding: 24px; }
+    .related { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .related span {
+      border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px;
+      color: var(--muted); font-size: 0.92rem;
+    }
+    .callout {
+      border-color: rgba(101, 216, 255, 0.24); padding: 18px;
+      background: linear-gradient(180deg, rgba(101, 216, 255, 0.1), rgba(23, 28, 36, 0.86));
+    }
+    footer { border-top: 1px solid var(--border); background: #080b10; padding: 28px 0; color: var(--dim); font-size: 0.92rem; text-align: center; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -24,13 +99,13 @@
   <main class="page">
     <p class="eyebrow">The people behind the forge</p>
     <h1>Meet the Team</h1>
-    <p class="lead">Abyssal Engine is built through the collaboration of creative vision, software engineering, and AI-assisted architecture.</p>
-    <p class="muted">Every system is carefully designed, reviewed, and implemented before becoming part of the engine. Together we are building games, not demos.</p>
+    <p class="lead">Abyssal Engine is built through the collaboration of creative vision, software engineering, architecture, and documentation.</p>
+    <p class="muted">Every system follows a disciplined workflow before becoming part of the engine.</p>
 
     <section class="section grid">
       <article class="card">
         <h2>Jose Salinas</h2>
-        <p class="eyebrow">Creator - Lead Engine Developer - Creative Director</p>
+        <p class="eyebrow">Creator • Lead Engine Developer • Creative Director</p>
         <ul class="list-clean">
           <li>Original vision</li>
           <li>Engine direction</li>
@@ -46,11 +121,11 @@
         <p class="eyebrow">Engine Architect</p>
         <ul class="list-clean">
           <li>System architecture</li>
-          <li>Long-term engine design</li>
-          <li>Workflow planning</li>
-          <li>Feature review</li>
-          <li>Documentation</li>
+          <li>Engine philosophy</li>
+          <li>Long-term planning</li>
+          <li>Feature reviews</li>
           <li>Design consistency</li>
+          <li>Architectural guidance</li>
         </ul>
       </article>
 
@@ -59,11 +134,25 @@
         <p class="eyebrow">Senior Software Engineer</p>
         <ul class="list-clean">
           <li>Engine implementation</li>
-          <li>Refactoring</li>
           <li>Runtime systems</li>
-          <li>Code quality</li>
+          <li>Refactoring</li>
           <li>Performance</li>
-          <li>Architecture realization</li>
+          <li>Code quality</li>
+          <li>Technical validation</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Documentation Engineer</h2>
+        <p class="eyebrow">Documentation Engineer</p>
+        <ul class="list-clean">
+          <li>Documentation</li>
+          <li>Knowledge organization</li>
+          <li>Canonical consistency</li>
+          <li>Public documentation curation</li>
+          <li>Glossary maintenance</li>
+          <li>Cross references</li>
+          <li>Canonical drift detection</li>
         </ul>
       </article>
     </section>
@@ -72,12 +161,17 @@
       <h2>Development Workflow</h2>
       <div class="related">
         <span>Idea</span>
-        <span>Architecture Review</span>
-        <span>Engineering Review</span>
-        <span>Forge the Tablet</span>
-        <span>Implementation</span>
-        <span>Validation</span>
-        <span>Architecture Review</span>
+        <span>→</span>
+        <span>Jose Vision</span>
+        <span>→</span>
+        <span>Wings Architecture</span>
+        <span>→</span>
+        <span>Aurel Implementation</span>
+        <span>→</span>
+        <span>Jose Validation</span>
+        <span>→</span>
+        <span>Documentation Engineer</span>
+        <span>→</span>
         <span>Abyssal Engine</span>
       </div>
     </section>
@@ -87,34 +181,30 @@
         <h2>Engine Philosophy</h2>
         <ul class="list-clean">
           <li>Build games, not demos.</li>
-          <li>Simple authoring.</li>
-          <li>Powerful runtime.</li>
           <li>Composition over inheritance.</li>
-          <li>Editor first.</li>
           <li>Gameplay before technology.</li>
           <li>AI assists creativity.</li>
           <li>Humans make the final decisions.</li>
+          <li>Public documentation teaches the engine.</li>
+          <li>Internal documentation builds the engine.</li>
         </ul>
       </article>
 
       <article class="card">
         <h2>Shared Mission</h2>
-        <p>Every tablet forged brings Abyssal Engine one step closer to becoming a complete game engine designed for creators, learners, and dreamers.</p>
+        <p>Great engines are not built by one mind, but by many ideas working toward one vision.</p>
         <p>Thank you for following our journey.</p>
       </article>
     </section>
 
     <section class="section callout">
       <h2>Team Signature</h2>
-      <p>Great engines are not built by one mind, but by many ideas working toward one vision.</p>
+      <p>Together we forge the future of accessible, AI-friendly game development.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-shell">
-      <div>Keyless Abyss - Abyssal Engine public documentation</div>
-      <div>The Team page documents the collaboration behind the current engine.</div>
-    </div>
+    <div>Keyless Abyss — Abyssal Engine public documentation • <a href="../">Open Editor</a></div>
   </footer>
 </body>
 </html>
