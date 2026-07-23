@@ -1,0 +1,36 @@
+{
+  "format": "AbyssalScene",
+  "formatVersion": 1,
+  "assetId": "Scene.Main",
+  "displayName": "Main",
+  "description": "Main project scene.",
+  "tags": [
+    "Scene",
+    "Project"
+  ],
+  "placedFragments": [
+    {
+      "instanceId": "PlacedFragment2",
+      "sourceFragmentAssetId": "Fragment.Standard_A",
+      "instanceName": "Standard Apex",
+      "worldPosition": [
+        -29.304157257080078,
+        0,
+        3.018404960632324
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Neutral",
+      "controllerId": "Player1"
+    }
+  ]
+}

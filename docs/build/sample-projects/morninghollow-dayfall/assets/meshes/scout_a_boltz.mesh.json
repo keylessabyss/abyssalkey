@@ -1,8 +1,8 @@
 {
   "format": "AbyssalMesh",
   "formatVersion": 1,
-  "assetId": "Mesh.heavy_a_base",
-  "displayName": "Heavy A Base",
+  "assetId": "Mesh.scout_a_boltz",
+  "displayName": "Scout A Boltz",
   "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
@@ -11,6 +11,6 @@
     "Mesh"
   ],
   "sourceType": "OBJ",
-  "sourcePath": "assets/meshes/heavy_a_base.obj",
+  "sourcePath": "assets/meshes/scout_a_boltz.obj",
   "importOptions": {}
 }

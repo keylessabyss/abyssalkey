@@ -1,8 +1,8 @@
 {
   "format": "AbyssalMesh",
   "formatVersion": 1,
-  "assetId": "Mesh.heavy_a_base",
-  "displayName": "Heavy A Base",
+  "assetId": "Mesh.standard_a_color",
+  "displayName": "Standard A Color",
   "description": "Project imported OBJ mesh.",
   "tags": [
     "Project",
@@ -11,6 +11,6 @@
     "Mesh"
   ],
   "sourceType": "OBJ",
-  "sourcePath": "assets/meshes/heavy_a_base.obj",
+  "sourcePath": "assets/meshes/standard_a_color.obj",
   "importOptions": {}
 }
