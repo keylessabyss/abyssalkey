@@ -165,14 +165,14 @@
         {
           "type": "AutoCombat",
           "enabled": true,
-          "aimSpeed": 8
+          "aimSpeed": 10
         },
         {
           "type": "AutoInput",
           "enabled": true,
           "inputChannel": "Input1",
           "interval": 0.5,
-          "range": 5
+          "range": 20
         }
       ]
     }

@@ -8,5 +8,5 @@
     "WingScript"
   ],
   "version": "1",
-  "source": "BeginPlay()\n{\n    CreateAgent(Day)\n        .Team(Morninghollow.Day)\n        .Bot(DefaultBot)\n        .Resources(StartingResources);\n\n    CreateAgent(Night)\n        .Team(Morninghollow.Night)\n        .Bot(DefaultBot)\n        .Resources(StartingResources);\n\n    Spawn(Stargate)\n        .Location(-50, 0, 0)\n        .Owner(Day);\n\n    Spawn(Stargate)\n        .Location(50, 0, 0)\n        .Owner(Night);\n\n    Spawn(StandardApex)\n        .Location(0, 0, 0)\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n}\n"
+  "source": "BeginPlay()\n{\n    CreateAgent(Day)\n        .Team(Morninghollow.Day)\n        .Bot(DefaultBot)\n        .Resources(StartingResources);\n\n    CreateAgent(Night)\n        .Team(Morninghollow.Night)\n        .Bot(DefaultBot)\n        .Resources(StartingResources);\n\n    Spawn(Stargate)\n        .Location(-100, 0, 0)\n        .Owner(Day);\n\n    Spawn(Stargate)\n        .Location(100, 0, 0)\n        .Owner(Night);\n\n    Spawn(StandardApex)\n        .Location(0, 0, 0)\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n}\n"
 }
