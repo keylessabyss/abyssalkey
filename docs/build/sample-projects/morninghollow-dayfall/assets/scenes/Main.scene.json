@@ -8,5 +8,17 @@
     "Scene",
     "Project"
   ],
+  "globalReflectionEnvironment": {
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "intensity": 1,
+    "exposure": 1,
+    "linkWorldLight": true,
+    "worldLightOffset": 0
+  },
   "placedFragments": []
 }
