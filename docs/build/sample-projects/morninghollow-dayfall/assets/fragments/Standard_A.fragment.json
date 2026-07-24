@@ -74,39 +74,9 @@
       ],
       "componentDefinitions": [
         {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Left Weapon",
-          "damage": 2,
-          "range": 5,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode1"
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Center Weapon",
-          "damage": 2,
-          "range": 5,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2"
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Right Weapon",
-          "damage": 2,
-          "range": 5,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode3"
-        },
-        {
           "type": "Targeting",
           "enabled": true,
-          "searchRadius": 7,
+          "searchRadius": 15,
           "requireEnemy": true
         },
         {
@@ -130,6 +100,56 @@
           "inputChannel": "Input4",
           "deadZone": 0.12,
           "pitchRate": 1.8
+        },
+        {
+          "type": "Respawn",
+          "enabled": true,
+          "requireRespawnAction": false,
+          "respawnAction": "Input1",
+          "respawnDelay": 0,
+          "respawnTarget": "Initial Spawn"
+        },
+        {
+          "type": "AutoCombat",
+          "enabled": true,
+          "aimSpeed": 8
+        },
+        {
+          "type": "AutoInput",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "interval": 0.2,
+          "range": 15
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 4,
+          "range": 15,
+          "cooldown": 0.2,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode2"
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 2,
+          "range": 15,
+          "cooldown": 0.2,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode1"
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 2,
+          "range": 15,
+          "cooldown": 0.2,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": null
         }
       ]
     },
