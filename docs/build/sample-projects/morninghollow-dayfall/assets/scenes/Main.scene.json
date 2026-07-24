@@ -1,0 +1,12 @@
+{
+  "format": "AbyssalScene",
+  "formatVersion": 1,
+  "assetId": "Scene.Main",
+  "displayName": "Main",
+  "description": "Main project scene.",
+  "tags": [
+    "Scene",
+    "Project"
+  ],
+  "placedFragments": []
+}

@@ -6,7 +6,7 @@
     "Fragment",
     "Project"
   ],
-  "behaviorSource": "Legacy",
+  "behaviorSource": "Authored",
   "behaviorProfiles": [
     {
       "profileId": "None",
@@ -16,56 +16,6 @@
     {
       "profileId": "Player",
       "displayName": "Player",
-      "inputBindings": [
-        {
-          "inputChannel": "Input1",
-          "positiveControls": [
-            "MouseLeft",
-            "Gamepad0.Button0"
-          ],
-          "negativeControls": [],
-          "hardwareControls": [
-            "MouseLeft",
-            "Gamepad0.Button0"
-          ]
-        },
-        {
-          "inputChannel": "Input2",
-          "positiveControls": [
-            "MouseRight",
-            "Gamepad0.Button1"
-          ],
-          "negativeControls": [],
-          "hardwareControls": [
-            "MouseRight",
-            "Gamepad0.Button1"
-          ]
-        },
-        {
-          "inputChannel": "Input3",
-          "positiveControls": [
-            "Space",
-            "Gamepad0.Button2"
-          ],
-          "negativeControls": [],
-          "hardwareControls": [
-            "Space",
-            "Gamepad0.Button2"
-          ]
-        },
-        {
-          "inputChannel": "Input4",
-          "positiveControls": [
-            "ShiftLeft",
-            "Gamepad0.Button3"
-          ],
-          "negativeControls": [],
-          "hardwareControls": [
-            "ShiftLeft",
-            "Gamepad0.Button3"
-          ]
-        }
-      ],
       "componentDefinitions": []
     },
     {
@@ -95,6 +45,24 @@
         1,
         1,
         1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "Tag",
+          "enabled": true,
+          "tags": [
+            "Structure",
+            "Production",
+            "Stargate"
+          ]
+        },
+        {
+          "type": "Resource",
+          "enabled": true,
+          "resourceId": "Health",
+          "maximum": 1000,
+          "startingValue": 1000
+        }
       ]
     },
     {
@@ -192,7 +160,53 @@
       ],
       "meshAssetId": "Mesh.stargate_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "EmptyNode1",
+      "type": "Empty",
+      "name": "Primary Spawn",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "Spawn",
+          "enabled": true
+        }
+      ],
+      "referenceKey": "spawn.primary"
     }
   ],
-  "componentDefinitions": []
+  "componentDefinitions": [
+    {
+      "type": "Tag",
+      "enabled": true,
+      "tags": [
+        "Structure",
+        "Production",
+        "Stargate"
+      ]
+    },
+    {
+      "type": "Resource",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 1000,
+      "startingValue": 1000
+    }
+  ]
 }

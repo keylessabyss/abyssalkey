@@ -1,130 +1,391 @@
 {
-  "assetId": "Fragment.Scout_A",
-  "displayName": "Scout Apex",
-  "description": "Project Fragment assembly authored in Wings Assembler.",
-  "tags": [
-    "Fragment",
-    "Project"
-  ],
-  "assemblyNodes": [
-    {
-      "nodeId": "Root",
-      "type": "Root",
-      "name": "Scout Apex",
-      "parentNodeId": null,
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "nodeId": "MeshNode1",
-      "type": "Mesh",
-      "name": "Scout A Base",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.scout_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
-    },
-    {
-      "nodeId": "MeshNode2",
-      "type": "Mesh",
-      "name": "Scout A Boltz",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.scout_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
-    },
-    {
-      "nodeId": "MeshNode3",
-      "type": "Mesh",
-      "name": "Scout A Color",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.scout_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
-    },
-    {
-      "nodeId": "MeshNode4",
-      "type": "Mesh",
-      "name": "Scout A Emissive",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.scout_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
-    }
-  ],
-  "componentDefinitions": []
+    "assetId":  "Fragment.Scout_A",
+    "displayName":  "Scout Apex",
+    "description":  "Project Fragment assembly authored in Wings Assembler.",
+    "tags":  [
+                 "Fragment",
+                 "Project"
+             ],
+    "assemblyNodes":  [
+                          {
+                              "nodeId":  "Root",
+                              "type":  "Root",
+                              "name":  "Scout Apex",
+                              "parentNodeId":  null,
+                              "localPosition":  [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "componentDefinitions":  [
+                                                           {
+                                                               "type":  "Resource",
+                                                               "enabled":  true,
+                                                               "resourceId":  "Health",
+                                                               "maximum":  60,
+                                                               "startingValue":  60
+                                                           }
+                                                       ]
+                          },
+                          {
+                              "nodeId":  "MeshNode1",
+                              "type":  "Mesh",
+                              "name":  "Scout A Base",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "meshAssetId":  "Mesh.scout_a_base",
+                              "materialAssetId":  "Material.M_Metal_Gray"
+                          },
+                          {
+                              "nodeId":  "MeshNode2",
+                              "type":  "Mesh",
+                              "name":  "Scout A Boltz",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "meshAssetId":  "Mesh.scout_a_boltz",
+                              "materialAssetId":  "Material.M_metal_bronze"
+                          },
+                          {
+                              "nodeId":  "MeshNode3",
+                              "type":  "Mesh",
+                              "name":  "Scout A Color",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "meshAssetId":  "Mesh.scout_a_color",
+                              "materialAssetId":  "Material.M_dynamic_color"
+                          },
+                          {
+                              "nodeId":  "MeshNode4",
+                              "type":  "Mesh",
+                              "name":  "Scout A Emissive",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "meshAssetId":  "Mesh.scout_a_emissive",
+                              "materialAssetId":  "Material.M_dynamic_accent"
+                          },
+                          {
+                              "nodeId":  "EmptyNode1",
+                              "type":  "Empty",
+                              "name":  "Left Muzzle",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0.68,
+                                                    -0.75,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "referenceKey":  "muzzle.left"
+                          },
+                          {
+                              "nodeId":  "EmptyNode2",
+                              "type":  "Empty",
+                              "name":  "Center Muzzle",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0.68,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "referenceKey":  "muzzle.center"
+                          },
+                          {
+                              "nodeId":  "EmptyNode3",
+                              "type":  "Empty",
+                              "name":  "Right Muzzle",
+                              "parentNodeId":  "Root",
+                              "localPosition":  [
+                                                    0.68,
+                                                    0.75,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ],
+                              "referenceKey":  "muzzle.right"
+                          }
+                      ],
+    "componentDefinitions":  [
+                                 {
+                                     "type":  "Resource",
+                                     "enabled":  true,
+                                     "resourceId":  "Health",
+                                     "maximum":  60,
+                                     "startingValue":  60
+                                 }
+                             ],
+    "behaviorSource":  "Authored",
+    "behaviorProfiles":  [
+                             {
+                                 "profileId":  "None",
+                                 "displayName":  "None",
+                                 "componentDefinitions":  [
+
+                                                          ]
+                             },
+                             {
+                                 "profileId":  "Player",
+                                 "displayName":  "Player",
+                                 "inputBindings":  [
+                                                       {
+                                                           "inputChannel":  "Input1",
+                                                           "positiveControls":  [
+                                                                                    "MouseLeft",
+                                                                                    "Gamepad0.Button0"
+                                                                                ],
+                                                           "negativeControls":  [
+
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "MouseLeft",
+                                                                                    "Gamepad0.Button0"
+                                                                                ]
+                                                       },
+                                                       {
+                                                           "inputChannel":  "Input2",
+                                                           "positiveControls":  [
+                                                                                    "Space",
+                                                                                    "Gamepad0.RightStickY"
+                                                                                ],
+                                                           "negativeControls":  [
+                                                                                    "ShiftLeft"
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "Space",
+                                                                                    "Gamepad0.RightStickY"
+                                                                                ]
+                                                       },
+                                                       {
+                                                           "inputChannel":  "Input3",
+                                                           "positiveControls":  [
+                                                                                    "KeyA",
+                                                                                    "Gamepad0.LeftStickX"
+                                                                                ],
+                                                           "negativeControls":  [
+                                                                                    "KeyD"
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "KeyA",
+                                                                                    "Gamepad0.LeftStickX"
+                                                                                ]
+                                                       },
+                                                       {
+                                                           "inputChannel":  "Input4",
+                                                           "positiveControls":  [
+                                                                                    "KeyW",
+                                                                                    "Gamepad0.LeftStickY"
+                                                                                ],
+                                                           "negativeControls":  [
+                                                                                    "KeyS"
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "KeyW",
+                                                                                    "Gamepad0.LeftStickY"
+                                                                                ]
+                                                       }
+                                                   ],
+                                 "componentDefinitions":  [
+                                                              {
+                                                                  "type":  "Weapon",
+                                                                  "enabled":  true,
+                                                                  "name":  "Left Weapon",
+                                                                  "damage":  1,
+                                                                  "range":  5,
+                                                                  "cooldown":  0.3,
+                                                                  "inputChannel":  "Input1",
+                                                                  "muzzleAnchorNodeId":  "EmptyNode1"
+                                                              },
+                                                              {
+                                                                  "type":  "Weapon",
+                                                                  "enabled":  true,
+                                                                  "name":  "Center Weapon",
+                                                                  "damage":  1,
+                                                                  "range":  5,
+                                                                  "cooldown":  0.3,
+                                                                  "inputChannel":  "Input1",
+                                                                  "muzzleAnchorNodeId":  "EmptyNode2"
+                                                              },
+                                                              {
+                                                                  "type":  "Weapon",
+                                                                  "enabled":  true,
+                                                                  "name":  "Right Weapon",
+                                                                  "damage":  1,
+                                                                  "range":  5,
+                                                                  "cooldown":  0.3,
+                                                                  "inputChannel":  "Input1",
+                                                                  "muzzleAnchorNodeId":  "EmptyNode3"
+                                                              },
+                                                              {
+                                                                  "type":  "Targeting",
+                                                                  "enabled":  true,
+                                                                  "searchRadius":  7,
+                                                                  "requireEnemy":  true
+                                                              },
+                                                              {
+                                                                  "type":  "Acceleration",
+                                                                  "enabled":  true,
+                                                                  "inputChannel":  "Input2",
+                                                                  "deadZone":  0.12,
+                                                                  "accelerationRate":  9,
+                                                                  "decelerationRate":  9
+                                                              },
+                                                              {
+                                                                  "type":  "Yaw",
+                                                                  "enabled":  true,
+                                                                  "inputChannel":  "Input3",
+                                                                  "deadZone":  0.12,
+                                                                  "yawRate":  1.8
+                                                              },
+                                                              {
+                                                                  "type":  "Pitch",
+                                                                  "enabled":  true,
+                                                                  "inputChannel":  "Input4",
+                                                                  "deadZone":  0.12,
+                                                                  "pitchRate":  1.8
+                                                              }
+                                                          ]
+                             },
+                             {
+                                 "profileId":  "AI",
+                                 "displayName":  "AI",
+                                 "componentDefinitions":  [
+                                                              {
+                                                                  "type":  "Targeting",
+                                                                  "enabled":  true,
+                                                                  "searchRadius":  7,
+                                                                  "requireEnemy":  true
+                                                              },
+                                                              {
+                                                                  "type":  "Weapon",
+                                                                  "enabled":  true,
+                                                                  "name":  "Center Weapon",
+                                                                  "damage":  1,
+                                                                  "range":  5,
+                                                                  "cooldown":  0.3,
+                                                                  "inputChannel":  "Input1",
+                                                                  "muzzleAnchorNodeId":  "EmptyNode2"
+                                                              },
+                                                              {
+                                                                  "type":  "LanePush",
+                                                                  "enabled":  true,
+                                                                  "speed":  5.5,
+                                                                  "turnSpeed":  6,
+                                                                  "arriveDistance":  0.4,
+                                                                  "pauseForCombat":  true,
+                                                                  "lockToPlane":  true
+                                                              },
+                                                              {
+                                                                  "type":  "AutoCombat",
+                                                                  "enabled":  true,
+                                                                  "aimSpeed":  8
+                                                              },
+                                                              {
+                                                                  "type":  "AutoInput",
+                                                                  "enabled":  true,
+                                                                  "inputChannel":  "Input1",
+                                                                  "interval":  0.3,
+                                                                  "range":  5
+                                                              }
+                                                          ]
+                             }
+                         ]
 }

@@ -1,0 +1,47 @@
+{
+  "format": "AbyssalBundledProject",
+  "formatVersion": 1,
+  "projectManifest": "abyssal.project.json",
+  "meshes": [
+    "assets/meshes/heavy_a_base.mesh.json",
+    "assets/meshes/heavy_a_bolz.mesh.json",
+    "assets/meshes/heavy_a_color.mesh.json",
+    "assets/meshes/heavy_a_emissive.mesh.json",
+    "assets/meshes/scout_a_base.mesh.json",
+    "assets/meshes/scout_a_boltz.mesh.json",
+    "assets/meshes/scout_a_color.mesh.json",
+    "assets/meshes/scout_a_emissive.mesh.json",
+    "assets/meshes/standard_a_base.mesh.json",
+    "assets/meshes/standard_a_boltz.mesh.json",
+    "assets/meshes/standard_a_color.mesh.json",
+    "assets/meshes/standard_a_emissive.mesh.json",
+    "assets/meshes/stargate_a_base.mesh.json",
+    "assets/meshes/stargate_a_boltz.mesh.json",
+    "assets/meshes/stargate_a_color.mesh.json",
+    "assets/meshes/stargate_a_emissive.mesh.json"
+  ],
+  "materials": [
+    "assets/materials/M_dynamic_accent.material.json",
+    "assets/materials/M_dynamic_color.material.json",
+    "assets/materials/M_metal_bronze.material.json",
+    "assets/materials/M_Metal_Gray.material.json",
+    "assets/materials/M_Player_1_ship_color.material.json",
+    "assets/materials/M_Player_1_ship_emissive.material.json"
+  ],
+  "fragments": [
+    "assets/fragments/Heavy_A.fragment.json",
+    "assets/fragments/Scout_A.fragment.json",
+    "assets/fragments/Standard_A.fragment.json",
+    "assets/fragments/Stargate_A.fragment.json"
+  ],
+  "scenes": [
+    "assets/scenes/Main.scene.json"
+  ],
+  "wingScripts": [
+    "assets/wingscripts/Morninghollow.Prologue.wingscript.json"
+  ],
+  "wingsWorlds": [
+    "assets/wingsworlds/MorninghollowPrologue.wingsworld.json"
+  ],
+  "defaultSceneAssetId": "Scene.Main"
+}

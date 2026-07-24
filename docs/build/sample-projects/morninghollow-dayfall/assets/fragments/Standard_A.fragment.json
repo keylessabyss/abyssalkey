@@ -18,6 +18,18 @@
       "displayName": "Player",
       "inputBindings": [
         {
+          "inputChannel": "Input1",
+          "positiveControls": [
+            "MouseLeft",
+            "Gamepad0.Button0"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "MouseLeft",
+            "Gamepad0.Button0"
+          ]
+        },
+        {
           "inputChannel": "Input2",
           "positiveControls": [
             "Space",
@@ -62,11 +74,40 @@
       ],
       "componentDefinitions": [
         {
-          "type": "AutoInput",
+          "type": "Weapon",
           "enabled": true,
+          "name": "Left Weapon",
+          "damage": 2,
+          "range": 5,
+          "cooldown": 0.5,
           "inputChannel": "Input1",
-          "interval": 0.25,
-          "range": 10
+          "muzzleAnchorNodeId": "EmptyNode1"
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Center Weapon",
+          "damage": 2,
+          "range": 5,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode2"
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Right Weapon",
+          "damage": 2,
+          "range": 5,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode3"
+        },
+        {
+          "type": "Targeting",
+          "enabled": true,
+          "searchRadius": 7,
+          "requireEnemy": true
         },
         {
           "type": "Acceleration",
@@ -95,7 +136,45 @@
     {
       "profileId": "AI",
       "displayName": "AI",
-      "componentDefinitions": []
+      "componentDefinitions": [
+        {
+          "type": "Targeting",
+          "enabled": true,
+          "searchRadius": 20,
+          "requireEnemy": true
+        },
+        {
+          "type": "Weapon",
+          "enabled": true,
+          "name": "Center Weapon",
+          "damage": 10,
+          "range": 20,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode2"
+        },
+        {
+          "type": "LanePush",
+          "enabled": true,
+          "speed": 4,
+          "turnSpeed": 4,
+          "arriveDistance": 10,
+          "pauseForCombat": true,
+          "lockToPlane": true
+        },
+        {
+          "type": "AutoCombat",
+          "enabled": true,
+          "aimSpeed": 8
+        },
+        {
+          "type": "AutoInput",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "interval": 0.5,
+          "range": 5
+        }
+      ]
     }
   ],
   "assemblyNodes": [
@@ -119,6 +198,15 @@
         1,
         1,
         1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "Resource",
+          "enabled": true,
+          "resourceId": "Health",
+          "maximum": 30,
+          "startingValue": 30
+        }
       ]
     },
     {
@@ -220,10 +308,10 @@
     {
       "nodeId": "EmptyNode1",
       "type": "Empty",
-      "name": "Anchor",
+      "name": "Left Muzzle",
       "parentNodeId": "Root",
       "localPosition": [
-        2,
+        2.5999999046325684,
         -1,
         0
       ],
@@ -238,43 +326,38 @@
         1,
         1
       ],
-      "behaviorProfiles": [
-        {
-          "profileId": "Player",
-          "displayName": "Player",
-          "componentDefinitions": [
-            {
-              "type": "Weapon",
-              "enabled": true,
-              "name": "Ship Weapon",
-              "damage": 2,
-              "range": 5,
-              "cooldown": 0.5,
-              "inputChannel": "Input1",
-              "muzzleAnchorNodeId": null
-            },
-            {
-              "type": "Targeting",
-              "enabled": true,
-              "searchRadius": 7,
-              "requireEnemy": true
-            },
-            {
-              "type": "AutoCombat",
-              "enabled": true,
-              "aimSpeed": 8
-            }
-          ]
-        }
-      ]
+      "referenceKey": "muzzle.left"
+    },
+    {
+      "nodeId": "EmptyNode2",
+      "type": "Empty",
+      "name": "Center Muzzle",
+      "parentNodeId": "Root",
+      "localPosition": [
+        2.5999999046325684,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "muzzle.center"
     },
     {
       "nodeId": "EmptyNode3",
       "type": "Empty",
-      "name": "Anchor (2)",
+      "name": "Right Muzzle",
       "parentNodeId": "Root",
       "localPosition": [
-        2,
+        2.5999999046325684,
         1,
         0
       ],
@@ -289,36 +372,16 @@
         1,
         1
       ],
-      "behaviorProfiles": [
-        {
-          "profileId": "Player",
-          "displayName": "Player",
-          "componentDefinitions": [
-            {
-              "type": "Weapon",
-              "enabled": true,
-              "name": "Ship Weapon",
-              "damage": 2,
-              "range": 5,
-              "cooldown": 2,
-              "inputChannel": "Input1",
-              "muzzleAnchorNodeId": null
-            },
-            {
-              "type": "Targeting",
-              "enabled": true,
-              "searchRadius": 7,
-              "requireEnemy": true
-            },
-            {
-              "type": "AutoCombat",
-              "enabled": true,
-              "aimSpeed": 8
-            }
-          ]
-        }
-      ]
+      "referenceKey": "muzzle.right"
     }
   ],
-  "componentDefinitions": []
+  "componentDefinitions": [
+    {
+      "type": "Resource",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 30,
+      "startingValue": 30
+    }
+  ]
 }
