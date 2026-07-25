@@ -319,7 +319,6 @@
         1,
         1
       ],
-      "role": "MeshDataRoot",
       "meshAssetId": "Mesh.standard_a_ship",
       "meshMaterialBindings": [
         {
@@ -330,17 +329,17 @@
         {
           "meshId": "standard_a_emissive.standard_a_emissive.03___default.off",
           "materialAssetId": "Material.M_dynamic_accent",
-          "smoothingGroupMask": 1
+          "smoothingGroupMask": 0
         },
         {
           "meshId": "standard_a_boltz.standard_a_boltz.04___default.off",
           "materialAssetId": "Material.M_metal_bronze",
-          "smoothingGroupMask": 1
+          "smoothingGroupMask": 0
         },
         {
           "meshId": "standard_a_color.standard_a_color.02___default.off",
           "materialAssetId": "Material.M_dynamic_color",
-          "smoothingGroupMask": 1
+          "smoothingGroupMask": 0
         }
       ],
       "uvwProjection": {
@@ -378,8 +377,8 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.standard_a_ship",
+      "meshId": "standard_a_base.standard_a_base.01___default.off",
       "materialAssetId": "Material.M_Metal_Gray"
     },
     {
@@ -403,8 +402,8 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.standard_a_ship",
+      "meshId": "standard_a_emissive.standard_a_emissive.03___default.off",
       "materialAssetId": "Material.M_dynamic_accent"
     },
     {
@@ -428,8 +427,8 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.standard_a_ship",
+      "meshId": "standard_a_boltz.standard_a_boltz.04___default.off",
       "materialAssetId": "Material.M_metal_bronze"
     },
     {
@@ -453,8 +452,8 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.standard_a_ship",
+      "meshId": "standard_a_color.standard_a_color.02___default.off",
       "materialAssetId": "Material.M_dynamic_color"
     }
   ],
