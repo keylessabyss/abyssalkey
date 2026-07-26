@@ -1,0 +1,118 @@
+﻿{
+    "assetId":  "Fragment.Standard_A",
+    "displayName":  "Standard Apex",
+    "description":  "Project Fragment assembly authored in Wings Assembler.",
+    "tags":  [
+                 "Fragment",
+                 "Project"
+             ],
+    "behaviorSource":  "Legacy",
+    "behaviorProfiles":  [
+                             {
+                                 "profileId":  "None",
+                                 "displayName":  "None",
+                                 "componentDefinitions":  [
+
+                                                          ]
+                             },
+                             {
+                                 "profileId":  "Player",
+                                 "displayName":  "Player",
+                                 "inputBindings":  [
+                                                       {
+                                                           "inputChannel":  "Input1",
+                                                           "positiveControls":  [
+                                                                                    "MouseLeft",
+                                                                                    "Gamepad0.Button0"
+                                                                                ],
+                                                           "negativeControls":  [
+
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "MouseLeft",
+                                                                                    "Gamepad0.Button0"
+                                                                                ]
+                                                       },
+                                                       {
+                                                           "inputChannel":  "Input2",
+                                                           "positiveControls":  [
+                                                                                    "MouseRight",
+                                                                                    "Gamepad0.Button1"
+                                                                                ],
+                                                           "negativeControls":  [
+
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "MouseRight",
+                                                                                    "Gamepad0.Button1"
+                                                                                ]
+                                                       },
+                                                       {
+                                                           "inputChannel":  "Input3",
+                                                           "positiveControls":  [
+                                                                                    "Space",
+                                                                                    "Gamepad0.Button2"
+                                                                                ],
+                                                           "negativeControls":  [
+
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "Space",
+                                                                                    "Gamepad0.Button2"
+                                                                                ]
+                                                       },
+                                                       {
+                                                           "inputChannel":  "Input4",
+                                                           "positiveControls":  [
+                                                                                    "ShiftLeft",
+                                                                                    "Gamepad0.Button3"
+                                                                                ],
+                                                           "negativeControls":  [
+
+                                                                                ],
+                                                           "hardwareControls":  [
+                                                                                    "ShiftLeft",
+                                                                                    "Gamepad0.Button3"
+                                                                                ]
+                                                       }
+                                                   ],
+                                 "componentDefinitions":  [
+
+                                                          ]
+                             },
+                             {
+                                 "profileId":  "AI",
+                                 "displayName":  "AI",
+                                 "componentDefinitions":  [
+
+                                                          ]
+                             }
+                         ],
+    "assemblyNodes":  [
+                          {
+                              "nodeId":  "Root",
+                              "type":  "Root",
+                              "name":  "Standard Apex",
+                              "parentNodeId":  null,
+                              "localPosition":  [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                              "localRotation":  [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                ],
+                              "localScale":  [
+                                                 1,
+                                                 1,
+                                                 1
+                                             ]
+                          }
+                      ],
+    "componentDefinitions":  [
+
+                             ]
+}

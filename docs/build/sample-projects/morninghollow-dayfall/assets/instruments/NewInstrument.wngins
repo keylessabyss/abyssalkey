@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.NewInstrument",
+  "displayName": "Noise 1",
+  "description": "",
+  "tags": [
+    "Instrument"
+  ],
+  "version": "1",
+  "parameters": {
+    "oscillator": "Noise",
+    "frequency": 800,
+    "volume": 0.7,
+    "attack": 0.01,
+    "decay": 0.12,
+    "sustain": 0.8,
+    "release": 0.1,
+    "dutyCycle": 0.25
+  }
+}

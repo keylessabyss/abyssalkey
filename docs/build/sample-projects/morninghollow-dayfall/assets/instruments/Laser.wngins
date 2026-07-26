@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Laser",
+  "displayName": "laser_1_pew",
+  "description": "",
+  "tags": [
+    "Instrument"
+  ],
+  "version": "1",
+  "parameters": {
+    "oscillator": "Pulse",
+    "frequency": 1000,
+    "volume": 0.7,
+    "attack": 0.1,
+    "decay": 0.1,
+    "sustain": 0.1,
+    "release": 0.08,
+    "dutyCycle": 0.25
+  }
+}

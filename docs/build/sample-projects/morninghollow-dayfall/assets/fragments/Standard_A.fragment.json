@@ -322,23 +322,23 @@
       "meshAssetId": "Mesh.standard_a_ship",
       "meshMaterialBindings": [
         {
-          "meshId": "standard_a_base.standard_a_base.01___default.off",
+          "meshId": "standard_a_base1",
           "materialAssetId": "Material.M_Metal_Gray",
           "smoothingGroupMask": 0
         },
         {
-          "meshId": "standard_a_emissive.standard_a_emissive.03___default.off",
-          "materialAssetId": "Material.M_dynamic_accent",
-          "smoothingGroupMask": 0
-        },
-        {
-          "meshId": "standard_a_boltz.standard_a_boltz.04___default.off",
+          "meshId": "standard_a_boltz1",
           "materialAssetId": "Material.M_metal_bronze",
           "smoothingGroupMask": 0
         },
         {
-          "meshId": "standard_a_color.standard_a_color.02___default.off",
+          "meshId": "standard_a_color1",
           "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "standard_a_emissive1",
+          "materialAssetId": "Material.M_dynamic_accent",
           "smoothingGroupMask": 0
         }
       ],
@@ -354,12 +354,13 @@
           4.042399883270264,
           0.7124999761581421
         ]
-      }
+      },
+      "automaticUVGeneration": true
     },
     {
       "nodeId": "MeshNode2",
       "type": "Mesh",
-      "name": "standard_a_base",
+      "name": "standard_a_base1",
       "parentNodeId": "MeshDataRoot1",
       "localPosition": [
         0,
@@ -378,13 +379,13 @@
         1
       ],
       "meshAssetId": "Mesh.standard_a_ship",
-      "meshId": "standard_a_base.standard_a_base.01___default.off",
+      "meshId": "standard_a_base1",
       "materialAssetId": "Material.M_Metal_Gray"
     },
     {
       "nodeId": "MeshNode3",
       "type": "Mesh",
-      "name": "standard_a_emissive",
+      "name": "standard_a_boltz1",
       "parentNodeId": "MeshDataRoot1",
       "localPosition": [
         0,
@@ -403,13 +404,13 @@
         1
       ],
       "meshAssetId": "Mesh.standard_a_ship",
-      "meshId": "standard_a_emissive.standard_a_emissive.03___default.off",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "meshId": "standard_a_boltz1",
+      "materialAssetId": "Material.M_metal_bronze"
     },
     {
       "nodeId": "MeshNode4",
       "type": "Mesh",
-      "name": "standard_a_boltz",
+      "name": "standard_a_color1",
       "parentNodeId": "MeshDataRoot1",
       "localPosition": [
         0,
@@ -428,13 +429,13 @@
         1
       ],
       "meshAssetId": "Mesh.standard_a_ship",
-      "meshId": "standard_a_boltz.standard_a_boltz.04___default.off",
-      "materialAssetId": "Material.M_metal_bronze"
+      "meshId": "standard_a_color1",
+      "materialAssetId": "Material.M_dynamic_color"
     },
     {
       "nodeId": "MeshNode5",
       "type": "Mesh",
-      "name": "standard_a_color",
+      "name": "standard_a_emissive1",
       "parentNodeId": "MeshDataRoot1",
       "localPosition": [
         0,
@@ -453,8 +454,8 @@
         1
       ],
       "meshAssetId": "Mesh.standard_a_ship",
-      "meshId": "standard_a_color.standard_a_color.02___default.off",
-      "materialAssetId": "Material.M_dynamic_color"
+      "meshId": "standard_a_emissive1",
+      "materialAssetId": "Material.M_dynamic_accent"
     }
   ],
   "componentDefinitions": [

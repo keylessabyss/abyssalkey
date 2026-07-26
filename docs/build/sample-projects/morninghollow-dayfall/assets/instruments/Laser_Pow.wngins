@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Laser_Pow",
+  "displayName": "Laser Pow",
+  "description": "",
+  "tags": [
+    "Instrument"
+  ],
+  "version": "1",
+  "parameters": {
+    "oscillator": "Pulse",
+    "frequency": 200,
+    "volume": 0.7,
+    "attack": 0.01,
+    "decay": 0.12,
+    "sustain": 0.35,
+    "release": 3,
+    "dutyCycle": 0.25
+  }
+}
