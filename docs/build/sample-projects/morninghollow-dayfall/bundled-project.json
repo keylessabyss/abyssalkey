@@ -44,5 +44,13 @@
   "wingsWorlds": [
     "assets/wingsworlds/MorninghollowPrologue.wingsworld.json"
   ],
+  "instruments": [
+    "assets/instruments/Laser_Pow.wngins",
+    "assets/instruments/Laser.wngins",
+    "assets/instruments/NewInstrument.wngins"
+  ],
+  "audioTracks": [
+    "assets/tracks/Track1785090983231.wngtrk"
+  ],
   "defaultSceneAssetId": "Scene.Main"
 }
