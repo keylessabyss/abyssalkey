@@ -1,0 +1,12 @@
+{
+  "format": "AbyssalContentBrowserLayout",
+  "formatVersion": 1,
+  "folders": [
+    {
+      "id": "Content/Instruments/engine",
+      "displayName": "Engine",
+      "parentId": "Content/Instruments"
+    }
+  ],
+  "assetFolders": {}
+}
