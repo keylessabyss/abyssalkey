@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.UI.Cancel",
+  "displayName": "Cancel",
+  "description": "Project ui instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "UI"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Triangle",
+    "frequency": 180,
+    "volume": 0.45,
+    "attack": 0.001,
+    "decay": 0.12,
+    "sustain": 0.05,
+    "release": 0.08,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Triangle",
+        "frequency": 180,
+        "mixPercent": 70,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 180,
+        "mixPercent": 30,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

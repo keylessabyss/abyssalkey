@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Simple.NoiseHiHat",
+  "displayName": "Noise Hi-Hat",
+  "description": "Project simple instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Simple"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Noise",
+    "frequency": 5000,
+    "volume": 0.35,
+    "attack": 0.001,
+    "decay": 0.04,
+    "sustain": 0,
+    "release": 0.06,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Noise",
+        "frequency": 5000,
+        "mixPercent": 95,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Square",
+        "frequency": 5000,
+        "mixPercent": 5,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.MissileLaunch",
+  "displayName": "Missile Launch",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Noise",
+    "frequency": 140,
+    "volume": 0.8,
+    "attack": 0.01,
+    "decay": 0.2,
+    "sustain": 0.15,
+    "release": 0.4,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Noise",
+        "frequency": 140,
+        "mixPercent": 45,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 140,
+        "mixPercent": 35,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Saw",
+        "frequency": 140,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

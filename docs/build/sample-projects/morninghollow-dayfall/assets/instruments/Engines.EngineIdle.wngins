@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Engines.EngineIdle",
+  "displayName": "Engine Idle",
+  "description": "Project engines instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Engines"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Triangle",
+    "frequency": 90,
+    "volume": 0.45,
+    "attack": 0.04,
+    "decay": 0.3,
+    "sustain": 0.7,
+    "release": 0.25,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Triangle",
+        "frequency": 90,
+        "mixPercent": 55,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 90,
+        "mixPercent": 30,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 90,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

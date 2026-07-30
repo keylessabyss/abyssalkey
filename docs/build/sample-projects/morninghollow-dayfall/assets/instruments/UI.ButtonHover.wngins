@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.UI.ButtonHover",
+  "displayName": "Button Hover",
+  "description": "Project ui instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "UI"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 720,
+    "volume": 0.35,
+    "attack": 0.001,
+    "decay": 0.04,
+    "sustain": 0,
+    "release": 0.04,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 720,
+        "mixPercent": 90,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 720,
+        "mixPercent": 10,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

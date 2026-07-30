@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Ambience.SpaceHum",
+  "displayName": "Space Hum",
+  "description": "Project ambience instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Ambience"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 55,
+    "volume": 0.2,
+    "attack": 0.1,
+    "decay": 0.35,
+    "sustain": 0.8,
+    "release": 0.4,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 55,
+        "mixPercent": 65,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 55,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 55,
+        "mixPercent": 10,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

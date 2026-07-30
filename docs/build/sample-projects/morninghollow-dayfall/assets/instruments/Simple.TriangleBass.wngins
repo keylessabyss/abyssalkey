@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Simple.TriangleBass",
+  "displayName": "Triangle Bass",
+  "description": "Project simple instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Simple"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Triangle",
+    "frequency": 110,
+    "volume": 0.6,
+    "attack": 0.01,
+    "decay": 0.18,
+    "sustain": 0.55,
+    "release": 0.2,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Triangle",
+        "frequency": 110,
+        "mixPercent": 80,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 110,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

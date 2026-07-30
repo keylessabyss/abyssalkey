@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Simple.Kick",
+  "displayName": "Kick",
+  "description": "Project simple instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Simple"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Noise",
+    "frequency": 70,
+    "volume": 0.7,
+    "attack": 0.001,
+    "decay": 0.18,
+    "sustain": 0,
+    "release": 0.14,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Noise",
+        "frequency": 70,
+        "mixPercent": 55,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Square",
+        "frequency": 70,
+        "mixPercent": 45,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

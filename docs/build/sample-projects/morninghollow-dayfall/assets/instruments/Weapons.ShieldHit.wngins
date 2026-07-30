@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.ShieldHit",
+  "displayName": "Shield Hit",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Square",
+    "frequency": 340,
+    "volume": 0.7,
+    "attack": 0.001,
+    "decay": 0.12,
+    "sustain": 0.1,
+    "release": 0.16,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Square",
+        "frequency": 340,
+        "mixPercent": 45,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 340,
+        "mixPercent": 30,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 340,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

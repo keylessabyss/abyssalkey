@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Ambience.Alarm",
+  "displayName": "Alarm",
+  "description": "Project ambience instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Ambience"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Square",
+    "frequency": 440,
+    "volume": 0.45,
+    "attack": 0.01,
+    "decay": 0.2,
+    "sustain": 0.45,
+    "release": 0.18,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Square",
+        "frequency": 440,
+        "mixPercent": 60,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 440,
+        "mixPercent": 40,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

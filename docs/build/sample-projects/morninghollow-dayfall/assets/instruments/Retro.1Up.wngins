@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Retro.1Up",
+  "displayName": "1-Up",
+  "description": "Project retro instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Retro"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 880,
+    "volume": 0.55,
+    "attack": 0.001,
+    "decay": 0.12,
+    "sustain": 0.1,
+    "release": 0.1,
+    "dutyCycle": 0.25,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 880,
+        "mixPercent": 60,
+        "dutyCycle": 0.25
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 880,
+        "mixPercent": 30,
+        "dutyCycle": 0.25
+      },
+      {
+        "oscillator": "Square",
+        "frequency": 880,
+        "mixPercent": 10,
+        "dutyCycle": 0.25
+      }
+    ]
+  }
+}

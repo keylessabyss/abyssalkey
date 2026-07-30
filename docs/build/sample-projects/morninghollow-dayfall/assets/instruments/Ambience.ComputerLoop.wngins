@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Ambience.ComputerLoop",
+  "displayName": "Computer Loop",
+  "description": "Project ambience instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Ambience"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Pulse",
+    "frequency": 240,
+    "volume": 0.2,
+    "attack": 0.04,
+    "decay": 0.2,
+    "sustain": 0.65,
+    "release": 0.2,
+    "dutyCycle": 0.25,
+    "oscillators": [
+      {
+        "oscillator": "Pulse",
+        "frequency": 240,
+        "mixPercent": 45,
+        "dutyCycle": 0.25
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 240,
+        "mixPercent": 35,
+        "dutyCycle": 0.25
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 240,
+        "mixPercent": 20,
+        "dutyCycle": 0.25
+      }
+    ]
+  }
+}

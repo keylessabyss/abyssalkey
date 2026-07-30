@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.PlasmaShot",
+  "displayName": "Plasma Shot",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Triangle",
+    "frequency": 520,
+    "volume": 0.75,
+    "attack": 0.01,
+    "decay": 0.15,
+    "sustain": 0.1,
+    "release": 0.12,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Triangle",
+        "frequency": 520,
+        "mixPercent": 50,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 520,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 520,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.HeavyLaser",
+  "displayName": "Heavy Laser",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Saw",
+    "frequency": 180,
+    "volume": 0.8,
+    "attack": 0.02,
+    "decay": 0.25,
+    "sustain": 0.35,
+    "release": 0.18,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Saw",
+        "frequency": 180,
+        "mixPercent": 50,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Pulse",
+        "frequency": 180,
+        "mixPercent": 30,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 180,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

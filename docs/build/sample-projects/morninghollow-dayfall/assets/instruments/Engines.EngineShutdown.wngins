@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Engines.EngineShutdown",
+  "displayName": "Engine Shutdown",
+  "description": "Project engines instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Engines"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Triangle",
+    "frequency": 70,
+    "volume": 0.5,
+    "attack": 0.01,
+    "decay": 0.35,
+    "sustain": 0.2,
+    "release": 0.5,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Triangle",
+        "frequency": 70,
+        "mixPercent": 60,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Saw",
+        "frequency": 70,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 70,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

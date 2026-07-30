@@ -1,0 +1,37 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.UI.Accept",
+  "displayName": "Accept",
+  "description": "Project ui instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "UI"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 880,
+    "volume": 0.5,
+    "attack": 0.001,
+    "decay": 0.1,
+    "sustain": 0.05,
+    "release": 0.08,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 880,
+        "mixPercent": 80,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 880,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

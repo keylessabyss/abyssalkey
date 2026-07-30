@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.PulseCannon",
+  "displayName": "Pulse Cannon",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Pulse",
+    "frequency": 260,
+    "volume": 0.8,
+    "attack": 0.01,
+    "decay": 0.18,
+    "sustain": 0.15,
+    "release": 0.2,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Pulse",
+        "frequency": 260,
+        "mixPercent": 70,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 260,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 260,
+        "mixPercent": 10,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

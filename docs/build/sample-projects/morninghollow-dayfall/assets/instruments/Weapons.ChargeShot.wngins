@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.ChargeShot",
+  "displayName": "Charge Shot",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 220,
+    "volume": 0.7,
+    "attack": 0.2,
+    "decay": 0.25,
+    "sustain": 0.6,
+    "release": 0.3,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 220,
+        "mixPercent": 45,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Saw",
+        "frequency": 220,
+        "mixPercent": 35,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 220,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

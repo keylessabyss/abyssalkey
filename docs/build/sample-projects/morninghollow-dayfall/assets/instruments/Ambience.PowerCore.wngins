@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Ambience.PowerCore",
+  "displayName": "Power Core",
+  "description": "Project ambience instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Ambience"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 75,
+    "volume": 0.3,
+    "attack": 0.08,
+    "decay": 0.25,
+    "sustain": 0.7,
+    "release": 0.35,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 75,
+        "mixPercent": 45,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 75,
+        "mixPercent": 35,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Saw",
+        "frequency": 75,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

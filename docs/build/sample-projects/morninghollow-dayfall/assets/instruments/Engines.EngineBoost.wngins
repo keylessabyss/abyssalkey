@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Engines.EngineBoost",
+  "displayName": "Engine Boost",
+  "description": "Project engines instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Engines"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Saw",
+    "frequency": 150,
+    "volume": 0.6,
+    "attack": 0.02,
+    "decay": 0.2,
+    "sustain": 0.65,
+    "release": 0.2,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Saw",
+        "frequency": 150,
+        "mixPercent": 40,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 150,
+        "mixPercent": 35,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 150,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

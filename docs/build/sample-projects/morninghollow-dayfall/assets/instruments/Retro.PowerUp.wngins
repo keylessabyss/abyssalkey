@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Retro.PowerUp",
+  "displayName": "Power Up",
+  "description": "Project retro instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Retro"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 660,
+    "volume": 0.55,
+    "attack": 0.01,
+    "decay": 0.18,
+    "sustain": 0.35,
+    "release": 0.15,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 660,
+        "mixPercent": 60,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Saw",
+        "frequency": 660,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 660,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

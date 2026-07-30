@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.Railgun",
+  "displayName": "Railgun",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Pulse",
+    "frequency": 90,
+    "volume": 0.9,
+    "attack": 0.005,
+    "decay": 0.08,
+    "sustain": 0.05,
+    "release": 0.3,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Pulse",
+        "frequency": 90,
+        "mixPercent": 45,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 90,
+        "mixPercent": 40,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Square",
+        "frequency": 90,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

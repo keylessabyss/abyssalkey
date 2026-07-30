@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Engines.WarpCharge",
+  "displayName": "Warp Charge",
+  "description": "Project engines instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Engines"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 110,
+    "volume": 0.55,
+    "attack": 0.15,
+    "decay": 0.3,
+    "sustain": 0.65,
+    "release": 0.4,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 110,
+        "mixPercent": 55,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 110,
+        "mixPercent": 30,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 110,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

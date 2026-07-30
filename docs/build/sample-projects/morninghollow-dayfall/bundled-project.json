@@ -45,12 +45,52 @@
     "assets/wingsworlds/MorninghollowPrologue.wingsworld.json"
   ],
   "instruments": [
-    "assets/instruments/Laser_Pow.wngins",
-    "assets/instruments/Laser.wngins",
-    "assets/instruments/NewInstrument.wngins"
+    "assets/instruments/Ambience.Alarm.wngins",
+    "assets/instruments/Ambience.ComputerLoop.wngins",
+    "assets/instruments/Ambience.PowerCore.wngins",
+    "assets/instruments/Ambience.Rain.wngins",
+    "assets/instruments/Ambience.SpaceHum.wngins",
+    "assets/instruments/Ambience.Wind.wngins",
+    "assets/instruments/Engines.EngineBoost.wngins",
+    "assets/instruments/Engines.EngineIdle.wngins",
+    "assets/instruments/Engines.EngineShutdown.wngins",
+    "assets/instruments/Engines.ThrusterBurst.wngins",
+    "assets/instruments/Engines.WarpCharge.wngins",
+    "assets/instruments/Retro.1Up.wngins",
+    "assets/instruments/Retro.Coin.wngins",
+    "assets/instruments/Retro.Jump.wngins",
+    "assets/instruments/Retro.PowerDown.wngins",
+    "assets/instruments/Retro.PowerUp.wngins",
+    "assets/instruments/Retro.Teleport.wngins",
+    "assets/instruments/Simple.Kick.wngins",
+    "assets/instruments/Simple.NoiseHiHat.wngins",
+    "assets/instruments/Simple.NoiseSnare.wngins",
+    "assets/instruments/Simple.PulseLead.wngins",
+    "assets/instruments/Simple.SawPad.wngins",
+    "assets/instruments/Simple.SquareLead.wngins",
+    "assets/instruments/Simple.Tom.wngins",
+    "assets/instruments/Simple.TriangleBass.wngins",
+    "assets/instruments/UI.Accept.wngins",
+    "assets/instruments/UI.ButtonClick.wngins",
+    "assets/instruments/UI.ButtonHover.wngins",
+    "assets/instruments/UI.Cancel.wngins",
+    "assets/instruments/UI.Error.wngins",
+    "assets/instruments/UI.Notification.wngins",
+    "assets/instruments/UI.Success.wngins",
+    "assets/instruments/Weapons.ChargeShot.wngins",
+    "assets/instruments/Weapons.ExplosionLarge.wngins",
+    "assets/instruments/Weapons.ExplosionSmall.wngins",
+    "assets/instruments/Weapons.HeavyLaser.wngins",
+    "assets/instruments/Weapons.MissileLaunch.wngins",
+    "assets/instruments/Weapons.PlasmaShot.wngins",
+    "assets/instruments/Weapons.PulseCannon.wngins",
+    "assets/instruments/Weapons.Railgun.wngins",
+    "assets/instruments/Weapons.Ricochet.wngins",
+    "assets/instruments/Weapons.ShieldHit.wngins"
   ],
-  "audioTracks": [
-    "assets/tracks/Track1785090983231.wngtrk"
+  "audioTracks": [],
+  "particles": [
+    "assets/particles/Particle1785182623798.wngprt"
   ],
   "defaultSceneAssetId": "Scene.Main"
 }

@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.ExplosionLarge",
+  "displayName": "Explosion Large",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Noise",
+    "frequency": 55,
+    "volume": 1,
+    "attack": 0.005,
+    "decay": 0.6,
+    "sustain": 0.15,
+    "release": 0.8,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Noise",
+        "frequency": 55,
+        "mixPercent": 60,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Saw",
+        "frequency": 55,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 55,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

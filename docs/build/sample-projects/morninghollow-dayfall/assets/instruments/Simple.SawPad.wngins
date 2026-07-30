@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Simple.SawPad",
+  "displayName": "Saw Pad",
+  "description": "Project simple instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Simple"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Saw",
+    "frequency": 180,
+    "volume": 0.4,
+    "attack": 0.12,
+    "decay": 0.35,
+    "sustain": 0.75,
+    "release": 0.5,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Saw",
+        "frequency": 180,
+        "mixPercent": 70,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 180,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 180,
+        "mixPercent": 10,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

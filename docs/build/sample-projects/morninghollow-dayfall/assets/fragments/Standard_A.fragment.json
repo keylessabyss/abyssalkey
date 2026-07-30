@@ -456,6 +456,36 @@
       "meshAssetId": "Mesh.standard_a_ship",
       "meshId": "standard_a_emissive1",
       "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "EmptyNode4",
+      "type": "Empty",
+      "name": "Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -1.3282512426376343,
+        -0.5620898008346558,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "ParticleEmitter",
+          "enabled": true,
+          "particleAssetId": "Particle.Particle1785182623798",
+          "autoPlay": true
+        }
+      ]
     }
   ],
   "componentDefinitions": [

@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Weapons.Ricochet",
+  "displayName": "Ricochet",
+  "description": "Project weapons instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Weapons"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Square",
+    "frequency": 1600,
+    "volume": 0.7,
+    "attack": 0.001,
+    "decay": 0.05,
+    "sustain": 0.05,
+    "release": 0.08,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Square",
+        "frequency": 1600,
+        "mixPercent": 55,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Sine",
+        "frequency": 1600,
+        "mixPercent": 30,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 1600,
+        "mixPercent": 15,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format": "AbyssalWingsInstrument",
+  "formatVersion": 1,
+  "assetId": "Instrument.Retro.Teleport",
+  "displayName": "Teleport",
+  "description": "Project retro instrument for Morninghollow Dayfall.",
+  "tags": [
+    "Instrument",
+    "Retro"
+  ],
+  "version": "1",
+  "author": "Morninghollow Dayfall",
+  "parameters": {
+    "oscillator": "Sine",
+    "frequency": 980,
+    "volume": 0.5,
+    "attack": 0.02,
+    "decay": 0.25,
+    "sustain": 0.3,
+    "release": 0.2,
+    "dutyCycle": 0.5,
+    "oscillators": [
+      {
+        "oscillator": "Sine",
+        "frequency": 980,
+        "mixPercent": 55,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Noise",
+        "frequency": 980,
+        "mixPercent": 25,
+        "dutyCycle": 0.5
+      },
+      {
+        "oscillator": "Triangle",
+        "frequency": 980,
+        "mixPercent": 20,
+        "dutyCycle": 0.5
+      }
+    ]
+  }
+}
