@@ -463,9 +463,9 @@
       "name": "Anchor",
       "parentNodeId": "Root",
       "localPosition": [
-        -1.3282512426376343,
+        -1.2644598484039307,
         -0.5620898008346558,
-        0
+        -0.11084619164466858
       ],
       "localRotation": [
         0,
@@ -474,8 +474,8 @@
         1
       ],
       "localScale": [
-        1,
-        1,
+        2,
+        3,
         1
       ],
       "componentDefinitions": [
