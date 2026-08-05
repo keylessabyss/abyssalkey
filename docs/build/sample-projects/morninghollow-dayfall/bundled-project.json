@@ -88,7 +88,12 @@
     "assets/instruments/Weapons.Ricochet.wngins",
     "assets/instruments/Weapons.ShieldHit.wngins"
   ],
-  "audioTracks": [],
+  "audioTracks": [
+    "assets/tracks/Track1785858162715.wngtrk"
+  ],
+  "audioCues": [
+    "assets/cues/Cue1785917775128.wngcue"
+  ],
   "particles": [
     "assets/particles/Particle1785182623798.wngprt"
   ],

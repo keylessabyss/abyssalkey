@@ -1,0 +1,14 @@
+{
+  "format": "AbyssalWingsAudioCue",
+  "formatVersion": 1,
+  "assetId": "AudioCue.Cue1785917775128",
+  "displayName": "Standard Weapon Fire Cue",
+  "description": "",
+  "tags": [
+    "AudioCue"
+  ],
+  "audioTrackAssetId": "AudioTrack.Track1785858162715",
+  "volume": 1,
+  "pitch": 1,
+  "loop": false
+}

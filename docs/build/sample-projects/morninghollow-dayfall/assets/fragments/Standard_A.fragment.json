@@ -463,9 +463,9 @@
       "name": "Anchor",
       "parentNodeId": "Root",
       "localPosition": [
-        -1.2644598484039307,
-        -0.5620898008346558,
-        -0.11084619164466858
+        -1.2629296779632568,
+        -0.5194752216339111,
+        -0.07207110524177551
       ],
       "localRotation": [
         0,
@@ -477,15 +477,35 @@
         2,
         3,
         1
-      ],
-      "componentDefinitions": [
-        {
-          "type": "ParticleEmitter",
-          "enabled": true,
-          "particleAssetId": "Particle.Particle1785182623798",
-          "autoPlay": true
-        }
       ]
+    },
+    {
+      "nodeId": "ParticleNode1",
+      "type": "Particle",
+      "name": "Particle Emitter",
+      "parentNodeId": "EmptyNode4",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1785182623798",
+        "autoPlay": true
+      }
     }
   ],
   "componentDefinitions": [
@@ -495,6 +515,25 @@
       "resourceId": "Health",
       "maximum": 30,
       "startingValue": 30
+    }
+  ],
+  "animationClips": [],
+  "notifierDefinitions": [
+    {
+      "id": "Notifier.c39f03c8-500e-4327-a64a-5d1f15c03c28",
+      "name": "Weapon Fired",
+      "comment": "",
+      "enabled": true,
+      "signalId": "Weapon.Fired",
+      "actions": [
+        {
+          "id": "Action.2038973a-d081-4f7c-8c39-22413feb21f8",
+          "type": "PlayAudioCue",
+          "enabled": true,
+          "audioCueAssetId": "AudioCue.Cue1785917775128",
+          "audioNodeId": null
+        }
+      ]
     }
   ]
 }

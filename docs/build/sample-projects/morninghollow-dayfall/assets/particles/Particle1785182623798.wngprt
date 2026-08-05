@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsParticle",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Particle.Particle1785182623798",
   "displayName": "Thruster",
   "description": "",
@@ -69,5 +69,78 @@
   "trailLength": 1,
   "trailFade": 1,
   "trailSegments": 6,
-  "loop": true
+  "loop": true,
+  "emitters": [
+    {
+      "id": "Emitter1",
+      "name": "Flame",
+      "enabled": true,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0
+      ],
+      "spawnRate": 50,
+      "burstCount": 0,
+      "lifetimeMin": 1,
+      "lifetimeMax": 1,
+      "velocityMin": [
+        -1,
+        0,
+        0
+      ],
+      "velocityMax": [
+        -1,
+        0,
+        0
+      ],
+      "sizeMin": 0.15,
+      "sizeMax": 0.02,
+      "initialAngleMin": 0,
+      "initialAngleMax": 0,
+      "angularVelocityMin": 0,
+      "angularVelocityMax": 0,
+      "materialAssetId": null,
+      "startColor": [
+        1,
+        0.9686274509803922,
+        0,
+        1
+      ],
+      "endColor": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "spawnShape": "Point",
+      "spawnDepth": 0.25,
+      "spawnRadius": 0.5,
+      "spawnHeight": 1,
+      "spawnSize": [
+        1,
+        1,
+        1
+      ],
+      "spawnAxis": "Z",
+      "surfaceOnly": false,
+      "useLocalSpace": true,
+      "materialName": "Default Particle",
+      "spriteId": "soft-circle",
+      "renderMode": "Sprite",
+      "beamWidth": 0.08,
+      "beamLength": 1,
+      "beamDirection": "Velocity",
+      "beamTaper": 0,
+      "trailWidth": 0.06,
+      "trailLength": 1,
+      "trailFade": 1,
+      "trailSegments": 6
+    }
+  ]
 }

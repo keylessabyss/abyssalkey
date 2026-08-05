@@ -1,0 +1,40 @@
+{
+  "format": "AbyssalWingsAudioTrack",
+  "formatVersion": 1,
+  "assetId": "AudioTrack.Track1785858162715",
+  "displayName": "Standard Weapon Fire",
+  "description": "",
+  "tags": [
+    "AudioTrack",
+    "Project"
+  ],
+  "version": "1",
+  "loop": false,
+  "lanes": [
+    {
+      "laneId": "Lane1",
+      "name": "Lane 1",
+      "mute": false,
+      "solo": false,
+      "volume": 1,
+      "clips": [
+        {
+          "clipId": "Clip17858581882250",
+          "instrumentAssetId": "Instrument.Weapons.PlasmaShot",
+          "startTimeSeconds": 0,
+          "volume": 1,
+          "pitch": 1
+        }
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "clipId": "Clip17858581882250",
+      "instrumentAssetId": "Instrument.Weapons.PlasmaShot",
+      "startTimeSeconds": 0,
+      "volume": 1,
+      "pitch": 1
+    }
+  ]
+}
