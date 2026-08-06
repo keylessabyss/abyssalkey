@@ -474,8 +474,8 @@
         1
       ],
       "localScale": [
-        2,
-        3,
+        1,
+        1,
         1
       ]
     },
@@ -506,6 +506,56 @@
         "particleAssetId": "Particle.Particle1785182623798",
         "autoPlay": true
       }
+    },
+    {
+      "nodeId": "Node1",
+      "type": "Empty",
+      "name": "Anchor Copy",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -1.2629296779632568,
+        0.5107300281524658,
+        -0.07207110524177551
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "Node2",
+      "type": "Particle",
+      "name": "Particle Emitter Copy",
+      "parentNodeId": "Node1",
+      "localPosition": [
+        0,
+        -5.160522675851098e-9,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1785182623798",
+        "autoPlay": true
+      }
     }
   ],
   "componentDefinitions": [
@@ -517,7 +567,102 @@
       "startingValue": 30
     }
   ],
-  "animationClips": [],
+  "animationClips": [
+    {
+      "id": "Animation_1",
+      "name": "Thurst Percent",
+      "duration": 1,
+      "loop": false,
+      "tracks": [
+        {
+          "anchorNodeId": "EmptyNode4",
+          "keyframes": [
+            {
+              "time": 0,
+              "localPosition": [
+                -1.2629296779632568,
+                -0.5194752216339111,
+                -0.07207110524177551
+              ],
+              "localRotation": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "localScale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "time": 1,
+              "localPosition": [
+                -1.2629296779632568,
+                -0.5194752216339111,
+                -0.07207110524177551
+              ],
+              "localRotation": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "localScale": [
+                2,
+                2,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "anchorNodeId": "Node1",
+          "keyframes": [
+            {
+              "time": 0,
+              "localPosition": [
+                -1.2629296779632568,
+                0.5107300281524658,
+                -0.07207110524177551
+              ],
+              "localRotation": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "localScale": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "time": 1,
+              "localPosition": [
+                -1.2629296779632568,
+                0.5107300281524658,
+                -0.07207110524177551
+              ],
+              "localRotation": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "localScale": [
+                2,
+                2,
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notifierDefinitions": [
     {
       "id": "Notifier.c39f03c8-500e-4327-a64a-5d1f15c03c28",
@@ -530,10 +675,26 @@
           "id": "Action.2038973a-d081-4f7c-8c39-22413feb21f8",
           "type": "PlayAudioCue",
           "enabled": true,
-          "audioCueAssetId": "AudioCue.Cue1785917775128",
-          "audioNodeId": null
+          "audioCueAssetId": "AudioCue.Cue1785917775128"
         }
       ]
     }
-  ]
+  ],
+  "driverDefinitions": [
+    {
+      "id": "Driver",
+      "name": "Thruster Power",
+      "enabled": true,
+      "sourceValueId": "Movement.ForwardSpeedNormalized",
+      "animationClipId": "Animation_1",
+      "inputMin": 0,
+      "inputMax": 1,
+      "outputStartNormalized": 0,
+      "outputEndNormalized": 1
+    }
+  ],
+  "driverSourceVersion": 2,
+  "fragmentScript": {
+    "source": "BeginPlay()\n{\n\n}\n\nTick()\n{\n    // Read-only instance diagnostics can be authored here.\n\n}\n\nEndPlay()\n{\n\n}\n"
+  }
 }
