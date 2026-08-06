@@ -695,6 +695,6 @@
   ],
   "driverSourceVersion": 2,
   "fragmentScript": {
-    "source": "BeginPlay()\n{\n\n}\n\nTick()\n{\n    // Read-only instance diagnostics can be authored here.\n\n}\n\nEndPlay()\n{\n\n}\n"
+    "source": "BeginPlay()\n{\n\n}\n\nTick()\n{\n    // Read-only instance diagnostics can be authored here\n\n}\n\nEndPlay()\n{\n\n}\n"
   }
 }
