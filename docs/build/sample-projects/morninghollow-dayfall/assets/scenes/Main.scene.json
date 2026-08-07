@@ -1,6 +1,6 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
@@ -20,5 +20,6 @@
     "linkWorldLight": true,
     "worldLightOffset": 0
   },
-  "placedFragments": []
+  "placedFragments": [],
+  "placedUtilities": []
 }
