@@ -97,5 +97,8 @@
   "particles": [
     "assets/particles/Particle1785182623798.wngprt"
   ],
+  "ui": [
+    "assets/ui/UI1786069767206.wngui"
+  ],
   "defaultSceneAssetId": "Scene.Main"
 }
