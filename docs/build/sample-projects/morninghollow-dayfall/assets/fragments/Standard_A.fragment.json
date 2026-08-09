@@ -224,8 +224,8 @@
           "type": "Resource",
           "enabled": true,
           "resourceId": "Health",
-          "maximum": 30,
-          "startingValue": 30
+          "maximum": 200,
+          "startingValue": 200
         }
       ]
     },
@@ -563,8 +563,8 @@
       "type": "Resource",
       "enabled": true,
       "resourceId": "Health",
-      "maximum": 30,
-      "startingValue": 30
+      "maximum": 200,
+      "startingValue": 200
     }
   ],
   "animationClips": [
@@ -675,7 +675,8 @@
           "id": "Action.2038973a-d081-4f7c-8c39-22413feb21f8",
           "type": "PlayAudioCue",
           "enabled": true,
-          "audioCueAssetId": "AudioCue.Cue1785917775128"
+          "audioCueAssetId": "AudioCue.Cue1785917775128",
+          "spatialAtFragment": true
         }
       ]
     }
