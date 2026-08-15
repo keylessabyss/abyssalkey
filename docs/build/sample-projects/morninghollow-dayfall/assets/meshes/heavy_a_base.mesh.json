@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/heavy_a_base.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "heavy_a_base",
+        "displayName": "heavy_a_base",
+        "objectName": "heavy_a_base",
+        "groupName": "heavy_a_base",
+        "materialName": "01___Default",
+        "smoothingGroup": "1"
+      }
+    ]
+  }
 }

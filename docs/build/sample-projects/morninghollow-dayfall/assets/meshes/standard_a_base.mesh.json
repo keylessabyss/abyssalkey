@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/standard_a_base.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "standard_a_base",
+        "displayName": "standard_a_base",
+        "objectName": "standard_a_base",
+        "groupName": "standard_a_base",
+        "materialName": "01___Default",
+        "smoothingGroup": "4"
+      }
+    ]
+  }
 }

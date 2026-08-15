@@ -1,0 +1,22 @@
+{
+  "format": "AbyssalWingsInk",
+  "formatVersion": 1,
+  "assetId": "Ink.Ink1786571688207",
+  "displayName": "testInk",
+  "description": "",
+  "tags": [
+    "Ink",
+    "Project"
+  ],
+  "width": 256,
+  "height": 256,
+  "layers": [
+    {
+      "id": "Layer_1",
+      "displayName": "Layer 1",
+      "visible": true,
+      "opacity": 1,
+      "sidecarFileName": "Ink1786571688207.Layer_1.png"
+    }
+  ]
+}

@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/standard_a_boltz.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "standard_a_boltz",
+        "displayName": "standard_a_boltz",
+        "objectName": "standard_a_boltz",
+        "groupName": "standard_a_boltz",
+        "materialName": "04___Default",
+        "smoothingGroup": "8"
+      }
+    ]
+  }
 }

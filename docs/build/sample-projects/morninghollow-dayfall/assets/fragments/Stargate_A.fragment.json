@@ -66,102 +66,6 @@
       ]
     },
     {
-      "nodeId": "MeshNode1",
-      "type": "Mesh",
-      "name": "Stargate A Base",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.stargate_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
-    },
-    {
-      "nodeId": "MeshNode2",
-      "type": "Mesh",
-      "name": "Stargate A Boltz",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.stargate_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
-    },
-    {
-      "nodeId": "MeshNode3",
-      "type": "Mesh",
-      "name": "Stargate A Color",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.stargate_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
-    },
-    {
-      "nodeId": "MeshNode4",
-      "type": "Mesh",
-      "name": "Stargate A Emissive",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.stargate_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
-    },
-    {
       "nodeId": "EmptyNode1",
       "type": "Empty",
       "name": "Primary Spawn",
@@ -189,6 +93,158 @@
         }
       ],
       "referenceKey": "spawn.primary"
+    },
+    {
+      "nodeId": "MeshDataRoot3",
+      "type": "MeshDataRoot",
+      "name": "Stargate A Building",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshDataRoot",
+      "meshAssetId": "Mesh.stargate_a_building",
+      "meshMaterialBindings": [
+        {
+          "meshId": "stargate_a_color",
+          "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "stargate_a_boltz",
+          "materialAssetId": "Material.M_metal_bronze",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "stargate_a_emissive",
+          "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "stargate_a_base",
+          "materialAssetId": "Material.M_Metal_Gray",
+          "smoothingGroupMask": 0
+        }
+      ],
+      "uvwProjection": null,
+      "automaticUVGeneration": true
+    },
+    {
+      "nodeId": "MeshNode4",
+      "type": "Mesh",
+      "name": "stargate_a_color",
+      "parentNodeId": "MeshDataRoot3",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.stargate_a_building",
+      "meshId": "stargate_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "MeshNode5",
+      "type": "Mesh",
+      "name": "stargate_a_boltz",
+      "parentNodeId": "MeshDataRoot3",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.stargate_a_building",
+      "meshId": "stargate_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "MeshNode6",
+      "type": "Mesh",
+      "name": "stargate_a_emissive",
+      "parentNodeId": "MeshDataRoot3",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.stargate_a_building",
+      "meshId": "stargate_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "MeshNode7",
+      "type": "Mesh",
+      "name": "stargate_a_base",
+      "parentNodeId": "MeshDataRoot3",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.stargate_a_building",
+      "meshId": "stargate_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
     }
   ],
   "componentDefinitions": [
@@ -208,5 +264,10 @@
       "maximum": 1000,
       "startingValue": 1000
     }
-  ]
+  ],
+  "animationClips": [],
+  "notifierDefinitions": [],
+  "driverDefinitions": [],
+  "driverSourceVersion": 2,
+  "fragmentScript": null
 }

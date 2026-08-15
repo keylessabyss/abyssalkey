@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/scout_a_base.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "scout_a_base",
+        "displayName": "scout_a_base",
+        "objectName": "scout_a_base",
+        "groupName": "scout_a_base",
+        "materialName": "01___Default",
+        "smoothingGroup": "4"
+      }
+    ]
+  }
 }

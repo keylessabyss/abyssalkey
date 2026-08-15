@@ -12,7 +12,9 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/standard_a_ship.obj",
-  "importOptions": {},
+  "importOptions": {
+    "flipV": false
+  },
   "meshDataRootManifest": {
     "parts": [
       {

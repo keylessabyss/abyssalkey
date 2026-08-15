@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/standard_a_emissive.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "standard_a_emissive",
+        "displayName": "standard_a_emissive",
+        "objectName": "standard_a_emissive",
+        "groupName": "standard_a_emissive",
+        "materialName": "03___Default",
+        "smoothingGroup": "8"
+      }
+    ]
+  }
 }

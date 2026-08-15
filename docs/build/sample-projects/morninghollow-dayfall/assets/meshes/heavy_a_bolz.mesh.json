@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/heavy_a_bolz.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "heavy_a_boltz",
+        "displayName": "heavy_a_boltz",
+        "objectName": "heavy_a_boltz",
+        "groupName": "heavy_a_boltz",
+        "materialName": "04___Default",
+        "smoothingGroup": "off"
+      }
+    ]
+  }
 }

@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/heavy_a_emissive.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "heavy_a_emissive",
+        "displayName": "heavy_a_emissive",
+        "objectName": "heavy_a_emissive",
+        "groupName": "heavy_a_emissive",
+        "materialName": "03___Default",
+        "smoothingGroup": "1"
+      }
+    ]
+  }
 }

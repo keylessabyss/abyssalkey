@@ -1,0 +1,394 @@
+{
+  "format": "AbyssalWingsParticle",
+  "formatVersion": 4,
+  "assetId": "Particle.Particle1786719688924",
+  "displayName": "Muzzle Flash",
+  "description": "",
+  "tags": [
+    "Particle",
+    "Project"
+  ],
+  "version": "1",
+  "position": [
+    -1,
+    0,
+    0
+  ],
+  "durationSeconds": 1,
+  "emissionRate": 12,
+  "particleLifetimeSeconds": 0.5,
+  "startColor": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "endColor": [
+    1,
+    1,
+    1,
+    0
+  ],
+  "startScale": 1,
+  "endScale": 0.75,
+  "velocity": [
+    0,
+    0,
+    1
+  ],
+  "velocityMin": [
+    0,
+    0,
+    0
+  ],
+  "velocityMax": [
+    0,
+    0,
+    0
+  ],
+  "spawnShape": "Point",
+  "spawnDepth": 0.25,
+  "spawnRadius": 0.5,
+  "spawnHeight": 1,
+  "spawnSize": [
+    1,
+    1,
+    1
+  ],
+  "spawnAxis": "Z",
+  "surfaceOnly": false,
+  "useLocalSpace": true,
+  "materialName": "Default Particle",
+  "spriteId": "soft-circle",
+  "pictureAssetId": "Picture.t_muzzleFlash",
+  "atlasColumns": 2,
+  "atlasRows": 2,
+  "atlasFrameMode": "Random",
+  "atlasFrameIndex": 0,
+  "spriteBlendMode": "Additive",
+  "spriteFacingMode": "EmitterFacing",
+  "renderMode": "Sprite",
+  "beamWidth": 0.08,
+  "beamLength": 1,
+  "beamDirection": "Velocity",
+  "beamTaper": 0,
+  "trailWidth": 0.06,
+  "trailLength": 1,
+  "trailFade": 1,
+  "trailSegments": 6,
+  "loop": true,
+  "emitters": [
+    {
+      "id": "Emitter1",
+      "name": "Emitter 1",
+      "enabled": true,
+      "localPosition": [
+        -1,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        -90
+      ],
+      "spawnRate": 12,
+      "burstCount": 0,
+      "lifetimeMin": 0.5,
+      "lifetimeMax": 0.5,
+      "velocityMin": [
+        0,
+        0,
+        0
+      ],
+      "velocityMax": [
+        0,
+        0,
+        0
+      ],
+      "sizeMin": 1,
+      "sizeMax": 0.75,
+      "initialAngleMin": 0,
+      "initialAngleMax": 0,
+      "angularVelocityMin": 0,
+      "angularVelocityMax": 0,
+      "materialAssetId": null,
+      "startColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "endColor": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "spawnShape": "Point",
+      "spawnDepth": 0.25,
+      "spawnRadius": 0.5,
+      "spawnHeight": 1,
+      "spawnSize": [
+        1,
+        1,
+        1
+      ],
+      "spawnAxis": "Z",
+      "surfaceOnly": false,
+      "useLocalSpace": true,
+      "materialName": "Default Particle",
+      "spriteId": "soft-circle",
+      "pictureAssetId": "Picture.t_muzzleFlash",
+      "atlasColumns": 2,
+      "atlasRows": 2,
+      "atlasFrameMode": "Random",
+      "atlasFrameIndex": 0,
+      "spriteBlendMode": "Additive",
+      "spriteFacingMode": "EmitterFacing",
+      "renderMode": "Sprite",
+      "beamWidth": 0.08,
+      "beamLength": 1,
+      "beamDirection": "Velocity",
+      "beamTaper": 0,
+      "trailWidth": 0.06,
+      "trailLength": 1,
+      "trailFade": 1,
+      "trailSegments": 6
+    },
+    {
+      "id": "Emitter2",
+      "name": "Emitter 2",
+      "enabled": true,
+      "localPosition": [
+        -1,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        90,
+        -90
+      ],
+      "spawnRate": 12,
+      "burstCount": 0,
+      "lifetimeMin": 0.5,
+      "lifetimeMax": 0.5,
+      "velocityMin": [
+        0,
+        0,
+        0
+      ],
+      "velocityMax": [
+        0,
+        0,
+        0
+      ],
+      "sizeMin": 1,
+      "sizeMax": 0.75,
+      "initialAngleMin": 0,
+      "initialAngleMax": 0,
+      "angularVelocityMin": 0,
+      "angularVelocityMax": 0,
+      "materialAssetId": null,
+      "startColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "endColor": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "spawnShape": "Point",
+      "spawnDepth": 0.25,
+      "spawnRadius": 0.5,
+      "spawnHeight": 1,
+      "spawnSize": [
+        1,
+        1,
+        1
+      ],
+      "spawnAxis": "Z",
+      "surfaceOnly": false,
+      "useLocalSpace": true,
+      "materialName": "Default Particle",
+      "spriteId": "soft-circle",
+      "pictureAssetId": "Picture.t_muzzleFlash",
+      "atlasColumns": 2,
+      "atlasRows": 2,
+      "atlasFrameMode": "Random",
+      "atlasFrameIndex": 0,
+      "spriteBlendMode": "Additive",
+      "spriteFacingMode": "EmitterFacing",
+      "renderMode": "Sprite",
+      "beamWidth": 0.08,
+      "beamLength": 1,
+      "beamDirection": "Velocity",
+      "beamTaper": 0,
+      "trailWidth": 0.06,
+      "trailLength": 1,
+      "trailFade": 1,
+      "trailSegments": 6
+    },
+    {
+      "id": "Emitter3",
+      "name": "Emitter 3",
+      "enabled": true,
+      "localPosition": [
+        -1,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        45,
+        -90
+      ],
+      "spawnRate": 12,
+      "burstCount": 0,
+      "lifetimeMin": 0.5,
+      "lifetimeMax": 0.5,
+      "velocityMin": [
+        0,
+        0,
+        0
+      ],
+      "velocityMax": [
+        0,
+        0,
+        0
+      ],
+      "sizeMin": 1,
+      "sizeMax": 0.75,
+      "initialAngleMin": 0,
+      "initialAngleMax": 0,
+      "angularVelocityMin": 0,
+      "angularVelocityMax": 0,
+      "materialAssetId": null,
+      "startColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "endColor": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "spawnShape": "Point",
+      "spawnDepth": 0.25,
+      "spawnRadius": 0.5,
+      "spawnHeight": 1,
+      "spawnSize": [
+        1,
+        1,
+        1
+      ],
+      "spawnAxis": "Z",
+      "surfaceOnly": false,
+      "useLocalSpace": true,
+      "materialName": "Default Particle",
+      "spriteId": "soft-circle",
+      "pictureAssetId": "Picture.t_muzzleFlash",
+      "atlasColumns": 2,
+      "atlasRows": 2,
+      "atlasFrameMode": "Random",
+      "atlasFrameIndex": 0,
+      "spriteBlendMode": "Additive",
+      "spriteFacingMode": "EmitterFacing",
+      "renderMode": "Sprite",
+      "beamWidth": 0.08,
+      "beamLength": 1,
+      "beamDirection": "Velocity",
+      "beamTaper": 0,
+      "trailWidth": 0.06,
+      "trailLength": 1,
+      "trailFade": 1,
+      "trailSegments": 6
+    },
+    {
+      "id": "Emitter4",
+      "name": "Emitter 4",
+      "enabled": true,
+      "localPosition": [
+        -1,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        -45,
+        -90
+      ],
+      "spawnRate": 12,
+      "burstCount": 0,
+      "lifetimeMin": 0.5,
+      "lifetimeMax": 0.5,
+      "velocityMin": [
+        0,
+        0,
+        0
+      ],
+      "velocityMax": [
+        0,
+        0,
+        0
+      ],
+      "sizeMin": 1,
+      "sizeMax": 0.75,
+      "initialAngleMin": 0,
+      "initialAngleMax": 0,
+      "angularVelocityMin": 0,
+      "angularVelocityMax": 0,
+      "materialAssetId": null,
+      "startColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "endColor": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "spawnShape": "Point",
+      "spawnDepth": 0.25,
+      "spawnRadius": 0.5,
+      "spawnHeight": 1,
+      "spawnSize": [
+        1,
+        1,
+        1
+      ],
+      "spawnAxis": "Z",
+      "surfaceOnly": false,
+      "useLocalSpace": true,
+      "materialName": "Default Particle",
+      "spriteId": "soft-circle",
+      "pictureAssetId": "Picture.t_muzzleFlash",
+      "atlasColumns": 2,
+      "atlasRows": 2,
+      "atlasFrameMode": "Random",
+      "atlasFrameIndex": 0,
+      "spriteBlendMode": "Additive",
+      "spriteFacingMode": "EmitterFacing",
+      "renderMode": "Sprite",
+      "beamWidth": 0.08,
+      "beamLength": 1,
+      "beamDirection": "Velocity",
+      "beamTaper": 0,
+      "trailWidth": 0.06,
+      "trailLength": 1,
+      "trailFade": 1,
+      "trailSegments": 6
+    }
+  ]
+}

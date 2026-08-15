@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 1,
+  "assetId": "Picture.t_muzzleFlash",
+  "displayName": "T MuzzleFlash",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 64,
+  "height": 64,
+  "sourceKind": "ImportedPng",
+  "sidecarFileName": "t_muzzleFlash.png"
+}

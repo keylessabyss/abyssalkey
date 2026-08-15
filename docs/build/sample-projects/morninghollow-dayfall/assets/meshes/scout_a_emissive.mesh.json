@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/scout_a_emissive.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "scout_a_emissive",
+        "displayName": "scout_a_emissive",
+        "objectName": "scout_a_emissive",
+        "groupName": "scout_a_emissive",
+        "materialName": "03___Default",
+        "smoothingGroup": "4"
+      }
+    ]
+  }
 }

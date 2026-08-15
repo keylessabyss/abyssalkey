@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/scout_a_color.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "scout_a_color",
+        "displayName": "scout_a_color",
+        "objectName": "scout_a_color",
+        "groupName": "scout_a_color",
+        "materialName": "02___Default",
+        "smoothingGroup": "4"
+      }
+    ]
+  }
 }

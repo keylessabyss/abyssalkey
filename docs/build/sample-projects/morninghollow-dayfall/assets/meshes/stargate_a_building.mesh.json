@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.stargate_a_building",
+  "displayName": "Stargate A Building",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/stargate_a_building.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "stargate_a_color",
+        "displayName": "stargate_a_color",
+        "objectName": "stargate_a_color",
+        "groupName": "stargate_a_color",
+        "materialName": "02___Default",
+        "smoothingGroup": "2"
+      },
+      {
+        "meshId": "stargate_a_boltz",
+        "displayName": "stargate_a_boltz",
+        "objectName": "stargate_a_boltz",
+        "groupName": "stargate_a_boltz",
+        "materialName": "04___Default",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "stargate_a_emissive",
+        "displayName": "stargate_a_emissive",
+        "objectName": "stargate_a_emissive",
+        "groupName": "stargate_a_emissive",
+        "materialName": "03___Default",
+        "smoothingGroup": "16"
+      },
+      {
+        "meshId": "stargate_a_base",
+        "displayName": "stargate_a_base",
+        "objectName": "stargate_a_base",
+        "groupName": "stargate_a_base",
+        "materialName": "01___Default",
+        "smoothingGroup": "1"
+      }
+    ]
+  }
+}

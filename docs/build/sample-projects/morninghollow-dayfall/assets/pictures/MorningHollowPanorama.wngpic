@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 1,
+  "assetId": "Picture.MorningHollowPanorama",
+  "displayName": "MorningHollowPanorama",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 512,
+  "height": 256,
+  "sourceKind": "ImportedPng",
+  "sidecarFileName": "MorningHollowPanorama.png"
+}

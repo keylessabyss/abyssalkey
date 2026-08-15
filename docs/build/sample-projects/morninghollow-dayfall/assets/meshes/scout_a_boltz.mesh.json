@@ -12,5 +12,19 @@
   ],
   "sourceType": "OBJ",
   "sourcePath": "assets/meshes/scout_a_boltz.obj",
-  "importOptions": {}
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "scout_a_boltz",
+        "displayName": "scout_a_boltz",
+        "objectName": "scout_a_boltz",
+        "groupName": "scout_a_boltz",
+        "materialName": "04___Default",
+        "smoothingGroup": "2"
+      }
+    ]
+  }
 }
