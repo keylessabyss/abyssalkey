@@ -60,9 +60,9 @@
         "id": "CelestialFeature.mt0m6jas.1",
         "pictureAssetId": "Picture.MH_celestial_1",
         "direction": [
-          -0.8834346331977361,
-          0.24821459682736746,
-          0.39740755250574844
+          -0.7445027805082782,
+          0.5725175720544944,
+          0.3434228290377177
         ],
         "angularSizeDegrees": 40.74346351623535,
         "rotationDegrees": 9.00178708067936,
@@ -119,9 +119,9 @@
         "id": "CelestialFeature.mszzh11x.1",
         "pictureAssetId": "Picture.MH_planet_1",
         "direction": [
-          -0.5657838692145217,
-          -0.8238977948827595,
-          0.0328791259611855
+          -0.6722841661660676,
+          -0.7351932906024734,
+          0.08674575133977604
         ],
         "angularSizeDegrees": 12,
         "rotationDegrees": -0.000018751559843115047,
@@ -138,9 +138,9 @@
         "id": "CelestialFeature.mt0nau43.3",
         "pictureAssetId": "Picture.MH_planet_2",
         "direction": [
-          0.2901025668867993,
-          -0.8400197498848283,
-          0.4584837188920896
+          0.34587152972976437,
+          -0.7992080856763903,
+          0.4915682258973546
         ],
         "angularSizeDegrees": 34.62968349456787,
         "rotationDegrees": 0,
@@ -157,12 +157,12 @@
         "id": "CelestialFeature.mt0nknub.4",
         "pictureAssetId": "Picture.MH_planet_3",
         "direction": [
-          0.32043573034661327,
-          0.9436851673430544,
-          -0.08233618678287195
+          0.4612943849213893,
+          0.8826308886861229,
+          -0.09038918506736297
         ],
         "angularSizeDegrees": 41.89646911621094,
-        "rotationDegrees": 0,
+        "rotationDegrees": 25.511163821222365,
         "color": [
           1,
           1,

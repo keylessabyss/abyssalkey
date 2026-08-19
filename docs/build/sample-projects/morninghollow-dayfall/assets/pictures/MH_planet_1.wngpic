@@ -10,8 +10,8 @@
     "Imported",
     "PNG"
   ],
-  "width": 512,
-  "height": 512,
+  "width": 256,
+  "height": 256,
   "sourceKind": "ImportedPng",
   "sidecarFileName": "MH_planet_1.png"
 }

@@ -10,8 +10,8 @@
     "Imported",
     "PNG"
   ],
-  "width": 512,
-  "height": 341,
+  "width": 256,
+  "height": 171,
   "sourceKind": "ImportedPng",
   "sidecarFileName": "MH_distantCelestial.png"
 }
