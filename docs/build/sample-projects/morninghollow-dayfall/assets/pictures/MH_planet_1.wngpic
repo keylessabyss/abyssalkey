@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 1,
+  "assetId": "Picture.MH_planet_1",
+  "displayName": "MH Planet 1",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 512,
+  "height": 512,
+  "sourceKind": "ImportedPng",
+  "sidecarFileName": "MH_planet_1.png"
+}

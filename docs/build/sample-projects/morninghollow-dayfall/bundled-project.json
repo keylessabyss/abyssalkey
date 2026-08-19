@@ -94,12 +94,21 @@
     "assets/particles/Particle1786719688924.wngprt"
   ],
   "ui": [
-    "assets/ui/UI1786069767206.wngui"
+    "assets/ui/UI1786069767206.wngui",
+    "assets/ui/UI1787034818343.wngui"
   ],
   "ink": [
     "assets/ink/Ink1786571688207.wngink"
   ],
   "pictures": [
+    "assets/pictures/crosshair.wngpic",
+    "assets/pictures/MH_celestial_1.wngpic",
+    "assets/pictures/MH_celestial_2.wngpic",
+    "assets/pictures/MH_celestial_3.wngpic",
+    "assets/pictures/MH_distantCelestial.wngpic",
+    "assets/pictures/MH_planet_1.wngpic",
+    "assets/pictures/MH_planet_2.wngpic",
+    "assets/pictures/MH_planet_3.wngpic",
     "assets/pictures/MorningHollowPanorama.wngpic",
     "assets/pictures/t_muzzleFlash.wngpic"
   ],

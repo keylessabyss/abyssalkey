@@ -1,6 +1,6 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 8,
+  "formatVersion": 10,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
@@ -35,7 +35,144 @@
       "density": 0.5,
       "brightness": 1,
       "size": 2
-    }
+    },
+    "backdropFeatures": [
+      {
+        "id": "CelestialFeature.v9.backdrop",
+        "pictureAssetId": "Picture.MH_distantCelestial",
+        "direction": [
+          0.9943771971715282,
+          -0.0273286383966332,
+          0.10230901851098978
+        ],
+        "angularSizeDegrees": 37.42694091796875,
+        "rotationDegrees": 59.48345882132092,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 1,
+        "blend": "Additive"
+      },
+      {
+        "id": "CelestialFeature.mt0m6jas.1",
+        "pictureAssetId": "Picture.MH_celestial_1",
+        "direction": [
+          -0.8834346331977361,
+          0.24821459682736746,
+          0.39740755250574844
+        ],
+        "angularSizeDegrees": 40.74346351623535,
+        "rotationDegrees": 9.00178708067936,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 1,
+        "blend": "Additive"
+      },
+      {
+        "id": "CelestialFeature.mt0momzn.1",
+        "pictureAssetId": "Picture.MH_celestial_2",
+        "direction": [
+          -0.6651338172381588,
+          0.24310294675353974,
+          -0.7060438813883605
+        ],
+        "angularSizeDegrees": 48.228272438049316,
+        "rotationDegrees": 18.08976289427094,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 1,
+        "blend": "Additive"
+      },
+      {
+        "id": "CelestialFeature.mt0mxha3.2",
+        "pictureAssetId": "Picture.MH_celestial_3",
+        "direction": [
+          0.022138124285906315,
+          -0.46905091307610075,
+          -0.8828936200899734
+        ],
+        "angularSizeDegrees": 38.968379974365234,
+        "rotationDegrees": 103.14209145496042,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.5,
+        "blend": "Additive"
+      }
+    ],
+    "foregroundFeatures": [
+      {
+        "id": "CelestialFeature.mszzh11x.1",
+        "pictureAssetId": "Picture.MH_planet_1",
+        "direction": [
+          -0.5657838692145217,
+          -0.8238977948827595,
+          0.0328791259611855
+        ],
+        "angularSizeDegrees": 12,
+        "rotationDegrees": -0.000018751559843115047,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 1,
+        "blend": "Additive"
+      },
+      {
+        "id": "CelestialFeature.mt0nau43.3",
+        "pictureAssetId": "Picture.MH_planet_2",
+        "direction": [
+          0.2901025668867993,
+          -0.8400197498848283,
+          0.4584837188920896
+        ],
+        "angularSizeDegrees": 34.62968349456787,
+        "rotationDegrees": 0,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 1,
+        "blend": "Additive"
+      },
+      {
+        "id": "CelestialFeature.mt0nknub.4",
+        "pictureAssetId": "Picture.MH_planet_3",
+        "direction": [
+          0.32043573034661327,
+          0.9436851673430544,
+          -0.08233618678287195
+        ],
+        "angularSizeDegrees": 41.89646911621094,
+        "rotationDegrees": 0,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "intensity": 1,
+        "blend": "Additive"
+      }
+    ]
   },
   "primaryDirectionalLight": {
     "enabled": true,

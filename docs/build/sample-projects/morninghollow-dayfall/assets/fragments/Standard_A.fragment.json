@@ -131,7 +131,15 @@
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
           "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
-          "projectileFragmentAssetId": null
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": "Picture.crosshair",
+          "crosshairBlend": "Additive",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "type": "Weapon",
@@ -143,7 +151,15 @@
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode1",
           "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
-          "projectileFragmentAssetId": null
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": "Picture.crosshair",
+          "crosshairBlend": "Additive",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "type": "Weapon",
@@ -155,7 +171,15 @@
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode3",
           "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
-          "projectileFragmentAssetId": null
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": "Picture.crosshair",
+          "crosshairBlend": "Additive",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
         }
       ]
     },
@@ -179,7 +203,15 @@
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
           "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "type": "LanePush",

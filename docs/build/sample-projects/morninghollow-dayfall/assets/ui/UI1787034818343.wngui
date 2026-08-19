@@ -1,0 +1,160 @@
+{
+  "format": "AbyssalWingsUI",
+  "formatVersion": 7,
+  "assetId": "UI.UI1787034818343",
+  "displayName": "Player HUD",
+  "description": "",
+  "tags": [
+    "UI",
+    "Project"
+  ],
+  "canvas": {
+    "nodeId": "Canvas",
+    "displayName": "Canvas",
+    "width": 1920,
+    "height": 1080
+  },
+  "nodes": [
+    {
+      "nodeId": "Overlay_1",
+      "type": "Overlay",
+      "parentNodeId": "Canvas",
+      "displayName": "Overlay 1",
+      "localX": 86.39999999999998,
+      "localY": -492.2526315789474,
+      "width": 645,
+      "height": 35,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0
+    },
+    {
+      "nodeId": "Background_2",
+      "type": "Background",
+      "parentNodeId": "Overlay_1",
+      "displayName": "Health Background",
+      "localX": 0,
+      "localY": 0,
+      "width": 640,
+      "height": 360,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Fill",
+      "verticalAlignment": "Fill",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "color": [
+        0.08,
+        0.12,
+        0.15,
+        1
+      ]
+    },
+    {
+      "nodeId": "Background_1",
+      "type": "Background",
+      "parentNodeId": "Overlay_1",
+      "displayName": "Health Bar",
+      "localX": 0,
+      "localY": 0,
+      "width": 640,
+      "height": 360,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Left",
+      "verticalAlignment": "Fill",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "color": [
+        0.23921568627450981,
+        0.7098039215686275,
+        1,
+        1
+      ],
+      "driver": {
+        "source": "Player.Health",
+        "target": "FillAmountX"
+      }
+    },
+    {
+      "nodeId": "Text_1",
+      "type": "Text",
+      "parentNodeId": "Overlay_1",
+      "displayName": "Text 1",
+      "localX": 0,
+      "localY": 0,
+      "width": 100,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Left",
+      "verticalAlignment": "Fill",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Health\n",
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "fontSize": 32,
+      "textHorizontalAlignment": "Left",
+      "textVerticalAlignment": "Center"
+    },
+    {
+      "nodeId": "Text_2",
+      "type": "Text",
+      "parentNodeId": "Overlay_1",
+      "displayName": "Text 2",
+      "localX": 0,
+      "localY": 0,
+      "width": 360,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Fill",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Text",
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "fontSize": 32,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Player.Health",
+        "target": "TextValue",
+        "format": "{current}"
+      }
+    }
+  ]
+}

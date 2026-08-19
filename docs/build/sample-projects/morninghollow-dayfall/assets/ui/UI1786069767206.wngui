@@ -1,8 +1,8 @@
 {
   "format": "AbyssalWingsUI",
-  "formatVersion": 6,
+  "formatVersion": 7,
   "assetId": "UI.UI1786069767206",
-  "displayName": "HUD",
+  "displayName": "Start HUD",
   "description": "Start Screen",
   "tags": [
     "UI",
@@ -20,8 +20,8 @@
       "type": "Button",
       "parentNodeId": "Canvas",
       "displayName": "ButtonStart",
-      "localX": 1473.8650306748466,
-      "localY": 470.4539877300613,
+      "localX": 991.8439780432677,
+      "localY": 700.0960929932193,
       "width": 240,
       "height": 64,
       "pivotX": 0.5,
@@ -48,7 +48,7 @@
         1
       ],
       "enabled": true,
-      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .Location(0, 0, 0)\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n\n    Destroy(Self.UI);\n}"
+      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .Location(0, 0, 0)\n        .Team(Morninghollow.Day)\n        .Controller(Player1)\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
     }
   ]
 }

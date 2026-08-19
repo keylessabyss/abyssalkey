@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 1,
+  "assetId": "Picture.MH_distantCelestial",
+  "displayName": "MH DistantCelestial",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 512,
+  "height": 341,
+  "sourceKind": "ImportedPng",
+  "sidecarFileName": "MH_distantCelestial.png"
+}

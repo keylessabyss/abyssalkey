@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 1,
+  "assetId": "Picture.crosshair",
+  "displayName": "Crosshair",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 16,
+  "height": 16,
+  "sourceKind": "ImportedPng",
+  "sidecarFileName": "crosshair.png"
+}
