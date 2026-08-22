@@ -115,7 +115,6 @@
         1,
         1
       ],
-      "role": "MeshDataRoot",
       "meshAssetId": "Mesh.stargate_a_building",
       "meshMaterialBindings": [
         {
@@ -163,7 +162,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_color",
       "materialAssetId": "Material.M_dynamic_color"
@@ -189,7 +187,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_boltz",
       "materialAssetId": "Material.M_metal_bronze"
@@ -215,7 +212,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
@@ -241,10 +237,37 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_base",
       "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "EmptyNode2",
+      "type": "Empty",
+      "name": "Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        2.5751471519470215
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "PlayerStart",
+          "enabled": true
+        }
+      ]
     }
   ],
   "componentDefinitions": [

@@ -48,7 +48,7 @@
         1
       ],
       "enabled": true,
-      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .Location(0, 0, 0)\n        .Team(Morninghollow.Day)\n        .Controller(Player1)\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
+      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
     }
   ]
 }

@@ -21,12 +21,12 @@
           "inputChannel": "Input1",
           "positiveControls": [
             "MouseLeft",
-            "Gamepad0.Button0"
+            "Gamepad0.Button5"
           ],
           "negativeControls": [],
           "hardwareControls": [
             "MouseLeft",
-            "Gamepad0.Button0"
+            "Gamepad0.Button5"
           ]
         },
         {
@@ -115,19 +115,12 @@
           "aimSpeed": 8
         },
         {
-          "type": "AutoInput",
-          "enabled": true,
-          "inputChannel": "Input1",
-          "interval": 0.2,
-          "range": 15
-        },
-        {
           "type": "Weapon",
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 4,
-          "range": 15,
-          "cooldown": 0.2,
+          "range": 50,
+          "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
           "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
@@ -146,8 +139,8 @@
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 2,
-          "range": 15,
-          "cooldown": 0.2,
+          "range": 50,
+          "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode1",
           "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
@@ -166,8 +159,8 @@
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 2,
-          "range": 15,
-          "cooldown": 0.2,
+          "range": 50,
+          "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode3",
           "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
@@ -180,6 +173,13 @@
             1,
             1
           ]
+        },
+        {
+          "type": "AutoInput",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "interval": 0.01,
+          "range": 20
         }
       ]
     },
@@ -231,7 +231,7 @@
           "type": "AutoInput",
           "enabled": true,
           "inputChannel": "Input1",
-          "interval": 0.5,
+          "interval": 0.01,
           "range": 20
         }
       ]
@@ -364,17 +364,17 @@
         {
           "meshId": "standard_a_base1",
           "materialAssetId": "Material.M_Metal_Gray",
-          "smoothingGroupMask": 0
+          "smoothingGroupMask": 1
         },
         {
           "meshId": "standard_a_boltz1",
           "materialAssetId": "Material.M_metal_bronze",
-          "smoothingGroupMask": 0
+          "smoothingGroupMask": 1
         },
         {
           "meshId": "standard_a_color1",
           "materialAssetId": "Material.M_dynamic_color",
-          "smoothingGroupMask": 0
+          "smoothingGroupMask": 1
         },
         {
           "meshId": "standard_a_emissive1",

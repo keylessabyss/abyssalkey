@@ -65,6 +65,7 @@
 
       <article class="card">
         <h2>Supported Control IDs</h2>
+        <p>Use <code>Gamepad0.Button0</code> through <code>Gamepad0.Button16</code> for the first connected controller. Replace <code>0</code> after <code>Gamepad</code> to address another controller.</p>
         <table>
           <tbody>
             <tr><th>Control</th><th>Meaning</th></tr>
@@ -75,12 +76,28 @@
             <tr><td>ControlLeft</td><td>Keyboard Left Control</td></tr>
             <tr><td>KeyE</td><td>Keyboard E</td></tr>
             <tr><td>KeyQ</td><td>Keyboard Q</td></tr>
-            <tr><td>Gamepad0.Button0</td><td>First gamepad face button</td></tr>
-            <tr><td>Gamepad0.Button1</td><td>Second gamepad face button</td></tr>
-            <tr><td>Gamepad0.Button2</td><td>Third gamepad face button</td></tr>
-            <tr><td>Gamepad0.Button3</td><td>Fourth gamepad face button</td></tr>
+            <tr><td>Gamepad0.Button0</td><td>South face button (A / Cross)</td></tr>
+            <tr><td>Gamepad0.Button1</td><td>East face button (B / Circle)</td></tr>
+            <tr><td>Gamepad0.Button2</td><td>West face button (X / Square)</td></tr>
+            <tr><td>Gamepad0.Button3</td><td>North face button (Y / Triangle)</td></tr>
+            <tr><td>Gamepad0.Button4</td><td>Left bumper (LB / L1)</td></tr>
+            <tr><td>Gamepad0.Button5</td><td>Right bumper (RB / R1)</td></tr>
+            <tr><td>Gamepad0.Button6</td><td>Left trigger (LT / L2)</td></tr>
+            <tr><td>Gamepad0.Button7</td><td>Right trigger (RT / R2)</td></tr>
+            <tr><td>Gamepad0.Button8</td><td>Back / View / Select</td></tr>
+            <tr><td>Gamepad0.Button9</td><td>Start / Menu</td></tr>
+            <tr><td>Gamepad0.Button10</td><td>Left stick press (L3)</td></tr>
+            <tr><td>Gamepad0.Button11</td><td>Right stick press (R3)</td></tr>
+            <tr><td>Gamepad0.Button12</td><td>D-pad up</td></tr>
+            <tr><td>Gamepad0.Button13</td><td>D-pad down</td></tr>
+            <tr><td>Gamepad0.Button14</td><td>D-pad left</td></tr>
+            <tr><td>Gamepad0.Button15</td><td>D-pad right</td></tr>
+            <tr><td>Gamepad0.Button16</td><td>Home / Guide (availability depends on browser and controller)</td></tr>
+            <tr><td>Gamepad0.LeftStickX / LeftStickY</td><td>Left stick axes</td></tr>
+            <tr><td>Gamepad0.RightStickX / RightStickY</td><td>Right stick axes</td></tr>
           </tbody>
         </table>
+        <p class="small">Names follow the standard gamepad layout. A controller or browser may expose fewer buttons; a missing button simply has no input value.</p>
       </article>
     </section>
 
