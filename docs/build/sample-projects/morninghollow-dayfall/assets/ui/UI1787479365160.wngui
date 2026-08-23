@@ -1,0 +1,91 @@
+{
+  "format": "AbyssalWingsUI",
+  "formatVersion": 10,
+  "assetId": "UI.UI1787479365160",
+  "displayName": "Controller HUD",
+  "description": "",
+  "tags": [
+    "UI",
+    "Project"
+  ],
+  "canvas": {
+    "nodeId": "Canvas",
+    "displayName": "Canvas",
+    "width": 1920,
+    "height": 1080
+  },
+  "nodes": [
+    {
+      "nodeId": "VirtualJoystick_1",
+      "type": "VirtualJoystick",
+      "parentNodeId": "Canvas",
+      "displayName": "VirtualJoystick 1",
+      "localX": 126.52631578947376,
+      "localY": -124.88421052631584,
+      "width": 280,
+      "height": 280,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "BottomLeft",
+      "inputProfile": "Mobile",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "role": "LeftStick",
+      "deadzone": 0.12,
+      "baseColor": [
+        0.1,
+        0.14,
+        0.16,
+        0.42
+      ],
+      "knobColor": [
+        0.68,
+        0.84,
+        0.9,
+        0.42
+      ]
+    },
+    {
+      "nodeId": "VirtualJoystick_2",
+      "type": "VirtualJoystick",
+      "parentNodeId": "Canvas",
+      "displayName": "VirtualJoystick 2",
+      "localX": -137.89473684210543,
+      "localY": -129.4315789473685,
+      "width": 280,
+      "height": 280,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "BottomRight",
+      "inputProfile": "Mobile",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "role": "RightStick",
+      "deadzone": 0.12,
+      "baseColor": [
+        0.1,
+        0.14,
+        0.16,
+        0.42
+      ],
+      "knobColor": [
+        0.68,
+        0.84,
+        0.9,
+        0.42
+      ]
+    }
+  ]
+}
