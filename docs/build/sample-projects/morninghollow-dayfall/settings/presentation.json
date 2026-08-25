@@ -2,12 +2,12 @@
   "format": "AbyssalProjectPresentationSettings",
   "formatVersion": 3,
   "landscape": {
-    "width": 1280,
-    "height": 720
+    "width": 1920,
+    "height": 1080
   },
   "portrait": {
-    "width": 720,
-    "height": 1280
+    "width": 1080,
+    "height": 1920
   },
   "defaultPresentation": "Auto",
   "hostFitMode": "Stretch"

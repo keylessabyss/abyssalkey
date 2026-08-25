@@ -1,0 +1,7 @@
+{
+  "format": "AbyssalPeriodicWorldTopology",
+  "formatVersion": 1,
+  "enabled": true,
+  "arenaCubeSize": 200,
+  "wrappedWorldArenaScalePercent": 300
+}
