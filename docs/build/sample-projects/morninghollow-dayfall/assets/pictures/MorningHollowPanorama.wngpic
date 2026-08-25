@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsPicture",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Picture.MorningHollowPanorama",
   "displayName": "MorningHollowPanorama",
   "description": "Project imported PNG picture.",
@@ -13,5 +13,12 @@
   "width": 512,
   "height": 256,
   "sourceKind": "ImportedPng",
-  "sidecarFileName": "MorningHollowPanorama.png"
+  "sourceFileName": "MorningHollowPanorama.png",
+  "optimization": {
+    "mode": "OpaqueAdditive",
+    "payloadFileName": "MorningHollowPanorama.optimized.webp",
+    "sourceSha256": "11e7407baf96603688da7964b6843d233177e985cf93af3d7afe327db8445b1b",
+    "sourceByteLength": 140842,
+    "optimizedByteLength": 8228
+  }
 }

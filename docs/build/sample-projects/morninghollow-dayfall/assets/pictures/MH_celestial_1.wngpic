@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsPicture",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Picture.MH_celestial_1",
   "displayName": "MH Celestial 1",
   "description": "Project imported PNG picture.",
@@ -13,5 +13,12 @@
   "width": 214,
   "height": 256,
   "sourceKind": "ImportedPng",
-  "sidecarFileName": "MH_celestial_1.png"
+  "sourceFileName": "MH_celestial_1.png",
+  "optimization": {
+    "mode": "OpaqueAdditive",
+    "payloadFileName": "MH_celestial_1.optimized.webp",
+    "sourceSha256": "747a4d870a8e12ec9f4a137a0fe1510bc36375458064c6e8b42c52b77311eb3f",
+    "sourceByteLength": 75878,
+    "optimizedByteLength": 8676
+  }
 }

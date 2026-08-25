@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsPicture",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Picture.MH_planet_2",
   "displayName": "MH Planet 2",
   "description": "Project imported PNG picture.",
@@ -13,5 +13,12 @@
   "width": 256,
   "height": 256,
   "sourceKind": "ImportedPng",
-  "sidecarFileName": "MH_planet_2.png"
+  "sourceFileName": "MH_planet_2.png",
+  "optimization": {
+    "mode": "PreserveAlpha",
+    "payloadFileName": "MH_planet_2.optimized.webp",
+    "sourceSha256": "d1ee44938e2ed5c109a6bf1b5b3cb2cf8c62e3c7e5171d5fec5223bd2d0430cb",
+    "sourceByteLength": 53574,
+    "optimizedByteLength": 13388
+  }
 }
