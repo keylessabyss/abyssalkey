@@ -113,5 +113,12 @@
     "assets/pictures/MorningHollowPanorama.wngpic",
     "assets/pictures/t_muzzleFlash.wngpic"
   ],
+  "worldTopologySettings": {
+    "format": "AbyssalPeriodicWorldTopology",
+    "formatVersion": 1,
+    "enabled": true,
+    "arenaCubeSize": 200,
+    "wrappedWorldArenaScalePercent": 300
+  },
   "defaultSceneAssetId": "Scene.Main"
 }
