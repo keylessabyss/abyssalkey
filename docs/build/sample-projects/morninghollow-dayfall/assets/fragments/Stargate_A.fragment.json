@@ -292,5 +292,24 @@
   "notifierDefinitions": [],
   "driverDefinitions": [],
   "driverSourceVersion": 2,
-  "fragmentScript": null
+  "fragmentScript": null,
+  "rootPhysicalCollider": {
+    "visible": true,
+    "hiddenInGame": true,
+    "radius": 0.5,
+    "halfHeight": 0.5,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "type": "Complex",
+    "convexHull": null
+  }
 }
