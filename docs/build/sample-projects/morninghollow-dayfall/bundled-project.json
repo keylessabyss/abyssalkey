@@ -117,7 +117,7 @@
     "format": "AbyssalPeriodicWorldTopology",
     "formatVersion": 1,
     "enabled": true,
-    "arenaCubeSize": 200,
+    "arenaCubeSize": 250,
     "wrappedWorldArenaScalePercent": 300
   },
   "defaultSceneAssetId": "Scene.Main"

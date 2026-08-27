@@ -797,6 +797,7 @@
       0,
       0.7071067690849304
     ],
+    "capsules": [],
     "type": "Capsule",
     "convexHull": {
       "vertices": [
