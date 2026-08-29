@@ -22,8 +22,8 @@
       0
     ],
     "emissiveIntensity": 0,
-    "metallic": 0.2,
-    "roughness": 0.7,
+    "metallic": 0,
+    "roughness": 1,
     "opacity": 1,
     "baseColorPictureAssetId": null,
     "textureMappingMode": "UV",

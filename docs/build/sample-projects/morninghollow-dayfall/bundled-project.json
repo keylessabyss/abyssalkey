@@ -115,6 +115,7 @@
     "assets/pictures/MorningHollowPanorama.wngpic",
     "assets/pictures/t_muzzleFlash.wngpic"
   ],
+  "globalWorldCapture": "settings/global-world-capture.json",
   "worldTopologySettings": {
     "format": "AbyssalPeriodicWorldTopology",
     "formatVersion": 1,

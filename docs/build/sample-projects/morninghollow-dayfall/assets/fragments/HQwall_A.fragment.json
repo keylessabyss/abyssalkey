@@ -141,7 +141,19 @@
           "smoothingGroupMask": 0
         }
       ],
-      "uvwProjection": null,
+      "uvwProjection": {
+        "mode": "Box",
+        "center": [
+          83.61139917373657,
+          0,
+          0
+        ],
+        "scale": [
+          183.56299877166748,
+          281.8855895996094,
+          92.99939727783203
+        ]
+      },
       "automaticUVGeneration": false
     },
     {

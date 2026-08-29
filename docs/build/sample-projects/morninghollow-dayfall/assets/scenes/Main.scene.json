@@ -1,6 +1,6 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 11,
+  "formatVersion": 13,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
@@ -15,8 +15,8 @@
       0,
       1
     ],
-    "intensity": 1,
-    "exposure": 1,
+    "intensity": 1.5,
+    "exposure": 0.7,
     "linkWorldLight": true,
     "worldLightOffset": 0
   },
@@ -32,7 +32,7 @@
     "proceduralStars": {
       "enabled": true,
       "seed": 24086,
-      "density": 0.5,
+      "density": 1,
       "brightness": 1,
       "size": 2
     },
@@ -220,21 +220,22 @@
       -0.49999999999999994
     ],
     "color": [
-      0.25415209433082675,
-      0.1119324278369056,
-      0.8962693533742664
+      0.3049873140698863,
+      0,
+      0.9559733532492861
     ],
-    "intensity": 1
+    "intensity": 0.4
   },
   "skyLight": {
     "enabled": true,
     "color": [
-      0.3419144249086609,
-      0.9822505503331171,
-      1
+      0.0003035269835488375,
+      0.44520119451622786,
+      0.9911020971138298
     ],
-    "intensity": 2
+    "intensity": 0.3
   },
+  "reflectionRenderingMode": "Hybrid Reflection",
   "placedFragments": [
     {
       "instanceId": "PlacedFragment1",
@@ -260,6 +261,37 @@
       "controllerId": "None",
       "gameplayRole": "None",
       "agentBinding": "Day",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment2",
+      "sourceFragmentAssetId": "Fragment.HQwall_A",
+      "instanceName": "HQwall_Apex 2",
+      "worldPosition": [
+        200,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        1,
+        6.123234262925839e-17
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Night",
+      "controllerId": "None",
+      "gameplayRole": "None",
+      "agentBinding": "Night",
       "baseRotationOffset": [
         0,
         0,
@@ -330,6 +362,105 @@
       ]
     }
   ],
-  "placedUtilities": [],
+  "placedUtilities": [
+    {
+      "instanceId": "PlacedUtility1",
+      "utilityType": "EmptyActor",
+      "instanceName": "MHdayfall Game Mode",
+      "worldPosition": [
+        0,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "settings": {
+        "kind": "EmptyActor",
+        "gameplayRole": "AgentSetup",
+        "agents": [
+          {
+            "agentId": "Day",
+            "teamId": "Morninghollow.Day",
+            "botId": "DefaultBot",
+            "startingResources": 100,
+            "passiveIncome": 5,
+            "unitCap": 20,
+            "killReward": 5
+          },
+          {
+            "agentId": "Night",
+            "teamId": "Morninghollow.Night",
+            "botId": "DefaultBot",
+            "startingResources": 100,
+            "passiveIncome": 5,
+            "unitCap": 20,
+            "killReward": 5
+          }
+        ],
+        "teams": [
+          {
+            "teamId": "Morninghollow.Day",
+            "teamColor": [
+              0,
+              0,
+              0.07421356838014963
+            ],
+            "teamEmissive": [
+              0,
+              0.5775804404296506,
+              1
+            ]
+          },
+          {
+            "teamId": "Morninghollow.Night",
+            "teamColor": [
+              0.06301001765316767,
+              0,
+              0.006995410187265387
+            ],
+            "teamEmissive": [
+              1,
+              0,
+              0.06480326669290577
+            ]
+          }
+        ]
+      },
+      "interactions": {
+        "interactionDefinitions": [
+          {
+            "id": "Interaction.BeginPlay",
+            "name": "Begin Play",
+            "event": "BeginPlay",
+            "enabled": true,
+            "sourceBody": "\n"
+          },
+          {
+            "id": "Interaction.Tick",
+            "name": "Tick",
+            "event": "Tick",
+            "enabled": true,
+            "sourceBody": "\n    // Read-only utility diagnostics can be authored here.\n"
+          },
+          {
+            "id": "Interaction.EndPlay",
+            "name": "End Play",
+            "event": "EndPlay",
+            "enabled": true,
+            "sourceBody": "\n"
+          }
+        ]
+      }
+    }
+  ],
   "placedAudioNodes": []
 }
