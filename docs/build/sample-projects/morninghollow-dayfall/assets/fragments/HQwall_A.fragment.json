@@ -128,7 +128,7 @@
         {
           "meshId": "hqwall_a_boltz",
           "materialAssetId": "Material.M_metal_bronze",
-          "smoothingGroupMask": 0
+          "smoothingGroupMask": 1
         },
         {
           "meshId": "hqwall_a_color",

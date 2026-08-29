@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.heavy_a_ship",
+  "displayName": "Heavy A Ship",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/heavy_a_ship.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "heavy_a_base",
+        "displayName": "heavy_a_base",
+        "objectName": "heavy_a_base",
+        "groupName": "heavy_a_base",
+        "materialName": "01___Default",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "heavy_a_boltz",
+        "displayName": "heavy_a_boltz",
+        "objectName": "heavy_a_boltz",
+        "groupName": "heavy_a_boltz",
+        "materialName": "04___Default",
+        "smoothingGroup": "off"
+      },
+      {
+        "meshId": "heavy_a_color",
+        "displayName": "heavy_a_color",
+        "objectName": "heavy_a_color",
+        "groupName": "heavy_a_color",
+        "materialName": "02___Default",
+        "smoothingGroup": "off"
+      },
+      {
+        "meshId": "heavy_a_emissive",
+        "displayName": "heavy_a_emissive",
+        "objectName": "heavy_a_emissive",
+        "groupName": "heavy_a_emissive",
+        "materialName": "03___Default",
+        "smoothingGroup": "1"
+      }
+    ]
+  }
+}

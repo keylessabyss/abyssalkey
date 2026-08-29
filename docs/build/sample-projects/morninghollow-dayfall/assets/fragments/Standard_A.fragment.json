@@ -393,7 +393,7 @@
         {
           "meshId": "standard_a_boltz1",
           "materialAssetId": "Material.M_metal_bronze",
-          "smoothingGroupMask": 1
+          "smoothingGroupMask": 0
         },
         {
           "meshId": "standard_a_color1",

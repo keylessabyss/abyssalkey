@@ -250,106 +250,6 @@
       ]
     },
     {
-      "nodeId": "MeshNode2",
-      "type": "Mesh",
-      "name": "Heavy A Bolz",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.heavy_a_bolz",
-      "meshId": null,
-      "materialAssetId": "Material.M_metal_bronze"
-    },
-    {
-      "nodeId": "MeshNode4",
-      "type": "Mesh",
-      "name": "Heavy A Emissive",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.heavy_a_emissive",
-      "meshId": null,
-      "materialAssetId": "Material.M_dynamic_accent"
-    },
-    {
-      "nodeId": "MeshNode1",
-      "type": "Mesh",
-      "name": "Heavy A Base",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.heavy_a_base",
-      "meshId": null,
-      "materialAssetId": "Material.M_Metal_Gray"
-    },
-    {
-      "nodeId": "MeshNode3",
-      "type": "Mesh",
-      "name": "Heavy A Color",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "meshAssetId": "Mesh.heavy_a_color",
-      "meshId": null,
-      "materialAssetId": "Material.M_dynamic_color"
-    },
-    {
       "nodeId": "EmptyNode1",
       "type": "Empty",
       "name": "Left Muzzle",
@@ -417,6 +317,170 @@
         1
       ],
       "referenceKey": "muzzle.right"
+    },
+    {
+      "nodeId": "MeshDataRoot1",
+      "type": "MeshDataRoot",
+      "name": "Heavy A Ship",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshDataRoot",
+      "meshAssetId": "Mesh.heavy_a_ship",
+      "meshMaterialBindings": [
+        {
+          "meshId": "heavy_a_base",
+          "materialAssetId": "Material.M_Metal_Gray",
+          "smoothingGroupMask": 1
+        },
+        {
+          "meshId": "heavy_a_boltz",
+          "materialAssetId": "Material.M_metal_bronze",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "heavy_a_color",
+          "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 1
+        },
+        {
+          "meshId": "heavy_a_emissive",
+          "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        }
+      ],
+      "uvwProjection": {
+        "mode": "Box",
+        "center": [
+          1.4654000401496887,
+          0,
+          0.28074997663497925
+        ],
+        "scale": [
+          6.241400122642517,
+          8.721199989318848,
+          2.1450999975204468
+        ]
+      },
+      "automaticUVGeneration": false
+    },
+    {
+      "nodeId": "MeshNode2",
+      "type": "Mesh",
+      "name": "heavy_a_base",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.heavy_a_ship",
+      "meshId": "heavy_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "MeshNode3",
+      "type": "Mesh",
+      "name": "heavy_a_boltz",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.heavy_a_ship",
+      "meshId": "heavy_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "MeshNode4",
+      "type": "Mesh",
+      "name": "heavy_a_color",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.heavy_a_ship",
+      "meshId": "heavy_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "MeshNode5",
+      "type": "Mesh",
+      "name": "heavy_a_emissive",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "role": "MeshPart",
+      "meshAssetId": "Mesh.heavy_a_ship",
+      "meshId": "heavy_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
     }
   ],
   "componentDefinitions": [
@@ -434,7 +498,7 @@
   "driverSourceVersion": 2,
   "fragmentScript": null,
   "rootPhysicalCollider": {
-    "visible": true,
+    "visible": false,
     "hiddenInGame": true,
     "radius": 1,
     "halfHeight": 3,
