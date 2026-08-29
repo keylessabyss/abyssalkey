@@ -1,6 +1,6 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 10,
+  "formatVersion": 11,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
@@ -220,9 +220,9 @@
       -0.49999999999999994
     ],
     "color": [
-      0.18782077230067787,
-      0.10461648409110419,
-      0.83879901174074
+      0.25415209433082675,
+      0.1119324278369056,
+      0.8962693533742664
     ],
     "intensity": 1
   },
@@ -230,12 +230,106 @@
     "enabled": true,
     "color": [
       0.3419144249086609,
-      1,
-      0.9046611743911496
+      0.9822505503331171,
+      1
     ],
     "intensity": 2
   },
-  "placedFragments": [],
+  "placedFragments": [
+    {
+      "instanceId": "PlacedFragment1",
+      "sourceFragmentAssetId": "Fragment.HQwall_A",
+      "instanceName": "HQwall_Apex",
+      "worldPosition": [
+        -200,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Day",
+      "controllerId": "None",
+      "gameplayRole": "None",
+      "agentBinding": "Day",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment3",
+      "sourceFragmentAssetId": "Fragment.Stargate_A",
+      "instanceName": "Stargate_Apex",
+      "worldPosition": [
+        -150,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Day",
+      "controllerId": "None",
+      "gameplayRole": "Base",
+      "agentBinding": "Day",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment4",
+      "sourceFragmentAssetId": "Fragment.Stargate_A",
+      "instanceName": "Stargate_Apex 2",
+      "worldPosition": [
+        150,
+        0,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Night",
+      "controllerId": "None",
+      "gameplayRole": "Base",
+      "agentBinding": "Night",
+      "baseRotationOffset": [
+        0,
+        0,
+        -1,
+        6.123234262925839e-17
+      ]
+    }
+  ],
   "placedUtilities": [],
   "placedAudioNodes": []
 }

@@ -1,6 +1,6 @@
 {
   "format": "AbyssalMaterial",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Material.M_dynamic_color",
   "displayName": "Team Color",
   "description": "",
@@ -11,9 +11,9 @@
   "channelRole": "TeamColor",
   "reflectionLit": {
     "baseColor": [
-      0.13843161503245183,
-      0.009134058702220787,
-      0.9646862478944651,
+      0.03189603307301153,
+      0.005605391624202723,
+      0.1559264637078274,
       1
     ],
     "emissiveColor": [
@@ -22,8 +22,16 @@
       0
     ],
     "emissiveIntensity": 0,
-    "metallic": 1,
-    "roughness": 1,
-    "opacity": 1
+    "metallic": 0.2,
+    "roughness": 0.7,
+    "opacity": 1,
+    "baseColorPictureAssetId": null,
+    "textureMappingMode": "UV",
+    "localTriplanarTileSize": 1,
+    "localTriplanarOffset": [
+      0,
+      0,
+      0
+    ]
   }
 }

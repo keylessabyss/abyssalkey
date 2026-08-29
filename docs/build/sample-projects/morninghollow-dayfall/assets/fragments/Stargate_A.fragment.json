@@ -294,7 +294,7 @@
   "driverSourceVersion": 2,
   "fragmentScript": null,
   "rootPhysicalCollider": {
-    "visible": true,
+    "visible": false,
     "hiddenInGame": true,
     "radius": 0.5,
     "halfHeight": 0.5,
@@ -309,6 +309,7 @@
       0,
       1
     ],
+    "capsules": [],
     "type": "Complex",
     "convexHull": null
   }

@@ -7,6 +7,7 @@
     "assets/meshes/heavy_a_bolz.mesh.json",
     "assets/meshes/heavy_a_color.mesh.json",
     "assets/meshes/heavy_a_emissive.mesh.json",
+    "assets/meshes/hqwall_a_building.mesh.json",
     "assets/meshes/scout_a_base.mesh.json",
     "assets/meshes/scout_a_boltz.mesh.json",
     "assets/meshes/scout_a_color.mesh.json",
@@ -26,6 +27,7 @@
   ],
   "fragments": [
     "assets/fragments/Heavy_A.fragment.json",
+    "assets/fragments/HQwall_A.fragment.json",
     "assets/fragments/Scout_A.fragment.json",
     "assets/fragments/Standard_A.fragment.json",
     "assets/fragments/Stargate_A.fragment.json"

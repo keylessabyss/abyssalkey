@@ -29,24 +29,83 @@
     <section class="section panel">
       <h2>Core Idea</h2>
       <p>Keep Actors light. Attach the behaviors you need. This makes systems modular, testable, and easy to combine.</p>
+      <p class="small">For authored Fragments, Root Core Components are shared by Player, AI, and future commander profiles. Acceleration, Pitch, Yaw, and Barrel Roll can therefore be authored once in Core when every controller should use the same flight model. Player keyboard and mouse bindings remain in the Player Input Manager; any controller can produce the logical input channels those Components consume.</p>
     </section>
 
-    <section class="section grid">
+    <section class="section grid two">
       <article class="card">
-        <h3>ResourceComponent</h3>
-        <p>Health, shields, energy, and other tracked values with regeneration.</p>
+        <h3>Tag</h3>
+        <p>Adds authored labels to a Fragment for identification and filtering by gameplay or scripts.</p>
       </article>
       <article class="card">
-        <h3>TeamComponent</h3>
-        <p>Faction ownership used for materials, targeting, and gameplay rules.</p>
+        <h3>Resource</h3>
+        <p>Creates tracked values such as Health, with a maximum and starting value for damage and other systems.</p>
       </article>
       <article class="card">
-        <h3>WeaponComponent</h3>
-        <p>Ranged or melee attacks with cooldown, damage, and range.</p>
+        <h3>Team</h3>
+        <p>Assigns faction ownership used by team colors, targeting, damage rules, and match logic.</p>
       </article>
       <article class="card">
-        <h3>LanePushBehavior</h3>
-        <p>Movement along lanes with targeting, combat pause, and friendly separation.</p>
+        <h3>Targeting</h3>
+        <p>Searches for valid targets within a configured radius, optionally requiring an enemy team.</p>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card" id="weapon">
+        <h3>Weapon</h3>
+        <p>Fires from an authored input channel with damage, range, and cooldown settings. It can use muzzle anchors, projectile visuals, muzzle flashes, and a local crosshair.</p>
+      </article>
+      <article class="card">
+        <h3>Lane Push</h3>
+        <p>Moves an AI unit along the active lane, turns toward its route, and can pause for combat while staying on the authored plane.</p>
+      </article>
+      <article class="card">
+        <h3>Acceleration</h3>
+        <p>Reads a signed local input channel and accelerates or decelerates forward movement up to the configured response rates.</p>
+      </article>
+      <article class="card">
+        <h3>Pitch</h3>
+        <p>Reads a signed local input channel and smoothly turns the Fragment around its pitch axis.</p>
+      </article>
+      <article class="card">
+        <h3>Yaw</h3>
+        <p>Reads a signed local input channel and smoothly turns the Fragment around its yaw axis.</p>
+      </article>
+      <article class="card" id="barrel-roll">
+        <h3>Barrel Roll</h3>
+        <p>Reads one signed input channel and continuously rolls the Fragment around its forward axis while the input is held. Positive and Negative / Opposite controls are combined by the Player Profile binding; the sign selects the roll direction. Sensitivity controls the roll rate, and releasing the input stops the roll.</p>
+      </article>
+      <article class="card">
+        <h3>Auto Combat</h3>
+        <p>Provides automatic combat behavior that can aim and work with targeting and weapon Components without player input.</p>
+      </article>
+    </section>
+
+    <section class="section grid two">
+      <article class="card" id="auto-input">
+        <h3>Auto Input</h3>
+        <p>Emits a local input channel at a configured interval when its range conditions are met, allowing weapons and other listeners to react.</p>
+      </article>
+      <article class="card">
+        <h3>Spawn</h3>
+        <p>Marks an authored Fragment as able to participate in the Fragment spawn path used by runtime gameplay.</p>
+      </article>
+      <article class="card">
+        <h3>Player Start</h3>
+        <p>Marks a Fragment Root or Anchor as a team-owned player start. PlayerStart selection uses the placed Fragment’s inherited team and authored transform.</p>
+      </article>
+      <article class="card">
+        <h3>Particle Emitter</h3>
+        <p>Attaches a particle asset to the authored host and optionally starts it automatically during runtime.</p>
+      </article>
+      <article class="card">
+        <h3>Respawn</h3>
+        <p>Returns an Actor to its initial spawn context after destruction or a configured respawn input, with an authored delay.</p>
+      </article>
+      <article class="card">
+        <h3>Unknown</h3>
+        <p>Preserves an unrecognized component definition so newer or custom data is not discarded when an older editor loads and saves the Fragment.</p>
       </article>
     </section>
 

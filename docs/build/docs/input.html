@@ -28,7 +28,7 @@
 
     <section class="section callout">
       <h2>Core Rule</h2>
-      <p>Hardware produces input. Controllers translate input. Fragments consume input. Components decide what it means.</p>
+      <p>Hardware, AI controllers, and authored producers can all provide input. Controllers translate their source into logical channels. Fragments consume those channels, and Components decide what each channel means.</p>
     </section>
 
     <section class="section grid two">
@@ -44,7 +44,9 @@
             <tr><td>Input4</td><td>ShiftLeft, Gamepad0.Button3</td></tr>
           </tbody>
         </table>
-        <p class="small">Bindings live on the Root Player profile because they describe how a player drives that Fragment.</p>
+        <p class="small">Bindings live on the Root Player profile because they describe how a player drives that Fragment. They are not shared Core definitions; an AI commander supplies its own logical channel values instead.</p>
+        <p class="small">Use the picker beside Positive / Axis or Negative / Opposite to capture one keyboard key, mouse button, gamepad button, or physical stick direction. Each capture is appended to the field, so multiple controls can share a channel; press Escape while capturing to cancel. Stick captures include their signed direction, such as <code>Gamepad0.LeftStickX+</code> or <code>Gamepad0.LeftStickY-</code>; non-standard axes use <code>Gamepad0.AxisN+</code> or <code>Gamepad0.AxisN-</code>.</p>
+        <p class="small">For complete binding instructions, mouse options, and supported control IDs, see <a href="#mouse-flight">Authored Mouse Flight</a> and <a href="#supported-controls">Supported Control IDs</a> below.</p>
       </article>
 
       <article class="card" id="fragment-input-channels">
@@ -55,22 +57,42 @@
       </article>
     </section>
 
+    <section class="section panel" id="mouse-flight">
+      <h2>Authored Mouse Flight</h2>
+      <p>Bind <code>MouseX</code> and <code>MouseY</code> to the local channels used by your Fragment’s Yaw and Pitch Components. Mouse axes are signed per-frame motion: <code>MouseX</code> is positive when moving left, and <code>MouseY</code> is positive when moving down. Put an axis in <strong>Positive / Axis</strong> by itself; use <strong>Negative / Opposite</strong> only for paired keys or buttons.</p>
+      <p class="small">MouseX and MouseY are Player hardware controls. If Yaw or Pitch is authored in Root Core, that Component is shared, but AI and other commanders must provide the same logical channel values through their own input producer.</p>
+      <table>
+        <tbody>
+          <tr><th>Player Profile option</th><th>What it does</th></tr>
+          <tr><td>Consume Mouse</td><td>While this Fragment is possessed, mouse motion drives its authored bindings instead of editor-camera look.</td></tr>
+          <tr><td>Hide Mouse (Pointer Lock)</td><td>Requires Consume Mouse. Hides and locks the cursor so Mouse X/Y continue reporting after the physical cursor reaches a viewport edge.</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Pointer lock is requested when Play begins. If a browser requires a direct gesture, click the Play viewport once to grant it. While the cursor is hidden, world-item selection is disabled so a flight click cannot select a Fragment accidentally; press F8 to jump to Wings Eye when you intentionally need editor selection. Press Escape to release the locked cursor. Stopping Play or releasing possession also restores the cursor.</p>
+    </section>
+
     <section class="section grid two">
       <article class="card" id="auto-input">
         <h2>Auto Input</h2>
         <p>Auto Input is an authored producer. When its conditions are met, it emits a local input channel at a configured rate, allowing existing Components to react without special-case combat code.</p>
         <p>For example, Auto Input can emit Input1 while a target is in range. Any Weapon Component listening to Input1 may fire.</p>
+        <p>Auto Input can feed any Component that listens to the selected channel, including Weapon, Acceleration, Pitch, Yaw, Barrel Roll, and Respawn. The channel is the connection between the producer and those listeners; the listener decides what the signal means.</p>
         <p class="small">Auto Input is not a replacement for Player Input Bindings. It is another producer that speaks the same channel language.</p>
+        <p class="small"><a href="components.html#auto-input">Read the Auto Input component details</a> and see the <a href="components.html#weapon">other component explanations</a>.</p>
       </article>
 
-      <article class="card">
+      <article class="card" id="supported-controls">
         <h2>Supported Control IDs</h2>
         <p>Use <code>Gamepad0.Button0</code> through <code>Gamepad0.Button16</code> for the first connected controller. Replace <code>0</code> after <code>Gamepad</code> to address another controller.</p>
+        <p><strong>Keyboard controls are not limited to the examples below.</strong> Any standard browser <code>KeyboardEvent.code</code> can be entered manually in a binding field. <code>Key(AnyKeyboardKey)</code> is a description of the pattern, not a literal value to type.</p>
         <table>
           <tbody>
             <tr><th>Control</th><th>Meaning</th></tr>
+            <tr><td><code>KeyboardEvent.code</code></td><td>Any physical keyboard key, entered by its code; examples include <code>KeyR</code>, <code>KeyF</code>, <code>Digit1</code>, <code>NumpadEnter</code>, <code>F1</code>, <code>BracketLeft</code>, and <code>Slash</code></td></tr>
             <tr><td>MouseLeft</td><td>Left mouse button</td></tr>
             <tr><td>MouseRight</td><td>Right mouse button</td></tr>
+            <tr><td>MouseX</td><td>Signed horizontal mouse motion: left is positive</td></tr>
+            <tr><td>MouseY</td><td>Signed vertical mouse motion: down is positive</td></tr>
             <tr><td>Space</td><td>Keyboard Space</td></tr>
             <tr><td>ShiftLeft</td><td>Keyboard Left Shift</td></tr>
             <tr><td>ControlLeft</td><td>Keyboard Left Control</td></tr>
@@ -97,8 +119,15 @@
             <tr><td>Gamepad0.RightStickX / RightStickY</td><td>Right stick axes</td></tr>
           </tbody>
         </table>
-        <p class="small">Names follow the standard gamepad layout. A controller or browser may expose fewer buttons; a missing button simply has no input value.</p>
+        <p class="small">Mouse axes are normalized per-frame motion in the same signed range as a stick. A signed axis can be placed in Positive / Axis by itself, or capture its + and - directions into the matching fields. The picker polls physical gamepads while it is capturing, so press a button or move a stick after opening it. Names follow the standard gamepad layout. A controller or browser may expose fewer buttons; a missing button simply has no input value.</p>
       </article>
+    </section>
+
+    <section class="section panel" id="barrel-roll-input">
+      <h2>Barrel Roll Inputs</h2>
+      <p>The authored Barrel Roll Component uses one Input Channel, just like Pitch and Yaw. It can be authored in Root Core for a shared flight model or in a specific controller profile for unique behavior. In a Player Profile binding, put the positive control in Positive / Axis and an opposite key or button in Negative / Opposite. The binding combines those controls into one signed value: positive rolls one direction, negative rolls the opposite direction.</p>
+      <p class="small">Holding the control continuously rolls the ship, and releasing it stops the roll. The Component's Sensitivity sets the roll rate; the default is 6 radians per second at full input.</p>
+      <p class="small"><a href="components.html#barrel-roll">Read the Barrel Roll component details</a>.</p>
     </section>
 
     <section class="section panel">

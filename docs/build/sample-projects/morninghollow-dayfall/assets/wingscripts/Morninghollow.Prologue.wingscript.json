@@ -8,5 +8,5 @@
     "WingScript"
   ],
   "version": "1",
-  "source": "BeginPlay()\n{\n    ShowUI(\"Start HUD\");\n\n    CreateAgent(Day)\n        .Team(Morninghollow.Day)\n        .Bot(DefaultBot)\n        .Resources(StartingResources)\n        .Income(5)\n        .UnitCap(20)\n        .KillReward(5);\n\n    CreateAgent(Night)\n        .Team(Morninghollow.Night)\n        .Bot(DefaultBot)\n        .Resources(StartingResources)\n        .Income(5)\n        .UnitCap(20)\n        .KillReward(5);\n\n    Spawn(Stargate)\n        .Location(-150, 0, 0)\n        .Owner(Day);\n\n    Spawn(Stargate)\n        .Location(150, 0, 0)\n        .Owner(Night);\n}\n"
+  "source": "BeginPlay()\n{\n    ShowUI(\"Start HUD\");\n    StartSiege(MorninghollowSiege);\n\n    CreateAgent(Day)\n        .Team(Morninghollow.Day)\n        .Bot(DefaultBot)\n        .Resources(StartingResources)\n        .Income(5)\n        .UnitCap(20)\n        .KillReward(5);\n\n    CreateAgent(Night)\n        .Team(Morninghollow.Night)\n        .Bot(DefaultBot)\n        .Resources(StartingResources)\n        .Income(5)\n        .UnitCap(20)\n        .KillReward(5);\n\n}\n"
 }

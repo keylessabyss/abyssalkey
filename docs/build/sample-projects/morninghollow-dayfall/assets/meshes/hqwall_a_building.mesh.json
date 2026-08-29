@@ -1,0 +1,54 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.hqwall_a_building",
+  "displayName": "Hqwall A Building",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/hqwall_a_building.obj",
+  "importOptions": {
+    "flipV": false
+  },
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "hqwall_a_base",
+        "displayName": "hqwall_a_base",
+        "objectName": "hqwall_a_base",
+        "groupName": "hqwall_a_base",
+        "materialName": "01___Default",
+        "smoothingGroup": "2"
+      },
+      {
+        "meshId": "hqwall_a_boltz",
+        "displayName": "hqwall_a_boltz",
+        "objectName": "hqwall_a_boltz",
+        "groupName": "hqwall_a_boltz",
+        "materialName": "04___Default",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "hqwall_a_color",
+        "displayName": "hqwall_a_color",
+        "objectName": "hqwall_a_color",
+        "groupName": "hqwall_a_color",
+        "materialName": "02___Default",
+        "smoothingGroup": "2"
+      },
+      {
+        "meshId": "hqwall_a_emissive",
+        "displayName": "hqwall_a_emissive",
+        "objectName": "hqwall_a_emissive",
+        "groupName": "hqwall_a_emissive",
+        "materialName": "03___Default",
+        "smoothingGroup": "8"
+      }
+    ]
+  }
+}

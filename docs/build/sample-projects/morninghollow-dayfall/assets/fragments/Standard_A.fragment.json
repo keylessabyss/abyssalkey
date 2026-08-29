@@ -16,6 +16,8 @@
     {
       "profileId": "Player",
       "displayName": "Player",
+      "consumeMouse": true,
+      "hideMouse": true,
       "inputBindings": [
         {
           "inputChannel": "Input1",
@@ -32,43 +34,59 @@
         {
           "inputChannel": "Input2",
           "positiveControls": [
-            "Space",
-            "Gamepad0.RightStickY"
+            "KeyW",
+            "Gamepad0.RightStickY+"
           ],
           "negativeControls": [
-            "ShiftLeft"
+            "KeyS",
+            "Gamepad0.RightStickY-"
           ],
           "hardwareControls": [
-            "Space",
-            "Gamepad0.RightStickY"
+            "KeyW",
+            "Gamepad0.RightStickY+"
           ]
         },
         {
           "inputChannel": "Input3",
           "positiveControls": [
-            "KeyA",
-            "Gamepad0.LeftStickX"
+            "MouseX",
+            "Gamepad0.LeftStickX+"
           ],
           "negativeControls": [
-            "KeyD"
+            "Gamepad0.LeftStickX-"
           ],
           "hardwareControls": [
-            "KeyA",
-            "Gamepad0.LeftStickX"
+            "MouseX",
+            "Gamepad0.LeftStickX+"
           ]
         },
         {
           "inputChannel": "Input4",
           "positiveControls": [
-            "KeyW",
-            "Gamepad0.LeftStickY"
+            "MouseY",
+            "Gamepad0.LeftStickY-"
           ],
           "negativeControls": [
-            "KeyS"
+            "Gamepad0.LeftStickY+"
           ],
           "hardwareControls": [
-            "KeyW",
-            "Gamepad0.LeftStickY"
+            "MouseY",
+            "Gamepad0.LeftStickY-"
+          ]
+        },
+        {
+          "inputChannel": "Input5",
+          "positiveControls": [
+            "KeyD",
+            "Gamepad0.RightStickX-"
+          ],
+          "negativeControls": [
+            "KeyA",
+            "Gamepad0.RightStickX+"
+          ],
+          "hardwareControls": [
+            "KeyD",
+            "Gamepad0.RightStickX-"
           ]
         }
       ],
@@ -180,6 +198,12 @@
           "inputChannel": "Input1",
           "interval": 0.01,
           "range": 20
+        },
+        {
+          "type": "BarrelRoll",
+          "enabled": true,
+          "inputChannel": "Input5",
+          "rollSensitivity": 2
         }
       ]
     },
@@ -618,7 +642,7 @@
         1,
         1
       ],
-      "cameraFieldOfViewDegrees": 48,
+      "cameraFieldOfViewDegrees": 50,
       "cameraSpringArm": {
         "enabled": true,
         "pivotOffset": [
@@ -637,7 +661,8 @@
         "positionLag": 8,
         "rotationLag": 4.5,
         "lookLag": 9,
-        "zoomLag": 3.5
+        "zoomLag": 3.5,
+        "followShipUp": true
       }
     }
   ],
@@ -782,7 +807,7 @@
     "source": "BeginPlay()\n{\n\n}\n\nTick()\n{\n    // Read-only instance diagnostics can be authored here\n\n}\n\nEndPlay()\n{\n\n}\n"
   },
   "rootPhysicalCollider": {
-    "visible": true,
+    "visible": false,
     "hiddenInGame": true,
     "radius": 1,
     "halfHeight": 2,

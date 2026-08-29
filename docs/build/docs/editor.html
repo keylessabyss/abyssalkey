@@ -39,10 +39,12 @@
       <article class="card">
         <h3>Content Browser</h3>
         <p>Browse Meshes, Materials, and Fragments. Create new content and add to world or assembler.</p>
+        <p class="small">The current editor-camera X, Y, and Z coordinates are shown centered along the top edge of the Content Browser, keeping the readout out of the way of other editors.</p>
       </article>
-      <article class="card">
+      <article class="card" id="wings-assembler">
         <h3>Wings Assembler</h3>
         <p>Build modular assemblies with mesh nodes, empty pivots, transforms, and material assignments. Save as FragmentAsset.</p>
+        <p class="small">The <strong>?</strong> beside the Wings Assembler heading opens this reference from the editor.</p>
       </article>
       <article class="card">
         <h3>Hierarchy & Details</h3>
@@ -50,9 +52,73 @@
       </article>
     </section>
 
+    <section class="section panel" id="wings-assembler-details">
+      <h2>Wings Assembler Details</h2>
+      <p>Wings Assembler stores the Fragment's reusable hierarchy and its authored ComponentDefinitions. The Details panel is intentionally compact; use this section for the ownership rules behind those controls.</p>
+      <table>
+        <tbody>
+          <tr><th>Authoring area</th><th>Runtime meaning</th></tr>
+          <tr><td>Root &gt; Core Components</td><td>Shared definitions. They are applied to authored instances using None, Player, or AI.</td></tr>
+          <tr><td>Behavior Profiles &gt; Player / AI</td><td>Definitions for only the selected controller profile.</td></tr>
+          <tr><td>Behavior Profiles &gt; None</td><td>Inert profile selection; it is not a shared-components bucket. Only Core Components run for Controller: None.</td></tr>
+          <tr><td>Anchor Components</td><td>Localized behavior attached to an Anchor's world pose and active Fragment context.</td></tr>
+          <tr><td>Mesh Data Root</td><td>Shared mesh presentation bindings. Mesh Parts inherit them and do not own gameplay components.</td></tr>
+        </tbody>
+      </table>
+      <p>Place a component in Core only when the same definition should exist for every controller context. For example, shared Targeting, Weapon, Acceleration, Pitch, Yaw, or Barrel Roll definitions can keep Player, AI, and future commander profiles cleaner. Auto Combat and Auto Input can also be shared when every controller should use them. Keep hardware bindings in the Player Input Manager; AI commanders provide the same logical input channels through their own producers.</p>
+    </section>
+
+    <section class="section panel" id="root-physical-collider">
+      <h2>Root Physical Collider</h2>
+      <p>Capsule and Compound Capsule are movable kinematic bodies. Convex is a baked precise body, while Complex As Simple uses structural mesh triangles. Visibility changes only the diagnostic wireframe; it never changes collision.</p>
+      <p>For a capsule, <strong>Half Height</strong> is the center-to-cap distance. Setting Half Height equal to Radius produces a spherical capsule. Compound Capsule combines up to four capsule shapes into one Fragment body.</p>
+    </section>
+
+    <section class="section panel" id="global-environment">
+      <h2>Global Environment</h2>
+      <p>The World has one authorable Global Reflection Environment. Its rotation changes the current reflection environment; translation is editor positioning, and scale is reserved for future local reflection volumes. The environment remains selectable for its Details controls, but its viewport gizmo is hidden to keep the environment view clear.</p>
+      <table>
+        <tbody>
+          <tr><th>System</th><th>Meaning</th></tr>
+          <tr><td>Primary Directional Light</td><td>Direct illumination only. It does not change the visible background or reflection environment.</td></tr>
+          <tr><td>Sky Light</td><td>Opposite-direction fill using the inverse Primary Directional Light direction. It lights metal and non-metal surfaces without changing the visible background or reflection environment.</td></tr>
+          <tr><td>Static Space Background</td><td>Visible backdrop only. It does not change reflections or lighting.</td></tr>
+          <tr><td>Celestial Presentation</td><td>Celestial features are authored in the separate Celestial Presentation workspace.</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Use the <strong>?</strong> button beside Global Reflection Environment in Details to return to this reference.</p>
+    </section>
+
     <section class="section panel">
       <h2>Play / Stop</h2>
-      <p>Test your scene with full gameplay simulation. Stop returns to the authored state.</p>
+      <p>Test your scene with full gameplay simulation. Play clears the previous editor world-item selection so it cannot look like a gameplay target; Stop returns to the authored state.</p>
+    </section>
+
+    <section class="section panel" id="fragment-camera">
+      <h2>Fragment Camera Spring Arm</h2>
+      <p>A Camera node inside a Fragment may use a Spring Arm for a smoothed third-person follow pose. The Camera node remains the authored rig and pivot; the Spring Arm resolves its final position, look target, and lag.</p>
+      <table>
+        <tbody>
+          <tr><th>Setting</th><th>Result</th></tr>
+          <tr><td>Follow Ship Up: Off</td><td>Uses a stable world-up reference, keeping the horizon readable while the ship rolls or loops.</td></tr>
+          <tr><td>Follow Ship Up: On</td><td>Uses the authored Camera node’s local +Z up direction, so the gameplay camera rolls with the ship and keeps the ship’s top toward the top of the view.</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Follow Ship Up is saved on the Camera node’s Spring Arm. It is off by default. It affects Spring Arm cameras only; a Camera without a Spring Arm already uses its authored world transform and up direction directly.</p>
+    </section>
+
+    <section class="section panel" id="placed-fragments">
+      <h2>Placed Fragment Preview</h2>
+      <p>World Mode previews a placed Fragment using its assigned Team materials and Agent Binding, so the editor viewport matches the presentation used when Play starts.</p>
+      <p>Team colors apply to mesh materials authored with the Team Color or Team Emissive channel role. Fixed materials keep their authored appearance. Assigning Day or Night applies that team’s canonical heading; the saved base rotation offset preserves additional authored rotation afterward.</p>
+      <p class="small">Gameplay Role <strong>Base</strong> marks a lane origin. You can use multiple Base buildings for Day and multiple Base buildings for Night; matching roots pair by authoring order to create parallel lane pushes. Use Gameplay Role <strong>None</strong> for additional buildings that should not be lane origins. Once Agent Binding is Day or Night, <strong>Align To Agent</strong> appears directly below it and restores that Fragment’s deterministic heading.</p>
+    </section>
+
+    <section class="section panel" id="empty-actor-agents">
+      <h2>Empty Actor Agents</h2>
+      <p>An Empty Actor can author a logical Agent. In its Details panel, set <strong>Gameplay Role</strong> to <strong>Agent</strong>, then configure Agent Id, Team, Bot, Starting Resources, Income, Unit Cap, and Kill Reward.</p>
+      <p>When Play starts, the scene-authored Agent is created through the same runtime Agent system used by WingScript <code>CreateAgent(...)</code>. The Empty Actor’s position, rotation, and scale are ignored for Agent gameplay, so place the authoring host anywhere convenient in the hierarchy.</p>
+      <p class="small">Leave Gameplay Role as <strong>None</strong> for an ordinary Empty Actor. WingScript <code>CreateAgent(...)</code> remains supported for runtime-created or scripted Agents. If both systems use the same Agent Id, the scene-authored definition wins for that Play session.</p>
     </section>
 
     <section class="section callout">
@@ -66,6 +132,7 @@
         <a href="getting-started.html">Getting Started</a>
         <a href="projects-assets.html">Projects & Assets</a>
         <a href="components.html">Components</a>
+        <a href="input.html">Input</a>
       </div>
     </section>
   </main>
