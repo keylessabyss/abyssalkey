@@ -115,11 +115,11 @@
             <tr><td>Gamepad0.Button14</td><td>D-pad left</td></tr>
             <tr><td>Gamepad0.Button15</td><td>D-pad right</td></tr>
             <tr><td>Gamepad0.Button16</td><td>Home / Guide (availability depends on browser and controller)</td></tr>
-            <tr><td>Gamepad0.LeftStickX / LeftStickY</td><td>Left stick axes</td></tr>
-            <tr><td>Gamepad0.RightStickX / RightStickY</td><td>Right stick axes</td></tr>
+            <tr><td>Gamepad0.LeftStickX+ / LeftStickX- / LeftStickY+ / LeftStickY-</td><td>Left stick +X, -X, +Y, and -Y directions</td></tr>
+            <tr><td>Gamepad0.RightStickX+ / RightStickX- / RightStickY+ / RightStickY-</td><td>Right stick +X, -X, +Y, and -Y directions</td></tr>
           </tbody>
         </table>
-        <p class="small">Mouse axes are normalized per-frame motion in the same signed range as a stick. A signed axis can be placed in Positive / Axis by itself, or capture its + and - directions into the matching fields. The picker polls physical gamepads while it is capturing, so press a button or move a stick after opening it. Names follow the standard gamepad layout. A controller or browser may expose fewer buttons; a missing button simply has no input value.</p>
+        <p class="small">Mouse axes are normalized per-frame motion in the same signed range as a stick. A signed axis can be placed in Positive / Axis by itself, or capture its + and - directions into the matching fields. Physical gamepads and authored UI Virtual Joysticks use the same signed channel language, so a UI stick can drive the same +X, -X, +Y, and -Y bindings. The picker polls physical gamepads while it is capturing, so press a button or move a stick after opening it. Names follow the standard gamepad layout. A controller or browser may expose fewer buttons; a missing button simply has no input value.</p>
       </article>
     </section>
 
