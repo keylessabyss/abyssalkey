@@ -15,7 +15,7 @@
       0,
       1
     ],
-    "intensity": 1.5,
+    "intensity": 1,
     "exposure": 1,
     "linkWorldLight": true,
     "worldLightOffset": 0
@@ -215,9 +215,9 @@
   "primaryDirectionalLight": {
     "enabled": true,
     "direction": [
-      0.49999999999999994,
-      0.7071067811865475,
-      -0.49999999999999994
+      0.9628426520818618,
+      0.24901370986126378,
+      0.1045284632676535
     ],
     "color": [
       0.11443537382697373,

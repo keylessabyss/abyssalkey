@@ -89,6 +89,20 @@
       <p class="small">Use the <strong>?</strong> button beside Global Reflection Environment in Details to return to this reference.</p>
     </section>
 
+    <section class="section panel" id="game-viewport-settings">
+      <h2>Game Viewport Settings</h2>
+      <p>Gameplay Resolution owns the logical gameplay composition, camera aspect, physical presentation rectangle, input bounds, and crosshair placement. UI Resolution owns only the logical Wings UI canvas and layout; the UI still renders inside the same physical gameplay rectangle.</p>
+      <p>Render Scale remains separate: it changes only the internal 3D HDR/depth/bloom pixel cost, never UI anchors, touch bounds, or gameplay composition.</p>
+      <p>Landscape and Portrait pairs can be linked while editing. The link preserves orientation: Landscape Width maps to Portrait Height, and Landscape Height maps to Portrait Width. The link is an editor convenience and is not saved as runtime project data.</p>
+      <p>Resolution presets are 640×360, 960×540, 1280×720, and 1920×1080. Manual values remain valid and display as Custom.</p>
+    </section>
+
+    <section class="section panel" id="world-topology">
+      <h2>World Topology</h2>
+      <p>Periodic World Rendering is visual-only. One bounded arena is presented continuously through translated neighboring copies; gameplay actors and simulation remain singular. The static celestial sky remains direction-only and never wraps.</p>
+      <p>Arena Cube Size defines the authored arena. Wrapped World Scale defines the larger presentation cube as a percentage of that arena. Debug cube controls are editor-session diagnostics only and do not affect collision, packaged gameplay, or project content.</p>
+    </section>
+
     <section class="section panel">
       <h2>Play / Stop</h2>
       <p>Test your scene with full gameplay simulation. Play clears the previous editor world-item selection so it cannot look like a gameplay target; Stop returns to the authored state.</p>
