@@ -11,9 +11,9 @@
   "channelRole": "Fixed",
   "reflectionLit": {
     "baseColor": [
-      0.24228112246555486,
-      0.1651321945016676,
-      0.012286488356915872,
+      0.14702726649759498,
+      0.10946171077829933,
+      0.017641954488384078,
       1
     ],
     "emissiveColor": [
@@ -22,8 +22,8 @@
       0
     ],
     "emissiveIntensity": 0,
-    "metallic": 0.7,
-    "roughness": 0.7,
+    "metallic": 1,
+    "roughness": 0.3,
     "opacity": 1,
     "baseColorPictureAssetId": null,
     "textureMappingMode": "LocalTriplanar",

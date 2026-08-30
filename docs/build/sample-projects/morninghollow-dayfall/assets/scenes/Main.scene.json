@@ -16,7 +16,7 @@
       1
     ],
     "intensity": 1.5,
-    "exposure": 0.7,
+    "exposure": 1,
     "linkWorldLight": true,
     "worldLightOffset": 0
   },
@@ -220,20 +220,20 @@
       -0.49999999999999994
     ],
     "color": [
-      0.1119324278369056,
-      0.08650046203654976,
-      0.9473065367331999
+      0.11443537382697373,
+      0.0003035269835488375,
+      0.4178850708481375
     ],
-    "intensity": 0.4
+    "intensity": 2
   },
   "skyLight": {
     "enabled": true,
     "color": [
-      0.9301108583754237,
-      0.11443537382697373,
-      0.23455058216100522
+      0.6239603916750761,
+      0.6104955708078648,
+      0.4072402119017367
     ],
-    "intensity": 0.3
+    "intensity": 1
   },
   "reflectionRenderingMode": "Hybrid Reflection",
   "placedFragments": [
