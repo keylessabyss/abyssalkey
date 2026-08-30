@@ -244,7 +244,7 @@
           "turnSpeed": 4,
           "arriveDistance": 10,
           "pauseForCombat": true,
-          "lockToPlane": true
+          "lockToPlane": false
         },
         {
           "type": "AutoCombat",

@@ -200,7 +200,7 @@
           "turnSpeed": 6,
           "arriveDistance": 2,
           "pauseForCombat": true,
-          "lockToPlane": true
+          "lockToPlane": false
         },
         {
           "type": "AutoCombat",
@@ -449,6 +449,7 @@
       0,
       0.7071067690849304
     ],
+    "capsules": [],
     "type": "Capsule",
     "convexHull": {
       "vertices": [
