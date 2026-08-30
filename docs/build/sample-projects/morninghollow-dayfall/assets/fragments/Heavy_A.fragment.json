@@ -339,7 +339,6 @@
         1,
         1
       ],
-      "role": "MeshDataRoot",
       "meshAssetId": "Mesh.heavy_a_ship",
       "meshMaterialBindings": [
         {
@@ -399,7 +398,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.heavy_a_ship",
       "meshId": "heavy_a_base",
       "materialAssetId": "Material.M_Metal_Gray"
@@ -425,7 +423,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.heavy_a_ship",
       "meshId": "heavy_a_boltz",
       "materialAssetId": "Material.M_metal_bronze"
@@ -451,7 +448,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.heavy_a_ship",
       "meshId": "heavy_a_color",
       "materialAssetId": "Material.M_dynamic_color"
@@ -477,7 +473,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.heavy_a_ship",
       "meshId": "heavy_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
@@ -498,7 +493,7 @@
   "driverSourceVersion": 2,
   "fragmentScript": null,
   "rootPhysicalCollider": {
-    "visible": false,
+    "visible": true,
     "hiddenInGame": true,
     "radius": 1,
     "halfHeight": 3,

@@ -807,7 +807,7 @@
     "source": "BeginPlay()\n{\n\n}\n\nTick()\n{\n    // Read-only instance diagnostics can be authored here\n\n}\n\nEndPlay()\n{\n\n}\n"
   },
   "rootPhysicalCollider": {
-    "visible": false,
+    "visible": true,
     "hiddenInGame": true,
     "radius": 1,
     "halfHeight": 2,

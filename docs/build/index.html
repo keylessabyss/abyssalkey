@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
     <title>Abyssal Engine Editor</title>
     <style></style>
-  <script type="module" crossorigin src="./assets/index-DUop7XJs.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D-bHwRzn.css">
+  <script type="module" crossorigin src="./assets/index-cPg5keiZ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-GuUs_Bsy.css">
 </head>
 
 <body>
@@ -15,6 +19,17 @@
         <div id="toolbar">
             <strong>Abyssal Engine</strong>
             <div id="mainMenu"></div>
+            <div id="editorPanelToggles" aria-label="Editor panels">
+                <button type="button" data-editor-panel-toggle="hierarchy" aria-expanded="false">
+                    Hierarchy
+                </button>
+                <button type="button" data-editor-panel-toggle="details" aria-expanded="false">
+                    Details
+                </button>
+                <button type="button" data-editor-panel-toggle="content" aria-expanded="false">
+                    Content
+                </button>
+            </div>
             <a id="docsButton" href="./docs/index.html">Docs</a>
             <div id="projectStatus">No Project</div>
         </div>
