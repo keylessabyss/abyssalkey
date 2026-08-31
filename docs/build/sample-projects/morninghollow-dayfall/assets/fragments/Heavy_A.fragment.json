@@ -408,7 +408,7 @@
   "fragmentScript": null,
   "rootPhysicalCollider": {
     "visible": true,
-    "hiddenInGame": true,
+    "hiddenInGame": false,
     "radius": 1,
     "halfHeight": 3,
     "offset": [
