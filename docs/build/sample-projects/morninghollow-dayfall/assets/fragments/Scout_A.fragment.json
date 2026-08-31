@@ -76,52 +76,12 @@
         {
           "type": "Weapon",
           "enabled": true,
-          "name": "Left Weapon",
-          "damage": 1,
-          "range": 5,
-          "cooldown": 0.3,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode1",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
           "name": "Center Weapon",
           "damage": 1,
           "range": 5,
           "cooldown": 0.3,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Right Weapon",
-          "damage": 1,
-          "range": 5,
-          "cooldown": 0.3,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode3",
           "muzzleFlashParticleAssetId": null,
           "projectileFragmentAssetId": null,
           "crosshairPictureAssetId": null,
@@ -350,29 +310,6 @@
       "materialAssetId": "Material.M_dynamic_accent"
     },
     {
-      "nodeId": "EmptyNode1",
-      "type": "Empty",
-      "name": "Left Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0.6800000071525574,
-        -0.75,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.left"
-    },
-    {
       "nodeId": "EmptyNode2",
       "type": "Empty",
       "name": "Center Muzzle",
@@ -394,29 +331,6 @@
         1
       ],
       "referenceKey": "muzzle.center"
-    },
-    {
-      "nodeId": "EmptyNode3",
-      "type": "Empty",
-      "name": "Right Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        0.6800000071525574,
-        0.75,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.right"
     }
   ],
   "componentDefinitions": [

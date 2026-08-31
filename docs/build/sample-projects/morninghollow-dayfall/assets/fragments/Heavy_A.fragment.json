@@ -76,52 +76,12 @@
         {
           "type": "Weapon",
           "enabled": true,
-          "name": "Left Weapon",
-          "damage": 4,
-          "range": 7,
-          "cooldown": 1,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode1",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
           "name": "Center Weapon",
           "damage": 4,
           "range": 7,
           "cooldown": 1,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "Weapon",
-          "enabled": true,
-          "name": "Right Weapon",
-          "damage": 4,
-          "range": 7,
-          "cooldown": 1,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode3",
           "muzzleFlashParticleAssetId": null,
           "projectileFragmentAssetId": null,
           "crosshairPictureAssetId": null,
@@ -177,7 +137,7 @@
           "type": "Weapon",
           "enabled": true,
           "name": "Center Weapon",
-          "damage": 4,
+          "damage": 20,
           "range": 50,
           "cooldown": 1,
           "inputChannel": "Input1",
@@ -250,29 +210,6 @@
       ]
     },
     {
-      "nodeId": "EmptyNode1",
-      "type": "Empty",
-      "name": "Left Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        4.199999809265137,
-        -2.200000047683716,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.left"
-    },
-    {
       "nodeId": "EmptyNode2",
       "type": "Empty",
       "name": "Center Muzzle",
@@ -294,29 +231,6 @@
         1
       ],
       "referenceKey": "muzzle.center"
-    },
-    {
-      "nodeId": "EmptyNode3",
-      "type": "Empty",
-      "name": "Right Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        4.199999809265137,
-        2.200000047683716,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.right"
     },
     {
       "nodeId": "MeshDataRoot1",
@@ -526,36 +440,6 @@
       },
       {
         "radius": 1,
-        "halfHeight": 2,
-        "offset": [
-          0.5,
-          -3.3,
-          0
-        ],
-        "rotation": [
-          0,
-          0.7071067690849304,
-          0,
-          0.7071067690849304
-        ]
-      },
-      {
-        "radius": 1,
-        "halfHeight": 2,
-        "offset": [
-          0.5,
-          3.3,
-          0
-        ],
-        "rotation": [
-          0,
-          0.7071067690849304,
-          0,
-          0.7071067690849304
-        ]
-      },
-      {
-        "radius": 1,
         "halfHeight": 4,
         "offset": [
           0.3,
@@ -570,7 +454,7 @@
         ]
       }
     ],
-    "type": "None",
+    "type": "CompoundCapsule",
     "convexHull": {
       "vertices": [
         [
