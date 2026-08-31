@@ -215,16 +215,16 @@
   "primaryDirectionalLight": {
     "enabled": true,
     "direction": [
-      0.9628426520818618,
-      0.24901370986126378,
-      0.1045284632676535
+      0.009206878082870516,
+      0.0039025712906071014,
+      -0.9999500004166654
     ],
     "color": [
       0.11443537382697373,
       0.0003035269835488375,
       0.4178850708481375
     ],
-    "intensity": 2
+    "intensity": 0.7
   },
   "skyLight": {
     "enabled": true,
@@ -233,7 +233,7 @@
       0.6104955708078648,
       0.4072402119017367
     ],
-    "intensity": 1
+    "intensity": 0.3
   },
   "reflectionRenderingMode": "Hybrid Reflection",
   "placedFragments": [

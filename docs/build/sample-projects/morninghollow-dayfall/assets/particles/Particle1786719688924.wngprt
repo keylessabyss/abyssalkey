@@ -15,7 +15,7 @@
     0
   ],
   "durationSeconds": 1,
-  "emissionRate": 12,
+  "emissionRate": 1,
   "particleLifetimeSeconds": 0.5,
   "startColor": [
     1,
@@ -92,7 +92,7 @@
         0,
         -90
       ],
-      "spawnRate": 12,
+      "spawnRate": 1,
       "burstCount": 0,
       "lifetimeMin": 0.5,
       "lifetimeMax": 0.5,
