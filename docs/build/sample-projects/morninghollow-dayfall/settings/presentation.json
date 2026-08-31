@@ -3,12 +3,12 @@
   "formatVersion": 5,
   "gameplay": {
     "landscape": {
-      "width": 1280,
-      "height": 720
+      "width": 1920,
+      "height": 1080
     },
     "portrait": {
-      "width": 720,
-      "height": 1280
+      "width": 1080,
+      "height": 1920
     }
   },
   "ui": {
@@ -24,9 +24,9 @@
   "defaultPresentation": "Auto",
   "hostFitMode": "Stretch",
   "particlePresentation": {
-    "fullQualityAtPixels": 5,
-    "fadeOutAtPixels": 3,
-    "suspendWhenSmallerThanPixels": 1,
-    "resumeWhenAtLeastPixels": 2
+    "fullQualityAtPixels": 1,
+    "fadeOutAtPixels": 0.5,
+    "suspendWhenSmallerThanPixels": 0.25,
+    "resumeWhenAtLeastPixels": 0.5
   }
 }
