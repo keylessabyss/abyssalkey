@@ -408,8 +408,8 @@
   "fragmentScript": null,
   "rootPhysicalCollider": {
     "visible": true,
-    "hiddenInGame": false,
-    "radius": 1,
+    "hiddenInGame": true,
+    "radius": 2,
     "halfHeight": 3,
     "offset": [
       1,
@@ -454,7 +454,7 @@
         ]
       }
     ],
-    "type": "CompoundCapsule",
+    "type": "Capsule",
     "convexHull": {
       "vertices": [
         [
