@@ -89,7 +89,12 @@
       "componentDefinitions": [
         {
           "type": "Spawn",
-          "enabled": true
+          "enabled": true,
+          "offset": [
+            1,
+            1,
+            2
+          ]
         }
       ],
       "referenceKey": "spawn.primary"
@@ -244,10 +249,10 @@
     {
       "nodeId": "EmptyNode2",
       "type": "Empty",
-      "name": "Anchor",
+      "name": "Player Spawn",
       "parentNodeId": "Root",
       "localPosition": [
-        0,
+        -12.739381790161133,
         0,
         2.5751471519470215
       ],
@@ -265,7 +270,12 @@
       "componentDefinitions": [
         {
           "type": "PlayerStart",
-          "enabled": true
+          "enabled": true,
+          "offset": [
+            1,
+            1,
+            1
+          ]
         }
       ]
     }
