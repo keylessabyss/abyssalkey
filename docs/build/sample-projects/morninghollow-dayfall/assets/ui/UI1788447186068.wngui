@@ -1,0 +1,18 @@
+{
+  "format": "AbyssalWingsUI",
+  "formatVersion": 11,
+  "assetId": "UI.UI1788447186068",
+  "displayName": "New UI",
+  "description": "",
+  "tags": [
+    "UI",
+    "Project"
+  ],
+  "canvas": {
+    "nodeId": "Canvas",
+    "displayName": "Canvas",
+    "width": 1920,
+    "height": 1080
+  },
+  "nodes": []
+}

@@ -1,6 +1,6 @@
 {
   "format": "AbyssalProjectPresentationSettings",
-  "formatVersion": 5,
+  "formatVersion": 6,
   "gameplay": {
     "landscape": {
       "width": 1920,
@@ -28,7 +28,7 @@
     "fadeOutAtPixels": 0.5,
     "suspendWhenSmallerThanPixels": 0.25,
     "resumeWhenAtLeastPixels": 0.5,
-    "maximumContinuousRate": 5000,
-    "continuousEmissionScale": 0.05
+    "preserveContinuousRate": 20,
+    "softContinuousCeiling": 500
   }
 }

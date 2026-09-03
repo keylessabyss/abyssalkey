@@ -255,6 +255,53 @@
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "SpatialNode1",
+      "type": "SpatialNode",
+      "name": "Spatial KA Logo",
+      "parentNodeId": "Root",
+      "localPosition": [
+        107.56014251708984,
+        130.6807098388672,
+        -0.48743677139282227
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        30.91092300415039,
+        1,
+        46.367706298828125
+      ],
+      "spatialComponents": [
+        {
+          "componentId": "Decal:b13439e6-c717-4128-9d2a-e7f8dca083b0",
+          "type": "ProjectedDecal",
+          "data": {
+            "enabled": true,
+            "targetFragmentInstanceId": null,
+            "targetMeshNodeId": null,
+            "projectionDirections": 4,
+            "size": [
+              50,
+              50
+            ],
+            "depth": 0.25,
+            "pictureAssetId": "Picture.KA_logo",
+            "tint": [
+              1,
+              1,
+              1
+            ],
+            "opacity": 1,
+            "emissive": 0
+          }
+        }
+      ]
     }
   ],
   "componentDefinitions": [],

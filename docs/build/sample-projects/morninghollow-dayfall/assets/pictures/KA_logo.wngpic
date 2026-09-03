@@ -1,0 +1,24 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 2,
+  "assetId": "Picture.KA_logo",
+  "displayName": "KA Logo",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 1024,
+  "height": 1024,
+  "sourceKind": "ImportedPng",
+  "sourceFileName": "KA_logo.png",
+  "optimization": {
+    "mode": "PreserveAlpha",
+    "payloadFileName": "KA_logo.optimized.webp",
+    "sourceSha256": "ed6499c8faa0bda1593970e8ca28fb587906950b7dec4352396f5da82c7b05b0",
+    "sourceByteLength": 372000,
+    "optimizedByteLength": 42144
+  }
+}

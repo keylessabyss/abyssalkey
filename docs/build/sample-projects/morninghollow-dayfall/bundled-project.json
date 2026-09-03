@@ -91,13 +91,15 @@
   "ui": [
     "assets/ui/UI1786069767206.wngui",
     "assets/ui/UI1787034818343.wngui",
-    "assets/ui/UI1787479365160.wngui"
+    "assets/ui/UI1787479365160.wngui",
+    "assets/ui/UI1788447186068.wngui"
   ],
   "ink": [
     "assets/ink/Ink1786571688207.wngink"
   ],
   "pictures": [
     "assets/pictures/crosshair.wngpic",
+    "assets/pictures/KA_logo.wngpic",
     "assets/pictures/MH_celestial_1.wngpic",
     "assets/pictures/MH_celestial_2.wngpic",
     "assets/pictures/MH_celestial_3.wngpic",

@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsParticle",
-  "formatVersion": 4,
+  "formatVersion": 5,
   "assetId": "Particle.Particle1785182623798",
   "displayName": "Thruster",
   "description": "",
@@ -15,7 +15,7 @@
     0
   ],
   "durationSeconds": 0.5,
-  "emissionRate": 5000,
+  "emissionRate": 50,
   "particleLifetimeSeconds": 1,
   "startColor": [
     1,
@@ -61,6 +61,7 @@
   "materialName": "Default Particle",
   "spriteId": "soft-circle",
   "pictureAssetId": null,
+  "authoredResolution": 8,
   "atlasColumns": 1,
   "atlasRows": 1,
   "atlasFrameMode": "Random",
@@ -92,7 +93,7 @@
         0,
         0
       ],
-      "spawnRate": 5000,
+      "spawnRate": 50,
       "burstCount": 0,
       "lifetimeMin": 1,
       "lifetimeMax": 1,
@@ -140,6 +141,7 @@
       "materialName": "Default Particle",
       "spriteId": "soft-circle",
       "pictureAssetId": null,
+      "authoredResolution": 8,
       "atlasColumns": 1,
       "atlasRows": 1,
       "atlasFrameMode": "Random",
