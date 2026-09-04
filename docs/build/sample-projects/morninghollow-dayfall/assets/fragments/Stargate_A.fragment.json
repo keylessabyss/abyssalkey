@@ -49,6 +49,7 @@
       "componentDefinitions": [
         {
           "type": "Tag",
+          "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "tags": [
             "Structure",
@@ -58,10 +59,18 @@
         },
         {
           "type": "Resource",
+          "componentId": "Legacy:assemblyNodes_0_componentDefinitions:1",
           "enabled": true,
           "resourceId": "Health",
           "maximum": 1000,
           "startingValue": 1000
+        },
+        {
+          "type": "HitBox",
+          "componentId": "HitBox:f89199bc-7d5a-4f87-a21a-778feafe3bf7",
+          "enabled": true,
+          "visible": false,
+          "hiddenInGame": true
         }
       ]
     },
@@ -89,6 +98,7 @@
       "componentDefinitions": [
         {
           "type": "Spawn",
+          "componentId": "Legacy:assemblyNodes_1_componentDefinitions:0",
           "enabled": true,
           "offset": [
             1,
@@ -270,6 +280,7 @@
       "componentDefinitions": [
         {
           "type": "PlayerStart",
+          "componentId": "Legacy:assemblyNodes_7_componentDefinitions:0",
           "enabled": true,
           "offset": [
             1,
@@ -278,11 +289,60 @@
           ]
         }
       ]
+    },
+    {
+      "nodeId": "SpatialNode1",
+      "type": "SpatialNode",
+      "name": "Spatial Node",
+      "parentNodeId": "Root",
+      "localPosition": [
+        3.794178009033203,
+        0,
+        16.4720458984375
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "spatialComponents": [
+        {
+          "componentId": "WorldUI:26b2a8a0-75f7-412e-82ba-334d217d0275",
+          "type": "WorldUI",
+          "data": {
+            "enabled": true,
+            "uiAssetId": "UI.UI1788447186068",
+            "physicalSize": [
+              60,
+              30
+            ],
+            "depthTested": true,
+            "facingAxes": 0,
+            "driverBindings": [
+              {
+                "slotId": "Background_1",
+                "source": {
+                  "scope": "Root",
+                  "componentId": "Legacy:assemblyNodes_0_componentDefinitions:1",
+                  "property": "Current"
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "componentDefinitions": [
     {
       "type": "Tag",
+      "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "tags": [
         "Structure",
@@ -292,10 +352,18 @@
     },
     {
       "type": "Resource",
+      "componentId": "Legacy:assemblyNodes_0_componentDefinitions:1",
       "enabled": true,
       "resourceId": "Health",
       "maximum": 1000,
       "startingValue": 1000
+    },
+    {
+      "type": "HitBox",
+      "componentId": "HitBox:f89199bc-7d5a-4f87-a21a-778feafe3bf7",
+      "enabled": true,
+      "visible": false,
+      "hiddenInGame": true
     }
   ],
   "animationClips": [],
