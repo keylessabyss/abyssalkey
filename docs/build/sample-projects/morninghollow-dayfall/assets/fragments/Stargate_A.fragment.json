@@ -296,9 +296,9 @@
       "name": "Spatial Node",
       "parentNodeId": "Root",
       "localPosition": [
-        3.794178009033203,
+        5.1506242752075195,
         0,
-        16.4720458984375
+        16.472000122070312
       ],
       "localRotation": [
         0,
@@ -322,8 +322,9 @@
               60,
               30
             ],
+            "maxDistance": 50,
             "depthTested": true,
-            "facingAxes": 0,
+            "facingAxes": 4,
             "driverBindings": [
               {
                 "slotId": "Background_1",
@@ -336,7 +337,16 @@
             ]
           }
         }
-      ]
+      ],
+      "presentationPivot": {
+        "enabled": true,
+        "localPosition": [
+          0,
+          0,
+          16.472000122070312
+        ],
+        "facingAxes": 4
+      }
     }
   ],
   "componentDefinitions": [

@@ -93,12 +93,14 @@
       "componentDefinitions": [
         {
           "type": "Targeting",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:0",
           "enabled": true,
           "searchRadius": 15,
           "requireEnemy": true
         },
         {
           "type": "Acceleration",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:1",
           "enabled": true,
           "inputChannel": "Input2",
           "deadZone": 0.12,
@@ -107,6 +109,7 @@
         },
         {
           "type": "Yaw",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:2",
           "enabled": true,
           "inputChannel": "Input3",
           "deadZone": 0.12,
@@ -114,6 +117,7 @@
         },
         {
           "type": "Pitch",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:3",
           "enabled": true,
           "inputChannel": "Input4",
           "deadZone": 0.12,
@@ -121,6 +125,7 @@
         },
         {
           "type": "Respawn",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:4",
           "enabled": true,
           "requireRespawnAction": false,
           "respawnAction": "Input1",
@@ -129,11 +134,15 @@
         },
         {
           "type": "AutoCombat",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:5",
           "enabled": true,
-          "aimSpeed": 8
+          "aimSpeed": 8,
+          "reactionTimeMin": 0,
+          "reactionTimeMax": 0
         },
         {
           "type": "Weapon",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:6",
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 4,
@@ -154,6 +163,7 @@
         },
         {
           "type": "Weapon",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:7",
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 2,
@@ -174,6 +184,7 @@
         },
         {
           "type": "Weapon",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:8",
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 2,
@@ -194,6 +205,7 @@
         },
         {
           "type": "AutoInput",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:9",
           "enabled": true,
           "inputChannel": "Input1",
           "interval": 0.5,
@@ -201,6 +213,7 @@
         },
         {
           "type": "BarrelRoll",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:10",
           "enabled": true,
           "inputChannel": "Input5",
           "rollSensitivity": 2
@@ -213,12 +226,14 @@
       "componentDefinitions": [
         {
           "type": "Targeting",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:0",
           "enabled": true,
           "searchRadius": 20,
           "requireEnemy": true
         },
         {
           "type": "Weapon",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:1",
           "enabled": true,
           "name": "Center Weapon",
           "damage": 10,
@@ -239,6 +254,7 @@
         },
         {
           "type": "LanePush",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:2",
           "enabled": true,
           "speed": 4,
           "turnSpeed": 4,
@@ -248,11 +264,15 @@
         },
         {
           "type": "AutoCombat",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:3",
           "enabled": true,
-          "aimSpeed": 10
+          "aimSpeed": 10,
+          "reactionTimeMin": 0,
+          "reactionTimeMax": 0
         },
         {
           "type": "AutoInput",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:4",
           "enabled": true,
           "inputChannel": "Input1",
           "interval": 0.5,
@@ -286,6 +306,7 @@
       "componentDefinitions": [
         {
           "type": "Resource",
+          "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "resourceId": "Health",
           "maximum": 200,
@@ -566,6 +587,7 @@
       ],
       "particleDefinition": {
         "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:40bc22d3-3e68-4660-b99d-b0d3a670b267",
         "enabled": true,
         "particleAssetId": "Particle.Particle1785182623798",
         "autoPlay": true
@@ -616,6 +638,7 @@
       ],
       "particleDefinition": {
         "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:31215f93-247c-4fbb-ae85-80a1705db283",
         "enabled": true,
         "particleAssetId": "Particle.Particle1785182623798",
         "autoPlay": true
@@ -664,11 +687,71 @@
         "zoomLag": 3.5,
         "followShipUp": true
       }
+    },
+    {
+      "nodeId": "SpatialNode2",
+      "type": "SpatialNode",
+      "name": "Spatial Node",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0.8190000057220459
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "ownerProfileId": "AI",
+      "spatialComponents": [
+        {
+          "componentId": "WorldUI:2478ea82-752c-4089-9a0c-05e1488c041c",
+          "type": "WorldUI",
+          "data": {
+            "enabled": true,
+            "uiAssetId": "UI.UI1788447186068",
+            "physicalSize": [
+              10,
+              5
+            ],
+            "maxDistance": 50,
+            "depthTested": true,
+            "facingAxes": 4,
+            "driverBindings": [
+              {
+                "slotId": "Background_1",
+                "source": {
+                  "scope": "Root",
+                  "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
+                  "property": "Current"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "presentationPivot": {
+        "enabled": false,
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "facingAxes": 0
+      }
     }
   ],
   "componentDefinitions": [
     {
       "type": "Resource",
+      "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "resourceId": "Health",
       "maximum": 200,
