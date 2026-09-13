@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.towerArm_a_building",
+  "displayName": "TowerArm A Building",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/towerArm_a_building.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "towerarm_a_base",
+        "displayName": "towerArm_a_base",
+        "objectName": "towerArm_a_base",
+        "groupName": "towerArm_a_base",
+        "materialName": "base",
+        "smoothingGroup": "off"
+      },
+      {
+        "meshId": "towerarm_a_emissive",
+        "displayName": "towerArm_a_emissive",
+        "objectName": "towerArm_a_emissive",
+        "groupName": "towerArm_a_emissive",
+        "materialName": "emissive",
+        "smoothingGroup": "off"
+      },
+      {
+        "meshId": "towerarm_a_color",
+        "displayName": "towerArm_a_color",
+        "objectName": "towerArm_a_color",
+        "groupName": "towerArm_a_color",
+        "materialName": "color",
+        "smoothingGroup": "off"
+      },
+      {
+        "meshId": "towerarm_a_boltz",
+        "displayName": "towerArm_a_boltz",
+        "objectName": "towerArm_a_boltz",
+        "groupName": "towerArm_a_boltz",
+        "materialName": "boltz",
+        "smoothingGroup": "off"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.tower_a_building",
+  "displayName": "Tower A Building",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/tower_a_building.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "tower_a_base",
+        "displayName": "tower_a_base",
+        "objectName": "tower_a_base",
+        "groupName": "tower_a_base",
+        "materialName": "base",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "tower_a_boltz",
+        "displayName": "tower_a_boltz",
+        "objectName": "tower_a_boltz",
+        "groupName": "tower_a_boltz",
+        "materialName": "boltz",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "tower_a_color",
+        "displayName": "tower_a_color",
+        "objectName": "tower_a_color",
+        "groupName": "tower_a_color",
+        "materialName": "color",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "tower_a_emissive",
+        "displayName": "tower_a_emissive",
+        "objectName": "tower_a_emissive",
+        "groupName": "tower_a_emissive",
+        "materialName": "emissive",
+        "smoothingGroup": "1"
+      }
+    ]
+  }
+}

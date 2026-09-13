@@ -32,6 +32,22 @@
       <p class="small">For authored Fragments, Root Core Components are shared by Player, AI, and future commander profiles. Acceleration, Pitch, Yaw, and Barrel Roll can therefore be authored once in Core when every controller should use the same flight model. Player keyboard and mouse bindings remain in the Player Input Manager; any controller can produce the logical input channels those Components consume.</p>
     </section>
 
+    <section class="section panel" id="homing-projectiles">
+      <h2>Homing Projectiles</h2>
+      <p>Weapon homing is opt-in for compatibility. Enable <strong>Homing Enabled</strong> and set <strong>Homing Turn Rate</strong> in degrees per second to make each fired projectile steer toward the target selected at launch.</p>
+      <div class="grid two">
+        <article class="card">
+          <h3>Homing Off</h3>
+          <p>The projectile keeps its launch direction and expires at the authored Range endpoint. Existing weapons and legacy records use this behavior.</p>
+        </article>
+        <article class="card">
+          <h3>Homing On</h3>
+          <p>The projectile turns toward its captured target at no more than the authored turn rate. Range still controls whether the weapon may engage, but does not expire the projectile after launch.</p>
+        </article>
+      </div>
+      <p>If the target is destroyed or removed, the missile continues unguided for up to 0.75 seconds before cleanup. A hidden 15-second safety ceiling prevents orphaned projectiles. Hit Boxes currently refine impact on the intended target; flares and interception volumes are separate future countermeasure behavior.</p>
+    </section>
+
     <section class="section grid two">
       <article class="card">
         <h3>Tag</h3>
@@ -47,14 +63,18 @@
       </article>
       <article class="card">
         <h3>Targeting</h3>
-        <p>Searches for valid targets within a configured radius, optionally requiring an enemy team.</p>
+        <p>Searches for valid targets within a configured radius, optionally requiring an enemy team. It can show a tinted warning line from its host to the current target before a weapon fires.</p>
+      </article>
+      <article class="card" id="hit-box">
+        <h3>Hit Box</h3>
+        <p>Provides optional rendered-surface hit geometry for more precise projectile impacts. Its editor wireframe is diagnostic only and does not change the Fragment's physical collider or targeting rules.</p>
       </article>
     </section>
 
     <section class="section grid two">
       <article class="card" id="weapon">
         <h3>Weapon</h3>
-        <p>Fires from an authored input channel with damage, range, and cooldown settings. It can use muzzle anchors, projectile visuals, muzzle flashes, and a local crosshair.</p>
+        <p>Fires from an authored input channel with damage, range, projectile speed, optional homing, and cooldown settings. Range is the maximum projectile travel distance and forward crosshair endpoint for normal shots; Projectile Speed controls travel speed. Homing is off by default and uses a bounded Homing Turn Rate when enabled. Target acquisition belongs to Targeting and Auto Combat. It can use muzzle anchors, projectile visuals, muzzle flashes, and a local crosshair.</p>
       </article>
       <article class="card">
         <h3>Lane Push</h3>
@@ -76,9 +96,13 @@
         <h3>Barrel Roll</h3>
         <p>Reads one signed input channel and continuously rolls the Fragment around its forward axis while the input is held. Positive and Negative / Opposite controls are combined by the Player Profile binding; the sign selects the roll direction. Sensitivity controls the roll rate, and releasing the input stops the roll.</p>
       </article>
+      <article class="card" id="rotating-movement">
+        <h3>Rotating Movement</h3>
+        <p>Provides UE-style continuous rotation from authored X, Y, and Z rates in degrees per second. Local Space composes the rate in the host's local frame; disabling it applies the rate in world space relative to the immediate parent. It can be placed on a Fragment root or Anchor and previews in the Wings Assembler.</p>
+      </article>
       <article class="card">
         <h3>Auto Combat</h3>
-        <p>Provides automatic combat behavior that can aim and work with targeting and weapon Components without player input.</p>
+        <p>Turns the host toward the current Targeting result and requests attacks from Weapon without player input. Aim Speed and optional reaction time control response; Weapon still owns cooldown and projectile delivery.</p>
       </article>
     </section>
 
@@ -111,7 +135,7 @@
 
     <section class="section panel">
       <h2>Authoring</h2>
-      <p>ComponentDefinitions on FragmentAssets describe intended behavior. At runtime they are turned into live Component instances on Actors.</p>
+      <p>ComponentDefinitions on FragmentAssets describe intended behavior. Root Core definitions are shared by the active controller profile; Player and AI profiles specialize behavior; and supported Anchor definitions localize behavior at the Anchor transform. At runtime they are turned into live Component instances on Actors. Mesh nodes remain visual-only.</p>
     </section>
 
     <section class="section callout">

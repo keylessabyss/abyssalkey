@@ -1,12 +1,21 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 17,
+  "formatVersion": 18,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
   "tags": [
     "Scene",
     "Project"
+  ],
+  "hierarchyOrder": [
+    "PlacedFragment1",
+    "PlacedFragment2",
+    "PlacedFragment3",
+    "PlacedFragment4",
+    "PlacedFragment5",
+    "PlacedFragment6",
+    "PlacedUtility1"
   ],
   "globalReflectionEnvironment": {
     "rotation": [
@@ -240,7 +249,7 @@
     {
       "instanceId": "PlacedFragment1",
       "sourceFragmentAssetId": "Fragment.HQwall_A",
-      "instanceName": "HQwall_Apex",
+      "instanceName": "HQwall_Apex_day",
       "worldPosition": [
         -200,
         0,
@@ -271,7 +280,7 @@
     {
       "instanceId": "PlacedFragment2",
       "sourceFragmentAssetId": "Fragment.HQwall_A",
-      "instanceName": "HQwall_Apex 2",
+      "instanceName": "HQwall_Apex_night",
       "worldPosition": [
         200,
         0,
@@ -302,7 +311,7 @@
     {
       "instanceId": "PlacedFragment3",
       "sourceFragmentAssetId": "Fragment.Stargate_A",
-      "instanceName": "Stargate_Apex",
+      "instanceName": "Stargate_Apex_day",
       "worldPosition": [
         -150,
         0,
@@ -333,7 +342,7 @@
     {
       "instanceId": "PlacedFragment4",
       "sourceFragmentAssetId": "Fragment.Stargate_A",
-      "instanceName": "Stargate_Apex 2",
+      "instanceName": "Stargate_Apex_night",
       "worldPosition": [
         150,
         0,
@@ -359,6 +368,68 @@
         0,
         -1,
         6.123234262925839e-17
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment5",
+      "sourceFragmentAssetId": "Fragment.TowerTurret_A",
+      "instanceName": "TowerTurret_Apex_night",
+      "worldPosition": [
+        50,
+        20,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        1,
+        6.123234262925839e-17
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Night",
+      "controllerId": "None",
+      "gameplayRole": "None",
+      "agentBinding": "Night",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment6",
+      "sourceFragmentAssetId": "Fragment.TowerTurret_A",
+      "instanceName": "TowerTurret_Apex_day",
+      "worldPosition": [
+        -50,
+        -20,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Day",
+      "controllerId": "None",
+      "gameplayRole": "None",
+      "agentBinding": "Day",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
       ]
     }
   ],

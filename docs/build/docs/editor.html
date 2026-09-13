@@ -68,6 +68,19 @@
       <p>Place a component in Core only when the same definition should exist for every controller context. For example, shared Targeting, Weapon, Acceleration, Pitch, Yaw, or Barrel Roll definitions can keep Player, AI, and future commander profiles cleaner. Auto Combat and Auto Input can also be shared when every controller should use them. Keep hardware bindings in the Player Input Manager; AI commanders provide the same logical input channels through their own producers.</p>
     </section>
 
+    <section class="section panel" id="recent-component-authoring">
+      <h2>Recent Component Authoring</h2>
+      <p><strong>Targeting</strong> searches for valid team-aware targets within its authored radius. Optional <strong>Warning Line Enabled</strong> and <strong>Warning Line Tint</strong> render a transient line from the Targeting host to its current target; the line is presentation-only and does not perform a physics trace or create a projectile.</p>
+      <p><strong>Weapon</strong> owns damage, range, projectile speed, optional homing settings, cooldown, muzzle Anchor selection, and optional projectile/muzzle presentation. Homing is off by default and defaults to a 90-degree-per-second turn rate. Normal shots use Range as their travel endpoint; homing shots steer toward the target selected at launch, ignore normal range expiry after launch, and use a hidden 15-second safety cleanup. If the target is lost, the projectile continues unguided for up to 0.75 seconds before cleanup.</p>
+      <p><strong>Rotating Movement</strong> continuously rotates a root or Anchor at authored X/Y/Z degrees-per-second rates. Use a dedicated parent Anchor when combining continuous rotation with animated children so each system owns a separate transform layer.</p>
+      <p><strong>Spawn</strong>, <strong>Player Start</strong>, <strong>Respawn</strong>, and <strong>Particle Emitter</strong> are also available as authored Fragment definitions. Runtime requests, team selection, timers, and live particle instances remain runtime-owned.</p>
+    </section>
+
+    <section class="section panel" id="wings-eye-display-controls">
+      <h2>Wings Eye Display Controls</h2>
+      <p><strong>Digital Joypads</strong> shows or hides the legacy fallback controls. <strong>Digital Displays</strong> shows or hides the editor side panels that contain those controls. Both are authoring-session toggles and default to Off; they do not affect authored Wings Interface controls or gameplay input.</p>
+    </section>
+
     <section class="section panel" id="root-physical-collider">
       <h2>Root Physical Collider</h2>
       <p>Capsule and Compound Capsule are movable kinematic bodies. Convex is a baked precise body, while Complex As Simple uses structural mesh triangles. Visibility changes only the diagnostic wireframe; it never changes collision.</p>

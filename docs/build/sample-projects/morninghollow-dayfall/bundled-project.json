@@ -10,7 +10,10 @@
     "assets/meshes/scout_a_color.mesh.json",
     "assets/meshes/scout_a_emissive.mesh.json",
     "assets/meshes/standard_a_ship.mesh.json",
-    "assets/meshes/stargate_a_building.mesh.json"
+    "assets/meshes/stargate_a_building.mesh.json",
+    "assets/meshes/tower_a_building.mesh.json",
+    "assets/meshes/towerArm_a_building.mesh.json",
+    "assets/meshes/turret_a_building.mesh.json"
   ],
   "materials": [
     "assets/materials/M_dynamic_accent.material.json",
@@ -23,7 +26,8 @@
     "assets/fragments/HQwall_A.fragment.json",
     "assets/fragments/Scout_A.fragment.json",
     "assets/fragments/Standard_A.fragment.json",
-    "assets/fragments/Stargate_A.fragment.json"
+    "assets/fragments/Stargate_A.fragment.json",
+    "assets/fragments/TowerTurret_A.fragment.json"
   ],
   "scenes": [
     "assets/scenes/Main.scene.json"

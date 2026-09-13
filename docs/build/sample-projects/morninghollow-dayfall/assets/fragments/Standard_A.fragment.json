@@ -543,108 +543,6 @@
       "materialAssetId": "Material.M_dynamic_accent"
     },
     {
-      "nodeId": "EmptyNode4",
-      "type": "Empty",
-      "name": "Anchor",
-      "parentNodeId": "Root",
-      "localPosition": [
-        -1,
-        -0.5189999938011169,
-        -0.07199999690055847
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        2,
-        2,
-        1
-      ]
-    },
-    {
-      "nodeId": "ParticleNode1",
-      "type": "Particle",
-      "name": "Particle Emitter",
-      "parentNodeId": "EmptyNode4",
-      "localPosition": [
-        0,
-        0,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "particleDefinition": {
-        "type": "ParticleEmitter",
-        "componentId": "ParticleEmitter:40bc22d3-3e68-4660-b99d-b0d3a670b267",
-        "enabled": true,
-        "particleAssetId": "Particle.Particle1785182623798",
-        "autoPlay": true
-      }
-    },
-    {
-      "nodeId": "Node1",
-      "type": "Empty",
-      "name": "Anchor Copy",
-      "parentNodeId": "Root",
-      "localPosition": [
-        -1,
-        0.5109999775886536,
-        -0.07199999690055847
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        2,
-        2,
-        1
-      ]
-    },
-    {
-      "nodeId": "Node2",
-      "type": "Particle",
-      "name": "Particle Emitter Copy",
-      "parentNodeId": "Node1",
-      "localPosition": [
-        0,
-        -5.160522675851098e-9,
-        0
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "particleDefinition": {
-        "type": "ParticleEmitter",
-        "componentId": "ParticleEmitter:31215f93-247c-4fbb-ae85-80a1705db283",
-        "enabled": true,
-        "particleAssetId": "Particle.Particle1785182623798",
-        "autoPlay": true
-      }
-    },
-    {
       "nodeId": "CameraNode1",
       "type": "Camera",
       "name": "Player Camera",
@@ -746,6 +644,130 @@
         ],
         "facingAxes": 0
       }
+    },
+    {
+      "nodeId": "EmptyNode5",
+      "type": "Empty",
+      "name": "Thrust Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -1,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "EmptyNode4",
+      "type": "Empty",
+      "name": "Thurst Joint Right",
+      "parentNodeId": "EmptyNode5",
+      "localPosition": [
+        -0.108428955078125,
+        -0.5189999938011169,
+        -0.07199999690055847
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "nodeId": "ParticleNode1",
+      "type": "Particle",
+      "name": "Particle Emitter",
+      "parentNodeId": "EmptyNode4",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:40bc22d3-3e68-4660-b99d-b0d3a670b267",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1785182623798",
+        "autoPlay": true
+      }
+    },
+    {
+      "nodeId": "Node1",
+      "type": "Empty",
+      "name": "Thrust Joint Left",
+      "parentNodeId": "EmptyNode5",
+      "localPosition": [
+        -0.108428955078125,
+        0.5109999775886536,
+        -0.07199999690055847
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "nodeId": "Node2",
+      "type": "Particle",
+      "name": "Particle Emitter Copy",
+      "parentNodeId": "Node1",
+      "localPosition": [
+        0,
+        -5.160522675851098e-9,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:31215f93-247c-4fbb-ae85-80a1705db283",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1785182623798",
+        "autoPlay": true
+      }
     }
   ],
   "componentDefinitions": [
@@ -771,7 +793,7 @@
             {
               "time": 0,
               "localPosition": [
-                -1,
+                0,
                 -0.5189999938011169,
                 -0.07199999690055847
               ],
@@ -790,7 +812,7 @@
             {
               "time": 1,
               "localPosition": [
-                -1,
+                0,
                 -0.5189999938011169,
                 -0.07199999690055847
               ],
@@ -814,7 +836,7 @@
             {
               "time": 0,
               "localPosition": [
-                -1,
+                0,
                 0.5109999775886536,
                 -0.07199999690055847
               ],
@@ -833,7 +855,7 @@
             {
               "time": 1,
               "localPosition": [
-                -1,
+                0,
                 0.5109999775886536,
                 -0.07199999690055847
               ],

@@ -1,0 +1,840 @@
+{
+  "assetId": "Fragment.TowerTurret_A",
+  "displayName": "TowerTurret_Apex",
+  "description": "Project Fragment assembly authored in Wings Assembler.",
+  "tags": [
+    "Fragment",
+    "Project"
+  ],
+  "behaviorSource": "Authored",
+  "behaviorProfiles": [
+    {
+      "profileId": "None",
+      "displayName": "None",
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "Player",
+      "displayName": "Player",
+      "inputBindings": [
+        {
+          "inputChannel": "Input1",
+          "positiveControls": [
+            "MouseLeft",
+            "Gamepad0.Button0"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "MouseLeft",
+            "Gamepad0.Button0"
+          ]
+        },
+        {
+          "inputChannel": "Input2",
+          "positiveControls": [
+            "MouseRight",
+            "Gamepad0.Button1"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "MouseRight",
+            "Gamepad0.Button1"
+          ]
+        },
+        {
+          "inputChannel": "Input3",
+          "positiveControls": [
+            "Space",
+            "Gamepad0.Button2"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "Space",
+            "Gamepad0.Button2"
+          ]
+        },
+        {
+          "inputChannel": "Input4",
+          "positiveControls": [
+            "ShiftLeft",
+            "Gamepad0.Button3"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "ShiftLeft",
+            "Gamepad0.Button3"
+          ]
+        }
+      ],
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "AI",
+      "displayName": "AI",
+      "componentDefinitions": []
+    }
+  ],
+  "assemblyNodes": [
+    {
+      "nodeId": "Root",
+      "type": "Root",
+      "name": "TowerTurret_Apex",
+      "parentNodeId": null,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "HitBox",
+          "componentId": "HitBox:7997c179-8c94-43bc-8e3e-10f47fb25098",
+          "enabled": true,
+          "visible": false,
+          "hiddenInGame": true
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:65760386-2dd0-4c7f-b2f1-82c636f92302",
+          "enabled": true,
+          "resourceId": "Health",
+          "maximum": 100,
+          "startingValue": 100
+        }
+      ]
+    },
+    {
+      "nodeId": "MeshDataRoot1",
+      "type": "MeshDataRoot",
+      "name": "Tower A Building",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.tower_a_building",
+      "meshMaterialBindings": [
+        {
+          "meshId": "tower_a_base",
+          "materialAssetId": "Material.M_Metal_Gray",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "tower_a_boltz",
+          "materialAssetId": "Material.M_metal_bronze",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "tower_a_color",
+          "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "tower_a_emissive",
+          "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        }
+      ],
+      "uvwProjection": {
+        "mode": "Box",
+        "center": [
+          0,
+          0,
+          -0.8285999298095703
+        ],
+        "scale": [
+          4,
+          3.939199924468994,
+          7.823599815368652
+        ]
+      },
+      "automaticUVGeneration": false
+    },
+    {
+      "nodeId": "MeshNode2",
+      "type": "Mesh",
+      "name": "tower_a_base",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.tower_a_building",
+      "meshId": "tower_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "MeshNode3",
+      "type": "Mesh",
+      "name": "tower_a_boltz",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.tower_a_building",
+      "meshId": "tower_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "MeshNode4",
+      "type": "Mesh",
+      "name": "tower_a_color",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.tower_a_building",
+      "meshId": "tower_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "MeshNode5",
+      "type": "Mesh",
+      "name": "tower_a_emissive",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.tower_a_building",
+      "meshId": "tower_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "EmptyNode17",
+      "type": "Empty",
+      "name": "Anchor Arm Rotator",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "RotatingMovement",
+          "componentId": "RotatingMovement:4c9ce43d-2d59-46d9-be6b-f955c37a1243",
+          "enabled": true,
+          "rotationRate": [
+            0,
+            0,
+            30
+          ],
+          "localSpace": true
+        }
+      ]
+    },
+    {
+      "nodeId": "MeshDataRoot6",
+      "type": "MeshDataRoot",
+      "name": "TowerArm A Building",
+      "parentNodeId": "EmptyNode17",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.towerArm_a_building",
+      "meshMaterialBindings": [
+        {
+          "meshId": "towerarm_a_base",
+          "materialAssetId": "Material.M_Metal_Gray",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "towerarm_a_emissive",
+          "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "towerarm_a_color",
+          "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "towerarm_a_boltz",
+          "materialAssetId": "Material.M_metal_bronze",
+          "smoothingGroupMask": 0
+        }
+      ],
+      "uvwProjection": null,
+      "automaticUVGeneration": false
+    },
+    {
+      "nodeId": "MeshNode7",
+      "type": "Mesh",
+      "name": "towerArm_a_base",
+      "parentNodeId": "MeshDataRoot6",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.towerArm_a_building",
+      "meshId": "towerarm_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "MeshNode8",
+      "type": "Mesh",
+      "name": "towerArm_a_emissive",
+      "parentNodeId": "MeshDataRoot6",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.towerArm_a_building",
+      "meshId": "towerarm_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "MeshNode9",
+      "type": "Mesh",
+      "name": "towerArm_a_color",
+      "parentNodeId": "MeshDataRoot6",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.towerArm_a_building",
+      "meshId": "towerarm_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "MeshNode10",
+      "type": "Mesh",
+      "name": "towerArm_a_boltz",
+      "parentNodeId": "MeshDataRoot6",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.towerArm_a_building",
+      "meshId": "towerarm_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "EmptyNode14",
+      "type": "Empty",
+      "name": "Anchor Turret Look At",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        3.700000047683716
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "componentDefinitions": [
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:c0bd7f4f-4261-4c19-9d6c-fb413e5c65b9",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 30,
+          "range": 30,
+          "projectileSpeed": 80,
+          "homingEnabled": true,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode15",
+          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:cf89c437-0ce3-4538-aeae-6c4a61721138",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 30,
+          "range": 30,
+          "projectileSpeed": 80,
+          "homingEnabled": true,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode16",
+          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:c9fc3099-a12c-42c7-9622-9a5dea27caa1",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 30,
+          "range": 30,
+          "projectileSpeed": 80,
+          "homingEnabled": true,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode18",
+          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Targeting",
+          "componentId": "Targeting:b5a6222b-957b-4442-8291-7d4e2fc94ab7",
+          "enabled": true,
+          "searchRadius": 50,
+          "requireEnemy": true,
+          "warningLineEnabled": true,
+          "warningLineTint": [
+            0.7529422167760779,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "type": "AutoCombat",
+          "componentId": "AutoCombat:deabc224-8427-4c9f-9f7f-7b5f9be4f7b0",
+          "enabled": true,
+          "aimSpeed": 200,
+          "reactionTimeMin": 0,
+          "reactionTimeMax": 0
+        },
+        {
+          "type": "AutoInput",
+          "componentId": "AutoInput:5633989f-3053-4a50-98a3-2faef1e6db78",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "interval": 0.5,
+          "range": 30
+        }
+      ]
+    },
+    {
+      "nodeId": "MeshDataRoot2",
+      "type": "MeshDataRoot",
+      "name": "Turret A Building",
+      "parentNodeId": "EmptyNode14",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.turret_a_building",
+      "meshMaterialBindings": [
+        {
+          "meshId": "turret_a_base",
+          "materialAssetId": "Material.M_Metal_Gray",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "turret_a_boltz",
+          "materialAssetId": "Material.M_metal_bronze",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "turret_a_color",
+          "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "turret_a_emissive",
+          "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        }
+      ],
+      "uvwProjection": null,
+      "automaticUVGeneration": false
+    },
+    {
+      "nodeId": "MeshNode6",
+      "type": "Mesh",
+      "name": "turret_a_base",
+      "parentNodeId": "MeshDataRoot2",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.turret_a_building",
+      "meshId": "turret_a_base",
+      "materialAssetId": "Material.M_Metal_Gray"
+    },
+    {
+      "nodeId": "MeshNode11",
+      "type": "Mesh",
+      "name": "turret_a_boltz",
+      "parentNodeId": "MeshDataRoot2",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.turret_a_building",
+      "meshId": "turret_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze"
+    },
+    {
+      "nodeId": "MeshNode12",
+      "type": "Mesh",
+      "name": "turret_a_color",
+      "parentNodeId": "MeshDataRoot2",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.turret_a_building",
+      "meshId": "turret_a_color",
+      "materialAssetId": "Material.M_dynamic_color"
+    },
+    {
+      "nodeId": "MeshNode13",
+      "type": "Mesh",
+      "name": "turret_a_emissive",
+      "parentNodeId": "MeshDataRoot2",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.turret_a_building",
+      "meshId": "turret_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "EmptyNode15",
+      "type": "Empty",
+      "name": "Turret Muzzle 1",
+      "parentNodeId": "EmptyNode14",
+      "localPosition": [
+        3.9000000953674316,
+        0,
+        0.18700000643730164
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "EmptyNode16",
+      "type": "Empty",
+      "name": "Turret Muzzle 2",
+      "parentNodeId": "EmptyNode14",
+      "localPosition": [
+        3.9000000953674316,
+        -0.25,
+        -0.1979999989271164
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "EmptyNode18",
+      "type": "Empty",
+      "name": "Turret Muzzle 3",
+      "parentNodeId": "EmptyNode14",
+      "localPosition": [
+        3.9000000953674316,
+        0.25,
+        -0.1979999989271164
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "componentDefinitions": [
+    {
+      "type": "HitBox",
+      "componentId": "HitBox:7997c179-8c94-43bc-8e3e-10f47fb25098",
+      "enabled": true,
+      "visible": false,
+      "hiddenInGame": true
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:65760386-2dd0-4c7f-b2f1-82c636f92302",
+      "enabled": true,
+      "resourceId": "Health",
+      "maximum": 100,
+      "startingValue": 100
+    }
+  ],
+  "animationClips": [],
+  "notifierDefinitions": [],
+  "driverDefinitions": [],
+  "driverSourceVersion": 2,
+  "fragmentScript": null,
+  "rootPhysicalCollider": {
+    "visible": false,
+    "hiddenInGame": true,
+    "radius": 0.5,
+    "halfHeight": 0.5,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "capsules": [],
+    "type": "Complex",
+    "convexHull": null
+  }
+}

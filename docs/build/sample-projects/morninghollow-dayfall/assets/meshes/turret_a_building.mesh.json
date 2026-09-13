@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.turret_a_building",
+  "displayName": "Turret A Building",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/turret_a_building.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "turret_a_base",
+        "displayName": "turret_a_base",
+        "objectName": "turret_a_base",
+        "groupName": "turret_a_base",
+        "materialName": "base",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "turret_a_boltz",
+        "displayName": "turret_a_boltz",
+        "objectName": "turret_a_boltz",
+        "groupName": "turret_a_boltz",
+        "materialName": "boltz",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "turret_a_color",
+        "displayName": "turret_a_color",
+        "objectName": "turret_a_color",
+        "groupName": "turret_a_color",
+        "materialName": "color",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "turret_a_emissive",
+        "displayName": "turret_a_emissive",
+        "objectName": "turret_a_emissive",
+        "groupName": "turret_a_emissive",
+        "materialName": "emissive",
+        "smoothingGroup": "1"
+      }
+    ]
+  }
+}

@@ -37,8 +37,14 @@
       </article>
       <article class="card">
         <h3>Components & Behaviors</h3>
-        <p>Resource, Team, Weapon, LanePush, Targeting, and AI systems drive live behavior.</p>
+        <p>Resource, Team, Targeting, Weapon, Lane Push, Auto Combat, movement, spawn, respawn, and particle components drive live behavior from authored Fragment definitions.</p>
       </article>
+    </section>
+
+    <section class="section panel" id="homing-projectiles">
+      <h2>Homing Projectiles</h2>
+      <p>Weapons can opt into bounded target-seeking projectiles without changing legacy straight-flight behavior. <strong>Homing Enabled</strong> is Off by default, and <strong>Homing Turn Rate</strong> limits how quickly a projectile can rotate toward the target captured at fire time.</p>
+      <p>Normal shots remain Range-limited. Homing shots do not use Range as a post-launch expiry, but still have a hidden safety timeout. When a target is lost, the projectile travels unguided briefly and then cleans up. Countermeasures and interception volumes are not part of the ordinary Hit Box contract.</p>
     </section>
 
     <section class="section panel">
