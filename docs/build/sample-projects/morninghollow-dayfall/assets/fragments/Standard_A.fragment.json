@@ -96,7 +96,14 @@
           "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:0",
           "enabled": true,
           "searchRadius": 15,
-          "requireEnemy": true
+          "requireEnemy": true,
+          "warningLineEnabled": false,
+          "warningLineTint": [
+            1,
+            0.08,
+            0.02,
+            0.9
+          ]
         },
         {
           "type": "Acceleration",
@@ -147,6 +154,9 @@
           "name": "Ship Weapon",
           "damage": 4,
           "range": 50,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
           "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
@@ -168,6 +178,9 @@
           "name": "Ship Weapon",
           "damage": 2,
           "range": 50,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
           "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode1",
@@ -189,6 +202,9 @@
           "name": "Ship Weapon",
           "damage": 2,
           "range": 50,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
           "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode3",
@@ -229,7 +245,14 @@
           "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:0",
           "enabled": true,
           "searchRadius": 20,
-          "requireEnemy": true
+          "requireEnemy": true,
+          "warningLineEnabled": false,
+          "warningLineTint": [
+            1,
+            0.08,
+            0.02,
+            0.9
+          ]
         },
         {
           "type": "Weapon",
@@ -238,6 +261,9 @@
           "name": "Center Weapon",
           "damage": 10,
           "range": 20,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
           "cooldown": 0.5,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
@@ -259,7 +285,9 @@
           "speed": 4,
           "turnSpeed": 4,
           "arriveDistance": 10,
-          "pauseForCombat": true,
+          "combatMovement": "Hold Range",
+          "orbitRadius": null,
+          "orbitDirection": "Clockwise",
           "lockToPlane": false
         },
         {
@@ -309,8 +337,15 @@
           "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "resourceId": "Health",
-          "maximum": 200,
-          "startingValue": 200
+          "maximum": 100,
+          "startingValue": 100
+        },
+        {
+          "type": "HitBox",
+          "componentId": "HitBox:04cca72b-ea81-4698-b442-1ddf89d8b360",
+          "enabled": true,
+          "visible": false,
+          "hiddenInGame": true
         }
       ]
     },
@@ -622,6 +657,15 @@
             "maxDistance": 50,
             "depthTested": true,
             "facingAxes": 4,
+            "presentationPivot": {
+              "enabled": false,
+              "localPosition": [
+                0,
+                0,
+                0
+              ],
+              "facingAxes": 0
+            },
             "driverBindings": [
               {
                 "slotId": "Background_1",
@@ -634,16 +678,7 @@
             ]
           }
         }
-      ],
-      "presentationPivot": {
-        "enabled": false,
-        "localPosition": [
-          0,
-          0,
-          0
-        ],
-        "facingAxes": 0
-      }
+      ]
     },
     {
       "nodeId": "EmptyNode5",
@@ -776,8 +811,15 @@
       "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "resourceId": "Health",
-      "maximum": 200,
-      "startingValue": 200
+      "maximum": 100,
+      "startingValue": 100
+    },
+    {
+      "type": "HitBox",
+      "componentId": "HitBox:04cca72b-ea81-4698-b442-1ddf89d8b360",
+      "enabled": true,
+      "visible": false,
+      "hiddenInGame": true
     }
   ],
   "animationClips": [

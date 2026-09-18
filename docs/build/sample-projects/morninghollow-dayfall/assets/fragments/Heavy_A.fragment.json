@@ -75,10 +75,14 @@
       "componentDefinitions": [
         {
           "type": "Weapon",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:0",
           "enabled": true,
           "name": "Center Weapon",
           "damage": 4,
           "range": 7,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
           "cooldown": 1,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
@@ -95,12 +99,21 @@
         },
         {
           "type": "Targeting",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:1",
           "enabled": true,
           "searchRadius": 9,
-          "requireEnemy": true
+          "requireEnemy": true,
+          "warningLineEnabled": false,
+          "warningLineTint": [
+            1,
+            0.08,
+            0.02,
+            0.9
+          ]
         },
         {
           "type": "Acceleration",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:2",
           "enabled": true,
           "inputChannel": "Input2",
           "deadZone": 0.12,
@@ -109,6 +122,7 @@
         },
         {
           "type": "Yaw",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:3",
           "enabled": true,
           "inputChannel": "Input3",
           "deadZone": 0.12,
@@ -116,6 +130,7 @@
         },
         {
           "type": "Pitch",
+          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:4",
           "enabled": true,
           "inputChannel": "Input4",
           "deadZone": 0.12,
@@ -129,16 +144,28 @@
       "componentDefinitions": [
         {
           "type": "Targeting",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:0",
           "enabled": true,
-          "searchRadius": 50,
-          "requireEnemy": true
+          "searchRadius": 30,
+          "requireEnemy": true,
+          "warningLineEnabled": false,
+          "warningLineTint": [
+            1,
+            0.08,
+            0.02,
+            0.9
+          ]
         },
         {
           "type": "Weapon",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:1",
           "enabled": true,
           "name": "Center Weapon",
           "damage": 20,
-          "range": 50,
+          "range": 30,
+          "projectileSpeed": 80,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
           "cooldown": 1,
           "inputChannel": "Input1",
           "muzzleAnchorNodeId": "EmptyNode2",
@@ -155,24 +182,31 @@
         },
         {
           "type": "LanePush",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:2",
           "enabled": true,
           "speed": 2.75,
           "turnSpeed": 3,
-          "arriveDistance": 30,
-          "pauseForCombat": true,
+          "arriveDistance": 20,
+          "combatMovement": "Hold Range",
+          "orbitRadius": null,
+          "orbitDirection": "Clockwise",
           "lockToPlane": false
         },
         {
           "type": "AutoCombat",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:3",
           "enabled": true,
-          "aimSpeed": 8
+          "aimSpeed": 8,
+          "reactionTimeMin": 0,
+          "reactionTimeMax": 0
         },
         {
           "type": "AutoInput",
+          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:4",
           "enabled": true,
           "inputChannel": "Input1",
           "interval": 1,
-          "range": 50
+          "range": 30
         }
       ]
     }
@@ -202,10 +236,18 @@
       "componentDefinitions": [
         {
           "type": "Resource",
+          "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "resourceId": "Health",
-          "maximum": 180,
-          "startingValue": 180
+          "maximum": 200,
+          "startingValue": 200
+        },
+        {
+          "type": "HitBox",
+          "componentId": "HitBox:811c6399-7d49-4a3a-bec6-ba88f25b14a6",
+          "enabled": true,
+          "visible": false,
+          "hiddenInGame": true
         }
       ]
     },
@@ -395,10 +437,18 @@
   "componentDefinitions": [
     {
       "type": "Resource",
+      "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "resourceId": "Health",
-      "maximum": 180,
-      "startingValue": 180
+      "maximum": 200,
+      "startingValue": 200
+    },
+    {
+      "type": "HitBox",
+      "componentId": "HitBox:811c6399-7d49-4a3a-bec6-ba88f25b14a6",
+      "enabled": true,
+      "visible": false,
+      "hiddenInGame": true
     }
   ],
   "animationClips": [],

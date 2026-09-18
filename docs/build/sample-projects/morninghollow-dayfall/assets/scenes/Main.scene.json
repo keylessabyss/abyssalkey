@@ -9,13 +9,15 @@
     "Project"
   ],
   "hierarchyOrder": [
-    "PlacedFragment1",
-    "PlacedFragment2",
+    "PlacedUtility1",
     "PlacedFragment3",
     "PlacedFragment4",
     "PlacedFragment5",
     "PlacedFragment6",
-    "PlacedUtility1"
+    "PlacedFragment7",
+    "PlacedFragment8",
+    "PlacedFragment1",
+    "PlacedFragment2"
   ],
   "globalReflectionEnvironment": {
     "rotation": [
@@ -373,9 +375,9 @@
     {
       "instanceId": "PlacedFragment5",
       "sourceFragmentAssetId": "Fragment.TowerTurret_A",
-      "instanceName": "TowerTurret_Apex_night",
+      "instanceName": "TowerTurret_1_Apex_night",
       "worldPosition": [
-        50,
+        70,
         20,
         0
       ],
@@ -404,9 +406,9 @@
     {
       "instanceId": "PlacedFragment6",
       "sourceFragmentAssetId": "Fragment.TowerTurret_A",
-      "instanceName": "TowerTurret_Apex_day",
+      "instanceName": "TowerTurret_1_Apex_day",
       "worldPosition": [
-        -50,
+        -70,
         -20,
         0
       ],
@@ -423,8 +425,70 @@
       ],
       "teamId": "Morninghollow.Day",
       "controllerId": "None",
-      "gameplayRole": "None",
+      "gameplayRole": "Building",
       "agentBinding": "Day",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment7",
+      "sourceFragmentAssetId": "Fragment.TowerTurret_A",
+      "instanceName": "TowerTurret_2_Apex_day",
+      "worldPosition": [
+        -70,
+        20,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Day",
+      "controllerId": "None",
+      "gameplayRole": "Building",
+      "agentBinding": "Day",
+      "baseRotationOffset": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "PlacedFragment8",
+      "sourceFragmentAssetId": "Fragment.TowerTurret_A",
+      "instanceName": "TowerTurret_2_Apex_night",
+      "worldPosition": [
+        70,
+        -20,
+        0
+      ],
+      "worldRotation": [
+        0,
+        0,
+        1,
+        6.123234262925839e-17
+      ],
+      "worldScale": [
+        1,
+        1,
+        1
+      ],
+      "teamId": "Morninghollow.Night",
+      "controllerId": "None",
+      "gameplayRole": "Building",
+      "agentBinding": "Night",
       "baseRotationOffset": [
         0,
         0,

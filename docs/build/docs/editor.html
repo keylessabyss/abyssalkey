@@ -105,7 +105,7 @@
     <section class="section panel" id="game-viewport-settings">
       <h2>Game Viewport Settings</h2>
       <p>Gameplay Resolution owns the logical gameplay composition, camera aspect, physical presentation rectangle, input bounds, and crosshair placement. UI Resolution owns only the logical Wings UI canvas and layout; the UI still renders inside the same physical gameplay rectangle.</p>
-      <p>Render Scale remains separate: it changes only the internal 3D HDR/depth/bloom pixel cost, never UI anchors, touch bounds, or gameplay composition.</p>
+      <p>Render Scale remains separate: it changes only the internal 3D HDR/depth/bloom pixel cost, never UI anchors, touch bounds, or gameplay composition. The selected mode applies immediately and is saved per project in <code>settings/rendering.json</code>.</p>
       <p>Landscape and Portrait pairs can be linked while editing. The link preserves orientation: Landscape Width maps to Portrait Height, and Landscape Height maps to Portrait Width. The link is an editor convenience and is not saved as runtime project data.</p>
       <p>Resolution presets are 640×360, 960×540, 1280×720, and 1920×1080. Manual values remain valid and display as Custom.</p>
     </section>

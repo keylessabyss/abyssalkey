@@ -80,7 +80,7 @@
       "name": "Primary Spawn",
       "parentNodeId": "Root",
       "localPosition": [
-        0,
+        11,
         0,
         0
       ],
@@ -100,10 +100,15 @@
           "type": "Spawn",
           "componentId": "Legacy:assemblyNodes_1_componentDefinitions:0",
           "enabled": true,
-          "offset": [
+          "offsetMin": [
+            -1,
+            -3,
+            -3
+          ],
+          "offsetMax": [
             1,
-            1,
-            2
+            3,
+            3
           ]
         }
       ],
@@ -282,7 +287,12 @@
           "type": "PlayerStart",
           "componentId": "Legacy:assemblyNodes_7_componentDefinitions:0",
           "enabled": true,
-          "offset": [
+          "offsetMin": [
+            -1,
+            -1,
+            -1
+          ],
+          "offsetMax": [
             1,
             1,
             1

@@ -483,7 +483,7 @@
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 30,
-          "range": 30,
+          "range": 50,
           "projectileSpeed": 80,
           "homingEnabled": true,
           "homingTurnRate": 90,
@@ -507,7 +507,7 @@
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 30,
-          "range": 30,
+          "range": 50,
           "projectileSpeed": 80,
           "homingEnabled": true,
           "homingTurnRate": 90,
@@ -531,7 +531,7 @@
           "enabled": true,
           "name": "Ship Weapon",
           "damage": 30,
-          "range": 30,
+          "range": 50,
           "projectileSpeed": 80,
           "homingEnabled": true,
           "homingTurnRate": 90,
@@ -553,14 +553,14 @@
           "type": "Targeting",
           "componentId": "Targeting:b5a6222b-957b-4442-8291-7d4e2fc94ab7",
           "enabled": true,
-          "searchRadius": 50,
+          "searchRadius": 60,
           "requireEnemy": true,
           "warningLineEnabled": true,
           "warningLineTint": [
             0.7529422167760779,
             1,
             0,
-            1
+            0.1
           ]
         },
         {
@@ -577,7 +577,7 @@
           "enabled": true,
           "inputChannel": "Input1",
           "interval": 0.5,
-          "range": 30
+          "range": 50
         }
       ]
     },
