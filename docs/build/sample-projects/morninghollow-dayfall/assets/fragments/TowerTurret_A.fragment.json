@@ -564,20 +564,20 @@
           ]
         },
         {
-          "type": "AutoCombat",
-          "componentId": "AutoCombat:deabc224-8427-4c9f-9f7f-7b5f9be4f7b0",
-          "enabled": true,
-          "aimSpeed": 200,
-          "reactionTimeMin": 0,
-          "reactionTimeMax": 0
-        },
-        {
           "type": "AutoInput",
           "componentId": "AutoInput:5633989f-3053-4a50-98a3-2faef1e6db78",
           "enabled": true,
           "inputChannel": "Input1",
           "interval": 0.5,
           "range": 50
+        },
+        {
+          "type": "AutoCombat",
+          "componentId": "AutoCombat:50e6e335-69a9-48de-8843-64838b5e2bf4",
+          "enabled": true,
+          "aimSpeed": 50,
+          "reactionTimeMin": 0,
+          "reactionTimeMax": 0
         }
       ]
     },

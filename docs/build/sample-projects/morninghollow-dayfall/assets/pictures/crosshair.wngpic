@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsPicture",
-  "formatVersion": 1,
+  "formatVersion": 2,
   "assetId": "Picture.crosshair",
   "displayName": "Crosshair",
   "description": "Project imported PNG picture.",
@@ -13,5 +13,12 @@
   "width": 16,
   "height": 16,
   "sourceKind": "ImportedPng",
-  "sidecarFileName": "crosshair.png"
+  "sourceFileName": "crosshair.png",
+  "optimization": {
+    "mode": "PreserveAlpha",
+    "payloadFileName": "crosshair.optimized.webp",
+    "sourceSha256": "c7d41599b8ead64b02c86d6827de67078d1a540a22abc4da4efaffe2a415f38a",
+    "sourceByteLength": 2942,
+    "optimizedByteLength": 714
+  }
 }

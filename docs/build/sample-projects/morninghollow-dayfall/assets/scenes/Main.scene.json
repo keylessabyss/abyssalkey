@@ -1,6 +1,6 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 18,
+  "formatVersion": 19,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
@@ -12,12 +12,12 @@
     "PlacedUtility1",
     "PlacedFragment3",
     "PlacedFragment4",
+    "PlacedFragment1",
+    "PlacedFragment2",
     "PlacedFragment5",
     "PlacedFragment6",
     "PlacedFragment7",
-    "PlacedFragment8",
-    "PlacedFragment1",
-    "PlacedFragment2"
+    "PlacedFragment8"
   ],
   "globalReflectionEnvironment": {
     "rotation": [
@@ -253,7 +253,7 @@
       "sourceFragmentAssetId": "Fragment.HQwall_A",
       "instanceName": "HQwall_Apex_day",
       "worldPosition": [
-        -200,
+        0,
         0,
         0
       ],
@@ -272,6 +272,7 @@
       "controllerId": "None",
       "gameplayRole": "None",
       "agentBinding": "Day",
+      "blocksNavigation": true,
       "baseRotationOffset": [
         0,
         0,
@@ -284,7 +285,7 @@
       "sourceFragmentAssetId": "Fragment.HQwall_A",
       "instanceName": "HQwall_Apex_night",
       "worldPosition": [
-        200,
+        0,
         0,
         0
       ],
@@ -303,6 +304,7 @@
       "controllerId": "None",
       "gameplayRole": "None",
       "agentBinding": "Night",
+      "blocksNavigation": true,
       "baseRotationOffset": [
         0,
         0,
@@ -334,6 +336,7 @@
       "controllerId": "None",
       "gameplayRole": "Base",
       "agentBinding": "Day",
+      "blocksNavigation": true,
       "baseRotationOffset": [
         0,
         0,
@@ -353,8 +356,8 @@
       "worldRotation": [
         0,
         0,
-        0,
-        1
+        1,
+        6.123234262925839e-17
       ],
       "worldScale": [
         1,
@@ -365,11 +368,12 @@
       "controllerId": "None",
       "gameplayRole": "Base",
       "agentBinding": "Night",
+      "blocksNavigation": true,
       "baseRotationOffset": [
         0,
         0,
-        -1,
-        6.123234262925839e-17
+        0,
+        1
       ]
     },
     {
@@ -396,6 +400,7 @@
       "controllerId": "None",
       "gameplayRole": "None",
       "agentBinding": "Night",
+      "blocksNavigation": false,
       "baseRotationOffset": [
         0,
         0,
@@ -427,6 +432,7 @@
       "controllerId": "None",
       "gameplayRole": "Building",
       "agentBinding": "Day",
+      "blocksNavigation": false,
       "baseRotationOffset": [
         0,
         0,
@@ -458,6 +464,7 @@
       "controllerId": "None",
       "gameplayRole": "Building",
       "agentBinding": "Day",
+      "blocksNavigation": false,
       "baseRotationOffset": [
         0,
         0,
@@ -489,6 +496,7 @@
       "controllerId": "None",
       "gameplayRole": "Building",
       "agentBinding": "Night",
+      "blocksNavigation": false,
       "baseRotationOffset": [
         0,
         0,
@@ -520,52 +528,97 @@
       ],
       "settings": {
         "kind": "EmptyActor",
-        "gameplayRole": "AgentSetup",
-        "agents": [
+        "gameplayComponents": [
           {
-            "agentId": "Day",
-            "teamId": "Morninghollow.Day",
-            "botId": "DefaultBot",
-            "startingResources": 100,
-            "passiveIncome": 5,
-            "unitCap": 20,
-            "killReward": 5
-          },
-          {
-            "agentId": "Night",
-            "teamId": "Morninghollow.Night",
-            "botId": "DefaultBot",
-            "startingResources": 100,
-            "passiveIncome": 5,
-            "unitCap": 20,
-            "killReward": 5
-          }
-        ],
-        "teams": [
-          {
-            "teamId": "Morninghollow.Day",
-            "teamColor": [
-              0,
-              0,
-              0.07421356838014963
+            "type": "AgentSetup",
+            "agents": [
+              {
+                "agentId": "Day",
+                "teamId": "Morninghollow.Day",
+                "botId": "DefaultBot",
+                "startingResources": 100,
+                "passiveIncome": 5,
+                "unitCap": 20,
+                "killReward": 5
+              },
+              {
+                "agentId": "Night",
+                "teamId": "Morninghollow.Night",
+                "botId": "DefaultBot",
+                "startingResources": 100,
+                "passiveIncome": 5,
+                "unitCap": 20,
+                "killReward": 5
+              }
             ],
-            "teamEmissive": [
-              0,
-              0.5775804404296506,
-              1
+            "teams": [
+              {
+                "teamId": "Morninghollow.Day",
+                "teamColor": [
+                  0,
+                  0,
+                  0.07421356838014963
+                ],
+                "teamEmissive": [
+                  0,
+                  0.5775804404296506,
+                  1
+                ]
+              },
+              {
+                "teamId": "Morninghollow.Night",
+                "teamColor": [
+                  0.06301001765316767,
+                  0,
+                  0.006995410187265387
+                ],
+                "teamEmissive": [
+                  1,
+                  0,
+                  0.06480326669290577
+                ]
+              }
             ]
           },
           {
-            "teamId": "Morninghollow.Night",
-            "teamColor": [
-              0.06301001765316767,
-              0,
-              0.006995410187265387
+            "type": "AgentMirrorManager"
+          },
+          {
+            "type": "AgentRoster",
+            "identities": [
+              {
+                "id": "Day",
+                "displayName": "Day"
+              },
+              {
+                "id": "Night",
+                "displayName": "Night"
+              },
+              {
+                "id": "Rookie01",
+                "displayName": "Rookie01"
+              }
             ],
-            "teamEmissive": [
-              1,
-              0,
-              0.06480326669290577
+            "assignments": [
+              {
+                "roleId": "Commander.Day",
+                "role": "Commander",
+                "agentId": "Day",
+                "teamId": "Morninghollow.Day"
+              },
+              {
+                "roleId": "Commander.Night",
+                "role": "Commander",
+                "agentId": "Night",
+                "teamId": "Morninghollow.Night"
+              },
+              {
+                "roleId": "Pilot.Agent01",
+                "role": "Pilot",
+                "agentId": "Rookie01",
+                "teamId": "Morninghollow.Night",
+                "localContactRadius": 60
+              }
             ]
           }
         ]

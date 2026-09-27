@@ -117,10 +117,11 @@
   "globalWorldCapture": "settings/global-world-capture.json",
   "worldTopologySettings": {
     "format": "AbyssalPeriodicWorldTopology",
-    "formatVersion": 1,
+    "formatVersion": 2,
     "enabled": true,
     "arenaCubeSize": 250,
-    "wrappedWorldArenaScalePercent": 300
+    "wrappedWorldArenaScalePercent": 300,
+    "maximumSubdivisionDepth": 16
   },
   "defaultSceneAssetId": "Scene.Main"
 }

@@ -118,7 +118,11 @@
           "inputChannel": "Input2",
           "deadZone": 0.12,
           "accelerationRate": 9,
-          "decelerationRate": 9
+          "decelerationRate": 9,
+          "minSpeed": 0,
+          "maxSpeed": 12,
+          "stopForReverse": false,
+          "stopForDrive": false
         },
         {
           "type": "Yaw",
@@ -161,7 +165,7 @@
           "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:1",
           "enabled": true,
           "name": "Center Weapon",
-          "damage": 1,
+          "damage": 15,
           "range": 10,
           "projectileSpeed": 36,
           "homingEnabled": false,
@@ -193,18 +197,11 @@
           "lockToPlane": false
         },
         {
-          "type": "AutoCombat",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:3",
-          "enabled": true,
-          "aimSpeed": 8,
-          "reactionTimeMin": 0,
-          "reactionTimeMax": 0
-        },
-        {
           "type": "AutoInput",
           "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:4",
           "enabled": true,
           "inputChannel": "Input1",
+          "dispatchScope": "Subtree",
           "interval": 0.3,
           "range": 10
         }
@@ -607,5 +604,6 @@
         17
       ]
     }
-  }
+  },
+  "blocksNavigationByDefault": false
 }

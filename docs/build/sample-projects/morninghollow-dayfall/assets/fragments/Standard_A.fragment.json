@@ -92,45 +92,6 @@
       ],
       "componentDefinitions": [
         {
-          "type": "Targeting",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:0",
-          "enabled": true,
-          "searchRadius": 15,
-          "requireEnemy": true,
-          "warningLineEnabled": false,
-          "warningLineTint": [
-            1,
-            0.08,
-            0.02,
-            0.9
-          ]
-        },
-        {
-          "type": "Acceleration",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:1",
-          "enabled": true,
-          "inputChannel": "Input2",
-          "deadZone": 0.12,
-          "accelerationRate": 9,
-          "decelerationRate": 9
-        },
-        {
-          "type": "Yaw",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:2",
-          "enabled": true,
-          "inputChannel": "Input3",
-          "deadZone": 0.12,
-          "yawRate": 1.8
-        },
-        {
-          "type": "Pitch",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:3",
-          "enabled": true,
-          "inputChannel": "Input4",
-          "deadZone": 0.12,
-          "pitchRate": 1.8
-        },
-        {
           "type": "Respawn",
           "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:4",
           "enabled": true,
@@ -138,101 +99,6 @@
           "respawnAction": "Input1",
           "respawnDelay": 0,
           "respawnTarget": "Initial Spawn"
-        },
-        {
-          "type": "AutoCombat",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:5",
-          "enabled": true,
-          "aimSpeed": 8,
-          "reactionTimeMin": 0,
-          "reactionTimeMax": 0
-        },
-        {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:6",
-          "enabled": true,
-          "name": "Ship Weapon",
-          "damage": 4,
-          "range": 50,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": "Picture.crosshair",
-          "crosshairBlend": "Additive",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:7",
-          "enabled": true,
-          "name": "Ship Weapon",
-          "damage": 2,
-          "range": 50,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode1",
-          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": "Picture.crosshair",
-          "crosshairBlend": "Additive",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:8",
-          "enabled": true,
-          "name": "Ship Weapon",
-          "damage": 2,
-          "range": 50,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode3",
-          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": "Picture.crosshair",
-          "crosshairBlend": "Additive",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
-          "type": "AutoInput",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:9",
-          "enabled": true,
-          "inputChannel": "Input1",
-          "interval": 0.5,
-          "range": 20
-        },
-        {
-          "type": "BarrelRoll",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:10",
-          "enabled": true,
-          "inputChannel": "Input5",
-          "rollSensitivity": 2
         }
       ]
     },
@@ -240,44 +106,6 @@
       "profileId": "AI",
       "displayName": "AI",
       "componentDefinitions": [
-        {
-          "type": "Targeting",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:0",
-          "enabled": true,
-          "searchRadius": 20,
-          "requireEnemy": true,
-          "warningLineEnabled": false,
-          "warningLineTint": [
-            1,
-            0.08,
-            0.02,
-            0.9
-          ]
-        },
-        {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:1",
-          "enabled": true,
-          "name": "Center Weapon",
-          "damage": 10,
-          "range": 20,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 0.5,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
         {
           "type": "LanePush",
           "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:2",
@@ -291,20 +119,18 @@
           "lockToPlane": false
         },
         {
-          "type": "AutoCombat",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:3",
-          "enabled": true,
-          "aimSpeed": 10,
-          "reactionTimeMin": 0,
-          "reactionTimeMax": 0
+          "type": "Respawn",
+          "componentId": "Respawn:a862b374-a003-45a7-96f5-62bd011b6690",
+          "enabled": false,
+          "requireRespawnAction": false,
+          "respawnAction": "Input1",
+          "respawnDelay": 0,
+          "respawnTarget": "Initial Spawn"
         },
         {
-          "type": "AutoInput",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:4",
-          "enabled": true,
-          "inputChannel": "Input1",
-          "interval": 0.5,
-          "range": 20
+          "type": "Agent",
+          "componentId": "Agent:630fc361-ff58-4a49-a13a-81be6bfd702d",
+          "enabled": true
         }
       ]
     }
@@ -346,77 +172,91 @@
           "enabled": true,
           "visible": false,
           "hiddenInGame": true
+        },
+        {
+          "type": "Acceleration",
+          "componentId": "Acceleration:ef33549f-9369-4a7c-9548-c71f5b82f7aa",
+          "enabled": true,
+          "inputChannel": "Input2",
+          "deadZone": 0.12,
+          "accelerationRate": 9,
+          "decelerationRate": 9,
+          "minSpeed": 0,
+          "maxSpeed": 12,
+          "stopForReverse": false,
+          "stopForDrive": false
+        },
+        {
+          "type": "Yaw",
+          "componentId": "Yaw:ecbeda9f-51ac-42cf-bbdc-9dbd81bce762",
+          "enabled": true,
+          "inputChannel": "Input3",
+          "deadZone": 0.12,
+          "yawRate": 1.8
+        },
+        {
+          "type": "Pitch",
+          "componentId": "Pitch:20f62e7d-b387-4973-82e5-d9c0de11eab6",
+          "enabled": true,
+          "inputChannel": "Input4",
+          "deadZone": 0.12,
+          "pitchRate": 1.8
+        },
+        {
+          "type": "BarrelRoll",
+          "componentId": "BarrelRoll:910474e5-610e-432f-82fb-50ed8476454c",
+          "enabled": true,
+          "inputChannel": "Input5",
+          "rollSensitivity": 1.5
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:e1cd61bc-3425-4966-b2a4-5b684024b577",
+          "enabled": true,
+          "name": "Ship Weapon",
+          "damage": 10,
+          "range": 20,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode1",
+          "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": "Picture.crosshair",
+          "crosshairBlend": "Additive",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Targeting",
+          "componentId": "Targeting:263554bb-5617-4fcf-857d-2f4f0ace6ac9",
+          "enabled": true,
+          "searchRadius": 20,
+          "requireEnemy": true,
+          "warningLineEnabled": false,
+          "warningLineTint": [
+            1,
+            0.08,
+            0.02,
+            0.9
+          ]
+        },
+        {
+          "type": "AutoInput",
+          "componentId": "AutoInput:a28b612a-ca3a-4039-8c83-5b46c6046e04",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "dispatchScope": "Subtree",
+          "interval": 0.5,
+          "range": 20
         }
       ]
-    },
-    {
-      "nodeId": "EmptyNode1",
-      "type": "Empty",
-      "name": "Left Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        1.600000023841858,
-        -0.7940618991851807,
-        -0.13171985745429993
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.left"
-    },
-    {
-      "nodeId": "EmptyNode2",
-      "type": "Empty",
-      "name": "Center Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        2.5999999046325684,
-        0,
-        0.06097075343132019
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.center"
-    },
-    {
-      "nodeId": "EmptyNode3",
-      "type": "Empty",
-      "name": "Right Muzzle",
-      "parentNodeId": "Root",
-      "localPosition": [
-        1.600000023841858,
-        0.8080594539642334,
-        -0.14883831143379211
-      ],
-      "localRotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "localScale": [
-        1,
-        1,
-        1
-      ],
-      "referenceKey": "muzzle.right"
     },
     {
       "nodeId": "MeshDataRoot1",
@@ -803,6 +643,28 @@
         "particleAssetId": "Particle.Particle1785182623798",
         "autoPlay": true
       }
+    },
+    {
+      "nodeId": "EmptyNode1",
+      "type": "Empty",
+      "name": "Anchor Laser Gun",
+      "parentNodeId": "Root",
+      "localPosition": [
+        2.01190447807312,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
     }
   ],
   "componentDefinitions": [
@@ -820,6 +682,89 @@
       "enabled": true,
       "visible": false,
       "hiddenInGame": true
+    },
+    {
+      "type": "Acceleration",
+      "componentId": "Acceleration:ef33549f-9369-4a7c-9548-c71f5b82f7aa",
+      "enabled": true,
+      "inputChannel": "Input2",
+      "deadZone": 0.12,
+      "accelerationRate": 9,
+      "decelerationRate": 9,
+      "minSpeed": 0,
+      "maxSpeed": 12,
+      "stopForReverse": false,
+      "stopForDrive": false
+    },
+    {
+      "type": "Yaw",
+      "componentId": "Yaw:ecbeda9f-51ac-42cf-bbdc-9dbd81bce762",
+      "enabled": true,
+      "inputChannel": "Input3",
+      "deadZone": 0.12,
+      "yawRate": 1.8
+    },
+    {
+      "type": "Pitch",
+      "componentId": "Pitch:20f62e7d-b387-4973-82e5-d9c0de11eab6",
+      "enabled": true,
+      "inputChannel": "Input4",
+      "deadZone": 0.12,
+      "pitchRate": 1.8
+    },
+    {
+      "type": "BarrelRoll",
+      "componentId": "BarrelRoll:910474e5-610e-432f-82fb-50ed8476454c",
+      "enabled": true,
+      "inputChannel": "Input5",
+      "rollSensitivity": 1.5
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:e1cd61bc-3425-4966-b2a4-5b684024b577",
+      "enabled": true,
+      "name": "Ship Weapon",
+      "damage": 10,
+      "range": 20,
+      "projectileSpeed": 36,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 0.5,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "EmptyNode1",
+      "muzzleFlashParticleAssetId": "Particle.Particle1786719688924",
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": "Picture.crosshair",
+      "crosshairBlend": "Additive",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Targeting",
+      "componentId": "Targeting:263554bb-5617-4fcf-857d-2f4f0ace6ac9",
+      "enabled": true,
+      "searchRadius": 20,
+      "requireEnemy": true,
+      "warningLineEnabled": false,
+      "warningLineTint": [
+        1,
+        0.08,
+        0.02,
+        0.9
+      ]
+    },
+    {
+      "type": "AutoInput",
+      "componentId": "AutoInput:a28b612a-ca3a-4039-8c83-5b46c6046e04",
+      "enabled": true,
+      "inputChannel": "Input1",
+      "dispatchScope": "Subtree",
+      "interval": 0.5,
+      "range": 20
     }
   ],
   "animationClips": [
@@ -1390,5 +1335,6 @@
         27
       ]
     }
-  }
+  },
+  "blocksNavigationByDefault": false
 }
