@@ -114,6 +114,19 @@
     "assets/pictures/MorningHollowPanorama.wngpic",
     "assets/pictures/t_muzzleFlash.wngpic"
   ],
+  "staticVoxelWorlds": [
+    {
+      "assetId": "VoxelWorld.Legacy.52a3b62e",
+      "displayName": "Main Dayfall",
+      "depth": 10,
+      "representation": "Compact",
+      "integrityChecksum": "7dec5de2",
+      "worldCubeSize": 750,
+      "topologyFormat": "AbyssalPeriodicWorldTopology",
+      "topologyFormatVersion": 2,
+      "path": "assets/world-voxel-maps/VoxelWorld.Legacy.52a3b62e.static-voxel-world.json"
+    }
+  ],
   "globalWorldCapture": "settings/global-world-capture.json",
   "worldTopologySettings": {
     "format": "AbyssalPeriodicWorldTopology",
