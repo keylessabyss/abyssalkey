@@ -71,6 +71,12 @@
           "enabled": true,
           "visible": false,
           "hiddenInGame": true
+        },
+        {
+          "type": "K9KVoxelWorld",
+          "componentId": "K9KVoxelWorld:8c866fce-ecb8-434f-bcab-6cc47235f8c5",
+          "enabled": true,
+          "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
         }
       ]
     },
@@ -288,14 +294,14 @@
           "componentId": "Legacy:assemblyNodes_7_componentDefinitions:0",
           "enabled": true,
           "offsetMin": [
-            -1,
-            -1,
-            -1
+            0,
+            0,
+            0
           ],
           "offsetMax": [
-            1,
-            1,
-            1
+            0,
+            0,
+            0
           ]
         }
       ]
@@ -335,6 +341,15 @@
             "maxDistance": 50,
             "depthTested": true,
             "facingAxes": 4,
+            "presentationPivot": {
+              "enabled": true,
+              "localPosition": [
+                0,
+                0,
+                16.472000122070312
+              ],
+              "facingAxes": 4
+            },
             "driverBindings": [
               {
                 "slotId": "Background_1",
@@ -347,16 +362,7 @@
             ]
           }
         }
-      ],
-      "presentationPivot": {
-        "enabled": true,
-        "localPosition": [
-          0,
-          0,
-          16.472000122070312
-        ],
-        "facingAxes": 4
-      }
+      ]
     }
   ],
   "componentDefinitions": [
@@ -384,6 +390,12 @@
       "enabled": true,
       "visible": false,
       "hiddenInGame": true
+    },
+    {
+      "type": "K9KVoxelWorld",
+      "componentId": "K9KVoxelWorld:8c866fce-ecb8-434f-bcab-6cc47235f8c5",
+      "enabled": true,
+      "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
     }
   ],
   "animationClips": [],
@@ -410,5 +422,6 @@
     "capsules": [],
     "type": "Complex",
     "convexHull": null
-  }
+  },
+  "blocksNavigationByDefault": false
 }

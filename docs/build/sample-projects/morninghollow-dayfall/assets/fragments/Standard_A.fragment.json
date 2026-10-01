@@ -255,6 +255,12 @@
           "dispatchScope": "Subtree",
           "interval": 0.5,
           "range": 20
+        },
+        {
+          "type": "K9KVoxelWorld",
+          "componentId": "K9KVoxelWorld:a3325349-52ba-4d92-8191-4eb28a1104ca",
+          "enabled": true,
+          "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
         }
       ]
     },
@@ -765,6 +771,12 @@
       "dispatchScope": "Subtree",
       "interval": 0.5,
       "range": 20
+    },
+    {
+      "type": "K9KVoxelWorld",
+      "componentId": "K9KVoxelWorld:a3325349-52ba-4d92-8191-4eb28a1104ca",
+      "enabled": true,
+      "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
     }
   ],
   "animationClips": [

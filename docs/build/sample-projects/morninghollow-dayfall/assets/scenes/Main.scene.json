@@ -1,6 +1,6 @@
 {
   "format": "AbyssalScene",
-  "formatVersion": 19,
+  "formatVersion": 20,
   "assetId": "Scene.Main",
   "displayName": "Main",
   "description": "Main project scene.",
@@ -10,14 +10,14 @@
   ],
   "hierarchyOrder": [
     "PlacedUtility1",
-    "PlacedFragment3",
-    "PlacedFragment4",
     "PlacedFragment1",
     "PlacedFragment2",
     "PlacedFragment5",
     "PlacedFragment6",
     "PlacedFragment7",
-    "PlacedFragment8"
+    "PlacedFragment8",
+    "PlacedFragment3",
+    "PlacedFragment4"
   ],
   "globalReflectionEnvironment": {
     "rotation": [
@@ -273,6 +273,7 @@
       "gameplayRole": "None",
       "agentBinding": "Day",
       "blocksNavigation": true,
+      "staticGeometry": true,
       "baseRotationOffset": [
         0,
         0,
@@ -305,6 +306,7 @@
       "gameplayRole": "None",
       "agentBinding": "Night",
       "blocksNavigation": true,
+      "staticGeometry": true,
       "baseRotationOffset": [
         0,
         0,
@@ -337,6 +339,7 @@
       "gameplayRole": "Base",
       "agentBinding": "Day",
       "blocksNavigation": true,
+      "staticGeometry": true,
       "baseRotationOffset": [
         0,
         0,
@@ -369,6 +372,7 @@
       "gameplayRole": "Base",
       "agentBinding": "Night",
       "blocksNavigation": true,
+      "staticGeometry": true,
       "baseRotationOffset": [
         0,
         0,
@@ -401,6 +405,7 @@
       "gameplayRole": "None",
       "agentBinding": "Night",
       "blocksNavigation": false,
+      "staticGeometry": false,
       "baseRotationOffset": [
         0,
         0,
@@ -433,6 +438,7 @@
       "gameplayRole": "Building",
       "agentBinding": "Day",
       "blocksNavigation": false,
+      "staticGeometry": false,
       "baseRotationOffset": [
         0,
         0,
@@ -465,6 +471,7 @@
       "gameplayRole": "Building",
       "agentBinding": "Day",
       "blocksNavigation": false,
+      "staticGeometry": false,
       "baseRotationOffset": [
         0,
         0,
@@ -497,6 +504,7 @@
       "gameplayRole": "Building",
       "agentBinding": "Night",
       "blocksNavigation": false,
+      "staticGeometry": false,
       "baseRotationOffset": [
         0,
         0,

@@ -329,5 +329,6 @@
     "capsules": [],
     "type": "Complex",
     "convexHull": null
-  }
+  },
+  "blocksNavigationByDefault": false
 }
