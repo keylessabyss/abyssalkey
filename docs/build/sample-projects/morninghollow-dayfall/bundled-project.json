@@ -118,9 +118,9 @@
     {
       "assetId": "VoxelWorld.Legacy.52a3b62e",
       "displayName": "Main Dayfall",
-      "depth": 10,
+      "depth": 8,
       "representation": "Compact",
-      "integrityChecksum": "7dec5de2",
+      "integrityChecksum": "e34908df",
       "worldCubeSize": 750,
       "topologyFormat": "AbyssalPeriodicWorldTopology",
       "topologyFormatVersion": 2,

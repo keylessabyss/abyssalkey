@@ -130,7 +130,19 @@
         {
           "type": "Agent",
           "componentId": "Agent:630fc361-ff58-4a49-a13a-81be6bfd702d",
-          "enabled": true
+          "enabled": true,
+          "extensions": [
+            {
+              "type": "SpatialAwareness",
+              "enabled": true,
+              "range": 20,
+              "queryVolume": "RangeAabb",
+              "queryDetail": 8,
+              "refreshRateHz": 5,
+              "workLimit": 4096,
+              "resultLimit": 4096
+            }
+          ]
         }
       ]
     }
