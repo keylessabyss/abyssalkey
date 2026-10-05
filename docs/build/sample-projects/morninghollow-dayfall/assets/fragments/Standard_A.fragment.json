@@ -138,7 +138,7 @@
               "range": 20,
               "queryVolume": "RangeAabb",
               "queryDetail": 8,
-              "refreshRateHz": 5,
+              "refreshRateHz": 10,
               "workLimit": 4096,
               "resultLimit": 4096
             }
