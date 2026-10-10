@@ -128,7 +128,7 @@
         {
           "meshId": "hqwall_a_boltz",
           "materialAssetId": "Material.M_metal_bronze",
-          "smoothingGroupMask": 1
+          "smoothingGroupMask": 2
         },
         {
           "meshId": "hqwall_a_color",
@@ -144,14 +144,14 @@
       "uvwProjection": {
         "mode": "Box",
         "center": [
-          83.61139917373657,
-          0,
+          -187.5,
+          0.00006103515625,
           0
         ],
         "scale": [
-          183.56299877166748,
-          281.8855895996094,
-          92.99939727783203
+          375,
+          750.0003051757812,
+          750
         ]
       },
       "automaticUVGeneration": false

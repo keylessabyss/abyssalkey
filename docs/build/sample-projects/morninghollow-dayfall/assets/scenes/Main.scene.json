@@ -612,19 +612,23 @@
                 "roleId": "Commander.Day",
                 "role": "Commander",
                 "agentId": "Day",
-                "teamId": "Morninghollow.Day"
+                "teamId": "Morninghollow.Day",
+                "teamMode": "Fixed"
               },
               {
                 "roleId": "Commander.Night",
                 "role": "Commander",
                 "agentId": "Night",
-                "teamId": "Morninghollow.Night"
+                "teamId": "Morninghollow.Night",
+                "teamMode": "Fixed"
               },
               {
                 "roleId": "Pilot.Agent01",
                 "role": "Pilot",
                 "agentId": "Rookie01",
                 "teamId": "Morninghollow.Night",
+                "teamMode": "Opposite Of Player Slot",
+                "playerSlotId": "Player1",
                 "localContactRadius": 60
               }
             ]
