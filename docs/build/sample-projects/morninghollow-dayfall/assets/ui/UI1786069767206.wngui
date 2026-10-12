@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsUI",
-  "formatVersion": 11,
+  "formatVersion": 13,
   "assetId": "UI.UI1786069767206",
   "displayName": "Start HUD",
   "description": "Start Screen",
@@ -51,7 +51,7 @@
       ],
       "enabled": true,
       "inputChannel": "None",
-      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    ShowUI(\"Controller HUD\");\n    Destroy(Self.UI);\n}"
+      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
     },
     {
       "nodeId": "VirtualJoystick_1",

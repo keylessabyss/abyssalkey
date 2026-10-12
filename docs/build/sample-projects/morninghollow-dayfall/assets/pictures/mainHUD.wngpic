@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 2,
+  "assetId": "Picture.mainHUD",
+  "displayName": "MainHUD",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 1920,
+  "height": 1080,
+  "sourceKind": "ImportedPng",
+  "sourceFileName": "mainHUD.png"
+}
