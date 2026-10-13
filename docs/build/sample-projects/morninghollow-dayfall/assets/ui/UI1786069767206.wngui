@@ -51,7 +51,7 @@
       ],
       "enabled": true,
       "inputChannel": "None",
-      "onClickSource": "OnClick()\n{\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
+      "onClickSource": "OnClick()\n{\n    ForceLandscape();\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
     },
     {
       "nodeId": "VirtualJoystick_1",
