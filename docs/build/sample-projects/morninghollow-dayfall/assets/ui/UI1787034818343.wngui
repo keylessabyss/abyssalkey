@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsUI",
-  "formatVersion": 20,
+  "formatVersion": 21,
   "assetId": "UI.UI1787034818343",
   "displayName": "Player HUD",
   "description": "",
@@ -317,6 +317,7 @@
       "outlineThickness": 1,
       "selectorEnabled": true,
       "selectorDefaultOverlayNodeId": "Overlay_3",
+      "selectorStartUnfocused": true,
       "selectorItemAssignmentFlow": {
         "sourceOverlayNodeId": "Overlay_3",
         "targetOverlayNodeId": "Overlay_5"
@@ -3205,7 +3206,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "selectorCommand": "Accept"
     },
     {
       "nodeId": "Overlay_25",
@@ -3276,7 +3278,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "selectorCommand": "CancelToDefault"
     },
     {
       "nodeId": "Image_1",
