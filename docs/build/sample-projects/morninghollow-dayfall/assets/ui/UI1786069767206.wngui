@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsUI",
-  "formatVersion": 20,
+  "formatVersion": 21,
   "assetId": "UI.UI1786069767206",
   "displayName": "Start HUD",
   "description": "Start Screen",
@@ -94,7 +94,7 @@
       "displayName": "Overlay 1",
       "localX": -452.6946107784431,
       "localY": 71.1377245508982,
-      "width": 360,
+      "width": 120,
       "height": 360,
       "pivotX": 0.5,
       "pivotY": 0.5,
@@ -118,14 +118,51 @@
       "outlineThickness": 1,
       "selectorEnabled": true,
       "selectorDefaultOverlayNodeId": "Overlay_StartAction",
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [
-        { "action": "UI.Up", "controls": ["ArrowUp", "Gamepad0.Button12"] },
-        { "action": "UI.Down", "controls": ["ArrowDown", "Gamepad0.Button13"] },
-        { "action": "UI.Left", "controls": ["ArrowLeft", "Gamepad0.Button14"] },
-        { "action": "UI.Right", "controls": ["ArrowRight", "Gamepad0.Button15"] },
-        { "action": "UI.Accept", "controls": ["Enter", "Gamepad0.Button0"] },
-        { "action": "UI.Back", "controls": ["Backspace", "Gamepad0.Button1"] }
+        {
+          "action": "UI.Up",
+          "controls": [
+            "ArrowUp",
+            "Gamepad0.Button12"
+          ]
+        },
+        {
+          "action": "UI.Down",
+          "controls": [
+            "ArrowDown",
+            "Gamepad0.Button13"
+          ]
+        },
+        {
+          "action": "UI.Left",
+          "controls": [
+            "ArrowLeft",
+            "Gamepad0.Button14"
+          ]
+        },
+        {
+          "action": "UI.Right",
+          "controls": [
+            "ArrowRight",
+            "Gamepad0.Button15"
+          ]
+        },
+        {
+          "action": "UI.Accept",
+          "controls": [
+            "Enter",
+            "Gamepad0.Button0"
+          ]
+        },
+        {
+          "action": "UI.Back",
+          "controls": [
+            "Backspace",
+            "Gamepad0.Button1"
+          ]
+        }
       ],
       "tooltipBehavior": false
     },
@@ -151,9 +188,15 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "outlineEnabled": false,
-      "outlineColor": [1, 1, 1, 1],
+      "outlineColor": [
+        1,
+        1,
+        1,
+        1
+      ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -165,7 +208,7 @@
       "displayName": "Vertical Box 1",
       "localX": 0,
       "localY": 0,
-      "width": 360,
+      "width": 120,
       "height": 360,
       "pivotX": 0.5,
       "pivotY": 0.5,
@@ -179,7 +222,7 @@
       "topMargin": 0,
       "rightMargin": 0,
       "bottomMargin": 0,
-      "spacing": 0
+      "spacing": 20
     },
     {
       "nodeId": "Button_1",
@@ -218,6 +261,147 @@
       "enabled": true,
       "inputChannel": "None",
       "onClickSource": "OnClick()\n{\n    ForceLandscape();\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
+    },
+    {
+      "nodeId": "Button_2",
+      "type": "Button",
+      "parentNodeId": "VerticalBox_1",
+      "displayName": "Button 2",
+      "localX": 0,
+      "localY": 0,
+      "width": 100,
+      "height": 64,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Top",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Lobby",
+      "backgroundColor": [
+        0.12,
+        0.31,
+        0.43,
+        1
+      ],
+      "textColor": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "enabled": true,
+      "inputChannel": "None"
+    },
+    {
+      "nodeId": "Button_3",
+      "type": "Button",
+      "parentNodeId": "VerticalBox_1",
+      "displayName": "Button 3",
+      "localX": 0,
+      "localY": 0,
+      "width": 100,
+      "height": 64,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Top",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Settings",
+      "backgroundColor": [
+        0.12,
+        0.31,
+        0.43,
+        1
+      ],
+      "textColor": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "enabled": true,
+      "inputChannel": "None"
+    },
+    {
+      "nodeId": "Overlay_2",
+      "type": "Overlay",
+      "parentNodeId": "Overlay_1",
+      "displayName": "Overlay 3",
+      "localX": 398.8023952095808,
+      "localY": 0,
+      "width": 640,
+      "height": 360,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "outlineEnabled": false,
+      "outlineColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "outlineThickness": 1,
+      "selectorEnabled": false,
+      "selectorStartUnfocused": false,
+      "selectorNavigationEnabled": true,
+      "selectorInputBindings": [],
+      "tooltipBehavior": false
+    },
+    {
+      "nodeId": "Text_1",
+      "type": "Text",
+      "parentNodeId": "Overlay_2",
+      "displayName": "Text 1",
+      "localX": 0,
+      "localY": 0,
+      "width": 360,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Text",
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "fontSize": 32,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center"
     }
   ]
 }
