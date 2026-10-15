@@ -1,6 +1,6 @@
 {
   "assetId": "Fragment.Standard_A",
-  "displayName": "Standard Apex",
+  "displayName": "Standard Apex 1A",
   "description": "Project Fragment assembly authored in Wings Assembler.",
   "tags": [
     "Fragment",
@@ -151,7 +151,7 @@
     {
       "nodeId": "Root",
       "type": "Root",
-      "name": "Standard Apex",
+      "name": "Standard Apex 1A",
       "parentNodeId": null,
       "localPosition": [
         0,

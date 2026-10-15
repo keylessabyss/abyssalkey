@@ -77,6 +77,78 @@
           "componentId": "K9KVoxelWorld:8c866fce-ecb8-434f-bcab-6cc47235f8c5",
           "enabled": true,
           "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
+        },
+        {
+          "type": "CommanderControl",
+          "componentId": "CommanderControl:6dbd687c-f905-4d6a-9e7f-729404665c64",
+          "enabled": true,
+          "autoOnAtStart": true,
+          "pilotRoleId": "Pilot.Agent01",
+          "allowPatrolTowerAB": true,
+          "allowRespondToBattleReports": true,
+          "crewWaveIntervalSeconds": 120,
+          "formationSlots": [
+            {
+              "slotKey": "1A",
+              "anchorNodeId": "FormationAnchor1A"
+            },
+            {
+              "slotKey": "2A",
+              "anchorNodeId": "FormationAnchor2A"
+            },
+            {
+              "slotKey": "3A",
+              "anchorNodeId": "FormationAnchor3A"
+            },
+            {
+              "slotKey": "4A",
+              "anchorNodeId": "FormationAnchor4A"
+            },
+            {
+              "slotKey": "5A",
+              "anchorNodeId": "FormationAnchor5A"
+            },
+            {
+              "slotKey": "1B",
+              "anchorNodeId": "FormationAnchor1B"
+            },
+            {
+              "slotKey": "2B",
+              "anchorNodeId": "FormationAnchor2B"
+            },
+            {
+              "slotKey": "3B",
+              "anchorNodeId": "FormationAnchor3B"
+            },
+            {
+              "slotKey": "4B",
+              "anchorNodeId": "FormationAnchor4B"
+            },
+            {
+              "slotKey": "5B",
+              "anchorNodeId": "FormationAnchor5B"
+            },
+            {
+              "slotKey": "1C",
+              "anchorNodeId": "FormationAnchor1C"
+            },
+            {
+              "slotKey": "2C",
+              "anchorNodeId": "FormationAnchor2C"
+            },
+            {
+              "slotKey": "3C",
+              "anchorNodeId": "FormationAnchor3C"
+            },
+            {
+              "slotKey": "4C",
+              "anchorNodeId": "FormationAnchor4C"
+            },
+            {
+              "slotKey": "5C",
+              "anchorNodeId": "FormationAnchor5C"
+            }
+          ]
         }
       ]
     },
@@ -86,7 +158,7 @@
       "name": "Primary Spawn",
       "parentNodeId": "Root",
       "localPosition": [
-        11,
+        36.10100173950195,
         0,
         0
       ],
@@ -307,6 +379,336 @@
       ]
     },
     {
+      "nodeId": "FormationAnchor1A",
+      "type": "Empty",
+      "name": "Formation Slot 1A",
+      "parentNodeId": "Root",
+      "localPosition": [
+        11,
+        -12,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor2A",
+      "type": "Empty",
+      "name": "Formation Slot 2A",
+      "parentNodeId": "Root",
+      "localPosition": [
+        11,
+        -6,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor3A",
+      "type": "Empty",
+      "name": "Formation Slot 3A",
+      "parentNodeId": "Root",
+      "localPosition": [
+        11,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor4A",
+      "type": "Empty",
+      "name": "Formation Slot 4A",
+      "parentNodeId": "Root",
+      "localPosition": [
+        11,
+        6,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor5A",
+      "type": "Empty",
+      "name": "Formation Slot 5A",
+      "parentNodeId": "Root",
+      "localPosition": [
+        11,
+        12,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor1B",
+      "type": "Empty",
+      "name": "Formation Slot 1B",
+      "parentNodeId": "Root",
+      "localPosition": [
+        17,
+        -12,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor2B",
+      "type": "Empty",
+      "name": "Formation Slot 2B",
+      "parentNodeId": "Root",
+      "localPosition": [
+        17,
+        -6,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor3B",
+      "type": "Empty",
+      "name": "Formation Slot 3B",
+      "parentNodeId": "Root",
+      "localPosition": [
+        17,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor4B",
+      "type": "Empty",
+      "name": "Formation Slot 4B",
+      "parentNodeId": "Root",
+      "localPosition": [
+        17,
+        6,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor5B",
+      "type": "Empty",
+      "name": "Formation Slot 5B",
+      "parentNodeId": "Root",
+      "localPosition": [
+        17,
+        12,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor1C",
+      "type": "Empty",
+      "name": "Formation Slot 1C",
+      "parentNodeId": "Root",
+      "localPosition": [
+        23,
+        -12,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor2C",
+      "type": "Empty",
+      "name": "Formation Slot 2C",
+      "parentNodeId": "Root",
+      "localPosition": [
+        23,
+        -6,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor3C",
+      "type": "Empty",
+      "name": "Formation Slot 3C",
+      "parentNodeId": "Root",
+      "localPosition": [
+        23,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor4C",
+      "type": "Empty",
+      "name": "Formation Slot 4C",
+      "parentNodeId": "Root",
+      "localPosition": [
+        23,
+        6,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "FormationAnchor5C",
+      "type": "Empty",
+      "name": "Formation Slot 5C",
+      "parentNodeId": "Root",
+      "localPosition": [
+        23,
+        12,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
       "nodeId": "SpatialNode1",
       "type": "SpatialNode",
       "name": "Spatial Node",
@@ -396,6 +798,78 @@
       "componentId": "K9KVoxelWorld:8c866fce-ecb8-434f-bcab-6cc47235f8c5",
       "enabled": true,
       "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
+    },
+    {
+      "type": "CommanderControl",
+      "componentId": "CommanderControl:6dbd687c-f905-4d6a-9e7f-729404665c64",
+      "enabled": true,
+      "autoOnAtStart": true,
+      "pilotRoleId": "Pilot.Agent01",
+      "allowPatrolTowerAB": true,
+      "allowRespondToBattleReports": true,
+      "crewWaveIntervalSeconds": 120,
+      "formationSlots": [
+        {
+          "slotKey": "1A",
+          "anchorNodeId": "FormationAnchor1A"
+        },
+        {
+          "slotKey": "2A",
+          "anchorNodeId": "FormationAnchor2A"
+        },
+        {
+          "slotKey": "3A",
+          "anchorNodeId": "FormationAnchor3A"
+        },
+        {
+          "slotKey": "4A",
+          "anchorNodeId": "FormationAnchor4A"
+        },
+        {
+          "slotKey": "5A",
+          "anchorNodeId": "FormationAnchor5A"
+        },
+        {
+          "slotKey": "1B",
+          "anchorNodeId": "FormationAnchor1B"
+        },
+        {
+          "slotKey": "2B",
+          "anchorNodeId": "FormationAnchor2B"
+        },
+        {
+          "slotKey": "3B",
+          "anchorNodeId": "FormationAnchor3B"
+        },
+        {
+          "slotKey": "4B",
+          "anchorNodeId": "FormationAnchor4B"
+        },
+        {
+          "slotKey": "5B",
+          "anchorNodeId": "FormationAnchor5B"
+        },
+        {
+          "slotKey": "1C",
+          "anchorNodeId": "FormationAnchor1C"
+        },
+        {
+          "slotKey": "2C",
+          "anchorNodeId": "FormationAnchor2C"
+        },
+        {
+          "slotKey": "3C",
+          "anchorNodeId": "FormationAnchor3C"
+        },
+        {
+          "slotKey": "4C",
+          "anchorNodeId": "FormationAnchor4C"
+        },
+        {
+          "slotKey": "5C",
+          "anchorNodeId": "FormationAnchor5C"
+        }
+      ]
     }
   ],
   "animationClips": [],

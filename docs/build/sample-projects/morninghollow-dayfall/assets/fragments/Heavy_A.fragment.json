@@ -1,6 +1,6 @@
 {
   "assetId": "Fragment.Heavy_A",
-  "displayName": "Heavy Apex",
+  "displayName": "Heavy Apex 1A",
   "description": "Project Fragment assembly authored in Wings Assembler.",
   "tags": [
     "Fragment",
@@ -16,59 +16,77 @@
     {
       "profileId": "Player",
       "displayName": "Player",
+      "consumeMouse": true,
+      "hideMouse": true,
       "inputBindings": [
         {
           "inputChannel": "Input1",
           "positiveControls": [
             "MouseLeft",
-            "Gamepad0.Button0"
+            "Gamepad0.Button5"
           ],
           "negativeControls": [],
           "hardwareControls": [
             "MouseLeft",
-            "Gamepad0.Button0"
+            "Gamepad0.Button5"
           ]
         },
         {
           "inputChannel": "Input2",
           "positiveControls": [
-            "Space",
-            "Gamepad0.RightStickY"
+            "KeyW",
+            "Gamepad0.RightStickY+"
           ],
           "negativeControls": [
-            "ShiftLeft"
+            "KeyS",
+            "Gamepad0.RightStickY-"
           ],
           "hardwareControls": [
-            "Space",
-            "Gamepad0.RightStickY"
+            "KeyW",
+            "Gamepad0.RightStickY+"
           ]
         },
         {
           "inputChannel": "Input3",
           "positiveControls": [
-            "KeyA",
-            "Gamepad0.LeftStickX"
+            "MouseX",
+            "Gamepad0.LeftStickX+"
           ],
           "negativeControls": [
-            "KeyD"
+            "Gamepad0.LeftStickX-"
           ],
           "hardwareControls": [
-            "KeyA",
-            "Gamepad0.LeftStickX"
+            "MouseX",
+            "Gamepad0.LeftStickX+"
           ]
         },
         {
           "inputChannel": "Input4",
           "positiveControls": [
-            "KeyW",
-            "Gamepad0.LeftStickY"
+            "MouseY",
+            "Gamepad0.LeftStickY-"
           ],
           "negativeControls": [
-            "KeyS"
+            "Gamepad0.LeftStickY+"
           ],
           "hardwareControls": [
-            "KeyW",
-            "Gamepad0.LeftStickY"
+            "MouseY",
+            "Gamepad0.LeftStickY-"
+          ]
+        },
+        {
+          "inputChannel": "Input5",
+          "positiveControls": [
+            "KeyD",
+            "Gamepad0.RightStickX-"
+          ],
+          "negativeControls": [
+            "KeyA",
+            "Gamepad0.RightStickX+"
+          ],
+          "hardwareControls": [
+            "KeyD",
+            "Gamepad0.RightStickX-"
           ]
         }
       ],
@@ -110,35 +128,6 @@
             0.02,
             0.9
           ]
-        },
-        {
-          "type": "Acceleration",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:2",
-          "enabled": true,
-          "inputChannel": "Input2",
-          "deadZone": 0.12,
-          "accelerationRate": 9,
-          "decelerationRate": 9,
-          "minSpeed": 0,
-          "maxSpeed": 12,
-          "stopForReverse": false,
-          "stopForDrive": false
-        },
-        {
-          "type": "Yaw",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:3",
-          "enabled": true,
-          "inputChannel": "Input3",
-          "deadZone": 0.12,
-          "yawRate": 1.8
-        },
-        {
-          "type": "Pitch",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:4",
-          "enabled": true,
-          "inputChannel": "Input4",
-          "deadZone": 0.12,
-          "pitchRate": 1.8
         }
       ]
     },
@@ -212,7 +201,7 @@
     {
       "nodeId": "Root",
       "type": "Root",
-      "name": "Heavy Apex",
+      "name": "Heavy Apex 1A",
       "parentNodeId": null,
       "localPosition": [
         0,
@@ -245,6 +234,42 @@
           "enabled": true,
           "visible": false,
           "hiddenInGame": true
+        },
+        {
+          "type": "Acceleration",
+          "componentId": "Acceleration:ba0c595d-e920-4a15-856d-16c0e1bb0801",
+          "enabled": true,
+          "inputChannel": "Input2",
+          "deadZone": 0.12,
+          "accelerationRate": 9,
+          "decelerationRate": 9,
+          "minSpeed": 0,
+          "maxSpeed": 12,
+          "stopForReverse": false,
+          "stopForDrive": false
+        },
+        {
+          "type": "Yaw",
+          "componentId": "Yaw:5889095f-4467-4435-bd29-fde475440f57",
+          "enabled": true,
+          "inputChannel": "Input3",
+          "deadZone": 0.12,
+          "yawRate": 1.8
+        },
+        {
+          "type": "Pitch",
+          "componentId": "Pitch:c2e91923-88ed-4c3e-9dc2-7feb01d758d0",
+          "enabled": true,
+          "inputChannel": "Input4",
+          "deadZone": 0.12,
+          "pitchRate": 1.8
+        },
+        {
+          "type": "BarrelRoll",
+          "componentId": "BarrelRoll:820c2e07-b3c8-48d1-8d81-cdfe6e00edbb",
+          "enabled": true,
+          "inputChannel": "Input5",
+          "rollSensitivity": 1.5
         }
       ]
     },
@@ -429,6 +454,160 @@
       "meshAssetId": "Mesh.heavy_a_ship",
       "meshId": "heavy_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
+    },
+    {
+      "nodeId": "EmptyNode1",
+      "type": "Empty",
+      "name": "Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -1.1759508848190308,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        4,
+        5,
+        10
+      ]
+    },
+    {
+      "nodeId": "ParticleNode1",
+      "type": "Particle",
+      "name": "Particle Emitter",
+      "parentNodeId": "EmptyNode1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:8772f51b-c36a-49d5-856a-ef3c08fbb7b9",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1785182623798",
+        "autoPlay": true
+      }
+    },
+    {
+      "nodeId": "CameraNode1",
+      "type": "Camera",
+      "name": "Player Camera",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -6.285999774932861,
+        0,
+        2.805000066757202
+      ],
+      "localRotation": [
+        0,
+        0.09155838837741258,
+        0,
+        0.9957997095388866
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "cameraFieldOfViewDegrees": 50,
+      "cameraSpringArm": {
+        "enabled": true,
+        "pivotOffset": [
+          0,
+          0,
+          2.589
+        ],
+        "lookOffset": [
+          3.698,
+          0,
+          2.219
+        ],
+        "minArmLength": 10.17,
+        "baseArmLength": 12.943,
+        "maxArmLength": 19.42,
+        "positionLag": 8,
+        "rotationLag": 4.5,
+        "lookLag": 9,
+        "zoomLag": 3.5,
+        "followShipUp": true
+      }
+    },
+    {
+      "nodeId": "SpatialNode1",
+      "type": "SpatialNode",
+      "name": "Spatial Node",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        1.721640944480896
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "ownerProfileId": "AI",
+      "spatialComponents": [
+        {
+          "componentId": "WorldUI:069c82f7-9f4d-4939-93ae-ff92677c5e58",
+          "type": "WorldUI",
+          "data": {
+            "enabled": true,
+            "uiAssetId": "UI.UI1788447186068",
+            "physicalSize": [
+              10,
+              5
+            ],
+            "maxDistance": 50,
+            "depthTested": true,
+            "facingAxes": 4,
+            "presentationPivot": {
+              "enabled": false,
+              "localPosition": [
+                0,
+                0,
+                0
+              ],
+              "facingAxes": 0
+            },
+            "driverBindings": [
+              {
+                "slotId": "Background_1",
+                "source": {
+                  "scope": "Root",
+                  "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
+                  "property": "Current"
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "componentDefinitions": [
@@ -446,6 +625,42 @@
       "enabled": true,
       "visible": false,
       "hiddenInGame": true
+    },
+    {
+      "type": "Acceleration",
+      "componentId": "Acceleration:ba0c595d-e920-4a15-856d-16c0e1bb0801",
+      "enabled": true,
+      "inputChannel": "Input2",
+      "deadZone": 0.12,
+      "accelerationRate": 9,
+      "decelerationRate": 9,
+      "minSpeed": 0,
+      "maxSpeed": 12,
+      "stopForReverse": false,
+      "stopForDrive": false
+    },
+    {
+      "type": "Yaw",
+      "componentId": "Yaw:5889095f-4467-4435-bd29-fde475440f57",
+      "enabled": true,
+      "inputChannel": "Input3",
+      "deadZone": 0.12,
+      "yawRate": 1.8
+    },
+    {
+      "type": "Pitch",
+      "componentId": "Pitch:c2e91923-88ed-4c3e-9dc2-7feb01d758d0",
+      "enabled": true,
+      "inputChannel": "Input4",
+      "deadZone": 0.12,
+      "pitchRate": 1.8
+    },
+    {
+      "type": "BarrelRoll",
+      "componentId": "BarrelRoll:820c2e07-b3c8-48d1-8d81-cdfe6e00edbb",
+      "enabled": true,
+      "inputChannel": "Input5",
+      "rollSensitivity": 1.5
     }
   ],
   "animationClips": [],
@@ -454,7 +669,7 @@
   "driverSourceVersion": 2,
   "fragmentScript": null,
   "rootPhysicalCollider": {
-    "visible": true,
+    "visible": false,
     "hiddenInGame": true,
     "radius": 2,
     "halfHeight": 3,

@@ -2682,9 +2682,9 @@
       "type": "Overlay",
       "parentNodeId": "Overlay_4",
       "displayName": "Overlay Upgrade Picker",
-      "localX": -521.6766467065868,
-      "localY": 469.94011976047904,
-      "width": 350,
+      "localX": -478.56287425149696,
+      "localY": 476.4071856287425,
+      "width": 500,
       "height": 100,
       "pivotX": 0.5,
       "pivotY": 0.5,
@@ -2866,12 +2866,49 @@
         1
       ],
       "fontSize": 32,
-      "textHorizontalAlignment": "Center",
+      "textHorizontalAlignment": "Left",
       "textVerticalAlignment": "Center",
       "driver": {
         "source": "Player.Money",
         "target": "TextValue",
         "format": "{current}"
+      }
+    },
+    {
+      "nodeId": "Text_9",
+      "type": "Text",
+      "parentNodeId": "HorizontalBox_5",
+      "displayName": "Text 9",
+      "localX": 0,
+      "localY": 0,
+      "width": 150,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Left",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "--:--",
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "fontSize": 32,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Game.FormationCrewWave.SecondsUntilNext",
+        "target": "TextValue",
+        "format": "{time}"
       }
     },
     {

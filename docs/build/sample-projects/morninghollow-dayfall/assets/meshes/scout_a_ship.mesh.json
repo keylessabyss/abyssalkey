@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.scout_a_ship",
+  "displayName": "Scout A Ship",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/scout_a_ship.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "scout_a_base",
+        "displayName": "scout_a_base",
+        "objectName": "scout_a_base",
+        "groupName": "scout_a_base",
+        "materialName": "base",
+        "smoothingGroup": "4"
+      },
+      {
+        "meshId": "scout_a_emissive",
+        "displayName": "scout_a_emissive",
+        "objectName": "scout_a_emissive",
+        "groupName": "scout_a_emissive",
+        "materialName": "emissive",
+        "smoothingGroup": "4"
+      },
+      {
+        "meshId": "scout_a_color",
+        "displayName": "scout_a_color",
+        "objectName": "scout_a_color",
+        "groupName": "scout_a_color",
+        "materialName": "color",
+        "smoothingGroup": "4"
+      },
+      {
+        "meshId": "scout_a_boltz",
+        "displayName": "scout_a_boltz",
+        "objectName": "scout_a_boltz",
+        "groupName": "scout_a_boltz",
+        "materialName": "boltz",
+        "smoothingGroup": "2"
+      }
+    ]
+  }
+}
