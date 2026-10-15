@@ -158,7 +158,7 @@
       "name": "Primary Spawn",
       "parentNodeId": "Root",
       "localPosition": [
-        36.10100173950195,
+        40,
         0,
         0
       ],
@@ -385,7 +385,7 @@
       "parentNodeId": "Root",
       "localPosition": [
         11,
-        -12,
+        -20,
         0
       ],
       "localRotation": [
@@ -407,7 +407,7 @@
       "parentNodeId": "Root",
       "localPosition": [
         11,
-        -6,
+        -10,
         0
       ],
       "localRotation": [
@@ -428,7 +428,7 @@
       "name": "Formation Slot 3A",
       "parentNodeId": "Root",
       "localPosition": [
-        11,
+        8,
         0,
         0
       ],
@@ -451,7 +451,7 @@
       "parentNodeId": "Root",
       "localPosition": [
         11,
-        6,
+        10,
         0
       ],
       "localRotation": [
@@ -473,7 +473,7 @@
       "parentNodeId": "Root",
       "localPosition": [
         11,
-        12,
+        20,
         0
       ],
       "localRotation": [
@@ -494,9 +494,9 @@
       "name": "Formation Slot 1B",
       "parentNodeId": "Root",
       "localPosition": [
-        17,
-        -12,
-        0
+        20,
+        -15,
+        5
       ],
       "localRotation": [
         0,
@@ -516,9 +516,9 @@
       "name": "Formation Slot 2B",
       "parentNodeId": "Root",
       "localPosition": [
-        17,
+        20,
         -6,
-        0
+        5
       ],
       "localRotation": [
         0,
@@ -540,7 +540,7 @@
       "localPosition": [
         17,
         0,
-        0
+        5
       ],
       "localRotation": [
         0,
@@ -560,9 +560,9 @@
       "name": "Formation Slot 4B",
       "parentNodeId": "Root",
       "localPosition": [
-        17,
+        20,
         6,
-        0
+        5
       ],
       "localRotation": [
         0,
@@ -582,9 +582,9 @@
       "name": "Formation Slot 5B",
       "parentNodeId": "Root",
       "localPosition": [
-        17,
-        12,
-        0
+        20,
+        15,
+        5
       ],
       "localRotation": [
         0,
@@ -604,8 +604,8 @@
       "name": "Formation Slot 1C",
       "parentNodeId": "Root",
       "localPosition": [
-        23,
-        -12,
+        30,
+        -18,
         0
       ],
       "localRotation": [
@@ -626,8 +626,8 @@
       "name": "Formation Slot 2C",
       "parentNodeId": "Root",
       "localPosition": [
-        23,
-        -6,
+        28,
+        -9,
         0
       ],
       "localRotation": [
@@ -648,7 +648,7 @@
       "name": "Formation Slot 3C",
       "parentNodeId": "Root",
       "localPosition": [
-        23,
+        28,
         0,
         0
       ],
@@ -670,8 +670,8 @@
       "name": "Formation Slot 4C",
       "parentNodeId": "Root",
       "localPosition": [
-        23,
-        6,
+        28,
+        9,
         0
       ],
       "localRotation": [
@@ -692,8 +692,8 @@
       "name": "Formation Slot 5C",
       "parentNodeId": "Root",
       "localPosition": [
-        23,
-        12,
+        30,
+        18,
         0
       ],
       "localRotation": [

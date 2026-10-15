@@ -45,6 +45,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -79,6 +80,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -399,6 +401,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "itemSelectorBehavior": {
@@ -612,6 +615,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -654,6 +658,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_11",
+      "type": "Text",
+      "parentNodeId": "Overlay_8",
+      "displayName": "Formation Crew Count 1A",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_9",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_1",
@@ -683,6 +724,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -725,6 +767,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_12",
+      "type": "Text",
+      "parentNodeId": "Overlay_9",
+      "displayName": "Formation Crew Count 2A",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_10",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_1",
@@ -754,6 +833,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -796,6 +876,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_13",
+      "type": "Text",
+      "parentNodeId": "Overlay_10",
+      "displayName": "Formation Crew Count 3A",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_11",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_1",
@@ -825,6 +942,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -867,6 +985,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_14",
+      "type": "Text",
+      "parentNodeId": "Overlay_11",
+      "displayName": "Formation Crew Count 4A",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_12",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_1",
@@ -896,6 +1051,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -936,6 +1092,43 @@
       ],
       "enabled": true,
       "inputChannel": "None"
+    },
+    {
+      "nodeId": "Text_15",
+      "type": "Text",
+      "parentNodeId": "Overlay_12",
+      "displayName": "Formation Crew Count 5A",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
     },
     {
       "nodeId": "HorizontalBox_2",
@@ -990,6 +1183,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1032,6 +1226,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_16",
+      "type": "Text",
+      "parentNodeId": "Overlay_13",
+      "displayName": "Formation Crew Count 1B",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_14",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_2",
@@ -1061,6 +1292,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1103,6 +1335,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_17",
+      "type": "Text",
+      "parentNodeId": "Overlay_14",
+      "displayName": "Formation Crew Count 2B",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_15",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_2",
@@ -1132,6 +1401,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1174,6 +1444,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_18",
+      "type": "Text",
+      "parentNodeId": "Overlay_15",
+      "displayName": "Formation Crew Count 3B",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_16",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_2",
@@ -1203,6 +1510,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1245,6 +1553,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_19",
+      "type": "Text",
+      "parentNodeId": "Overlay_16",
+      "displayName": "Formation Crew Count 4B",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_17",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_2",
@@ -1274,6 +1619,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1314,6 +1660,43 @@
       ],
       "enabled": true,
       "inputChannel": "None"
+    },
+    {
+      "nodeId": "Text_20",
+      "type": "Text",
+      "parentNodeId": "Overlay_17",
+      "displayName": "Formation Crew Count 5B",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
     },
     {
       "nodeId": "HorizontalBox_3",
@@ -1368,6 +1751,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1410,6 +1794,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_21",
+      "type": "Text",
+      "parentNodeId": "Overlay_18",
+      "displayName": "Formation Crew Count 1C",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_19",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_3",
@@ -1439,6 +1860,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1481,6 +1903,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_22",
+      "type": "Text",
+      "parentNodeId": "Overlay_19",
+      "displayName": "Formation Crew Count 2C",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_20",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_3",
@@ -1510,6 +1969,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1552,6 +2012,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_23",
+      "type": "Text",
+      "parentNodeId": "Overlay_20",
+      "displayName": "Formation Crew Count 3C",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_21",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_3",
@@ -1581,6 +2078,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1623,6 +2121,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_24",
+      "type": "Text",
+      "parentNodeId": "Overlay_21",
+      "displayName": "Formation Crew Count 4C",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_22",
       "type": "Overlay",
       "parentNodeId": "HorizontalBox_3",
@@ -1652,6 +2187,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -1694,6 +2230,43 @@
       "inputChannel": "None"
     },
     {
+      "nodeId": "Text_25",
+      "type": "Text",
+      "parentNodeId": "Overlay_22",
+      "displayName": "Formation Crew Count 5C",
+      "localX": 0,
+      "localY": 30,
+      "width": 80,
+      "height": 18,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "0",
+      "color": [
+        1,
+        0.08,
+        0.08,
+        1
+      ],
+      "fontSize": 16,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Selector.AssignedItem.UnitsInField",
+        "target": "TextValue",
+        "format": "{value}"
+      }
+    },
+    {
       "nodeId": "Overlay_5",
       "type": "Overlay",
       "parentNodeId": "Overlay_4",
@@ -1723,6 +2296,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "itemSelectorBehavior": {
@@ -2154,6 +2728,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2225,6 +2800,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2296,6 +2872,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2367,6 +2944,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2438,6 +3016,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2495,6 +3074,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2566,6 +3146,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2637,6 +3218,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2708,6 +3290,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2765,6 +3348,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2913,6 +3497,43 @@
       }
     },
     {
+      "nodeId": "Text_10",
+      "type": "Text",
+      "parentNodeId": "Overlay_7",
+      "displayName": "Formation Crew In Field",
+      "localX": 1182.0110608178143,
+      "localY": -255.765229541263,
+      "width": 150,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Left",
+      "verticalAlignment": "Top",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Crew: 0",
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "fontSize": 24,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Game.FormationCrewWave.UnitsInField",
+        "target": "TextValue",
+        "format": "Crew: {current}"
+      }
+    },
+    {
       "nodeId": "Overlay_23",
       "type": "Overlay",
       "parentNodeId": "Overlay_4",
@@ -2942,6 +3563,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": false,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -2999,6 +3621,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": true
@@ -3167,6 +3790,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
@@ -3239,6 +3863,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorStartUnfocused": false,
       "selectorNavigationEnabled": true,
       "selectorInputBindings": [],
       "tooltipBehavior": false
