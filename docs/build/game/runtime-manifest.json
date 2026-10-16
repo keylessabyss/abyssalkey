@@ -1,0 +1,7 @@
+{
+  "format": "AbyssalGameRuntime",
+  "formatVersion": 1,
+  "projectRoot": "../sample-projects/morninghollow-dayfall",
+  "includedBackends": ["WebGPU", "WebGL2"],
+  "preferredBackend": "WebGPU"
+}
