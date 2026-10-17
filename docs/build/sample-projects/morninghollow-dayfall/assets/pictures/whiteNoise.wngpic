@@ -1,0 +1,24 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 2,
+  "assetId": "Picture.whiteNoise",
+  "displayName": "WhiteNoise",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 256,
+  "height": 256,
+  "sourceKind": "ImportedPng",
+  "sourceFileName": "whiteNoise.png",
+  "optimization": {
+    "mode": "PreserveAlpha",
+    "payloadFileName": "whiteNoise.optimized.webp",
+    "sourceSha256": "5093bb8afa3373a589def56372017a8c9924a2ff08bb2121fc97fc4dd765f9d5",
+    "sourceByteLength": 160589,
+    "optimizedByteLength": 40600
+  }
+}

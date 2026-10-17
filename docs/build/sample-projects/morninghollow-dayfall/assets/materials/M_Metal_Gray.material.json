@@ -1,6 +1,6 @@
 {
   "format": "AbyssalMaterial",
-  "formatVersion": 2,
+  "formatVersion": 3,
   "assetId": "Material.M_Metal_Gray",
   "displayName": "Metallic Gray",
   "description": "",
@@ -25,7 +25,10 @@
     "metallic": 1,
     "roughness": 0.3,
     "opacity": 1,
-    "baseColorPictureAssetId": null,
+    "baseColorPictureAssetId": "Picture.metal_3",
+    "baseColorPictureBlendMode": "AlphaBlend",
+    "baseColorPictureStrength": 0.2,
+    "baseColorPictureUseAlphaMask": true,
     "textureMappingMode": "LocalTriplanar",
     "localTriplanarTileSize": 1,
     "localTriplanarOffset": [

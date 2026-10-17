@@ -1,6 +1,6 @@
 {
   "format": "AbyssalMaterial",
-  "formatVersion": 2,
+  "formatVersion": 3,
   "assetId": "Material.M_dynamic_color",
   "displayName": "Team Color",
   "description": "",
@@ -25,7 +25,10 @@
     "metallic": 0,
     "roughness": 1,
     "opacity": 1,
-    "baseColorPictureAssetId": null,
+    "baseColorPictureAssetId": "Picture.metal_1",
+    "baseColorPictureBlendMode": "Overlay",
+    "baseColorPictureStrength": 0.4,
+    "baseColorPictureUseAlphaMask": false,
     "textureMappingMode": "UV",
     "localTriplanarTileSize": 1,
     "localTriplanarOffset": [

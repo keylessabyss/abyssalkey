@@ -1,0 +1,17 @@
+{
+  "format": "AbyssalWingsPicture",
+  "formatVersion": 2,
+  "assetId": "Picture.metal_3",
+  "displayName": "Metal 3",
+  "description": "Project imported PNG picture.",
+  "tags": [
+    "Picture",
+    "Project",
+    "Imported",
+    "PNG"
+  ],
+  "width": 256,
+  "height": 256,
+  "sourceKind": "ImportedPng",
+  "sourceFileName": "metal_3.png"
+}

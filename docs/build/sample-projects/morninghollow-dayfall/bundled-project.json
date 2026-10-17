@@ -105,6 +105,10 @@
     "assets/pictures/crosshair.wngpic",
     "assets/pictures/KA_logo.wngpic",
     "assets/pictures/mainHUD.wngpic",
+    "assets/pictures/metal_1.wngpic",
+    "assets/pictures/metal_2.wngpic",
+    "assets/pictures/metal_3.wngpic",
+    "assets/pictures/metal_4.wngpic",
     "assets/pictures/MH_celestial_1.wngpic",
     "assets/pictures/MH_celestial_2.wngpic",
     "assets/pictures/MH_celestial_3.wngpic",
@@ -113,7 +117,8 @@
     "assets/pictures/MH_planet_2.wngpic",
     "assets/pictures/MH_planet_3.wngpic",
     "assets/pictures/MorningHollowPanorama.wngpic",
-    "assets/pictures/t_muzzleFlash.wngpic"
+    "assets/pictures/t_muzzleFlash.wngpic",
+    "assets/pictures/whiteNoise.wngpic"
   ],
   "staticVoxelWorlds": [
     {
