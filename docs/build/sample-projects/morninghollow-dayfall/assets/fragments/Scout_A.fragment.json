@@ -37,7 +37,10 @@
             "KeyW",
             "Gamepad0.RightStickY+"
           ],
-          "negativeControls": ["KeyS", "Gamepad0.RightStickY-"],
+          "negativeControls": [
+            "KeyS",
+            "Gamepad0.RightStickY-"
+          ],
           "hardwareControls": [
             "KeyW",
             "Gamepad0.RightStickY+"
@@ -49,7 +52,9 @@
             "MouseX",
             "Gamepad0.LeftStickX+"
           ],
-          "negativeControls": ["Gamepad0.LeftStickX-"],
+          "negativeControls": [
+            "Gamepad0.LeftStickX-"
+          ],
           "hardwareControls": [
             "MouseX",
             "Gamepad0.LeftStickX+"
@@ -61,7 +66,9 @@
             "MouseY",
             "Gamepad0.LeftStickY-"
           ],
-          "negativeControls": ["Gamepad0.LeftStickY+"],
+          "negativeControls": [
+            "Gamepad0.LeftStickY+"
+          ],
           "hardwareControls": [
             "MouseY",
             "Gamepad0.LeftStickY-"
@@ -73,7 +80,10 @@
             "KeyD",
             "Gamepad0.RightStickX-"
           ],
-          "negativeControls": ["KeyA", "Gamepad0.RightStickX+"],
+          "negativeControls": [
+            "KeyA",
+            "Gamepad0.RightStickX+"
+          ],
           "hardwareControls": [
             "KeyD",
             "Gamepad0.RightStickX-"
@@ -244,7 +254,7 @@
           "enabled": true,
           "inputChannel": "Input3",
           "deadZone": 0.12,
-          "yawRate": 1.8
+          "yawRate": 3
         },
         {
           "type": "Pitch",
@@ -252,7 +262,7 @@
           "enabled": true,
           "inputChannel": "Input4",
           "deadZone": 0.12,
-          "pitchRate": 1.8
+          "pitchRate": 3
         },
         {
           "type": "BarrelRoll",
@@ -307,7 +317,6 @@
         1,
         1
       ],
-      "role": "MeshDataRoot",
       "meshAssetId": "Mesh.scout_a_ship",
       "meshMaterialBindings": [
         {
@@ -355,7 +364,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_base",
       "materialAssetId": "Material.M_Metal_Gray"
@@ -381,7 +389,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_emissive",
       "materialAssetId": "Material.M_dynamic_accent"
@@ -407,7 +414,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_color",
       "materialAssetId": "Material.M_dynamic_color"
@@ -433,7 +439,6 @@
         1,
         1
       ],
-      "role": "MeshPart",
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_boltz",
       "materialAssetId": "Material.M_metal_bronze"
@@ -444,9 +449,9 @@
       "name": "Player Camera",
       "parentNodeId": "Root",
       "localPosition": [
-        -1.924,
+        -1.9240000247955322,
         0,
-        0.859
+        0.859000027179718
       ],
       "localRotation": [
         0,
@@ -577,7 +582,7 @@
       "enabled": true,
       "inputChannel": "Input3",
       "deadZone": 0.12,
-      "yawRate": 1.8
+      "yawRate": 3
     },
     {
       "type": "Pitch",
@@ -585,7 +590,7 @@
       "enabled": true,
       "inputChannel": "Input4",
       "deadZone": 0.12,
-      "pitchRate": 1.8
+      "pitchRate": 3
     },
     {
       "type": "BarrelRoll",
