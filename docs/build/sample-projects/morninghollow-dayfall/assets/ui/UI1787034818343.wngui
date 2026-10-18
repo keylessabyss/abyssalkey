@@ -218,42 +218,6 @@
       }
     },
     {
-      "nodeId": "VirtualJoystick_1",
-      "type": "VirtualJoystick",
-      "parentNodeId": "Overlay_2",
-      "displayName": "Virtual Joystick 1",
-      "localX": -73.17365269461078,
-      "localY": 118.4131736526946,
-      "width": 200,
-      "height": 200,
-      "pivotX": 0.5,
-      "pivotY": 0.5,
-      "visible": true,
-      "locked": false,
-      "horizontalAlignment": "Center",
-      "verticalAlignment": "Center",
-      "anchor": "None",
-      "inputProfile": "Mobile",
-      "leftMargin": 0,
-      "topMargin": 0,
-      "rightMargin": 0,
-      "bottomMargin": 0,
-      "role": "RightStick",
-      "deadzone": 0.12,
-      "baseColor": [
-        0.1,
-        0.14,
-        0.16,
-        0.42
-      ],
-      "knobColor": [
-        0.68,
-        0.84,
-        0.9,
-        0.42
-      ]
-    },
-    {
       "nodeId": "Button_1",
       "type": "Button",
       "parentNodeId": "Overlay_2",
@@ -288,7 +252,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "Input1"
+      "inputChannel": "Input1",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_4",
@@ -660,7 +625,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_11",
@@ -770,7 +736,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_12",
@@ -880,7 +847,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_13",
@@ -990,7 +958,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_14",
@@ -1100,7 +1069,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_15",
@@ -1233,7 +1203,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_16",
@@ -1343,7 +1314,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_17",
@@ -1453,7 +1425,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_18",
@@ -1563,7 +1536,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_19",
@@ -1673,7 +1647,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_20",
@@ -1806,7 +1781,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_21",
@@ -1916,7 +1892,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_22",
@@ -2026,7 +2003,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_23",
@@ -2136,7 +2114,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_24",
@@ -2246,7 +2225,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_25",
@@ -2789,7 +2769,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_28",
@@ -2862,7 +2843,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_29",
@@ -2935,7 +2917,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_34",
@@ -3140,7 +3123,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_32",
@@ -3213,7 +3197,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_33",
@@ -3286,7 +3271,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Overlay_7",
@@ -3418,7 +3404,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "inputValue": 1
     },
     {
       "nodeId": "Text_3",
@@ -3864,6 +3851,7 @@
       ],
       "enabled": true,
       "inputChannel": "None",
+      "inputValue": 1,
       "selectorCommand": "Accept"
     },
     {
@@ -3938,6 +3926,7 @@
       ],
       "enabled": true,
       "inputChannel": "None",
+      "inputValue": 1,
       "selectorCommand": "CancelToDefault"
     },
     {
@@ -4061,79 +4050,6 @@
       }
     },
     {
-      "nodeId": "Overlay_36",
-      "type": "Overlay",
-      "parentNodeId": "Overlay_35",
-      "displayName": "Overlay 36",
-      "localX": 0,
-      "localY": 0,
-      "width": 100,
-      "height": 40,
-      "pivotX": 0.5,
-      "pivotY": 0.5,
-      "visible": true,
-      "locked": false,
-      "horizontalAlignment": "Center",
-      "verticalAlignment": "Bottom",
-      "anchor": "None",
-      "inputProfile": "None",
-      "leftMargin": 0,
-      "topMargin": 0,
-      "rightMargin": 0,
-      "bottomMargin": 0,
-      "outlineEnabled": false,
-      "outlineColor": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "outlineThickness": 1,
-      "selectorEnabled": false,
-      "selectorStartUnfocused": false,
-      "selectorBackDismissesUI": false,
-      "selectorNavigationEnabled": true,
-      "selectorInputBindings": [],
-      "tooltipBehavior": false
-    },
-    {
-      "nodeId": "Button_26",
-      "type": "Button",
-      "parentNodeId": "Overlay_36",
-      "displayName": "Button 26",
-      "localX": 0,
-      "localY": 0,
-      "width": 240,
-      "height": 64,
-      "pivotX": 0.5,
-      "pivotY": 0.5,
-      "visible": true,
-      "locked": false,
-      "horizontalAlignment": "Fill",
-      "verticalAlignment": "Fill",
-      "anchor": "None",
-      "inputProfile": "None",
-      "leftMargin": 0,
-      "topMargin": 0,
-      "rightMargin": 0,
-      "bottomMargin": 0,
-      "text": "Thrust ",
-      "backgroundColor": [
-        0.12,
-        0.31,
-        0.43,
-        1
-      ],
-      "textColor": [
-        0.95,
-        0.98,
-        1,
-        1
-      ],
-      "enabled": true,
-      "inputChannel": "None"
-    },
-    {
       "nodeId": "Overlay_37",
       "type": "Overlay",
       "parentNodeId": "Overlay_35",
@@ -4141,7 +4057,7 @@
       "localX": -80,
       "localY": 0,
       "width": 100,
-      "height": 40,
+      "height": 60,
       "pivotX": 0.5,
       "pivotY": 0.5,
       "visible": true,
@@ -4215,7 +4131,7 @@
       "localX": 80,
       "localY": 0,
       "width": 100,
-      "height": 40,
+      "height": 60,
       "pivotX": 0.5,
       "pivotY": 0.5,
       "visible": true,
