@@ -246,6 +246,7 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Start",
+      "description": "Join the current battle.",
       "backgroundColor": [
         0.12,
         0.31,
@@ -284,6 +285,7 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Lobby",
+      "description": "Lobby is under construction.",
       "backgroundColor": [
         0.12,
         0.31,
@@ -321,6 +323,7 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Settings",
+      "description": "Open game options and choose your graphics renderer.",
       "backgroundColor": [
         0.12,
         0.31,
@@ -334,7 +337,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "onClickSource": "OnClick()\n{\n    ShowUI(\"Graphics Settings\");\n}"
     },
     {
       "nodeId": "Overlay_2",
@@ -378,8 +382,8 @@
       "displayName": "Text 1",
       "localX": 0,
       "localY": 0,
-      "width": 360,
-      "height": 56,
+      "width": 600,
+      "height": 100,
       "pivotX": 0.5,
       "pivotY": 0.5,
       "visible": true,
@@ -393,13 +397,18 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Text",
+      "driver": {
+        "source": "Selector.FocusedButton.Description",
+        "target": "TextValue",
+        "format": "{value}"
+      },
       "color": [
         0.95,
         0.98,
         1,
         1
       ],
-      "fontSize": 32,
+      "fontSize": 28,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center"
     }
