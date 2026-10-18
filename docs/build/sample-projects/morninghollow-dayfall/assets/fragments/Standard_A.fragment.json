@@ -910,7 +910,7 @@
       "id": "Driver",
       "name": "Thruster Power",
       "enabled": true,
-      "sourceValueId": "Movement.ForwardSpeedNormalized",
+      "sourceValueId": "Movement.ThrottleNormalized",
       "animationClipId": "Animation_1",
       "inputMin": 0,
       "inputMax": 1,
