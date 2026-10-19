@@ -1,6 +1,6 @@
 {
   "format": "AbyssalWingsUI",
-  "formatVersion": 22,
+  "formatVersion": 24,
   "assetId": "UI.UI1787034818343",
   "displayName": "Player HUD",
   "description": "",
@@ -223,7 +223,7 @@
       "parentNodeId": "Overlay_2",
       "displayName": "Button Laser",
       "localX": 840,
-      "localY": 90,
+      "localY": -50,
       "width": 100,
       "height": 80,
       "pivotX": 0.5,
@@ -2266,10 +2266,111 @@
       }
     },
     {
+      "nodeId": "Overlay_36",
+      "type": "Overlay",
+      "parentNodeId": "Overlay_3",
+      "displayName": "formation Crew Background",
+      "localX": -172.45508982035932,
+      "localY": -198.32335329341316,
+      "width": 150,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "outlineEnabled": false,
+      "outlineColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "outlineThickness": 1,
+      "selectorEnabled": false,
+      "selectorStartUnfocused": false,
+      "selectorBackDismissesUI": false,
+      "selectorNavigationEnabled": true,
+      "selectorInputBindings": [],
+      "tooltipBehavior": false
+    },
+    {
+      "nodeId": "Background_5",
+      "type": "Background",
+      "parentNodeId": "Overlay_36",
+      "displayName": "Background 5",
+      "localX": 0,
+      "localY": 0,
+      "width": 150,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Left",
+      "verticalAlignment": "Top",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "color": [
+        0.08,
+        0.12,
+        0.15,
+        1
+      ]
+    },
+    {
+      "nodeId": "Text_10",
+      "type": "Text",
+      "parentNodeId": "Overlay_36",
+      "displayName": "Formation Crew In Field",
+      "localX": 0,
+      "localY": 0,
+      "width": 150,
+      "height": 56,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "text": "Crew: 0",
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
+      "fontSize": 24,
+      "textHorizontalAlignment": "Center",
+      "textVerticalAlignment": "Center",
+      "driver": {
+        "source": "Game.FormationCrewWave.UnitsInField",
+        "target": "TextValue",
+        "format": "Crew: {current}"
+      }
+    },
+    {
       "nodeId": "Overlay_39",
       "type": "Overlay",
       "parentNodeId": "Overlay_3",
-      "displayName": "Player Wing Status",
+      "displayName": "Overlay 39",
       "localX": 68.98203592814369,
       "localY": -217.60479041916167,
       "width": 300,
@@ -2286,8 +2387,13 @@
       "topMargin": 0,
       "rightMargin": 0,
       "bottomMargin": 0,
-      "outlineEnabled": false,
-      "outlineColor": [0, 0, 0, 1],
+      "outlineEnabled": true,
+      "outlineColor": [
+        0,
+        0,
+        0,
+        1
+      ],
       "outlineThickness": 1,
       "selectorEnabled": false,
       "selectorStartUnfocused": false,
@@ -2300,7 +2406,7 @@
       "nodeId": "Button_26",
       "type": "Button",
       "parentNodeId": "Overlay_39",
-      "displayName": "Player Wing Scout",
+      "displayName": "Button 28",
       "localX": 0,
       "localY": 0,
       "width": 90,
@@ -2318,8 +2424,18 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Scout",
-      "backgroundColor": [0.12, 0.31, 0.43, 1],
-      "textColor": [0.95, 0.98, 1, 1],
+      "backgroundColor": [
+        0.12,
+        0.31,
+        0.43,
+        1
+      ],
+      "textColor": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
       "enabled": true,
       "inputChannel": "None",
       "inputValue": 1
@@ -2328,7 +2444,7 @@
       "nodeId": "Button_29",
       "type": "Button",
       "parentNodeId": "Overlay_39",
-      "displayName": "Player Wing Standard",
+      "displayName": "Button 29",
       "localX": 0,
       "localY": 0,
       "width": 90,
@@ -2346,8 +2462,18 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Standard",
-      "backgroundColor": [0.12, 0.31, 0.43, 1],
-      "textColor": [0.95, 0.98, 1, 1],
+      "backgroundColor": [
+        0.12,
+        0.31,
+        0.43,
+        1
+      ],
+      "textColor": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
       "enabled": true,
       "inputChannel": "None",
       "inputValue": 1
@@ -2356,7 +2482,7 @@
       "nodeId": "Button_30",
       "type": "Button",
       "parentNodeId": "Overlay_39",
-      "displayName": "Player Wing Heavy",
+      "displayName": "Button 30",
       "localX": 0,
       "localY": 0,
       "width": 90,
@@ -2374,8 +2500,18 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Heavy",
-      "backgroundColor": [0.12, 0.31, 0.43, 1],
-      "textColor": [0.95, 0.98, 1, 1],
+      "backgroundColor": [
+        0.12,
+        0.31,
+        0.43,
+        1
+      ],
+      "textColor": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
       "enabled": true,
       "inputChannel": "None",
       "inputValue": 1
@@ -2402,7 +2538,12 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "1A",
-      "color": [0.55, 0.9, 1, 1],
+      "color": [
+        0.55,
+        0.9,
+        1,
+        1
+      ],
       "fontSize": 14,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center",
@@ -2434,7 +2575,12 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Fielded: 0",
-      "color": [0.95, 0.98, 1, 1],
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
       "fontSize": 12,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center",
@@ -2466,7 +2612,12 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "1A",
-      "color": [0.55, 0.9, 1, 1],
+      "color": [
+        0.55,
+        0.9,
+        1,
+        1
+      ],
       "fontSize": 14,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center",
@@ -2498,7 +2649,12 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Fielded: 0",
-      "color": [0.95, 0.98, 1, 1],
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
       "fontSize": 12,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center",
@@ -2530,7 +2686,12 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "1A",
-      "color": [0.55, 0.9, 1, 1],
+      "color": [
+        0.55,
+        0.9,
+        1,
+        1
+      ],
       "fontSize": 14,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center",
@@ -2562,7 +2723,12 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Fielded: 0",
-      "color": [0.95, 0.98, 1, 1],
+      "color": [
+        0.95,
+        0.98,
+        1,
+        1
+      ],
       "fontSize": 12,
       "textHorizontalAlignment": "Center",
       "textVerticalAlignment": "Center",
@@ -3821,43 +3987,6 @@
       }
     },
     {
-      "nodeId": "Text_10",
-      "type": "Text",
-      "parentNodeId": "Overlay_7",
-      "displayName": "Formation Crew In Field",
-      "localX": 1182.0110608178143,
-      "localY": -255.765229541263,
-      "width": 150,
-      "height": 56,
-      "pivotX": 0.5,
-      "pivotY": 0.5,
-      "visible": true,
-      "locked": false,
-      "horizontalAlignment": "Left",
-      "verticalAlignment": "Top",
-      "anchor": "None",
-      "inputProfile": "None",
-      "leftMargin": 0,
-      "topMargin": 0,
-      "rightMargin": 0,
-      "bottomMargin": 0,
-      "text": "Crew: 0",
-      "color": [
-        0.95,
-        0.98,
-        1,
-        1
-      ],
-      "fontSize": 24,
-      "textHorizontalAlignment": "Center",
-      "textVerticalAlignment": "Center",
-      "driver": {
-        "source": "Game.FormationCrewWave.UnitsInField",
-        "target": "TextValue",
-        "format": "Crew: {current}"
-      }
-    },
-    {
       "nodeId": "Overlay_23",
       "type": "Overlay",
       "parentNodeId": "Overlay_4",
@@ -4547,10 +4676,10 @@
       "type": "SpatialAwareness",
       "parentNodeId": "Overlay_2",
       "displayName": "3D Spatial Awareness 1",
-      "localX": -760,
-      "localY": 24,
-      "width": 320,
-      "height": 320,
+      "localX": -790,
+      "localY": -160,
+      "width": 300,
+      "height": 300,
       "pivotX": 0.5,
       "pivotY": 0.5,
       "visible": true,
@@ -4563,7 +4692,42 @@
       "topMargin": 0,
       "rightMargin": 0,
       "bottomMargin": 0,
-      "awarenessSize": 100
+      "mode": "World",
+      "awarenessSize": 100,
+      "localRotation": [
+        45,
+        45,
+        0
+      ]
+    },
+    {
+      "nodeId": "SpatialAwareness_2",
+      "type": "SpatialAwareness",
+      "parentNodeId": "Overlay_2",
+      "displayName": "3D Spatial Awareness 2",
+      "localX": -800,
+      "localY": 110,
+      "width": 200,
+      "height": 200,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Center",
+      "verticalAlignment": "Center",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "mode": "Tactical",
+      "awarenessSize": 100,
+      "localRotation": [
+        0,
+        0,
+        0
+      ]
     }
   ]
 }
