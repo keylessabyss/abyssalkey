@@ -122,6 +122,22 @@ button:focus-visible {
   color: var(--text);
 }
 
+.game-library-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  border-color: rgba(101, 216, 255, 0.3);
+  background: radial-gradient(circle at 100% 0%, rgba(101, 216, 255, 0.12), transparent 26rem), rgba(23, 28, 36, 0.9);
+}
+
+.game-library-card h2 { margin-bottom: 8px; }
+.game-library-card .actions { margin-top: 18px; }
+
+@media (max-width: 680px) {
+  .game-library-card { grid-template-columns: 1fr; }
+}
+
 .page {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
