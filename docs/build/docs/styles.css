@@ -134,6 +134,41 @@ button:focus-visible {
 .game-library-card h2 { margin-bottom: 8px; }
 .game-library-card .actions { margin-top: 18px; }
 
+.game-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.game-library-entry {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px;
+}
+
+.game-library-entry .eyebrow {
+  font-size: 0.74rem;
+}
+
+.game-library-entry .lead {
+  font-size: 1.08rem;
+}
+
+.game-library-footer {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+}
+
+.game-library-footer .badge-row {
+  margin-top: 0;
+}
+
 @media (max-width: 680px) {
   .game-library-card { grid-template-columns: 1fr; }
 }
@@ -586,6 +621,10 @@ tr:last-child td {
     grid-template-columns: 1fr;
   }
 
+  .game-library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .timeline-item {
     grid-template-columns: 1fr;
   }
@@ -610,6 +649,10 @@ tr:last-child td {
   .card,
   .callout {
     padding: 16px;
+  }
+
+  .game-library-grid {
+    grid-template-columns: 1fr;
   }
 }
 
