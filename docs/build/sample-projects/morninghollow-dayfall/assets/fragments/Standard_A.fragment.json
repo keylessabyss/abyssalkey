@@ -99,6 +99,23 @@
           "respawnAction": "Input1",
           "respawnDelay": 0,
           "respawnTarget": "Initial Spawn"
+        },
+        {
+          "type": "Agent",
+          "componentId": "Agent:PlayerSpatialAwareness",
+          "enabled": true,
+          "extensions": [
+            {
+              "type": "SpatialAwareness",
+              "enabled": true,
+              "range": 50,
+              "queryVolume": "RangeAabb",
+              "queryDetail": 8,
+              "refreshRateHz": 10,
+              "workLimit": 4096,
+              "resultLimit": 4096
+            }
+          ]
         }
       ]
     },
