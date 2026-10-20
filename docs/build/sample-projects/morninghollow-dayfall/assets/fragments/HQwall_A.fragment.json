@@ -122,7 +122,7 @@
       "meshMaterialBindings": [
         {
           "meshId": "hqwall_a_base",
-          "materialAssetId": "Material.M_Metal_Gray",
+          "materialAssetId": "Material.hqWall_gray",
           "smoothingGroupMask": 0
         },
         {
@@ -138,6 +138,11 @@
         {
           "meshId": "hqwall_a_emissive",
           "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "hqwall_a_floor",
+          "materialAssetId": "Material.NewMaterial",
           "smoothingGroupMask": 0
         }
       ],
@@ -179,7 +184,7 @@
       ],
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.hqWall_gray"
     },
     {
       "nodeId": "MeshNode3",
@@ -257,6 +262,31 @@
       "materialAssetId": "Material.M_dynamic_accent"
     },
     {
+      "nodeId": "MeshNode1",
+      "type": "Mesh",
+      "name": "hqwall_a_floor",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.hqwall_a_building",
+      "meshId": "hqwall_a_floor",
+      "materialAssetId": "Material.NewMaterial"
+    },
+    {
       "nodeId": "SpatialNode1",
       "type": "SpatialNode",
       "name": "Spatial KA Logo",
@@ -291,6 +321,7 @@
               50
             ],
             "depth": 0.25,
+            "localZOffset": 0.005,
             "pictureAssetId": "Picture.KA_logo",
             "tint": [
               1,
@@ -308,7 +339,7 @@
   "animationClips": [],
   "notifierDefinitions": [],
   "driverDefinitions": [],
-  "driverSourceVersion": 2,
+  "driverSourceVersion": 3,
   "fragmentScript": null,
   "rootPhysicalCollider": {
     "visible": false,

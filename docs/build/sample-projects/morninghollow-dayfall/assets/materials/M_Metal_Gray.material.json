@@ -22,7 +22,7 @@
       0
     ],
     "emissiveIntensity": 0,
-    "metallic": 1,
+    "metallic": 0.9,
     "roughness": 0.3,
     "opacity": 1,
     "baseColorPictureAssetId": "Picture.metal_3",

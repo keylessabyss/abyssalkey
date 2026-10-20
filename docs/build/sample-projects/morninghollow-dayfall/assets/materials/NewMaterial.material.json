@@ -1,0 +1,40 @@
+{
+  "format": "AbyssalMaterial",
+  "formatVersion": 3,
+  "assetId": "Material.NewMaterial",
+  "displayName": "HqFloor Gray",
+  "description": "",
+  "tags": [
+    "Material"
+  ],
+  "materialType": "ReflectionLit",
+  "channelRole": "Fixed",
+  "reflectionLit": {
+    "baseColor": [
+      0.12743768043564743,
+      0.12743768043564743,
+      0.12743768043564743,
+      1
+    ],
+    "emissiveColor": [
+      0,
+      0,
+      0
+    ],
+    "emissiveIntensity": 0,
+    "metallic": 0.9,
+    "roughness": 0.2,
+    "opacity": 1,
+    "baseColorPictureAssetId": "Picture.metal_1",
+    "baseColorPictureBlendMode": "Multiply",
+    "baseColorPictureStrength": 0.2,
+    "baseColorPictureUseAlphaMask": false,
+    "textureMappingMode": "LocalTriplanar",
+    "localTriplanarTileSize": 1,
+    "localTriplanarOffset": [
+      0,
+      0,
+      0
+    ]
+  }
+}

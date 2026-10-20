@@ -3,9 +3,9 @@
   "formatVersion": 1,
   "folders": [
     {
-      "id": "Content/Instruments/engine",
-      "displayName": "Engine",
-      "parentId": "Content/Instruments"
+      "id": "Content/Materials/hqfloor-gray",
+      "displayName": "HqFloor Gray",
+      "parentId": "Content/Materials"
     }
   ],
   "assetFolders": {}
