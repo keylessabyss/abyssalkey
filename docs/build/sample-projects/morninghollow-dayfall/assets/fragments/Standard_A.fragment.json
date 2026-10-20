@@ -927,7 +927,7 @@
       "id": "Driver",
       "name": "Thruster Power",
       "enabled": true,
-      "sourceValueId": "Movement.ThrottleNormalized",
+      "sourceValueId": "Movement.ForwardSpeedNormalized",
       "animationClipId": "Animation_1",
       "inputMin": 0,
       "inputMax": 1,
@@ -935,7 +935,7 @@
       "outputEndNormalized": 1
     }
   ],
-  "driverSourceVersion": 2,
+  "driverSourceVersion": 3,
   "fragmentScript": {
     "source": "BeginPlay()\n{\n\n}\n\nTick()\n{\n    // Read-only instance diagnostics can be authored here\n\n}\n\nEndPlay()\n{\n\n}\n"
   },

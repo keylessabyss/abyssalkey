@@ -169,6 +169,140 @@ button:focus-visible {
   margin-top: 0;
 }
 
+.games-page {
+  padding-top: 32px;
+}
+
+.library-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 174px;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 28px;
+  border: 1px solid rgba(101, 216, 255, 0.28);
+  border-radius: 8px;
+  padding: 18px 22px;
+  background: linear-gradient(115deg, #111a22, #10151c 72%);
+  box-shadow: 0 16px 40px var(--shadow);
+}
+
+.library-hero-art {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right center;
+}
+
+.library-hero::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(90deg, #111a22 0%, rgba(17, 26, 34, 0.97) 29%, rgba(17, 26, 34, 0.82) 39%, rgba(17, 26, 34, 0.12) 57%, transparent 70%);
+  content: "";
+  pointer-events: none;
+}
+
+.library-hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 380px;
+}
+
+.library-hero-copy .eyebrow {
+  margin-bottom: 4px;
+  font-size: 0.7rem;
+}
+
+.library-hero h1 {
+  margin: 0 0 2px;
+  font-size: clamp(1.65rem, 4vw, 2.15rem);
+}
+
+.library-hero-subtitle {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.library-hero .button {
+  min-height: 36px;
+  padding: 7px 11px;
+  font-size: 0.84rem;
+}
+
+.games-page .game-library-grid {
+  gap: 14px;
+}
+
+.games-page .game-library-entry {
+  gap: 16px;
+  padding: 16px;
+  background: rgba(23, 28, 36, 0.94);
+}
+
+.games-page .game-library-entry h2 {
+  margin-bottom: 6px;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.games-page .game-library-entry .eyebrow {
+  margin-bottom: 6px;
+  font-size: 0.68rem;
+}
+
+.games-page .game-library-entry .lead {
+  margin-bottom: 10px;
+  font-size: 0.94rem;
+}
+
+.games-page .game-library-entry .muted {
+  font-size: 0.88rem;
+}
+
+.games-page .game-library-footer {
+  gap: 12px;
+}
+
+.games-page .game-library-footer .button {
+  min-height: 36px;
+  padding: 7px 11px;
+  font-size: 0.84rem;
+}
+
+.universe-statement {
+  margin-top: 18px;
+  border: 1px solid rgba(101, 216, 255, 0.32);
+  border-radius: 8px;
+  padding: 6px;
+  background: linear-gradient(135deg, rgba(101, 216, 255, 0.12), rgba(23, 28, 36, 0.94));
+  box-shadow: 0 16px 40px var(--shadow);
+}
+
+.universe-statement-inner {
+  height: 100%;
+  padding: 12px 14px;
+  background: rgba(3, 5, 8, 0.88);
+}
+
+.universe-statement h2 {
+  margin-bottom: 4px;
+  font-size: clamp(1.12rem, 2.2vw, 1.42rem);
+}
+
+.universe-statement p {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(0.92rem, 1.55vw, 1.1rem);
+  font-weight: 650;
+  line-height: 1.55;
+}
+
 @media (max-width: 680px) {
   .game-library-card { grid-template-columns: 1fr; }
 }
@@ -661,5 +795,47 @@ tr:last-child td {
   *::before,
   *::after {
     scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .games-page .game-library-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .games-page .game-library-entry {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .games-page .game-library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .library-hero-art {
+    width: 78%;
+    opacity: 0.72;
+  }
+}
+
+@media (max-width: 520px) {
+  .games-page .game-library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-hero {
+    min-height: 190px;
+    padding: 18px;
+  }
+
+  .library-hero-art {
+    width: 100%;
+    opacity: 0.82;
+  }
+
+  .library-hero::after {
+    background: linear-gradient(90deg, rgba(17, 26, 34, 0.98), rgba(17, 26, 34, 0.82) 56%, rgba(17, 26, 34, 0.34));
   }
 }
