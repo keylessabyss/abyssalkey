@@ -48,6 +48,14 @@
         "groupName": "hqwall_a_emissive",
         "materialName": "emissive",
         "smoothingGroup": "8"
+      },
+      {
+        "meshId": "hqwall_a_floor",
+        "displayName": "hqwall_a_floor",
+        "objectName": "hqwall_a_floor",
+        "groupName": "hqwall_a_floor",
+        "materialName": "05___Default",
+        "smoothingGroup": "4"
       }
     ]
   }
