@@ -262,7 +262,9 @@
       ],
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode5",
@@ -287,7 +289,9 @@
       ],
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode6",
@@ -312,7 +316,9 @@
       ],
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode7",
@@ -337,7 +343,9 @@
       ],
       "meshAssetId": "Mesh.stargate_a_building",
       "meshId": "stargate_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "EmptyNode2",
@@ -875,7 +883,7 @@
   "animationClips": [],
   "notifierDefinitions": [],
   "driverDefinitions": [],
-  "driverSourceVersion": 2,
+  "driverSourceVersion": 3,
   "fragmentScript": null,
   "rootPhysicalCollider": {
     "visible": false,

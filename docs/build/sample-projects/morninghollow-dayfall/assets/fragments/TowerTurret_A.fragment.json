@@ -196,7 +196,9 @@
       ],
       "meshAssetId": "Mesh.tower_a_building",
       "meshId": "tower_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode3",
@@ -221,7 +223,9 @@
       ],
       "meshAssetId": "Mesh.tower_a_building",
       "meshId": "tower_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode4",
@@ -246,7 +250,9 @@
       ],
       "meshAssetId": "Mesh.tower_a_building",
       "meshId": "tower_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode5",
@@ -271,7 +277,9 @@
       ],
       "meshAssetId": "Mesh.tower_a_building",
       "meshId": "tower_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "EmptyNode17",
@@ -378,7 +386,9 @@
       ],
       "meshAssetId": "Mesh.towerArm_a_building",
       "meshId": "towerarm_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode8",
@@ -403,7 +413,9 @@
       ],
       "meshAssetId": "Mesh.towerArm_a_building",
       "meshId": "towerarm_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode9",
@@ -428,7 +440,9 @@
       ],
       "meshAssetId": "Mesh.towerArm_a_building",
       "meshId": "towerarm_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode10",
@@ -453,7 +467,9 @@
       ],
       "meshAssetId": "Mesh.towerArm_a_building",
       "meshId": "towerarm_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "EmptyNode14",
@@ -652,7 +668,9 @@
       ],
       "meshAssetId": "Mesh.turret_a_building",
       "meshId": "turret_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode11",
@@ -677,7 +695,9 @@
       ],
       "meshAssetId": "Mesh.turret_a_building",
       "meshId": "turret_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode12",
@@ -702,7 +722,9 @@
       ],
       "meshAssetId": "Mesh.turret_a_building",
       "meshId": "turret_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode13",
@@ -727,7 +749,9 @@
       ],
       "meshAssetId": "Mesh.turret_a_building",
       "meshId": "turret_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "EmptyNode15",
@@ -816,7 +840,7 @@
   "animationClips": [],
   "notifierDefinitions": [],
   "driverDefinitions": [],
-  "driverSourceVersion": 2,
+  "driverSourceVersion": 3,
   "fragmentScript": null,
   "rootPhysicalCollider": {
     "visible": false,

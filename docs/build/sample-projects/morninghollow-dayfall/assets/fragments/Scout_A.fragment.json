@@ -383,7 +383,9 @@
       ],
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_base",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode6",
@@ -408,7 +410,9 @@
       ],
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode7",
@@ -433,7 +437,9 @@
       ],
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode8",
@@ -458,7 +464,9 @@
       ],
       "meshAssetId": "Mesh.scout_a_ship",
       "meshId": "scout_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "CameraNode1",
@@ -620,7 +628,7 @@
   "animationClips": [],
   "notifierDefinitions": [],
   "driverDefinitions": [],
-  "driverSourceVersion": 2,
+  "driverSourceVersion": 3,
   "fragmentScript": null,
   "rootPhysicalCollider": {
     "visible": false,

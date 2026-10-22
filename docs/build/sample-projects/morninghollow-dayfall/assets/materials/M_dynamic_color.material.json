@@ -30,7 +30,7 @@
     "baseColorPictureStrength": 0.8,
     "baseColorPictureUseAlphaMask": false,
     "textureMappingMode": "LocalTriplanar",
-    "localTriplanarTileSize": 1,
+    "localTriplanarTileSize": 80,
     "localTriplanarOffset": [
       0,
       0,

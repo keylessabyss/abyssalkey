@@ -184,7 +184,9 @@
       ],
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_base",
-      "materialAssetId": "Material.hqWall_gray"
+      "materialAssetId": "Material.hqWall_gray",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode3",
@@ -209,7 +211,9 @@
       ],
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_boltz",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode4",
@@ -234,7 +238,9 @@
       ],
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_color",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode5",
@@ -259,7 +265,9 @@
       ],
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_emissive",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode1",
@@ -284,7 +292,9 @@
       ],
       "meshAssetId": "Mesh.hqwall_a_building",
       "meshId": "hqwall_a_floor",
-      "materialAssetId": "Material.NewMaterial"
+      "materialAssetId": "Material.NewMaterial",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
     },
     {
       "nodeId": "SpatialNode1",

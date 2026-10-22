@@ -27,10 +27,10 @@
     "opacity": 1,
     "baseColorPictureAssetId": "Picture.metal_1",
     "baseColorPictureBlendMode": "Multiply",
-    "baseColorPictureStrength": 0.2,
+    "baseColorPictureStrength": 0.8,
     "baseColorPictureUseAlphaMask": false,
     "textureMappingMode": "LocalTriplanar",
-    "localTriplanarTileSize": 1,
+    "localTriplanarTileSize": 40,
     "localTriplanarOffset": [
       0,
       0,

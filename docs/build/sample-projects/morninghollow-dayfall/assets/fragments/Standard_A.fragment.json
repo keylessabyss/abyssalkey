@@ -375,7 +375,9 @@
       ],
       "meshAssetId": "Mesh.standard_a_ship",
       "meshId": "standard_a_base1",
-      "materialAssetId": "Material.M_Metal_Gray"
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode3",
@@ -400,7 +402,9 @@
       ],
       "meshAssetId": "Mesh.standard_a_ship",
       "meshId": "standard_a_boltz1",
-      "materialAssetId": "Material.M_metal_bronze"
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode4",
@@ -425,7 +429,9 @@
       ],
       "meshAssetId": "Mesh.standard_a_ship",
       "meshId": "standard_a_color1",
-      "materialAssetId": "Material.M_dynamic_color"
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "MeshNode5",
@@ -450,7 +456,9 @@
       ],
       "meshAssetId": "Mesh.standard_a_ship",
       "meshId": "standard_a_emissive1",
-      "materialAssetId": "Material.M_dynamic_accent"
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": true,
+      "customStencilValue": 1
     },
     {
       "nodeId": "CameraNode1",
