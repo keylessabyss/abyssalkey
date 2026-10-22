@@ -246,7 +246,7 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Start",
-      "description": "Join the current battle.",
+      "description": "Choose which side you want to fight for.",
       "backgroundColor": [
         0.12,
         0.31,
@@ -261,7 +261,7 @@
       ],
       "enabled": true,
       "inputChannel": "None",
-      "onClickSource": "OnClick()\n{\n    ForceLandscape();\n    Spawn(StandardApex)\n        .PlayerStart()\n        .Team(Morninghollow.Day)\n        .Controller(Player1);\n    ShowUI(\"Player HUD\");\n    Destroy(Self.UI);\n}"
+      "onClickSource": "OnClick()\n{\n    ShowUI(\"Choose Your Side\");\n    Destroy(Self.UI);\n}"
     },
     {
       "nodeId": "Button_2",
