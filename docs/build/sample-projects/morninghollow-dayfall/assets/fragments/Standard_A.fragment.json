@@ -221,7 +221,7 @@
           "enabled": true,
           "inputChannel": "Input3",
           "deadZone": 0.12,
-          "yawRate": 2
+          "yawRate": 4
         },
         {
           "type": "Pitch",
@@ -229,7 +229,7 @@
           "enabled": true,
           "inputChannel": "Input4",
           "deadZone": 0.12,
-          "pitchRate": 2
+          "pitchRate": 4
         },
         {
           "type": "BarrelRoll",
@@ -745,7 +745,7 @@
       "enabled": true,
       "inputChannel": "Input3",
       "deadZone": 0.12,
-      "yawRate": 2
+      "yawRate": 4
     },
     {
       "type": "Pitch",
@@ -753,7 +753,7 @@
       "enabled": true,
       "inputChannel": "Input4",
       "deadZone": 0.12,
-      "pitchRate": 2
+      "pitchRate": 4
     },
     {
       "type": "BarrelRoll",
