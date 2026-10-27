@@ -269,6 +269,11 @@ button:focus-visible {
   gap: 12px;
 }
 
+.games-page .game-library-actions {
+  gap: 8px;
+  margin-top: 0;
+}
+
 .games-page .game-library-footer .button {
   min-height: 36px;
   padding: 7px 11px;

@@ -211,7 +211,7 @@
           "accelerationRate": 9,
           "decelerationRate": 9,
           "minSpeed": 0,
-          "maxSpeed": 12,
+          "maxSpeed": 24,
           "stopForReverse": false,
           "stopForDrive": false
         },
@@ -735,7 +735,7 @@
       "accelerationRate": 9,
       "decelerationRate": 9,
       "minSpeed": 0,
-      "maxSpeed": 12,
+      "maxSpeed": 24,
       "stopForReverse": false,
       "stopForDrive": false
     },

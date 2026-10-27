@@ -10,14 +10,14 @@
   ],
   "hierarchyOrder": [
     "PlacedUtility1",
-    "PlacedFragment1",
-    "PlacedFragment2",
     "PlacedFragment3",
     "PlacedFragment4",
     "PlacedFragment5",
     "PlacedFragment6",
     "PlacedFragment7",
-    "PlacedFragment8"
+    "PlacedFragment8",
+    "PlacedFragment1",
+    "PlacedFragment2"
   ],
   "globalReflectionEnvironment": {
     "rotation": [

@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the Morninghollow Universe digital manual: lore, prologue, ships, controls, and playable games.">
-  <link rel="canonical" href="./">
-  <title>Morninghollow Universe Manual</title>
+  <meta name="description" content="The Morninghollow Digital Manual: explore its lore, trilogy story, games, ships, and player guidance.">
+  <link rel="canonical" href="index.html">
+  <title>Morninghollow Digital Manual · Keyless Abyss</title>
   <link rel="stylesheet" href="../docs/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="nav-shell">
-      <a class="brand" href="index.html">Morninghollow <span>Universe Manual</span></a>
+      <a class="brand" href="index.html">Morninghollow <span>Digital Manual · Keyless Abyss</span></a>
       <nav class="nav-links" aria-label="Morninghollow navigation">
         <a href="index.html" aria-current="page">Universe</a>
-        <a href="lore/">Lore</a>
-        <a href="prologue/">Prologue</a>
-        <a href="ships/">Ships</a>
-        <a href="controls/">Controls</a>
+        <a href="lore/index.html">Lore</a>
+        <a href="story/index.html">Trilogy Story</a>
+        <a href="ships/index.html">Ships</a>
+        <a href="controls/index.html">Controls</a>
         <a class="open-editor" href="../games.html">Games Library</a>
         <a class="open-editor" href="../docs/index.html">Engine Docs</a>
       </nav>
@@ -25,83 +25,91 @@
   </header>
 
   <main class="page">
-    <p class="eyebrow">Keyless Abyss · Universe Guide</p>
+    <p class="eyebrow">Keyless Abyss · The Morninghollow Universe</p>
     <h1>Morninghollow</h1>
-    <p class="lead">A growing science-fiction game series. Start with Dayfall: Part I, then explore the stories, ships, and connected titles of its universe.</p>
+    <p class="lead">One connected universe. Three games, told in story order: Dayfall, Lightender, and Megatroid.</p>
 
-    <section class="section panel">
-      <h2>Welcome to the universe</h2>
-      <p class="muted">This digital manual is the story-side companion to the Abyssal Engine documentation. It brings Morninghollow’s lore and player guides together while keeping engine instructions in their own manual.</p>
+    <section class="section panel" aria-labelledby="welcome-title">
+      <h2 id="welcome-title">Welcome to the Digital Manual</h2>
+      <p class="muted">Explore the current working lore, follow the trilogy timeline, and find guides for each game. Abyssal Engine documentation stays in its own manual.</p>
       <div class="actions">
-        <a class="button primary" href="dayfall.html">Play Morninghollow: Dayfall</a>
-        <a class="button" href="prologue/">Read the Prologue</a>
-        <a class="button" href="lore/">Explore the Lore</a>
+        <a class="button primary" href="story/index.html">Read the trilogy story</a>
+        <a class="button" href="lore/index.html">Explore Morninghollow lore</a>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="manual-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">The manual</p>
-          <h2>Explore Morninghollow</h2>
+          <p class="eyebrow">Explore</p>
+          <h2 id="manual-title">Universe guide</h2>
         </div>
       </div>
       <div class="grid two">
         <article class="card">
-          <h3>Lore</h3>
-          <p class="muted">Meet the people, forces, and ideas at the heart of the setting.</p>
-          <a class="button" href="lore/">Explore the lore</a>
+          <h3>Creation and cosmology</h3>
+          <p class="muted">Learn about Morninghollow's nested cubes, the Origin, the Wall, and the centerward path through its world.</p>
+          <a class="button" href="lore/index.html">Explore the lore</a>
         </article>
         <article class="card">
-          <h3>Prologue</h3>
-          <p class="muted">Begin with “In the Beginning,” the opening chapter of the universe.</p>
-          <a class="button" href="prologue/">Open the Prologue</a>
+          <h3>Trilogy story <span class="badge experimental">Spoilers</span></h3>
+          <p class="muted">Read the current story direction from the Fall and Dayfall through Vry's escape and Megatroid's future restoration.</p>
+          <a class="button" href="story/index.html">Open the story timeline</a>
         </article>
         <article class="card">
-          <h3>Ships</h3>
-          <p class="muted">Browse the current Dayfall craft families and the growing roster.</p>
-          <a class="button" href="ships/">View ships</a>
+          <h3>Ships and controls</h3>
+          <p class="muted">Find the Dayfall wing roster and player guidance, with each game's control scheme documented separately.</p>
+          <div class="related">
+            <a href="ships/index.html">Ships</a>
+            <a href="controls/index.html">Controls</a>
+          </div>
         </article>
         <article class="card">
-          <h3>Controls</h3>
-          <p class="muted">Find player guidance organized by game and input device.</p>
-          <a class="button" href="controls/">View controls</a>
+          <h3>Original Prologue archive</h3>
+          <p class="muted">The earlier Megatroid-era text remains available as historical source material while continuity is reconciled.</p>
+          <a class="button" href="prologue/index.html">Open the archive page</a>
         </article>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="games-title">
       <p class="eyebrow">The games</p>
-      <h2>One universe, a growing series</h2>
-      <div class="game-library-grid" aria-label="Morninghollow games">
+      <h2 id="games-title">Three connected chapters</h2>
+      <div class="game-library-grid" aria-label="Morninghollow trilogy">
         <article class="card game-library-entry">
           <div>
-            <p class="eyebrow">Part I · In development</p>
+            <p class="eyebrow">Part I · Active development</p>
             <h3>Morninghollow: Dayfall</h3>
-            <p class="muted">The first game in the series, built with the in-house Abyssal Engine.</p>
+            <p class="muted">Choose Day under Vry or Night under Voy in the battle that begins the trilogy.</p>
+            <span class="badge">Abyssal Engine</span>
           </div>
           <div class="game-library-footer">
-            <a class="button primary" href="dayfall.html">Play Dayfall</a>
+            <a class="button" href="games/dayfall/index.html">Dayfall manual</a>
+            <a class="button primary" href="dayfall.html">Play Dayfall Demo</a>
           </div>
         </article>
         <article class="card game-library-entry">
           <div>
-            <p class="eyebrow">Playable prototype</p>
+            <p class="eyebrow">Part II · Active development</p>
             <h3>Morninghollow: Lightender</h3>
-            <p class="muted">An earlier Unreal Engine 4 prototype connected to the Morninghollow universe.</p>
+            <p class="muted">Vry escapes and finds human help against Megatroid, who carries Vry's light.</p>
+            <span class="badge">UE 4.23 · HTML5</span>
           </div>
           <div class="game-library-footer">
-            <a class="button" href="https://keylessabyss.github.io/lightender/">Play Lightender</a>
+            <a class="button" href="games/lightender/index.html">Lightender manual</a>
+            <a class="button primary" href="https://keylessabyss.github.io/lightender/">Play prototype</a>
           </div>
         </article>
         <article class="card game-library-entry">
           <div>
-            <p class="eyebrow">Playable prototype</p>
+            <p class="eyebrow">Part III · Future title</p>
             <h3>Morninghollow: Megatroid</h3>
-            <p class="muted">An earlier Unreal Engine 4 prototype connected to the Morninghollow universe.</p>
+            <p class="muted">Megatroid's redemption and the effort to restore humanity's shattered light.</p>
+            <span class="badge planned">Engine and systems not selected</span>
           </div>
           <div class="game-library-footer">
-            <a class="button" href="https://keylessabyss.github.io/megatroid/">Play Megatroid</a>
+            <a class="button" href="games/megatroid/index.html">Megatroid overview</a>
+            <a class="button primary" href="https://keylessabyss.github.io/megatroid/">Play earlier prototype</a>
           </div>
         </article>
       </div>
@@ -110,7 +118,7 @@
 
   <footer class="site-footer">
     <div class="footer-shell">
-      <div>Morninghollow Universe Manual · Keyless Abyss</div>
+      <div>Morninghollow Digital Manual · Keyless Abyss</div>
       <a href="../games.html">Games Library</a>
     </div>
   </footer>
