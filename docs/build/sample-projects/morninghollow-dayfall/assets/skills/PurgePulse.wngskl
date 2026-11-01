@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.PurgePulse",
+  "displayName": "Purge Pulse",
+  "role": "Heal",
+  "implementationStatus": "Planned",
+  "effect": "RestoreHealth",
+  "targetRelationship": "Friendly",
+  "targetRule": "LowestHealthPercent",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned friendly debuff removal pulse. Status-effect support and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "Heal",
+    "Project"
+  ]
+}

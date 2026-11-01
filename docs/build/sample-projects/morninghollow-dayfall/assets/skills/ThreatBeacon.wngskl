@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.ThreatBeacon",
+  "displayName": "Threat Beacon",
+  "role": "Tank",
+  "implementationStatus": "Planned",
+  "effect": "Damage",
+  "targetRelationship": "Hostile",
+  "targetRule": "Nearest",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned taunt that attracts hostile attention. Threat behavior and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "Tank",
+    "Project"
+  ]
+}

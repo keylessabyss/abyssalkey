@@ -88,6 +88,54 @@
             "KeyD",
             "Gamepad0.RightStickX-"
           ]
+        },
+        {
+          "inputChannel": "Input6",
+          "positiveControls": [
+            "KeyQ",
+            "Gamepad0.Button4"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyQ",
+            "Gamepad0.Button4"
+          ]
+        },
+        {
+          "inputChannel": "Input7",
+          "positiveControls": [
+            "KeyE",
+            "Gamepad0.Button6"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyE",
+            "Gamepad0.Button6"
+          ]
+        },
+        {
+          "inputChannel": "Input8",
+          "positiveControls": [
+            "KeyR",
+            "Gamepad0.Button7"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyR",
+            "Gamepad0.Button7"
+          ]
+        },
+        {
+          "inputChannel": "Input9",
+          "positiveControls": [
+            "KeyF",
+            "Gamepad0.Button8"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyF",
+            "Gamepad0.Button8"
+          ]
         }
       ],
       "componentDefinitions": [
@@ -160,6 +208,16 @@
               "resultLimit": 4096
             }
           ]
+        },
+        {
+          "type": "AutoInput",
+          "componentId": "AutoInput:a28b612a-ca3a-4039-8c83-5b46c6046e04",
+          "enabled": true,
+          "inputChannel": "Input1",
+          "dispatchScope": "Subtree",
+          "interval": 0.5,
+          "range": 20,
+          "autoUseSkills": true
         }
       ]
     }
@@ -192,8 +250,16 @@
           "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "resourceId": "Health",
-          "maximum": 100,
-          "startingValue": 100
+          "maximum": 300,
+          "startingValue": 300
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:standard_a-shield-v1",
+          "enabled": true,
+          "resourceId": "Shield",
+          "maximum": 75,
+          "startingValue": 75
         },
         {
           "type": "HitBox",
@@ -242,7 +308,9 @@
           "type": "Weapon",
           "componentId": "Weapon:e1cd61bc-3425-4966-b2a4-5b684024b577",
           "enabled": true,
-          "name": "Ship Weapon",
+          "name": "Laser 01",
+          "familyKey": "laser",
+          "memberKey": "01",
           "damage": 10,
           "range": 20,
           "projectileSpeed": 36,
@@ -255,6 +323,110 @@
           "projectileFragmentAssetId": null,
           "crosshairPictureAssetId": "Picture.crosshair",
           "crosshairBlend": "Additive",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:standard-a-rocket-01",
+          "enabled": true,
+          "name": "Rocket 01",
+          "familyKey": "rocket",
+          "memberKey": "01",
+          "damage": 20,
+          "range": 20,
+          "projectileSpeed": 15,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointRocket01",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:standard-a-rocket-02",
+          "enabled": true,
+          "name": "Rocket 02",
+          "familyKey": "rocket",
+          "memberKey": "02",
+          "damage": 20,
+          "range": 20,
+          "projectileSpeed": 15,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointRocket02",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:standard-a-rocket-03",
+          "enabled": true,
+          "name": "Rocket 03",
+          "familyKey": "rocket",
+          "memberKey": "03",
+          "damage": 20,
+          "range": 20,
+          "projectileSpeed": 15,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointRocket03",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:standard-a-rocket-04",
+          "enabled": true,
+          "name": "Rocket 04",
+          "familyKey": "rocket",
+          "memberKey": "04",
+          "damage": 20,
+          "range": 20,
+          "projectileSpeed": 15,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointRocket04",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
           "crosshairColor": [
             1,
             1,
@@ -277,19 +449,59 @@
           ]
         },
         {
-          "type": "AutoInput",
-          "componentId": "AutoInput:a28b612a-ca3a-4039-8c83-5b46c6046e04",
-          "enabled": true,
-          "inputChannel": "Input1",
-          "dispatchScope": "Subtree",
-          "interval": 0.5,
-          "range": 20
-        },
-        {
           "type": "K9KVoxelWorld",
           "componentId": "K9KVoxelWorld:a3325349-52ba-4d92-8191-4eb28a1104ca",
           "enabled": true,
           "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:standard_a-slot-01",
+          "enabled": true,
+          "skillAssetId": "Skill.TargetFracture",
+          "inputChannel": "Input6",
+          "anchorNodeId": "HardpointSkill01",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:standard_a-slot-02",
+          "enabled": true,
+          "skillAssetId": "Skill.AegisField",
+          "inputChannel": "Input7",
+          "anchorNodeId": "HardpointSkill02",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:standard_a-slot-03",
+          "enabled": true,
+          "skillAssetId": "Skill.RepairBeam",
+          "inputChannel": "Input8",
+          "anchorNodeId": "HardpointSkill03",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:standard_a-energy-v1",
+          "enabled": true,
+          "resourceId": "Energy",
+          "maximum": 100,
+          "startingValue": 100
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:standard_a-stamina-v1",
+          "enabled": true,
+          "resourceId": "Stamina",
+          "maximum": 100,
+          "startingValue": 100
         }
       ]
     },
@@ -690,7 +902,7 @@
     {
       "nodeId": "EmptyNode1",
       "type": "Empty",
-      "name": "Anchor Laser Gun",
+      "name": "Laser Anchor 01",
       "parentNodeId": "Root",
       "localPosition": [
         2.01190447807312,
@@ -708,6 +920,190 @@
         1,
         1
       ]
+    },
+    {
+      "nodeId": "HardpointRocket01",
+      "type": "Empty",
+      "name": "Rocket Anchor 01",
+      "parentNodeId": "Root",
+      "localPosition": [
+        1.2999999523162842,
+        -0.7200000286102295,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.rocket.01"
+    },
+    {
+      "nodeId": "HardpointRocket02",
+      "type": "Empty",
+      "name": "Rocket Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        1.2999999523162842,
+        0.7200000286102295,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.rocket.02"
+    },
+    {
+      "nodeId": "HardpointRocket03",
+      "type": "Empty",
+      "name": "Rocket Anchor 03",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.44999998807907104,
+        -0.8199999928474426,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.rocket.03"
+    },
+    {
+      "nodeId": "HardpointRocket04",
+      "type": "Empty",
+      "name": "Rocket Anchor 04",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.44999998807907104,
+        0.8199999928474426,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.rocket.04"
+    },
+    {
+      "nodeId": "HardpointSkill01",
+      "type": "Empty",
+      "name": "Skill Anchor 01",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.20000000298023224,
+        -0.2800000011920929,
+        0.11999999731779099
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.01"
+    },
+    {
+      "nodeId": "HardpointSkill02",
+      "type": "Empty",
+      "name": "Skill Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.20000000298023224,
+        0.2800000011920929,
+        0.11999999731779099
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.02"
+    },
+    {
+      "nodeId": "HardpointSkill03",
+      "type": "Empty",
+      "name": "Skill Anchor 03",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.47999998927116394,
+        0,
+        -0.07999999821186066
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.03"
+    },
+    {
+      "nodeId": "HardpointSpecialWeapon01",
+      "type": "Empty",
+      "name": "Special Weapon Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -1.2799999713897705,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.special.01"
     }
   ],
   "componentDefinitions": [
@@ -716,8 +1112,16 @@
       "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "resourceId": "Health",
-      "maximum": 100,
-      "startingValue": 100
+      "maximum": 300,
+      "startingValue": 300
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:standard_a-shield-v1",
+      "enabled": true,
+      "resourceId": "Shield",
+      "maximum": 75,
+      "startingValue": 75
     },
     {
       "type": "HitBox",
@@ -766,7 +1170,9 @@
       "type": "Weapon",
       "componentId": "Weapon:e1cd61bc-3425-4966-b2a4-5b684024b577",
       "enabled": true,
-      "name": "Ship Weapon",
+      "name": "Laser 01",
+      "familyKey": "laser",
+      "memberKey": "01",
       "damage": 10,
       "range": 20,
       "projectileSpeed": 36,
@@ -779,6 +1185,110 @@
       "projectileFragmentAssetId": null,
       "crosshairPictureAssetId": "Picture.crosshair",
       "crosshairBlend": "Additive",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:standard-a-rocket-01",
+      "enabled": true,
+      "name": "Rocket 01",
+      "familyKey": "rocket",
+      "memberKey": "01",
+      "damage": 20,
+      "range": 20,
+      "projectileSpeed": 15,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointRocket01",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:standard-a-rocket-02",
+      "enabled": true,
+      "name": "Rocket 02",
+      "familyKey": "rocket",
+      "memberKey": "02",
+      "damage": 20,
+      "range": 20,
+      "projectileSpeed": 15,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointRocket02",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:standard-a-rocket-03",
+      "enabled": true,
+      "name": "Rocket 03",
+      "familyKey": "rocket",
+      "memberKey": "03",
+      "damage": 20,
+      "range": 20,
+      "projectileSpeed": 15,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointRocket03",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:standard-a-rocket-04",
+      "enabled": true,
+      "name": "Rocket 04",
+      "familyKey": "rocket",
+      "memberKey": "04",
+      "damage": 20,
+      "range": 20,
+      "projectileSpeed": 15,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointRocket04",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
       "crosshairColor": [
         1,
         1,
@@ -801,19 +1311,59 @@
       ]
     },
     {
-      "type": "AutoInput",
-      "componentId": "AutoInput:a28b612a-ca3a-4039-8c83-5b46c6046e04",
-      "enabled": true,
-      "inputChannel": "Input1",
-      "dispatchScope": "Subtree",
-      "interval": 0.5,
-      "range": 20
-    },
-    {
       "type": "K9KVoxelWorld",
       "componentId": "K9KVoxelWorld:a3325349-52ba-4d92-8191-4eb28a1104ca",
       "enabled": true,
       "voxelWorldAssetId": "VoxelWorld.Legacy.52a3b62e"
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:standard_a-slot-01",
+      "enabled": true,
+      "skillAssetId": "Skill.TargetFracture",
+      "inputChannel": "Input6",
+      "anchorNodeId": "HardpointSkill01",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:standard_a-slot-02",
+      "enabled": true,
+      "skillAssetId": "Skill.AegisField",
+      "inputChannel": "Input7",
+      "anchorNodeId": "HardpointSkill02",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:standard_a-slot-03",
+      "enabled": true,
+      "skillAssetId": "Skill.RepairBeam",
+      "inputChannel": "Input8",
+      "anchorNodeId": "HardpointSkill03",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:standard_a-energy-v1",
+      "enabled": true,
+      "resourceId": "Energy",
+      "maximum": 100,
+      "startingValue": 100
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:standard_a-stamina-v1",
+      "enabled": true,
+      "resourceId": "Stamina",
+      "maximum": 100,
+      "startingValue": 100
     }
   ],
   "animationClips": [

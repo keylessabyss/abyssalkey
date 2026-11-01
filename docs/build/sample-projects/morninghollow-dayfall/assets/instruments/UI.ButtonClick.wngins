@@ -11,26 +11,27 @@
   "version": "1",
   "author": "Morninghollow Dayfall",
   "parameters": {
-    "oscillator": "Square",
+    "oscillator": "Pulse",
     "frequency": 600,
     "volume": 0.45,
     "attack": 0.001,
     "decay": 0.06,
     "sustain": 0,
     "release": 0.05,
-    "dutyCycle": 0.25,
+    "dutyCycle": 0.5,
     "oscillators": [
       {
-        "oscillator": "Square",
+        "oscillator": "Pulse",
         "frequency": 600,
         "mixPercent": 70,
-        "dutyCycle": 0.25
+        "dutyCycle": 0.5
       },
       {
         "oscillator": "Noise",
         "frequency": 600,
         "mixPercent": 30,
-        "dutyCycle": 0.25
+        "dutyCycle": 0.25,
+        "noiseCutoffHz": 600
       }
     ]
   }

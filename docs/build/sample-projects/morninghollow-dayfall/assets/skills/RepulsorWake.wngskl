@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.RepulsorWake",
+  "displayName": "Repulsor Wake",
+  "role": "Tank",
+  "implementationStatus": "Planned",
+  "effect": "Damage",
+  "targetRelationship": "Hostile",
+  "targetRule": "Nearest",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned frontal push and interruption effect. Effect and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "Tank",
+    "Project"
+  ]
+}

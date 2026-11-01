@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.TargetFracture",
+  "displayName": "Target Fracture",
+  "role": "DPS",
+  "implementationStatus": "Operational",
+  "effect": "Damage",
+  "targetRelationship": "Hostile",
+  "targetRule": "CurrentTarget",
+  "amount": 45,
+  "energyCost": 0,
+  "cooldownSeconds": 10,
+  "range": 30,
+  "description": "Deals a focused 45 damage burst to the current hostile target. V1 applies instantly; projectile presentation is planned.",
+  "tags": [
+    "Skill",
+    "DPS",
+    "Project"
+  ]
+}

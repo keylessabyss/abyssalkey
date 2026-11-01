@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.RegenerationField",
+  "displayName": "Regeneration Field",
+  "role": "Heal",
+  "implementationStatus": "Planned",
+  "effect": "RestoreHealth",
+  "targetRelationship": "Friendly",
+  "targetRule": "LowestHealthPercent",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned friendly healing-over-time field. Effect and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "Heal",
+    "Project"
+  ]
+}

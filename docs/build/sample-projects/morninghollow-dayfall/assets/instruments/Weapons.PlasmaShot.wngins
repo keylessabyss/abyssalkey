@@ -30,7 +30,8 @@
         "oscillator": "Noise",
         "frequency": 520,
         "mixPercent": 25,
-        "dutyCycle": 0.5
+        "dutyCycle": 0.5,
+        "noiseCutoffHz": 520
       },
       {
         "oscillator": "Sine",

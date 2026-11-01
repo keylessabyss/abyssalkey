@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.KineticLance",
+  "displayName": "Kinetic Lance",
+  "role": "DPS",
+  "implementationStatus": "Planned",
+  "effect": "Damage",
+  "targetRelationship": "Hostile",
+  "targetRule": "CurrentTarget",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned high-impact single-target attack. Effect and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "DPS",
+    "Project"
+  ]
+}

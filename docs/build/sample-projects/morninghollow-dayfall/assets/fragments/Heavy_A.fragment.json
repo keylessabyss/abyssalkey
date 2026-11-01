@@ -88,33 +88,57 @@
             "KeyD",
             "Gamepad0.RightStickX-"
           ]
+        },
+        {
+          "inputChannel": "Input6",
+          "positiveControls": [
+            "KeyQ",
+            "Gamepad0.Button4"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyQ",
+            "Gamepad0.Button4"
+          ]
+        },
+        {
+          "inputChannel": "Input7",
+          "positiveControls": [
+            "KeyE",
+            "Gamepad0.Button6"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyE",
+            "Gamepad0.Button6"
+          ]
+        },
+        {
+          "inputChannel": "Input8",
+          "positiveControls": [
+            "KeyR",
+            "Gamepad0.Button7"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyR",
+            "Gamepad0.Button7"
+          ]
+        },
+        {
+          "inputChannel": "Input9",
+          "positiveControls": [
+            "KeyF",
+            "Gamepad0.Button8"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyF",
+            "Gamepad0.Button8"
+          ]
         }
       ],
       "componentDefinitions": [
-        {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:0",
-          "enabled": true,
-          "name": "Center Weapon",
-          "damage": 4,
-          "range": 7,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 1,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
         {
           "type": "Targeting",
           "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:1",
@@ -167,30 +191,6 @@
           ]
         },
         {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:1",
-          "enabled": true,
-          "name": "Center Weapon",
-          "damage": 20,
-          "range": 30,
-          "projectileSpeed": 80,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 1,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
           "type": "LanePush",
           "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:2",
           "enabled": true,
@@ -209,7 +209,8 @@
           "inputChannel": "Input1",
           "dispatchScope": "Subtree",
           "interval": 1,
-          "range": 30
+          "range": 30,
+          "autoUseSkills": true
         }
       ]
     }
@@ -242,8 +243,16 @@
           "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "resourceId": "Health",
-          "maximum": 200,
-          "startingValue": 200
+          "maximum": 600,
+          "startingValue": 600
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:heavy_a-shield-v1",
+          "enabled": true,
+          "resourceId": "Shield",
+          "maximum": 150,
+          "startingValue": 150
         },
         {
           "type": "HitBox",
@@ -287,13 +296,207 @@
           "enabled": true,
           "inputChannel": "Input5",
           "rollSensitivity": 1.5
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:heavy-a-laser-01",
+          "enabled": true,
+          "name": "Laser 01",
+          "familyKey": "laser",
+          "memberKey": "01",
+          "damage": 20,
+          "range": 30,
+          "projectileSpeed": 60,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode2",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:heavy-a-laser-02",
+          "enabled": true,
+          "name": "Laser 02",
+          "familyKey": "laser",
+          "memberKey": "02",
+          "damage": 20,
+          "range": 30,
+          "projectileSpeed": 60,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointLaser02",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:heavy-a-laser-03",
+          "enabled": true,
+          "name": "Laser 03",
+          "familyKey": "laser",
+          "memberKey": "03",
+          "damage": 20,
+          "range": 30,
+          "projectileSpeed": 60,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointLaser03",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:heavy-a-laser-04",
+          "enabled": true,
+          "name": "Laser 04",
+          "familyKey": "laser",
+          "memberKey": "04",
+          "damage": 20,
+          "range": 30,
+          "projectileSpeed": 60,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 1,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointLaser04",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:heavy-a-rocket-01",
+          "enabled": true,
+          "name": "Rocket 01",
+          "familyKey": "rocket",
+          "memberKey": "01",
+          "damage": 40,
+          "range": 20,
+          "projectileSpeed": 15,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 2,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointRocket01",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:heavy-a-rocket-02",
+          "enabled": true,
+          "name": "Rocket 02",
+          "familyKey": "rocket",
+          "memberKey": "02",
+          "damage": 40,
+          "range": 20,
+          "projectileSpeed": 15,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 2,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointRocket02",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:heavy_a-slot-01",
+          "enabled": true,
+          "skillAssetId": "Skill.AegisField",
+          "inputChannel": "Input6",
+          "anchorNodeId": "HardpointSkill01",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:heavy_a-slot-02",
+          "enabled": true,
+          "skillAssetId": "Skill.RepairBeam",
+          "inputChannel": "Input7",
+          "anchorNodeId": "HardpointSkill02",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:heavy_a-energy-v1",
+          "enabled": true,
+          "resourceId": "Energy",
+          "maximum": 100,
+          "startingValue": 100
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:heavy_a-stamina-v1",
+          "enabled": true,
+          "resourceId": "Stamina",
+          "maximum": 100,
+          "startingValue": 100
         }
       ]
     },
     {
       "nodeId": "EmptyNode2",
       "type": "Empty",
-      "name": "Center Muzzle",
+      "name": "Laser Anchor 01",
       "parentNodeId": "Root",
       "localPosition": [
         4.199999809265137,
@@ -633,6 +836,190 @@
           }
         }
       ]
+    },
+    {
+      "nodeId": "HardpointLaser02",
+      "type": "Empty",
+      "name": "Laser Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        3.200000047683716,
+        -0.8999999761581421,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.laser.02"
+    },
+    {
+      "nodeId": "HardpointLaser03",
+      "type": "Empty",
+      "name": "Laser Anchor 03",
+      "parentNodeId": "Root",
+      "localPosition": [
+        3.200000047683716,
+        0.8999999761581421,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.laser.03"
+    },
+    {
+      "nodeId": "HardpointLaser04",
+      "type": "Empty",
+      "name": "Laser Anchor 04",
+      "parentNodeId": "Root",
+      "localPosition": [
+        2.1500000953674316,
+        1.0800000429153442,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.laser.04"
+    },
+    {
+      "nodeId": "HardpointRocket01",
+      "type": "Empty",
+      "name": "Rocket Anchor 01",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.9200000166893005,
+        -0.9200000166893005,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.rocket.01"
+    },
+    {
+      "nodeId": "HardpointRocket02",
+      "type": "Empty",
+      "name": "Rocket Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.9200000166893005,
+        0.9200000166893005,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.rocket.02"
+    },
+    {
+      "nodeId": "HardpointSkill01",
+      "type": "Empty",
+      "name": "Skill Anchor 01",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.18000000715255737,
+        -0.3400000035762787,
+        0.10000000149011612
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.01"
+    },
+    {
+      "nodeId": "HardpointSkill02",
+      "type": "Empty",
+      "name": "Skill Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.18000000715255737,
+        0.3400000035762787,
+        0.10000000149011612
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.02"
+    },
+    {
+      "nodeId": "HardpointSpecialWeapon01",
+      "type": "Empty",
+      "name": "Special Weapon Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -1.4500000476837158,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.special.01"
     }
   ],
   "componentDefinitions": [
@@ -641,8 +1028,16 @@
       "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "resourceId": "Health",
-      "maximum": 200,
-      "startingValue": 200
+      "maximum": 600,
+      "startingValue": 600
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:heavy_a-shield-v1",
+      "enabled": true,
+      "resourceId": "Shield",
+      "maximum": 150,
+      "startingValue": 150
     },
     {
       "type": "HitBox",
@@ -686,6 +1081,200 @@
       "enabled": true,
       "inputChannel": "Input5",
       "rollSensitivity": 1.5
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:heavy-a-laser-01",
+      "enabled": true,
+      "name": "Laser 01",
+      "familyKey": "laser",
+      "memberKey": "01",
+      "damage": 20,
+      "range": 30,
+      "projectileSpeed": 60,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "EmptyNode2",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:heavy-a-laser-02",
+      "enabled": true,
+      "name": "Laser 02",
+      "familyKey": "laser",
+      "memberKey": "02",
+      "damage": 20,
+      "range": 30,
+      "projectileSpeed": 60,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointLaser02",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:heavy-a-laser-03",
+      "enabled": true,
+      "name": "Laser 03",
+      "familyKey": "laser",
+      "memberKey": "03",
+      "damage": 20,
+      "range": 30,
+      "projectileSpeed": 60,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointLaser03",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:heavy-a-laser-04",
+      "enabled": true,
+      "name": "Laser 04",
+      "familyKey": "laser",
+      "memberKey": "04",
+      "damage": 20,
+      "range": 30,
+      "projectileSpeed": 60,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 1,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointLaser04",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:heavy-a-rocket-01",
+      "enabled": true,
+      "name": "Rocket 01",
+      "familyKey": "rocket",
+      "memberKey": "01",
+      "damage": 40,
+      "range": 20,
+      "projectileSpeed": 15,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 2,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointRocket01",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:heavy-a-rocket-02",
+      "enabled": true,
+      "name": "Rocket 02",
+      "familyKey": "rocket",
+      "memberKey": "02",
+      "damage": 40,
+      "range": 20,
+      "projectileSpeed": 15,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 2,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointRocket02",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": "Fragment.Missile_Apex_1A",
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:heavy_a-slot-01",
+      "enabled": true,
+      "skillAssetId": "Skill.AegisField",
+      "inputChannel": "Input6",
+      "anchorNodeId": "HardpointSkill01",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:heavy_a-slot-02",
+      "enabled": true,
+      "skillAssetId": "Skill.RepairBeam",
+      "inputChannel": "Input7",
+      "anchorNodeId": "HardpointSkill02",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:heavy_a-energy-v1",
+      "enabled": true,
+      "resourceId": "Energy",
+      "maximum": 100,
+      "startingValue": 100
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:heavy_a-stamina-v1",
+      "enabled": true,
+      "resourceId": "Stamina",
+      "maximum": 100,
+      "startingValue": 100
     }
   ],
   "animationClips": [],

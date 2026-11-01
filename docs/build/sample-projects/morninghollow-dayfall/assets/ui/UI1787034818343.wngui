@@ -391,6 +391,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorDescription": "Choose a formation cell to deploy a unit from that position in the formation.",
       "selectorStartUnfocused": false,
       "selectorBackDismissesUI": false,
       "selectorNavigationEnabled": true,
@@ -2495,7 +2496,7 @@
       "topMargin": 0,
       "rightMargin": 0,
       "bottomMargin": 0,
-      "text": "Fielded: 0",
+      "text": "Fielded: 0/1",
       "color": [
         0.95,
         0.98,
@@ -2508,7 +2509,7 @@
       "driver": {
         "source": "Game.PlayerWing.Scout.UnitsInField",
         "target": "TextValue",
-        "format": "Fielded: {current}"
+        "format": "Fielded: {current}/{max}"
       }
     },
     {
@@ -2569,7 +2570,7 @@
       "topMargin": 0,
       "rightMargin": 0,
       "bottomMargin": 0,
-      "text": "Fielded: 0",
+      "text": "Fielded: 0/1",
       "color": [
         0.95,
         0.98,
@@ -2582,7 +2583,7 @@
       "driver": {
         "source": "Game.PlayerWing.Standard.UnitsInField",
         "target": "TextValue",
-        "format": "Fielded: {current}"
+        "format": "Fielded: {current}/{max}"
       }
     },
     {
@@ -2643,7 +2644,7 @@
       "topMargin": 0,
       "rightMargin": 0,
       "bottomMargin": 0,
-      "text": "Fielded: 0",
+      "text": "Fielded: 0/1",
       "color": [
         0.95,
         0.98,
@@ -2656,8 +2657,80 @@
       "driver": {
         "source": "Game.PlayerWing.Heavy.UnitsInField",
         "target": "TextValue",
-        "format": "Fielded: {current}"
+        "format": "Fielded: {current}/{max}"
       }
+    },
+    {
+      "nodeId": "Overlay_40",
+      "type": "Overlay",
+      "parentNodeId": "Overlay_39",
+      "displayName": "Pressure Wave Channels",
+      "localX": 0,
+      "localY": 0,
+      "width": 300,
+      "height": 80,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "visible": true,
+      "locked": false,
+      "horizontalAlignment": "Left",
+      "verticalAlignment": "Top",
+      "anchor": "None",
+      "inputProfile": "None",
+      "leftMargin": 0,
+      "topMargin": 0,
+      "rightMargin": 0,
+      "bottomMargin": 0,
+      "outlineEnabled": false,
+      "outlineColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "outlineThickness": 1,
+      "selectorEnabled": false,
+      "selectorDescription": "Choose a pressure-wave",
+      "selectorStartUnfocused": false,
+      "selectorBackDismissesUI": false,
+      "selectorNavigationEnabled": true,
+      "selectorInputBindings": [],
+      "itemSelectorBehavior": {
+        "type": "Reinforcement",
+        "items": [],
+        "sets": [
+          {
+            "setId": "PressureWaveChannels",
+            "displayName": "Pressure Wave Channels",
+            "items": [
+              {
+                "itemId": "WaveChannel_Scout",
+                "buttonNodeId": "Button_26",
+                "displayName": "Scout",
+                "description": "Select the Scout pressure-wave channel. Future Scout variants and channel upgrades will be authored here.",
+                "ownershipStatus": "Owned"
+              },
+              {
+                "itemId": "WaveChannel_Standard",
+                "buttonNodeId": "Button_29",
+                "displayName": "Standard",
+                "description": "Select the Standard pressure-wave channel. Future Standard variants and channel upgrades will be authored here.",
+                "ownershipStatus": "Owned"
+              },
+              {
+                "itemId": "WaveChannel_Heavy",
+                "buttonNodeId": "Button_30",
+                "displayName": "Heavy",
+                "description": "Select the Heavy pressure-wave channel. Future Heavy variants and channel upgrades will be authored here.",
+                "ownershipStatus": "Owned"
+              }
+            ]
+          }
+        ],
+        "defaultSetId": "PressureWaveChannels",
+        "matrixSourceOverlayNodeId": "Overlay_3"
+      },
+      "tooltipBehavior": false
     },
     {
       "nodeId": "Overlay_36",
@@ -2793,6 +2866,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorDescription": "Choose the ship class and variant controlled by the player.",
       "selectorStartUnfocused": false,
       "selectorBackDismissesUI": false,
       "selectorNavigationEnabled": true,
@@ -3521,6 +3595,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorDescription": "Select an Agent to deploy or command on the field.",
       "selectorStartUnfocused": false,
       "selectorBackDismissesUI": false,
       "selectorNavigationEnabled": true,
@@ -3802,6 +3877,7 @@
       ],
       "outlineThickness": 1,
       "selectorEnabled": false,
+      "selectorDescription": "Review and purchase available upgrades for your force.",
       "selectorStartUnfocused": false,
       "selectorBackDismissesUI": false,
       "selectorNavigationEnabled": true,

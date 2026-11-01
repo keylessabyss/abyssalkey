@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.RepairBeam",
+  "displayName": "Repair Beam",
+  "role": "Heal",
+  "implementationStatus": "Operational",
+  "effect": "RestoreHealth",
+  "targetRelationship": "FormationAlly",
+  "targetRule": "LowestHealthPercent",
+  "amount": 30,
+  "energyCost": 0,
+  "cooldownSeconds": 12,
+  "range": 30,
+  "description": "Instantly restores up to 30 health to the most damaged eligible Formation Crew ally within range. A beam from the authored anchor is future presentation work.",
+  "tags": [
+    "Skill",
+    "Heal",
+    "Project"
+  ]
+}

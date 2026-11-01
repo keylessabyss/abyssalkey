@@ -30,7 +30,8 @@
         "oscillator": "Noise",
         "frequency": 980,
         "mixPercent": 25,
-        "dutyCycle": 0.5
+        "dutyCycle": 0.5,
+        "noiseCutoffHz": 980
       },
       {
         "oscillator": "Triangle",

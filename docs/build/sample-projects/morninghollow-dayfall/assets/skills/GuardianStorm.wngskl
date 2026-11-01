@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.GuardianStorm",
+  "displayName": "Guardian Storm",
+  "role": "Tank",
+  "implementationStatus": "Planned",
+  "effect": "Damage",
+  "targetRelationship": "Hostile",
+  "targetRule": "Nearest",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned retaliatory strikes against attackers. Effect and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "Tank",
+    "Project"
+  ]
+}

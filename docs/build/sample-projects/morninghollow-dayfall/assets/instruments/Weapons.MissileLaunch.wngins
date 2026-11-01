@@ -24,7 +24,8 @@
         "oscillator": "Noise",
         "frequency": 140,
         "mixPercent": 45,
-        "dutyCycle": 0.5
+        "dutyCycle": 0.5,
+        "noiseCutoffHz": 140
       },
       {
         "oscillator": "Triangle",

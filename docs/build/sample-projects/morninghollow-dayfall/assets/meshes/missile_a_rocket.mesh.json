@@ -1,0 +1,52 @@
+{
+  "format": "AbyssalMesh",
+  "formatVersion": 1,
+  "assetId": "Mesh.missile_a_rocket",
+  "displayName": "Missile A Rocket",
+  "description": "Project imported OBJ mesh.",
+  "tags": [
+    "Project",
+    "Imported",
+    "OBJ",
+    "Mesh"
+  ],
+  "sourceType": "OBJ",
+  "sourcePath": "assets/meshes/missile_a_rocket.obj",
+  "importOptions": {},
+  "meshDataRootManifest": {
+    "parts": [
+      {
+        "meshId": "missile_a_color",
+        "displayName": "missile_a_color",
+        "objectName": "missile_a_color",
+        "groupName": "missile_a_color",
+        "materialName": "base",
+        "smoothingGroup": "2"
+      },
+      {
+        "meshId": "missile_a_boltz",
+        "displayName": "missile_a_boltz",
+        "objectName": "missile_a_boltz",
+        "groupName": "missile_a_boltz",
+        "materialName": "boltz",
+        "smoothingGroup": "2"
+      },
+      {
+        "meshId": "missile_a_emissive",
+        "displayName": "missile_a_emissive",
+        "objectName": "missile_a_emissive",
+        "groupName": "missile_a_emissive",
+        "materialName": "emissive",
+        "smoothingGroup": "1"
+      },
+      {
+        "meshId": "missile_a_base",
+        "displayName": "missile_a_base",
+        "objectName": "missile_a_base",
+        "groupName": "missile_a_base",
+        "materialName": "base",
+        "smoothingGroup": "2"
+      }
+    ]
+  }
+}

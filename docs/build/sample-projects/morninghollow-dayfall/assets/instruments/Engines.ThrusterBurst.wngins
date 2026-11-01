@@ -24,7 +24,8 @@
         "oscillator": "Noise",
         "frequency": 140,
         "mixPercent": 50,
-        "dutyCycle": 0.5
+        "dutyCycle": 0.5,
+        "noiseCutoffHz": 140
       },
       {
         "oscillator": "Saw",

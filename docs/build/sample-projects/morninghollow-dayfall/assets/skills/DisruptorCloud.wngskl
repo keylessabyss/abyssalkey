@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.DisruptorCloud",
+  "displayName": "Disruptor Cloud",
+  "role": "DPS",
+  "implementationStatus": "Planned",
+  "effect": "Damage",
+  "targetRelationship": "Hostile",
+  "targetRule": "Nearest",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned hostile area effect that damages targets and slows weapon cadence. Effect and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "DPS",
+    "Project"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.AegisField",
+  "displayName": "Aegis Field",
+  "role": "Tank",
+  "implementationStatus": "Operational",
+  "effect": "RestoreShield",
+  "targetRelationship": "Self",
+  "targetRule": "Nearest",
+  "amount": 25,
+  "energyCost": 0,
+  "cooldownSeconds": 15,
+  "range": 0,
+  "description": "Restores 25 shield to the user. V1 is an instant shield repair; temporary damage reduction and visual presentation remain future work.",
+  "tags": [
+    "Skill",
+    "Tank",
+    "Project"
+  ]
+}

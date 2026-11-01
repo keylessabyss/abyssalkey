@@ -1,0 +1,21 @@
+{
+  "format": "AbyssalSkill",
+  "formatVersion": 1,
+  "id": "Skill.RescueWave",
+  "displayName": "Rescue Wave",
+  "role": "Heal",
+  "implementationStatus": "Planned",
+  "effect": "RestoreHealth",
+  "targetRelationship": "Friendly",
+  "targetRule": "LowestHealthPercent",
+  "amount": 0,
+  "energyCost": 0,
+  "cooldownSeconds": 0,
+  "range": 0,
+  "description": "Planned area effect that repairs allies and pushes hostile targets. Mixed-target effect and balance values are not authored yet.",
+  "tags": [
+    "Skill",
+    "Heal",
+    "Project"
+  ]
+}

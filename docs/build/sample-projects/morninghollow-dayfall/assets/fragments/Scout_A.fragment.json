@@ -88,33 +88,57 @@
             "KeyD",
             "Gamepad0.RightStickX-"
           ]
+        },
+        {
+          "inputChannel": "Input6",
+          "positiveControls": [
+            "KeyQ",
+            "Gamepad0.Button4"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyQ",
+            "Gamepad0.Button4"
+          ]
+        },
+        {
+          "inputChannel": "Input7",
+          "positiveControls": [
+            "KeyE",
+            "Gamepad0.Button6"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyE",
+            "Gamepad0.Button6"
+          ]
+        },
+        {
+          "inputChannel": "Input8",
+          "positiveControls": [
+            "KeyR",
+            "Gamepad0.Button7"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyR",
+            "Gamepad0.Button7"
+          ]
+        },
+        {
+          "inputChannel": "Input9",
+          "positiveControls": [
+            "KeyF",
+            "Gamepad0.Button8"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "KeyF",
+            "Gamepad0.Button8"
+          ]
         }
       ],
       "componentDefinitions": [
-        {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:0",
-          "enabled": true,
-          "name": "Center Weapon",
-          "damage": 1,
-          "range": 5,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 0.3,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
         {
           "type": "Targeting",
           "componentId": "Legacy:behaviorProfiles_1_componentDefinitions:1",
@@ -167,30 +191,6 @@
           ]
         },
         {
-          "type": "Weapon",
-          "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:1",
-          "enabled": true,
-          "name": "Center Weapon",
-          "damage": 15,
-          "range": 10,
-          "projectileSpeed": 36,
-          "homingEnabled": false,
-          "homingTurnRate": 90,
-          "cooldown": 0.3,
-          "inputChannel": "Input1",
-          "muzzleAnchorNodeId": "EmptyNode2",
-          "muzzleFlashParticleAssetId": null,
-          "projectileFragmentAssetId": null,
-          "crosshairPictureAssetId": null,
-          "crosshairBlend": "Alpha",
-          "crosshairColor": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        {
           "type": "LanePush",
           "componentId": "Legacy:behaviorProfiles_2_componentDefinitions:2",
           "enabled": true,
@@ -209,7 +209,8 @@
           "inputChannel": "Input1",
           "dispatchScope": "Subtree",
           "interval": 0.3,
-          "range": 10
+          "range": 10,
+          "autoUseSkills": true
         }
       ]
     }
@@ -242,8 +243,16 @@
           "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
           "enabled": true,
           "resourceId": "Health",
-          "maximum": 60,
-          "startingValue": 60
+          "maximum": 180,
+          "startingValue": 180
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:scout_a-shield-v1",
+          "enabled": true,
+          "resourceId": "Shield",
+          "maximum": 45,
+          "startingValue": 45
         },
         {
           "type": "HitBox",
@@ -261,7 +270,7 @@
           "accelerationRate": 9,
           "decelerationRate": 9,
           "minSpeed": 0,
-          "maxSpeed": 12,
+          "maxSpeed": 30,
           "stopForReverse": false,
           "stopForDrive": false
         },
@@ -287,13 +296,151 @@
           "enabled": true,
           "inputChannel": "Input5",
           "rollSensitivity": 1.5
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:scout-a-laser-01",
+          "enabled": true,
+          "name": "Laser 01",
+          "familyKey": "laser",
+          "memberKey": "01",
+          "damage": 15,
+          "range": 10,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "EmptyNode2",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:scout-a-laser-02",
+          "enabled": true,
+          "name": "Laser 02",
+          "familyKey": "laser",
+          "memberKey": "02",
+          "damage": 15,
+          "range": 10,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointLaser02",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Weapon",
+          "componentId": "Weapon:scout-a-laser-03",
+          "enabled": true,
+          "name": "Laser 03",
+          "familyKey": "laser",
+          "memberKey": "03",
+          "damage": 15,
+          "range": 10,
+          "projectileSpeed": 36,
+          "homingEnabled": false,
+          "homingTurnRate": 90,
+          "cooldown": 0.5,
+          "inputChannel": "Input1",
+          "muzzleAnchorNodeId": "HardpointLaser03",
+          "muzzleFlashParticleAssetId": null,
+          "projectileFragmentAssetId": null,
+          "crosshairPictureAssetId": null,
+          "crosshairBlend": "Alpha",
+          "crosshairColor": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:scout_a-slot-01",
+          "enabled": true,
+          "skillAssetId": "Skill.TargetFracture",
+          "inputChannel": "Input6",
+          "anchorNodeId": "HardpointSkill01",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:scout_a-slot-02",
+          "enabled": true,
+          "skillAssetId": "Skill.AegisField",
+          "inputChannel": "Input7",
+          "anchorNodeId": "HardpointSkill02",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:scout_a-slot-03",
+          "enabled": true,
+          "skillAssetId": "Skill.RepairBeam",
+          "inputChannel": "Input8",
+          "anchorNodeId": "HardpointSkill03",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Skill",
+          "componentId": "Skill:scout_a-slot-04",
+          "enabled": true,
+          "skillAssetId": null,
+          "inputChannel": "Input9",
+          "anchorNodeId": "HardpointSkill04",
+          "cooldownMultiplier": 1,
+          "cooldownOverride": 0,
+          "rangeOverride": 0
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:scout_a-energy-v1",
+          "enabled": true,
+          "resourceId": "Energy",
+          "maximum": 100,
+          "startingValue": 100
+        },
+        {
+          "type": "Resource",
+          "componentId": "Resource:scout_a-stamina-v1",
+          "enabled": true,
+          "resourceId": "Stamina",
+          "maximum": 100,
+          "startingValue": 100
         }
       ]
     },
     {
       "nodeId": "EmptyNode2",
       "type": "Empty",
-      "name": "Center Muzzle",
+      "name": "Laser Anchor 01",
       "parentNodeId": "Root",
       "localPosition": [
         0.6800000071525574,
@@ -570,6 +717,167 @@
           }
         }
       ]
+    },
+    {
+      "nodeId": "HardpointLaser02",
+      "type": "Empty",
+      "name": "Laser Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.3799999952316284,
+        -0.3400000035762787,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.laser.02"
+    },
+    {
+      "nodeId": "HardpointLaser03",
+      "type": "Empty",
+      "name": "Laser Anchor 03",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0.3799999952316284,
+        0.3400000035762787,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.laser.03"
+    },
+    {
+      "nodeId": "HardpointSkill01",
+      "type": "Empty",
+      "name": "Skill Anchor 01",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.019999999552965164,
+        -0.1599999964237213,
+        0.07999999821186066
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.01"
+    },
+    {
+      "nodeId": "HardpointSkill02",
+      "type": "Empty",
+      "name": "Skill Anchor 02",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.019999999552965164,
+        0.1599999964237213,
+        0.07999999821186066
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.02"
+    },
+    {
+      "nodeId": "HardpointSkill03",
+      "type": "Empty",
+      "name": "Skill Anchor 03",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.3400000035762787,
+        -0.1599999964237213,
+        -0.07999999821186066
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.03"
+    },
+    {
+      "nodeId": "HardpointSkill04",
+      "type": "Empty",
+      "name": "Skill Anchor 04",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.3400000035762787,
+        0.1599999964237213,
+        -0.07999999821186066
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.skill.04"
+    },
+    {
+      "nodeId": "HardpointSpecialWeapon01",
+      "type": "Empty",
+      "name": "Special Weapon Anchor",
+      "parentNodeId": "Root",
+      "localPosition": [
+        -0.6200000047683716,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "referenceKey": "hardpoint.special.01"
     }
   ],
   "componentDefinitions": [
@@ -578,8 +886,16 @@
       "componentId": "Legacy:assemblyNodes_0_componentDefinitions:0",
       "enabled": true,
       "resourceId": "Health",
-      "maximum": 60,
-      "startingValue": 60
+      "maximum": 180,
+      "startingValue": 180
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:scout_a-shield-v1",
+      "enabled": true,
+      "resourceId": "Shield",
+      "maximum": 45,
+      "startingValue": 45
     },
     {
       "type": "HitBox",
@@ -597,7 +913,7 @@
       "accelerationRate": 9,
       "decelerationRate": 9,
       "minSpeed": 0,
-      "maxSpeed": 12,
+      "maxSpeed": 30,
       "stopForReverse": false,
       "stopForDrive": false
     },
@@ -623,6 +939,144 @@
       "enabled": true,
       "inputChannel": "Input5",
       "rollSensitivity": 1.5
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:scout-a-laser-01",
+      "enabled": true,
+      "name": "Laser 01",
+      "familyKey": "laser",
+      "memberKey": "01",
+      "damage": 15,
+      "range": 10,
+      "projectileSpeed": 36,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 0.5,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "EmptyNode2",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:scout-a-laser-02",
+      "enabled": true,
+      "name": "Laser 02",
+      "familyKey": "laser",
+      "memberKey": "02",
+      "damage": 15,
+      "range": 10,
+      "projectileSpeed": 36,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 0.5,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointLaser02",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Weapon",
+      "componentId": "Weapon:scout-a-laser-03",
+      "enabled": true,
+      "name": "Laser 03",
+      "familyKey": "laser",
+      "memberKey": "03",
+      "damage": 15,
+      "range": 10,
+      "projectileSpeed": 36,
+      "homingEnabled": false,
+      "homingTurnRate": 90,
+      "cooldown": 0.5,
+      "inputChannel": "Input1",
+      "muzzleAnchorNodeId": "HardpointLaser03",
+      "muzzleFlashParticleAssetId": null,
+      "projectileFragmentAssetId": null,
+      "crosshairPictureAssetId": null,
+      "crosshairBlend": "Alpha",
+      "crosshairColor": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:scout_a-slot-01",
+      "enabled": true,
+      "skillAssetId": "Skill.TargetFracture",
+      "inputChannel": "Input6",
+      "anchorNodeId": "HardpointSkill01",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:scout_a-slot-02",
+      "enabled": true,
+      "skillAssetId": "Skill.AegisField",
+      "inputChannel": "Input7",
+      "anchorNodeId": "HardpointSkill02",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:scout_a-slot-03",
+      "enabled": true,
+      "skillAssetId": "Skill.RepairBeam",
+      "inputChannel": "Input8",
+      "anchorNodeId": "HardpointSkill03",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Skill",
+      "componentId": "Skill:scout_a-slot-04",
+      "enabled": true,
+      "skillAssetId": null,
+      "inputChannel": "Input9",
+      "anchorNodeId": "HardpointSkill04",
+      "cooldownMultiplier": 1,
+      "cooldownOverride": 0,
+      "rangeOverride": 0
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:scout_a-energy-v1",
+      "enabled": true,
+      "resourceId": "Energy",
+      "maximum": 100,
+      "startingValue": 100
+    },
+    {
+      "type": "Resource",
+      "componentId": "Resource:scout_a-stamina-v1",
+      "enabled": true,
+      "resourceId": "Stamina",
+      "maximum": 100,
+      "startingValue": 100
     }
   ],
   "animationClips": [],

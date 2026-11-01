@@ -1,0 +1,363 @@
+{
+  "assetId": "Fragment.Missile_Apex_1A",
+  "displayName": "Missile Apex 1A",
+  "description": "Project Fragment assembly authored in Wings Assembler.",
+  "tags": [
+    "Fragment",
+    "Project"
+  ],
+  "behaviorSource": "Legacy",
+  "behaviorProfiles": [
+    {
+      "profileId": "None",
+      "displayName": "None",
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "Player",
+      "displayName": "Player",
+      "inputBindings": [
+        {
+          "inputChannel": "Input1",
+          "positiveControls": [
+            "MouseLeft",
+            "Gamepad0.Button0"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "MouseLeft",
+            "Gamepad0.Button0"
+          ]
+        },
+        {
+          "inputChannel": "Input2",
+          "positiveControls": [
+            "MouseRight",
+            "Gamepad0.Button1"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "MouseRight",
+            "Gamepad0.Button1"
+          ]
+        },
+        {
+          "inputChannel": "Input3",
+          "positiveControls": [
+            "Space",
+            "Gamepad0.Button2"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "Space",
+            "Gamepad0.Button2"
+          ]
+        },
+        {
+          "inputChannel": "Input4",
+          "positiveControls": [
+            "ShiftLeft",
+            "Gamepad0.Button3"
+          ],
+          "negativeControls": [],
+          "hardwareControls": [
+            "ShiftLeft",
+            "Gamepad0.Button3"
+          ]
+        }
+      ],
+      "componentDefinitions": []
+    },
+    {
+      "profileId": "AI",
+      "displayName": "AI",
+      "componentDefinitions": []
+    }
+  ],
+  "assemblyNodes": [
+    {
+      "nodeId": "Root",
+      "type": "Root",
+      "name": "Missile Apex 1A",
+      "parentNodeId": null,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "MeshDataRoot1",
+      "type": "MeshDataRoot",
+      "name": "Missile A Rocket",
+      "parentNodeId": "Root",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.missile_a_rocket",
+      "meshMaterialBindings": [
+        {
+          "meshId": "missile_a_color",
+          "materialAssetId": "Material.M_dynamic_color",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "missile_a_boltz",
+          "materialAssetId": "Material.M_metal_bronze",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "missile_a_emissive",
+          "materialAssetId": "Material.M_dynamic_accent",
+          "smoothingGroupMask": 0
+        },
+        {
+          "meshId": "missile_a_base",
+          "materialAssetId": "Material.M_Metal_Gray",
+          "smoothingGroupMask": 0
+        }
+      ],
+      "uvwProjection": null,
+      "automaticUVGeneration": false
+    },
+    {
+      "nodeId": "MeshNode2",
+      "type": "Mesh",
+      "name": "missile_a_color",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.missile_a_rocket",
+      "meshId": "missile_a_color",
+      "materialAssetId": "Material.M_dynamic_color",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
+    },
+    {
+      "nodeId": "MeshNode3",
+      "type": "Mesh",
+      "name": "missile_a_boltz",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.missile_a_rocket",
+      "meshId": "missile_a_boltz",
+      "materialAssetId": "Material.M_metal_bronze",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
+    },
+    {
+      "nodeId": "MeshNode4",
+      "type": "Mesh",
+      "name": "missile_a_emissive",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.missile_a_rocket",
+      "meshId": "missile_a_emissive",
+      "materialAssetId": "Material.M_dynamic_accent",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
+    },
+    {
+      "nodeId": "MeshNode5",
+      "type": "Mesh",
+      "name": "missile_a_base",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "meshAssetId": "Mesh.missile_a_rocket",
+      "meshId": "missile_a_base",
+      "materialAssetId": "Material.M_Metal_Gray",
+      "customDepthEnabled": false,
+      "customStencilValue": 1
+    },
+    {
+      "nodeId": "EmptyNode6",
+      "type": "Empty",
+      "name": "Anchor",
+      "parentNodeId": "MeshDataRoot1",
+      "localPosition": [
+        -0.6950144171714783,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "nodeId": "ParticleNode7",
+      "type": "Particle",
+      "name": "Particle Emitter",
+      "parentNodeId": "EmptyNode6",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:6e2945a7-a3bc-4ee9-8e78-7e6aa094b6ba",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1785182623798",
+        "autoPlay": true
+      }
+    },
+    {
+      "nodeId": "ParticleNode1",
+      "type": "Particle",
+      "name": "Particle Emitter (2)",
+      "parentNodeId": "EmptyNode6",
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "localRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "particleDefinition": {
+        "type": "ParticleEmitter",
+        "componentId": "ParticleEmitter:b514ff7b-2724-4db7-94ac-619e083c9af7",
+        "enabled": true,
+        "particleAssetId": "Particle.Particle1793200171669",
+        "autoPlay": true
+      }
+    }
+  ],
+  "componentDefinitions": [],
+  "animationClips": [],
+  "notifierDefinitions": [],
+  "driverDefinitions": [],
+  "driverSourceVersion": 3,
+  "fragmentScript": null,
+  "rootPhysicalCollider": {
+    "visible": true,
+    "hiddenInGame": true,
+    "radius": 0.5,
+    "halfHeight": 0.5,
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "capsules": [],
+    "type": "None",
+    "convexHull": null
+  },
+  "blocksNavigationByDefault": false
+}

@@ -5,6 +5,7 @@
   "meshes": [
     "assets/meshes/heavy_a_ship.mesh.json",
     "assets/meshes/hqwall_a_building.mesh.json",
+    "assets/meshes/missile_a_rocket.mesh.json",
     "assets/meshes/scout_a_base.mesh.json",
     "assets/meshes/scout_a_boltz.mesh.json",
     "assets/meshes/scout_a_color.mesh.json",
@@ -27,6 +28,7 @@
   "fragments": [
     "assets/fragments/Heavy_A.fragment.json",
     "assets/fragments/HQwall_A.fragment.json",
+    "assets/fragments/Missile_Apex_1A.fragment.json",
     "assets/fragments/Scout_A.fragment.json",
     "assets/fragments/Standard_A.fragment.json",
     "assets/fragments/Stargate_A.fragment.json",
@@ -53,7 +55,7 @@
     "assets/instruments/Engines.EngineShutdown.wngins",
     "assets/instruments/Engines.ThrusterBurst.wngins",
     "assets/instruments/Engines.WarpCharge.wngins",
-    "assets/instruments/Retro.1Up.wngins",
+    "assets/instruments/Player/Retro.1Up.wngins",
     "assets/instruments/Retro.Coin.wngins",
     "assets/instruments/Retro.Jump.wngins",
     "assets/instruments/Retro.PowerDown.wngins",
@@ -93,7 +95,8 @@
   ],
   "particles": [
     "assets/particles/Particle1785182623798.wngprt",
-    "assets/particles/Particle1786719688924.wngprt"
+    "assets/particles/Particle1786719688924.wngprt",
+    "assets/particles/Particle1793200171669.wngprt"
   ],
   "ui": [
     "assets/ui/UI1786069767206.wngui",

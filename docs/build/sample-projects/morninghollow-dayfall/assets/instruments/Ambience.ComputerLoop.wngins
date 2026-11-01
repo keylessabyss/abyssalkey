@@ -36,7 +36,8 @@
         "oscillator": "Noise",
         "frequency": 240,
         "mixPercent": 20,
-        "dutyCycle": 0.25
+        "dutyCycle": 0.25,
+        "noiseCutoffHz": 240
       }
     ]
   }

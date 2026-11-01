@@ -30,10 +30,11 @@
         "oscillator": "Noise",
         "frequency": 90,
         "mixPercent": 40,
-        "dutyCycle": 0.5
+        "dutyCycle": 0.5,
+        "noiseCutoffHz": 90
       },
       {
-        "oscillator": "Square",
+        "oscillator": "Pulse",
         "frequency": 90,
         "mixPercent": 15,
         "dutyCycle": 0.5
