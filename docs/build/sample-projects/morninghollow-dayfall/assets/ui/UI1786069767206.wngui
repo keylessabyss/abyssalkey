@@ -285,7 +285,7 @@
       "rightMargin": 0,
       "bottomMargin": 0,
       "text": "Lobby",
-      "description": "Lobby is under construction.",
+      "description": "Create or find a local lobby.",
       "backgroundColor": [
         0.12,
         0.31,
@@ -299,7 +299,8 @@
         1
       ],
       "enabled": true,
-      "inputChannel": "None"
+      "inputChannel": "None",
+      "onClickSource": "OnClick()\n{\n    OpenLobby();\n}"
     },
     {
       "nodeId": "Button_3",

@@ -21,16 +21,16 @@
     "dutyCycle": 0.5,
     "oscillators": [
       {
+        "name": "",
         "oscillator": "Pulse",
         "frequency": 440,
         "mixPercent": 60,
-        "dutyCycle": 0.5
-      },
-      {
-        "oscillator": "Sine",
-        "frequency": 440,
-        "mixPercent": 40,
-        "dutyCycle": 0.5
+        "dutyCycle": 0.5,
+        "noiseCutoffHz": 1000,
+        "sweepEnabled": true,
+        "sweepReturnEnabled": true,
+        "sweepEndHz": 440,
+        "sweepCycleSeconds": 1.2
       }
     ]
   }

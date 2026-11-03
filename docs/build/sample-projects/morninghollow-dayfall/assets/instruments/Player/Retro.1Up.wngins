@@ -12,34 +12,25 @@
   "author": "Morninghollow Dayfall",
   "parameters": {
     "oscillator": "Sine",
-    "frequency": 20,
+    "frequency": 142.24270273066577,
     "volume": 0.688,
-    "attack": 0,
-    "decay": 0.1599858719606059,
-    "sustain": 0.444,
-    "release": 0.002632741160370135,
+    "attack": 0.0015848931924611136,
+    "decay": 0.09102981779915217,
+    "sustain": 0.376,
+    "release": 0.0032374575428176433,
     "dutyCycle": 0.25,
     "oscillators": [
       {
+        "name": "",
         "oscillator": "Sine",
-        "frequency": 20,
-        "mixPercent": 55.1,
+        "frequency": 142.24270273066577,
+        "mixPercent": 27.500000000000004,
         "dutyCycle": 0.25,
-        "noiseCutoffHz": 1000
-      },
-      {
-        "oscillator": "Triangle",
-        "frequency": 37.241742733257354,
-        "mixPercent": 0,
-        "dutyCycle": 0.25,
-        "noiseCutoffHz": 1000
-      },
-      {
-        "oscillator": "Pulse",
-        "frequency": 56.75838056883112,
-        "mixPercent": 0,
-        "dutyCycle": 0.04234,
-        "noiseCutoffHz": 1000
+        "noiseCutoffHz": 1000,
+        "sweepEnabled": true,
+        "sweepReturnEnabled": false,
+        "sweepEndHz": 1489.463947811978,
+        "sweepCycleSeconds": 0.12941958414499863
       }
     ]
   }

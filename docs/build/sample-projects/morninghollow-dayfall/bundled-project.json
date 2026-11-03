@@ -44,12 +44,12 @@
     "assets/wingsworlds/MorninghollowPrologue.wingsworld.json"
   ],
   "instruments": [
-    "assets/instruments/Ambience.Alarm.wngins",
     "assets/instruments/Ambience.ComputerLoop.wngins",
     "assets/instruments/Ambience.PowerCore.wngins",
     "assets/instruments/Ambience.Rain.wngins",
     "assets/instruments/Ambience.SpaceHum.wngins",
     "assets/instruments/Ambience.Wind.wngins",
+    "assets/instruments/Ambient/Ambience.Alarm.wngins",
     "assets/instruments/Engines.EngineBoost.wngins",
     "assets/instruments/Engines.EngineIdle.wngins",
     "assets/instruments/Engines.EngineShutdown.wngins",
@@ -69,23 +69,23 @@
     "assets/instruments/Simple.SquareLead.wngins",
     "assets/instruments/Simple.Tom.wngins",
     "assets/instruments/Simple.TriangleBass.wngins",
-    "assets/instruments/UI.Accept.wngins",
     "assets/instruments/UI.ButtonClick.wngins",
     "assets/instruments/UI.ButtonHover.wngins",
     "assets/instruments/UI.Cancel.wngins",
     "assets/instruments/UI.Error.wngins",
     "assets/instruments/UI.Notification.wngins",
     "assets/instruments/UI.Success.wngins",
+    "assets/instruments/UI/UI.Accept.wngins",
     "assets/instruments/Weapons.ChargeShot.wngins",
     "assets/instruments/Weapons.ExplosionLarge.wngins",
     "assets/instruments/Weapons.ExplosionSmall.wngins",
     "assets/instruments/Weapons.HeavyLaser.wngins",
     "assets/instruments/Weapons.MissileLaunch.wngins",
-    "assets/instruments/Weapons.PlasmaShot.wngins",
     "assets/instruments/Weapons.PulseCannon.wngins",
     "assets/instruments/Weapons.Railgun.wngins",
     "assets/instruments/Weapons.Ricochet.wngins",
-    "assets/instruments/Weapons.ShieldHit.wngins"
+    "assets/instruments/Weapons.ShieldHit.wngins",
+    "assets/instruments/Weapons/Weapons.PlasmaShot.wngins"
   ],
   "audioTracks": [
     "assets/tracks/Track1785858162715.wngtrk"
