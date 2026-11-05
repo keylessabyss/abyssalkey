@@ -586,6 +586,10 @@
               {
                 "id": "Rookie01",
                 "displayName": "Rookie01"
+              },
+              {
+                "id": "Rookie02",
+                "displayName": "Rookie02"
               }
             ],
             "assignments": [
@@ -610,6 +614,15 @@
                 "teamId": "Morninghollow.Night",
                 "teamMode": "Opposite Of Player Slot",
                 "playerSlotId": "Player1",
+                "localContactRadius": 60
+              },
+              {
+                "roleId": "Pilot.Agent02",
+                "role": "Pilot",
+                "agentId": "Rookie02",
+                "teamId": "Morninghollow.Day",
+                "teamMode": "Opposite Of Player Slot",
+                "playerSlotId": "Player2",
                 "localContactRadius": 60
               }
             ]
