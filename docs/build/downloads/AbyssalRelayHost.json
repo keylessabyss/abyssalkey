@@ -1,7 +1,7 @@
 ﻿{
-    "launcherSha256":  "819d8f7910dc57bfdef6e12df092be7080049a3f8a2155db90c2efe7ac32171b",
+    "launcherSha256":  "a1c79000a1696374a8ac6c007db0a5f7792a81e1e84f895117b301892c6d4a89",
     "relaySha256":  "ba82611548ef19cc548bc8e1ce9538ff65ee15a5c6b184251a82922186b03603",
     "nodeVersion":  "22.23.4",
-    "executableSha256":  "e0b5c34afcc27f2cd75760f69df024045b26a8e9a496c5b470b82ee0e1f2e59f",
+    "executableSha256":  "21b54927e9bf2205c38d3d17074d121d85f0ebbf3501f172d0b671cbbc8ac0b9",
     "wsVersion":  "8.21.3"
 }
